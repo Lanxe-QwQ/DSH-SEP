@@ -1,6 +1,7 @@
 {
   "schema": 1,
-  "sha256": "311124a1e9ac177ca6b7e24a5ecc79e33d346ee94c455624b86c801bb3e288c8",
+  "sha256": "9ee87c13fc7e6c60fbe68464c8d54f30b330bca1f48a595512dc04696706784b",
+  "historicalInputSha256": "311124a1e9ac177ca6b7e24a5ecc79e33d346ee94c455624b86c801bb3e288c8",
   "officialCommit": "687f282e8625c6b8d11ff58211a90524be2e4317",
   "candidateSha256": "854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5",
   "inputs": [
@@ -11,13 +12,13 @@
     },
     {
       "path": "desktop/lib/main.js",
-      "bytes": 278413,
-      "sha256": "2be0668cbff38b5ba6b48523817d656b76ac843b9b42f920332571efc7a700b9"
+      "bytes": 279010,
+      "sha256": "36b7d25df5af1d63b31698edc70a89dc0367e0cc605e32d05a5eb9c1a7b4bd23"
     },
     {
       "path": "desktop/lib/preload-app.cjs",
-      "bytes": 49899,
-      "sha256": "161e8688befc6ee728e062bbf2ba8047928f8ada0769dc97128376f4c85c849f"
+      "bytes": 50605,
+      "sha256": "3b49d2c8ea035fe066e52230321f3cd15b691f8274fa6340ddaa3d5c0e6b5ab2"
     },
     {
       "path": "desktop/lib/preload-mandatory.cjs",
@@ -38,6 +39,36 @@
       "path": "desktop/lib/preload-welcome.cjs",
       "bytes": 28926,
       "sha256": "b2b9e5670ffc183c38c60eee307c49e00caa6697a976451c12e590d2dea12173"
+    },
+    {
+      "path": "desktop/lib/project-workflow-product/endpoint.mjs",
+      "bytes": 3872,
+      "sha256": "c3e54a7f3e32c09d6e941730cb2e49f34a58d249df55ad456c448d88bb21c6b7"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/electron-adapter.mjs",
+      "bytes": 1679,
+      "sha256": "7673e4bde5cb6e44bb9a75758364b266818c5609561dfc9a7c05291aa6277986"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/main.mjs",
+      "bytes": 6035,
+      "sha256": "add6c1a03c165c63fe61f007b7f261aaf5a23e5684db104f38f795f90a7b7696"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/native-confirmation.mjs",
+      "bytes": 1285,
+      "sha256": "c4d91dd63e11f80059d7ab1dbd3c4427fec24310cebfb997a75575e8f2cfe7a5"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/rules.mjs",
+      "bytes": 1372,
+      "sha256": "83dc0f51585f6871259bf42cc97b24cd06d8c038c107a16d47768a621acb5b6a"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/transport.mjs",
+      "bytes": 4353,
+      "sha256": "65134282e54d2c7b70b98565a55615023740660ec9cb6b1bb5ae9658f2e7a7cb"
     },
     {
       "path": "desktop/lib/sep-mac-entry.mjs",
@@ -665,6 +696,21 @@
       "sha256": "0df1cfa81b0659fb4092d90d0b613cf0acc0b67d72912e3a33eb6f5f3bb95f0a"
     },
     {
+      "path": "current-project-ui/lib/client.js",
+      "bytes": 6682,
+      "sha256": "43c94f0026e722d7852e3c961241fa1e64119b68d7df878fded7007472d746d3"
+    },
+    {
+      "path": "current-project-ui/lib/index.js",
+      "bytes": 259,
+      "sha256": "63b2b2264c9265702fe435d2ed462d659106c760b033723d02d4ea4710e58e21"
+    },
+    {
+      "path": "current-project-ui/package.json",
+      "bytes": 608,
+      "sha256": "b13824b6586c295c08cac9f33b18835f90bfa9d92530553252952fb6f7925a67"
+    },
+    {
       "path": "frontend.js",
       "bytes": 939913,
       "sha256": "281871871f34cb52425b883d9af8c9fa6fd00e75a27d1e604a2fafb0ca2f9f81"
@@ -676,8 +722,8 @@
     },
     {
       "path": "ORIGIN.json",
-      "bytes": 30831,
-      "sha256": "5d53f50a3184263df8c7a7712e19356ff75a8e11cecd2ff585b1aac8968b58d9"
+      "bytes": 5310,
+      "sha256": "d64a34fa3e22cbdd54480dac00c8de57e3c2d824ec40d174b52d85d9b3c902de"
     },
     {
       "path": "brand/package.json",
