@@ -27,7 +27,7 @@ jobs:
         run: node tools/rc2-adaptation/macos/run-native.mjs "$RUNNER_TEMP/sep-rc2"
       - name: Assemble actual RC2 Mac app from verified carrier
         run: node tools/rc2-adaptation/macos/assemble-app.mjs "$RUNNER_TEMP/sep-rc2"
-      - name: Verify actual RC2 app closure and native document/pending suites
+      - name: Verify actual RC2 app closure and native document/pending/context suites
         run: node tools/rc2-adaptation/macos/run-postbuild.mjs "$RUNNER_TEMP/sep-rc2"
       - name: Actual RC2 LaunchServices cold boot and normal restart
         run: node tools/rc2-adaptation/macos/run-app-lifecycle.mjs "$RUNNER_TEMP/sep-rc2"
