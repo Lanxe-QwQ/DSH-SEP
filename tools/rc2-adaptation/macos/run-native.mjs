@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';import{spawnSync}from'node:child_process
 const root=resolve(process.argv[2]),source=join(root,'carrier'),sha=b=>createHash('sha256').update(b).digest('hex');
 assert.equal(process.platform,'darwin');assert.equal(process.arch,'arm64');assert.equal(process.version,'v24.21.0');process.umask(0o077);
 await symlink(join(root,'host/node_modules'),join(root,'node_modules'));
-await cp(join(root,'capture/bundle/modules/ui-settings-memory'),join(root,'host/node_modules/@deepseek-ai/dsh-client-ui-settings-memory'),{recursive:true,errorOnExist:true,force:false});
+const {prepareSettingsUi}=await import(new URL('file://'+join(root,'carrier/settings-ui/adapter.mjs')));await prepareSettingsUi({hostRoot:join(root,'host'),bundleRoot:join(root,'capture')});
 const evidence=join(root,'evidence');await mkdir(evidence,{mode:0o700});const report={schema:1,status:'fail',scope:'RC.2 native APFS + actual host integration; synthetic LLM, no GUI or physical input certification',runs:[],fullMacCertification:'blocked',notVerified:['RC.2 installed Electron lifecycle','RC.2 installer','physical input','paid API','Developer ID/notarization']};
 function run(name,exe,args,env={},timeout=300000){const x=spawnSync(exe,args,{cwd:source,env:{...process.env,...env},timeout,maxBuffer:32*1024*1024,encoding:'utf8'});const o=x.stdout??'',e=x.stderr??'';return Promise.all([writeFile(join(evidence,name+'.stdout.log'),o,{flag:'wx'}),writeFile(join(evidence,name+'.stderr.log'),e,{flag:'wx'})]).then(()=>{const row={name,exit:x.status,error:x.error?.code??null,stdoutSha256:sha(o),stderrSha256:sha(e),status:x.status===0&&!x.error?'pass':'fail'};report.runs.push(row);return{row,o,e};});}
 try{
