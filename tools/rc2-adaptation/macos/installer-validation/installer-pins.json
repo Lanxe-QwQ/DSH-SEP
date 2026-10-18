@@ -458,16 +458,16 @@
   },
   "installer": {
     "status": "ready",
-    "commit": "1027e597c53b6d31f734026d97adb1fb4b2426bf",
+    "commit": "fecf8489d4bc98e2cac515b2a705b861bda89b9d",
     "artifact": "DSH-SEP-macOS-RC2-installer-preview.zip",
-    "assemblySha256": "2cbbb7dae9840e32add9f2164afc1e69c975563ef36284f33632b3eb3da8ffb5",
+    "assemblySha256": "cd2715f6ba2638ecacbf967e9ccc9ba84b75f231cc0d9ab026d2472453e1a14b",
     "assemblyBytes": 9511,
-    "archiveSha256": "bd3316100ac6912728bc5c4fffdb090f125e8e42b7cac684ac3b424a4cb490de",
-    "archiveBytes": 862171912,
-    "inventorySha256": "734be50dbbbe8efa2135ef655fd4b25828c23377f48c52dcacb436910029c2d3",
+    "archiveSha256": "1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77",
+    "archiveBytes": 862171913,
+    "inventorySha256": "34033cb61a0a04d991db01f239c515e8a2f566ea43dbd95daab63ed98c491cec",
     "inventoryBytes": 19892015,
-    "treeSha256": "e716c54c889985235072d17493baea8de25e9ccc6e9f214653948b4528666ef3",
-    "manifestSha256": "23c48c5d9eb6f19700665c3425b2e3b649f0f6f334680ceb1528250efd2afc83",
+    "treeSha256": "99845b4795d69a092275e5ce6bc9e3980de6d5a761d332a830c02445cdaa0aeb",
+    "manifestSha256": "b53bdc34ef8c018dc49a990575a6722ddd00d5be329caed1c701f7f191f55f69",
     "payload": {
       "sourceAssemblySha256": "71450688bdc20b746a3e4eb59dbbfacc8692c865933a206c40dde2ffe181e903",
       "programSha256": "ad859a608576a79b8c0129676884d18272b4f25d93459af2fd610c3a06d7cba1",
@@ -546,7 +546,7 @@
       },
       {
         "path": "installer-entry/controller-core.mjs",
-        "sha256": "04268feaa3faaff0a1d25e8f87e7cbc8f997ba0cd79cb01610bf9bd98d378262"
+        "sha256": "ea7a0a43857a4ddd26d85c4af7d4abe6867d18c68b374259207a2f6a11a61829"
       },
       {
         "path": "installer-entry/controller.mjs",
@@ -596,7 +596,7 @@
       },
       {
         "path": "installer-entry/account-native.c",
-        "sha256": "dc43051f1fadd40738501e11a8339f2f5624fd6d5cbc75f236a36de62c45a7bf"
+        "sha256": "a6ddb7fba2b2ae3cda37b55d416fd95e031c3fd5c8ede562f8655d1da305eb4f"
       }
     ]
   }

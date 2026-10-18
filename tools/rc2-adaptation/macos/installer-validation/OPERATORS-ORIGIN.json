@@ -108,7 +108,7 @@
       "source": "tools/alpha2-macos/native-revalidation/installer-run-full.mjs",
       "result": "installer-run-full.mjs",
       "sourceSha256": "4b80f1c2a2bc3c37f1c3f32d5990ffca5b57707179b65522c128544fe76e59a0",
-      "resultSha256": "18f85674f1b61d9a2a79ca3ffe51bca2f89fb8c3f693bacade4bd523b6b7c33e",
+      "resultSha256": "5899ade4fab821f0fba92b3efef8bcaa3437222deaf6b0428de145064319d1c9",
       "transforms": [
         {
           "before": "assert(sourceRoot.startsWith(workspace+'/'));",
@@ -123,6 +123,20 @@
           "count": 1,
           "inputSha256": "0f5eed3067ef72cd288098d79bad3a435e1660473e27f61d9da6088810c7bfa3",
           "resultSha256": "18f85674f1b61d9a2a79ca3ffe51bca2f89fb8c3f693bacade4bd523b6b7c33e"
+        },
+        {
+          "before": "assert.equal(confirmation.plan.target,target);",
+          "after": "assert.equal(confirmation.plan.target,target);assert.equal(confirmation.plan.dataRoot,dataRoot);assert.equal(confirmation.plan.nativeSnapshot.dataRoot,dataRoot);",
+          "count": 1,
+          "inputSha256": "18f85674f1b61d9a2a79ca3ffe51bca2f89fb8c3f693bacade4bd523b6b7c33e",
+          "resultSha256": "dc6bbc6c31689a8be3b33cb55042f83b151cea0cdd2bb757856cd4a202eaffdb"
+        },
+        {
+          "before": "result.integration={status:'pass',transactionId:state.transactionId,planHash:confirmation.planHash,journalClose};",
+          "after": "result.integration={status:'pass',transactionId:state.transactionId,planHash:confirmation.planHash,journalClose,dataRoot:confirmation.plan.dataRoot,nativeSnapshotDataRoot:confirmation.plan.nativeSnapshot.dataRoot,dataRootMatchesApplication:true};",
+          "count": 1,
+          "inputSha256": "dc6bbc6c31689a8be3b33cb55042f83b151cea0cdd2bb757856cd4a202eaffdb",
+          "resultSha256": "5899ade4fab821f0fba92b3efef8bcaa3437222deaf6b0428de145064319d1c9"
         }
       ]
     },
@@ -145,8 +159,16 @@
       "source": "tools/alpha2-macos/native-revalidation/installer-test-main.m",
       "result": "installer-test-main.m",
       "sourceSha256": "6c588c90e2d1828e046682f8f91deabd5068b0d511aa602f02a3066d139c494a",
-      "resultSha256": "6c588c90e2d1828e046682f8f91deabd5068b0d511aa602f02a3066d139c494a",
-      "transforms": []
+      "resultSha256": "7a1c138ccbc386920f2cbe41e48497bba26cacfa4109c10dbd52093e806b280a",
+      "transforms": [
+        {
+          "before": "alpha2-mac-finder-preview",
+          "after": "rc2-mac-finder-preview",
+          "count": 2,
+          "inputSha256": "6c588c90e2d1828e046682f8f91deabd5068b0d511aa602f02a3066d139c494a",
+          "resultSha256": "7a1c138ccbc386920f2cbe41e48497bba26cacfa4109c10dbd52093e806b280a"
+        }
+      ]
     },
     {
       "source": "tools/alpha2-macos/native-revalidation/installer-observer.m",
@@ -166,14 +188,14 @@
       "source": "tools/alpha2-macos/native-revalidation/installer-source-binding.mjs",
       "result": "installer-source-binding.mjs",
       "sourceSha256": "d86a85537fdd8d402130206dd5c5c221e8a73fc2ca4fe63a55d9c4cad3767a77",
-      "resultSha256": "b4a2aa44ece9b1ab1655e5759277203fd50675810349ee0d5ea51e23a542b6bd",
+      "resultSha256": "c9f599df7b2fa991f58cc9076b62e99cee5c01c51c1240655afcec7ec3683808",
       "transforms": [
         {
           "before": "379be1413b87ec063eeee3b3029a160ce4d76e150efefa63567f7b6740780d71",
-          "after": "44a5df38dbed999e03418d83f72e6f708b0b931e85bd1cc1b3ce8200ef7f5a8d",
+          "after": "0d20ff00bf69bf127551d77752d1f97ee1e271845fad8cb5613e052cf9dc9067",
           "count": 1,
           "inputSha256": "d86a85537fdd8d402130206dd5c5c221e8a73fc2ca4fe63a55d9c4cad3767a77",
-          "resultSha256": "b4a2aa44ece9b1ab1655e5759277203fd50675810349ee0d5ea51e23a542b6bd"
+          "resultSha256": "c9f599df7b2fa991f58cc9076b62e99cee5c01c51c1240655afcec7ec3683808"
         }
       ]
     }

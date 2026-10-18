@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "sourceCommit": "1027e597c53b6d31f734026d97adb1fb4b2426bf",
-  "scope": "RC.2 installer inputs; only program-manifest DSH version gate changes; all native/helper and other listed source bytes unchanged",
+  "sourceCommit": "fecf8489d4bc98e2cac515b2a705b861bda89b9d",
+  "scope": "generated current RC.2 installer inputs: three exactly declared transformations of frozen templates; tracked Alpha.2 originals retained",
   "files": [
     {
       "path": "bootstrap/production-manifest.mjs",
@@ -29,8 +29,8 @@
     },
     {
       "path": "installer-entry/account-native.c",
-      "sha256": "dc43051f1fadd40738501e11a8339f2f5624fd6d5cbc75f236a36de62c45a7bf",
-      "bytes": 18101,
+      "sha256": "a6ddb7fba2b2ae3cda37b55d416fd95e031c3fd5c8ede562f8655d1da305eb4f",
+      "bytes": 18095,
       "kind": "production-helper"
     },
     {
@@ -47,8 +47,8 @@
     },
     {
       "path": "installer-entry/controller-core.mjs",
-      "sha256": "04268feaa3faaff0a1d25e8f87e7cbc8f997ba0cd79cb01610bf9bd98d378262",
-      "bytes": 12203,
+      "sha256": "ea7a0a43857a4ddd26d85c4af7d4abe6867d18c68b374259207a2f6a11a61829",
+      "bytes": 12200,
       "kind": "production-runtime"
     },
     {
@@ -233,6 +233,22 @@
       "resultSha256": "b52e2223d2b9af5ca47e4950a473714ff1d917f3b60dbd25300a0026005bcd03",
       "before": "0.2.1-alpha.2",
       "after": "0.2.1-rc.2",
+      "count": 1
+    },
+    {
+      "path": "installer-entry/account-native.c",
+      "sourceSha256": "dc43051f1fadd40738501e11a8339f2f5624fd6d5cbc75f236a36de62c45a7bf",
+      "resultSha256": "a6ddb7fba2b2ae3cda37b55d416fd95e031c3fd5c8ede562f8655d1da305eb4f",
+      "before": "alpha2-mac-finder-preview",
+      "after": "rc2-mac-finder-preview",
+      "count": 2
+    },
+    {
+      "path": "installer-entry/controller-core.mjs",
+      "sourceSha256": "04268feaa3faaff0a1d25e8f87e7cbc8f997ba0cd79cb01610bf9bd98d378262",
+      "resultSha256": "ea7a0a43857a4ddd26d85c4af7d4abe6867d18c68b374259207a2f6a11a61829",
+      "before": "alpha2-mac-finder-preview",
+      "after": "rc2-mac-finder-preview",
       "count": 1
     }
   ]

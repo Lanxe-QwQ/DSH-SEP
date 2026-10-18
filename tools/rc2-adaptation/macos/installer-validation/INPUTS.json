@@ -45,7 +45,7 @@
     {
       "path": "installer-pins.json",
       "bytes": 25665,
-      "sha256": "55765a140b635f47de4b26f4c8624a578a150a074f24da9cf996d6491979eea7"
+      "sha256": "6e3245f00efb73fe699721926e09e93e3a19c85c2f314151cf7abc1464a8adc3"
     },
     {
       "path": "installer-restore-local.mjs",
@@ -54,28 +54,28 @@
     },
     {
       "path": "installer-run-full.mjs",
-      "bytes": 22016,
-      "sha256": "18f85674f1b61d9a2a79ca3ffe51bca2f89fb8c3f693bacade4bd523b6b7c33e"
+      "bytes": 22264,
+      "sha256": "5899ade4fab821f0fba92b3efef8bcaa3437222deaf6b0428de145064319d1c9"
     },
     {
       "path": "installer-source-binding.mjs",
       "bytes": 1057,
-      "sha256": "b4a2aa44ece9b1ab1655e5759277203fd50675810349ee0d5ea51e23a542b6bd"
+      "sha256": "c9f599df7b2fa991f58cc9076b62e99cee5c01c51c1240655afcec7ec3683808"
     },
     {
       "path": "installer-sources.json",
-      "bytes": 8306,
-      "sha256": "44a5df38dbed999e03418d83f72e6f708b0b931e85bd1cc1b3ce8200ef7f5a8d"
+      "bytes": 9008,
+      "sha256": "0d20ff00bf69bf127551d77752d1f97ee1e271845fad8cb5613e052cf9dc9067"
     },
     {
       "path": "installer-test-main.m",
-      "bytes": 11309,
-      "sha256": "6c588c90e2d1828e046682f8f91deabd5068b0d511aa602f02a3066d139c494a"
+      "bytes": 11303,
+      "sha256": "7a1c138ccbc386920f2cbe41e48497bba26cacfa4109c10dbd52093e806b280a"
     },
     {
       "path": "installer-transport-pins.json",
-      "bytes": 74941,
-      "sha256": "a13d0adc43d54e8d040874e4cc2b2b2ca8670ebf1fe48085a48218db2d70c256"
+      "bytes": 79882,
+      "sha256": "8b2a9fcbfcdf80e75821495c790bab471f74bc8d7328fca3fcbf1d894b9ee513"
     },
     {
       "path": "installer-transport.mjs",
@@ -99,18 +99,18 @@
     },
     {
       "path": "OPERATORS-ORIGIN.json",
-      "bytes": 10525,
-      "sha256": "1a9b7228e7277a667e35e2e82996e1a73fdb57f69811676b4ee8199f3ea7a058"
+      "bytes": 11972,
+      "sha256": "db0c8362dcd42ffe7f44539d0a1d59f57500ac9493b5200b61b9ebcdb7362565"
     },
     {
       "path": "origin.test.mjs",
-      "bytes": 2478,
-      "sha256": "8ee4bc22da097fbe8f624256f5aad65d861fdffa687d332651a3b5cd748069be"
+      "bytes": 2551,
+      "sha256": "5af8562ba2712e8f0440102d1153afd4bdd876865c2f36dece716e96902c27ab"
     },
     {
       "path": "README.md",
-      "bytes": 1535,
-      "sha256": "dfb8708bdf2dae0723915788ea643779abac1f61387ff660f73a311298a444c9"
+      "bytes": 2000,
+      "sha256": "d8a69b14c178abe3cec3ea794fc2f7690c34e41b8f81c1106873dec0840cd7ad"
     }
   ]
 }

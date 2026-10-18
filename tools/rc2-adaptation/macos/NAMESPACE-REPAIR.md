@@ -1,3 +1,5 @@
+> Current follow-up: native original-miss/detection/preview-refusal checks all passed, including no target/journal writes and unchanged synthetic state. Corrected installer build/signature/archive restore passed on source fecf8489. New installer SHA-256 `1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77`, 862171913 bytes, wraps the unchanged R9 application. Its independently reviewed pins are committed for the next fresh Mac installation run; that run is pending at this commit. Preparation-time statements below remain historical.
+
 # RC.2 installer namespace follow-up
 
 The R9 application correctly uses `rc2-mac-finder-preview`, but the R9 installer

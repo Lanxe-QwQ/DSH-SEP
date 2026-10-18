@@ -1512,44 +1512,166 @@
   },
   "installer": {
     "status": "ready",
-    "sourceCommit": "1027e597c53b6d31f734026d97adb1fb4b2426bf",
-    "runId": 39125453791,
+    "sourceCommit": "fecf8489d4bc98e2cac515b2a705b861bda89b9d",
+    "runId": 39133136770,
     "artifacts": [
       {
-        "id": 12136948831,
-        "name": "sep-rc2-macos-candidate-39125453791",
-        "bytes": 1710617239,
-        "sha256": "2a198fbb69319c2734394d436a82419c4c50fb8fde6332dd7b4f9aa896ac4c33",
+        "id": 12139612132,
+        "name": "sep-rc2-macos-repaired-evidence-39133136770",
+        "bytes": 2481275,
+        "sha256": "fdc0877d7f8ab2bbc598c51ffad490113e7068c7c0427dc7870426f9460b9895",
         "members": [
           {
-            "path": "mac-package/DSH-SEP-macOS-RC2-application-preview.zip",
-            "bytes": 810931059,
-            "sha256": "ba05f7c66ca616186b7412a6dab822c1a2347f95087423a9b2f216851d27deac"
+            "path": "REPAIRED-INSTALLER-BUILD-ORIGIN.json",
+            "bytes": 935,
+            "sha256": "369558ab86fea67725b707a49c50320bf0b00e5f7871ff512c311dced09b7e79"
           },
           {
-            "path": "installer/DSH-SEP-macOS-RC2-installer-preview.zip",
-            "bytes": 862171912,
-            "sha256": "bd3316100ac6912728bc5c4fffdb090f125e8e42b7cac684ac3b424a4cb490de"
+            "path": "namespace-guard/RESULT.json",
+            "bytes": 1761,
+            "sha256": "bc8d8ee2cee8ada21b328b528e2143fea27017635a74a0deb411e96215eed3c8"
           },
           {
-            "path": "mac-package/RESULT.json",
-            "bytes": 25127,
-            "sha256": "71450688bdc20b746a3e4eb59dbbfacc8692c865933a206c40dde2ffe181e903"
+            "path": "INSTALLER-NAMESPACE-ORIGIN.json",
+            "bytes": 826,
+            "sha256": "1f917d5efd91476a6f64c057bc33101fb588dd12d3d77c5d9a04e435be25c0d8"
           },
           {
-            "path": "installer/RESULT.json",
-            "bytes": 9511,
-            "sha256": "2cbbb7dae9840e32add9f2164afc1e69c975563ef36284f33632b3eb3da8ffb5"
+            "path": "namespace-guard/core-install.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
           },
           {
-            "path": "mac-package/PACKAGE-INVENTORY.json",
-            "bytes": 17586617,
-            "sha256": "d28938b65db7136e9deee945e8c966f67625b1a364bc3be53a6d15805d17bae6"
+            "path": "namespace-guard/legacy-account.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "namespace-guard/rc2-account.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
           },
           {
             "path": "installer/PACKAGE-INVENTORY.json",
             "bytes": 19892015,
-            "sha256": "734be50dbbbe8efa2135ef655fd4b25828c23377f48c52dcacb436910029c2d3"
+            "sha256": "34033cb61a0a04d991db01f239c515e8a2f566ea43dbd95daab63ed98c491cec"
+          },
+          {
+            "path": "installer/RESULT.json",
+            "bytes": 9511,
+            "sha256": "cd2715f6ba2638ecacbf967e9ccc9ba84b75f231cc0d9ab026d2472453e1a14b"
+          },
+          {
+            "path": "installer/archive.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/compile-installer.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/info.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/restore.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/sign-outer.log",
+            "bytes": 96,
+            "sha256": "cba9d9af39a2b27ad537168c7c9e6b7eda972d87d2cf6450e84a5d4852dd12f5"
+          },
+          {
+            "path": "installer/verify-outer.log",
+            "bytes": 184,
+            "sha256": "8b427d2f4d357e2cad28d48c9c7d0c328b2a3b560322b144c55a81f4bc8c4611"
+          },
+          {
+            "path": "installer/verify-restored.log",
+            "bytes": 202,
+            "sha256": "75d50d8900566b57bf5f795432d65895a9a1b48784c9def9cc6533a381910299"
+          },
+          {
+            "path": "installer-parts/PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139133902,
+        "name": "sep-rc2-macos-repaired-part-1-39133136770",
+        "bytes": 268436709,
+        "sha256": "f854c72a24ea3c1f10ad4c6f4884a5326a41c86e38efe2610a1380b2fba957f6",
+        "members": [
+          {
+            "path": "installer-part-1.bin",
+            "bytes": 268435456,
+            "sha256": "5ac29d8888c65ad6777d320b5fd9205347ec3eec92a3ded0ccd40f5f36af8446"
+          },
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139676396,
+        "name": "sep-rc2-macos-repaired-part-2-39133136770",
+        "bytes": 268436709,
+        "sha256": "a6ea5773ad77bed31867f7c9630b39547cc59d2dc131245cab8675adea00bc3c",
+        "members": [
+          {
+            "path": "installer-part-2.bin",
+            "bytes": 268435456,
+            "sha256": "5ccbb4442292d883e5a9d05d3bdad4b218e037a10bf66a93399dc1892e9a065d"
+          },
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139024412,
+        "name": "sep-rc2-macos-repaired-part-3-39133136770",
+        "bytes": 268436709,
+        "sha256": "b681d884b4c7be611c64e2e27b6bd571fae6b7609312eb880b7a6c8054f68988",
+        "members": [
+          {
+            "path": "installer-part-3.bin",
+            "bytes": 268435456,
+            "sha256": "eef7c6e9cf25e1155839e406aacf3d23c9f9c8b4ba9b70d18ed428943bddb4f8"
+          },
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139487680,
+        "name": "sep-rc2-macos-repaired-part-4-39133136770",
+        "bytes": 56866798,
+        "sha256": "11c07c8dda64896750a0b92d87ec3299c3a1a946b4dbfc11fd0255892c0b4200",
+        "members": [
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          },
+          {
+            "path": "installer-part-4.bin",
+            "bytes": 56865545,
+            "sha256": "85760cad119a5f6b9bf77ed318f3e86ea32c6e13c34e7c8b9c878abbd7f8a6dd"
           }
         ]
       }
@@ -1557,22 +1679,43 @@
     "outputs": [
       {
         "name": "RESULT.json",
-        "artifactId": 12136948831,
+        "artifactId": 12139612132,
         "member": "installer/RESULT.json"
       },
       {
         "name": "PACKAGE-INVENTORY.json",
-        "artifactId": 12136948831,
+        "artifactId": 12139612132,
         "member": "installer/PACKAGE-INVENTORY.json"
       }
     ],
     "parts": [
       {
         "index": 1,
-        "artifactId": 12136948831,
-        "member": "installer/DSH-SEP-macOS-RC2-installer-preview.zip",
-        "bytes": 862171912,
-        "sha256": "bd3316100ac6912728bc5c4fffdb090f125e8e42b7cac684ac3b424a4cb490de"
+        "artifactId": 12139133902,
+        "member": "installer-part-1.bin",
+        "bytes": 268435456,
+        "sha256": "5ac29d8888c65ad6777d320b5fd9205347ec3eec92a3ded0ccd40f5f36af8446"
+      },
+      {
+        "index": 2,
+        "artifactId": 12139676396,
+        "member": "installer-part-2.bin",
+        "bytes": 268435456,
+        "sha256": "5ccbb4442292d883e5a9d05d3bdad4b218e037a10bf66a93399dc1892e9a065d"
+      },
+      {
+        "index": 3,
+        "artifactId": 12139024412,
+        "member": "installer-part-3.bin",
+        "bytes": 268435456,
+        "sha256": "eef7c6e9cf25e1155839e406aacf3d23c9f9c8b4ba9b70d18ed428943bddb4f8"
+      },
+      {
+        "index": 4,
+        "artifactId": 12139487680,
+        "member": "installer-part-4.bin",
+        "bytes": 56865545,
+        "sha256": "85760cad119a5f6b9bf77ed318f3e86ea32c6e13c34e7c8b9c878abbd7f8a6dd"
       }
     ]
   }

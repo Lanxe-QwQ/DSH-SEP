@@ -1,3 +1,5 @@
+> Current RC.2 follow-up: the source contract explicitly ports three files (program DSH gate, native account directory twice, controller directory once). The test-native main directory checks and journal plan directory assertions now use the same RC.2 application namespace. Fixed new installer 1c3a62ae... replaces R9 installer bd331610...; the R9 application is unchanged. Native guard checks passed; this commit admits a new, still-pending fresh installer run.
+
 # RC.2 independent native installer verification
 
 This successor keeps the historical Alpha.2 operators unchanged in Git. The

@@ -1,4 +1,4 @@
-name: SEP RC2 repaired installer namespace and native regression
+name: SEP RC2 independent native Mac installation
 on:
   push:
     branches: [codex/sep-rc2-macos-20261018]
@@ -6,9 +6,9 @@ permissions:
   contents: read
   actions: read
 jobs:
-  repair:
+  native-install:
     runs-on: macos-15
-    timeout-minutes: 90
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -16,65 +16,35 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 24.21.0
-      - name: Prepare corrected installer sources around the fixed R9 application
-        run: node tools/rc2-adaptation/macos/prepare-repaired-installer.mjs "$RUNNER_TEMP/sep-rc2"
-      - name: Download only previously fixed application and execution proofs
+      - name: Verify independent operator and transport contracts
+        run: node --test --test-reporter=tap tools/rc2-adaptation/macos/installer-validation/installer-binding.test.mjs tools/rc2-adaptation/macos/installer-validation/installer-transport.test.mjs tools/rc2-adaptation/macos/installer-validation/origin.test.mjs
+      - name: Prepare independently fixed RC2 carrier inputs
+        run: node tools/rc2-adaptation/macos/prepare-installer-validation.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Retrieve only the committed previous-run installer
         env:
           SEP_ARTIFACT_TOKEN: ${{ github.token }}
-        run: node "$RUNNER_TEMP/sep-rc2/carrier/native-revalidation/installer-download.mjs" payload "$RUNNER_TEMP/sep-rc2/payload-download"
-      - name: Restore exact R9 application and verify signature and inventory
-        run: node "$RUNNER_TEMP/sep-rc2/carrier/native-revalidation/installer-restore-local.mjs" payload "$RUNNER_TEMP/sep-rc2/payload-download" "$RUNNER_TEMP/sep-rc2/payload-restored"
-      - name: Native original miss plus corrected actual-data detection and refusal
-        env:
-          SEP_NAMESPACE_ROOT: ${{ runner.temp }}/sep-rc2
-        run: node --test --test-reporter=tap tools/rc2-adaptation/macos/installer-namespace-native.test.mjs
-      - name: Build corrected installer without changing the fixed application
-        run: node tools/rc2-adaptation/macos/build-repaired-installer.mjs "$RUNNER_TEMP/sep-rc2"
-      - name: Split only exact completed installer bytes
-        run: node tools/rc2-adaptation/macos/split-repaired-installer.mjs "$RUNNER_TEMP/sep-rc2"
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: sep-rc2-macos-repaired-part-1-${{ github.run_id }}
-          path: |
-            ${{ runner.temp }}/sep-rc2/installer-parts/installer-part-1.bin
-            ${{ runner.temp }}/sep-rc2/installer-parts/PARTS.json
-          if-no-files-found: error
-          compression-level: 0
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: sep-rc2-macos-repaired-part-2-${{ github.run_id }}
-          path: |
-            ${{ runner.temp }}/sep-rc2/installer-parts/installer-part-2.bin
-            ${{ runner.temp }}/sep-rc2/installer-parts/PARTS.json
-          if-no-files-found: error
-          compression-level: 0
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: sep-rc2-macos-repaired-part-3-${{ github.run_id }}
-          path: |
-            ${{ runner.temp }}/sep-rc2/installer-parts/installer-part-3.bin
-            ${{ runner.temp }}/sep-rc2/installer-parts/PARTS.json
-          if-no-files-found: error
-          compression-level: 0
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: sep-rc2-macos-repaired-part-4-${{ github.run_id }}
-          path: |
-            ${{ runner.temp }}/sep-rc2/installer-parts/installer-part-4.bin
-            ${{ runner.temp }}/sep-rc2/installer-parts/PARTS.json
-          if-no-files-found: error
-          compression-level: 0
+        run: node "$RUNNER_TEMP/sep-rc2/carrier/native-revalidation/installer-download.mjs" installer "$RUNNER_TEMP/sep-rc2/installer-download"
+      - name: Restore exact reviewed installer and verify signature and inventory
+        run: node "$RUNNER_TEMP/sep-rc2/carrier/native-revalidation/installer-restore-local.mjs" installer "$RUNNER_TEMP/sep-rc2/installer-download" "$RUNNER_TEMP/sep-rc2/installer-restored"
+      - name: Actual original installer and real controls followed by installed cold boot and restart
+        run: |
+          set -euo pipefail
+          receipt="$RUNNER_TEMP/sep-rc2/installer-restored/RESULT.json"
+          digest="$(shasum -a 256 "$receipt" | cut -d ' ' -f 1)"
+          node "$RUNNER_TEMP/sep-rc2/carrier/native-revalidation/installer-run-full.mjs" "$receipt" "$digest" "$RUNNER_TEMP/sep-rc2/installer-integration"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: sep-rc2-macos-repaired-evidence-${{ github.run_id }}
+          name: sep-rc2-macos-independent-${{ github.run_id }}
           path: |
-            ${{ runner.temp }}/sep-rc2/INSTALLER-NAMESPACE-ORIGIN.json
-            ${{ runner.temp }}/sep-rc2/REPAIRED-INSTALLER-BUILD-ORIGIN.json
-            ${{ runner.temp }}/sep-rc2/namespace-guard/*.json
-            ${{ runner.temp }}/sep-rc2/namespace-guard/*.log
-            ${{ runner.temp }}/sep-rc2/installer/RESULT.json
-            ${{ runner.temp }}/sep-rc2/installer/PACKAGE-INVENTORY.json
-            ${{ runner.temp }}/sep-rc2/installer/*.log
-            ${{ runner.temp }}/sep-rc2/installer-parts/PARTS.json
+            ${{ runner.temp }}/sep-rc2/DERIVATION.json
+            ${{ runner.temp }}/sep-rc2/INDEPENDENT-VALIDATION-INPUTS.json
+            ${{ runner.temp }}/sep-rc2/installer-download/*.json
+            ${{ runner.temp }}/sep-rc2/installer-download/*.log
+            ${{ runner.temp }}/sep-rc2/installer-restored/*.json
+            ${{ runner.temp }}/sep-rc2/installer-restored/*.log
+            ${{ runner.temp }}/sep-rc2/installer-integration/*.json
+            ${{ runner.temp }}/sep-rc2/installer-integration/*.jsonl
+            ${{ runner.temp }}/sep-rc2/installer-integration/*.log
+            ${{ runner.temp }}/sep-rc2/installer-integration/installed-startup
           if-no-files-found: error

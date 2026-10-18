@@ -2,7 +2,7 @@
 // of the later payload/installer artifact pins. No directory discovery.
 import {readFile} from 'node:fs/promises';import {join} from 'node:path';
 import {fileBytes,hash} from './installer-binding.mjs';
-export const SOURCE_MANIFEST_SHA256='44a5df38dbed999e03418d83f72e6f708b0b931e85bd1cc1b3ce8200ef7f5a8d';
+export const SOURCE_MANIFEST_SHA256='0d20ff00bf69bf127551d77752d1f97ee1e271845fad8cb5613e052cf9dc9067';
 export async function verifyInstallerSources(root){
  const bytes=await readFile(new URL('./installer-sources.json',import.meta.url));
  if(hash(bytes)!==SOURCE_MANIFEST_SHA256)throw Object.assign(Error('SEP_NATIVE_INSTALLER_SOURCE_MANIFEST'),{code:'SEP_NATIVE_INSTALLER_SOURCE_MANIFEST'});
