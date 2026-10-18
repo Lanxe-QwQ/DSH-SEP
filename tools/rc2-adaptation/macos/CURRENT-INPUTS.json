@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "scope": "current committed Mac source byte index; not execution evidence",
+  "scope": "current committed Mac source byte index, not execution evidence",
   "isExecutionEvidence": false,
   "files": [
     {
@@ -24,6 +24,11 @@
       "sha256": "63fc34511226ea862208dbada8d38b7efc80ce95e4af85b7f05fd62412c1cec4"
     },
     {
+      "path": "build-repaired-installer.mjs",
+      "bytes": 2044,
+      "sha256": "3fa5cee35a5b06940a46547c3fbbefa06bcfe7b122e2b6a53951754cb8540749"
+    },
+    {
       "path": "build-workflow-r9.yml",
       "bytes": 3489,
       "sha256": "2fb225cbcb2adee88cd81fbc05bc7179064c5fa09bd3b6f499ffc659b951a85e"
@@ -42,6 +47,11 @@
       "path": "derive-desktop.mjs",
       "bytes": 5764,
       "sha256": "bce2314a93191c1068212624ff184f1bce266ddd466760ca80c49a4c05d069cd"
+    },
+    {
+      "path": "derive-installer-namespace.mjs",
+      "bytes": 1457,
+      "sha256": "9095d3bb4bb86a58eeb0d4cac12f382181b1e5f484bb65d24812b3e1fb8bfcf6"
     },
     {
       "path": "derive-project-desktop.mjs",
@@ -102,6 +112,16 @@
       "path": "independent-installer-workflow.yml",
       "bytes": 2848,
       "sha256": "96b8b8bbdc54e37a73096a6cd23a682f153fa6cbac1a58f3a611fdca8c7e3603"
+    },
+    {
+      "path": "installer-namespace-native.test.mjs",
+      "bytes": 5628,
+      "sha256": "307bb34380e66ffd1c544019ff688073a7a70c2a935374af9120cfa9c6dfb5d0"
+    },
+    {
+      "path": "installer-namespace.test.mjs",
+      "bytes": 2317,
+      "sha256": "de644c8047d1a25ce65fd578bd07a61ee618acdaf8f29d2b8f79221149ddd9bf"
     },
     {
       "path": "installer-validation/INPUTS.json",
@@ -219,6 +239,11 @@
       "sha256": "dfb8708bdf2dae0723915788ea643779abac1f61387ff660f73a311298a444c9"
     },
     {
+      "path": "NAMESPACE-REPAIR.md",
+      "bytes": 1555,
+      "sha256": "1bc58a618e72a463644ee1b67ffff326e21b3d9ca28997f50df19a71fb5ea3fc"
+    },
+    {
       "path": "pnpm-lock.yaml",
       "bytes": 785732,
       "sha256": "4a16160242b83b2e747da2083a36247bf7781441e27b779c3c30fb92c109b70f"
@@ -229,9 +254,19 @@
       "sha256": "9ae002d6bb93d0d1709243a563afeb13ffa0e86e3ece7f381682b7344f987ffa"
     },
     {
+      "path": "prepare-repaired-installer.mjs",
+      "bytes": 949,
+      "sha256": "de5bc900930eb3eb22d61e17a9c821115b076d51fba71cfe9054a4048bf97226"
+    },
+    {
       "path": "prepare.mjs",
       "bytes": 8084,
       "sha256": "d686349ac997478ed5c6ce78e65c60dc0504d8280f58faaddbcaa81cb7ec673a"
+    },
+    {
+      "path": "repaired-installer-workflow.yml",
+      "bytes": 4105,
+      "sha256": "ed553ccb01af2cd39675bc2a55961faa2b86896b96f5dc01df965a1eaeaa0805"
     },
     {
       "path": "run-app-lifecycle.mjs",
@@ -262,6 +297,11 @@
       "path": "split-fixed-artifact.mjs",
       "bytes": 3875,
       "sha256": "cd3c238fb084d6d595f6f3f7b8a2c6e3adbd38bae2976fe979bf65393a178d6e"
+    },
+    {
+      "path": "split-repaired-installer.mjs",
+      "bytes": 1700,
+      "sha256": "732ab8ea2d0d0ded0f6fa0c7c3440eeb9567f0ccfc079abef107f34cab0ad7cc"
     },
     {
       "path": "transport-workflow-r10.yml",
