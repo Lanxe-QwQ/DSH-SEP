@@ -1,8 +1,23 @@
 {
   "schema": 2,
-  "scope": "current source byte index, not an execution receipt; actual run inputs are also archived separately per test generation",
+  "scope": "committed Mac build and current fixed-artifact transport inputs; separate uncommitted independent installer drafts are not part of this CI commit",
   "isExecutionEvidence": false,
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 13,
+      "sha256": "06ba2d5db36c4f5334da5d4234d3a5034b1d926b17d2c517cd134ce4d9ce5235"
+    },
+    {
+      "path": "DESKTOP-INPUTS.json",
+      "bytes": 26752,
+      "sha256": "206e15c1c86f2bf16740f4f708ef4c79be4281146694b6b053ddd8e5f59579e7"
+    },
+    {
+      "path": "RUNTIME-HELPER-ORIGIN.json",
+      "bytes": 357,
+      "sha256": "0581ec578796ef83d09757eb5e8778881b698c0fc7259d66203934d76547a46c"
+    },
     {
       "path": "app-lifecycle-template.mjs",
       "bytes": 10330,
@@ -17,6 +32,11 @@
       "path": "assemble-installer.mjs",
       "bytes": 3802,
       "sha256": "63fc34511226ea862208dbada8d38b7efc80ce95e4af85b7f05fd62412c1cec4"
+    },
+    {
+      "path": "build-workflow-r9.yml",
+      "bytes": 3489,
+      "sha256": "2fb225cbcb2adee88cd81fbc05bc7179064c5fa09bd3b6f499ffc659b951a85e"
     },
     {
       "path": "candidate.tgz",
@@ -39,14 +59,14 @@
       "sha256": "658a2c4f436fe82cdfa9d6026da22399f4a6305e33015f72010cfb4d65109680"
     },
     {
-      "path": "DESKTOP-INPUTS.json",
-      "bytes": 26752,
-      "sha256": "206e15c1c86f2bf16740f4f708ef4c79be4281146694b6b053ddd8e5f59579e7"
-    },
-    {
       "path": "desktop-inputs.zip",
       "bytes": 7209767,
       "sha256": "9ee87c13fc7e6c60fbe68464c8d54f30b330bca1f48a595512dc04696706784b"
+    },
+    {
+      "path": "desktop-recipes/SOURCE.json",
+      "bytes": 1238,
+      "sha256": "37edce061fbe0a8abc526e7279a023e567a6594012d2014f78b2754b0e372e5e"
     },
     {
       "path": "desktop-recipes/derive.mjs",
@@ -67,11 +87,6 @@
       "path": "desktop-recipes/product-gate-derive.mjs",
       "bytes": 1148,
       "sha256": "97c9d9f71378a7eeb7b9b444d3a9a3afea6f5cbc315bff178c284e4d9a44c234"
-    },
-    {
-      "path": "desktop-recipes/SOURCE.json",
-      "bytes": 1238,
-      "sha256": "37edce061fbe0a8abc526e7279a023e567a6594012d2014f78b2754b0e372e5e"
     },
     {
       "path": "desktop-recipes/welcome-derive.mjs",
@@ -114,14 +129,14 @@
       "sha256": "0c183ba97987d672334f02c6ebd855ef9a25b64c20169ffd41fef3e0bff30182"
     },
     {
-      "path": "RUNTIME-HELPER-ORIGIN.json",
-      "bytes": 357,
-      "sha256": "0581ec578796ef83d09757eb5e8778881b698c0fc7259d66203934d76547a46c"
-    },
-    {
       "path": "runtime-helper.mjs",
       "bytes": 82535,
       "sha256": "261a337751be3e2f0f706b267cbb7bde5509a68c436b6f202ca39b2146ace4c2"
+    },
+    {
+      "path": "split-fixed-artifact.mjs",
+      "bytes": 3875,
+      "sha256": "cd3c238fb084d6d595f6f3f7b8a2c6e3adbd38bae2976fe979bf65393a178d6e"
     }
   ]
 }
