@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "scope": "Exact, version-specific successor of the reviewed native installer verification operators. Frozen Alpha.2 inputs unchanged; build pins are added only after independent receipt/artifact review.",
+  "origins": [
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-binding.mjs",
+      "result": "installer-binding.mjs",
+      "sourceSha256": "be5d582fc326cc50ca0520a24cd383324f53726d7c17b2ad5d036295451d7684",
+      "resultSha256": "7d5600fe8e005c858afc10e7eaa8bb8d8bd853e75defc5c60266bb444955fcc8",
+      "transforms": [
+        {
+          "before": "DSH-SEP-macOS-Alpha2-project-preview.zip",
+          "after": "DSH-SEP-macOS-RC2-application-preview.zip",
+          "count": 1,
+          "inputSha256": "be5d582fc326cc50ca0520a24cd383324f53726d7c17b2ad5d036295451d7684",
+          "resultSha256": "c46b39dea037b7bf8bde44c4bad75c128bf7e37c1ed3cd4146ab995d2252445b"
+        },
+        {
+          "before": "DSH-SEP-macOS-Alpha2-installer-preview.zip",
+          "after": "DSH-SEP-macOS-RC2-installer-preview.zip",
+          "count": 1,
+          "inputSha256": "c46b39dea037b7bf8bde44c4bad75c128bf7e37c1ed3cd4146ab995d2252445b",
+          "resultSha256": "bd28ffeafcf5506093febfe7a077020ad18e03a490f4aada9fb178dd3cc2f456"
+        },
+        {
+          "before": "rows(p.runtime,84,true)",
+          "after": "rows(p.runtime,85,true)",
+          "count": 1,
+          "inputSha256": "bd28ffeafcf5506093febfe7a077020ad18e03a490f4aada9fb178dd3cc2f456",
+          "resultSha256": "c57466daac599d74d1c84abd00b7a3bbc86a02be474f33634004f55bf41306bd"
+        },
+        {
+          "before": "['APP-BUILD-REVALIDATION.json','APP-POST-VERIFICATION.json']",
+          "after": "['APP-POST-VERIFICATION.json','APP-LIFECYCLE.json']",
+          "count": 1,
+          "inputSha256": "c57466daac599d74d1c84abd00b7a3bbc86a02be474f33634004f55bf41306bd",
+          "resultSha256": "aff5174cba9c356e21745e4d7b811d2aad372cd59f6228e4521b7d4ad7d95d0e"
+        },
+        {
+          "before": "export function validatePayloadVerification(build,post,p){\n const common=r=>r?.schema===1&&r.status==='pass'&&r.sourceCommit===p.commit&&r.sourceTreeSha256===p.sourceTreeSha256&&r.programSha256===p.programSha256&&r.sourceUnchanged===true;\n if(!common(build)||!common(post)||build.assemblyResultSha256!==p.assemblySha256||!digest(build.verificationSha256)||build.runtimeFiles!==84||build.originalUnchanged!==true||build.bootstrapSha256!==p.bootstrapSha256||build.treeSha256!==p.treeSha256||build.artifact!==p.artifact||build.artifactSha256!==p.archiveSha256||build.artifactBytes!==p.archiveBytes||post.mode!=='built'||post.applicationResultSha256!==p.assemblySha256||post.applicationUnchanged!==true||post.paidProviderCalls!==0||!isDeepStrictEqual(post.counts,{tests:41,pass:41,fail:0,skipped:0,cancelled:0}))fail('SEP_NATIVE_INSTALLER_VERIFICATION');\n return {status:'pass',sourceTreeSha256:p.sourceTreeSha256};\n}\n",
+          "after": "export function validatePayloadVerification(post,lifecycle,p){\n if(post?.schema!==1||post.status!=='pass'||post.mode!=='built'||post.sourceCommit!==p.commit||post.sourceTreeSha256!==p.sourceTreeSha256||post.applicationResultSha256!==p.assemblySha256||post.programSha256!==p.programSha256||post.sourceUnchanged!==true||post.applicationUnchanged!==true||post.paidProviderCalls!==0||!isDeepStrictEqual(post.counts,{tests:46,pass:46,fail:0,skipped:0,cancelled:0})||lifecycle?.schema!==1||lifecycle.status!=='pass'||lifecycle.programSha256!==p.programSha256||lifecycle.treeSha256!==p.treeSha256||lifecycle.paidProviderCalls!==0||lifecycle.modelGenerated!==false||lifecycle.plannedCycles!==2||!Array.isArray(lifecycle.cycles)||lifecycle.cycles.length!==2||lifecycle.cycles.some(c=>c.status!=='pass'||c.closed?.resourcesConfirmedReleased!==true||!isDeepStrictEqual(c.closed.normalLaunchServicesWaitExit,{code:0,signal:null}))||!isDeepStrictEqual(lifecycle.cleanup,[]))fail('SEP_NATIVE_INSTALLER_VERIFICATION');\n return {status:'pass',sourceTreeSha256:p.sourceTreeSha256};\n}\n",
+          "count": 1,
+          "inputSha256": "aff5174cba9c356e21745e4d7b811d2aad372cd59f6228e4521b7d4ad7d95d0e",
+          "resultSha256": "7d5600fe8e005c858afc10e7eaa8bb8d8bd853e75defc5c60266bb444955fcc8"
+        }
+      ]
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-transport.mjs",
+      "result": "installer-transport.mjs",
+      "sourceSha256": "11a663417d6c3fed8bc4401b7fcb7abfe2b06f45183dc22a1caa20a900ee3500",
+      "resultSha256": "6e9660d6f5b86009e2da9f258d986b4d818e35f90d8cd60199db087aafdbe914",
+      "transforms": [
+        {
+          "before": "Lance-QwQ/DSH-SEP",
+          "after": "Lanxe-QwQ/DSH-SEP",
+          "count": 1,
+          "inputSha256": "11a663417d6c3fed8bc4401b7fcb7abfe2b06f45183dc22a1caa20a900ee3500",
+          "resultSha256": "6e9660d6f5b86009e2da9f258d986b4d818e35f90d8cd60199db087aafdbe914"
+        }
+      ]
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-download.mjs",
+      "result": "installer-download.mjs",
+      "sourceSha256": "5571bad8be49f8b298f2979b8ba4949f8469f191f28a7f19f64ca7f8757a19f9",
+      "resultSha256": "e534a490bfe6bfb0b03b64d6c832e572db69dd57e5e523f771c707c120f4b3e1",
+      "transforms": [
+        {
+          "before": "Lance-QwQ/DSH-SEP",
+          "after": "Lanxe-QwQ/DSH-SEP",
+          "count": 1,
+          "inputSha256": "5571bad8be49f8b298f2979b8ba4949f8469f191f28a7f19f64ca7f8757a19f9",
+          "resultSha256": "e534a490bfe6bfb0b03b64d6c832e572db69dd57e5e523f771c707c120f4b3e1"
+        }
+      ]
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-verify-download.py",
+      "result": "installer-verify-download.py",
+      "sourceSha256": "8e8798be5651867874dfb595dc84f03c3dcd53553abf67b19292aab9fa05fab7",
+      "resultSha256": "2708d0bcc2dd67c8b7a425cccdfed1c5c758934702377c55c244216e7a0b4e03",
+      "transforms": [
+        {
+          "before": "DSH-SEP-macOS-Alpha2-project-preview.zip",
+          "after": "DSH-SEP-macOS-RC2-application-preview.zip",
+          "count": 1,
+          "inputSha256": "8e8798be5651867874dfb595dc84f03c3dcd53553abf67b19292aab9fa05fab7",
+          "resultSha256": "8c4c9401314f2f97642fe2eadb3ccd4cb2907e52a3bbe97eecd06e79dbf4120a"
+        },
+        {
+          "before": "DSH-SEP-macOS-Alpha2-installer-preview.zip",
+          "after": "DSH-SEP-macOS-RC2-installer-preview.zip",
+          "count": 1,
+          "inputSha256": "8c4c9401314f2f97642fe2eadb3ccd4cb2907e52a3bbe97eecd06e79dbf4120a",
+          "resultSha256": "2708d0bcc2dd67c8b7a425cccdfed1c5c758934702377c55c244216e7a0b4e03"
+        }
+      ]
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-restore-local.mjs",
+      "result": "installer-restore-local.mjs",
+      "sourceSha256": "50806b5d0ff4a72ce3bc387062e16cd0f8298c421a4da53094669b0e3b8e6208",
+      "resultSha256": "50806b5d0ff4a72ce3bc387062e16cd0f8298c421a4da53094669b0e3b8e6208",
+      "transforms": []
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-run-full.mjs",
+      "result": "installer-run-full.mjs",
+      "sourceSha256": "4b80f1c2a2bc3c37f1c3f32d5990ffca5b57707179b65522c128544fe76e59a0",
+      "resultSha256": "18f85674f1b61d9a2a79ca3ffe51bca2f89fb8c3f693bacade4bd523b6b7c33e",
+      "transforms": [
+        {
+          "before": "assert(sourceRoot.startsWith(workspace+'/'));",
+          "after": "assert.equal(sourceRoot,join(temp,'sep-rc2/carrier'));",
+          "count": 1,
+          "inputSha256": "4b80f1c2a2bc3c37f1c3f32d5990ffca5b57707179b65522c128544fe76e59a0",
+          "resultSha256": "0f5eed3067ef72cd288098d79bad3a435e1660473e27f61d9da6088810c7bfa3"
+        },
+        {
+          "before": "alpha2-mac-finder-preview",
+          "after": "rc2-mac-finder-preview",
+          "count": 1,
+          "inputSha256": "0f5eed3067ef72cd288098d79bad3a435e1660473e27f61d9da6088810c7bfa3",
+          "resultSha256": "18f85674f1b61d9a2a79ca3ffe51bca2f89fb8c3f693bacade4bd523b6b7c33e"
+        }
+      ]
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-installed-startup.mjs",
+      "result": "installer-installed-startup.mjs",
+      "sourceSha256": "ab0f8d2c5f1fda7023e563caf9203951bdfd538aae7d1431559f411caeb8790e",
+      "resultSha256": "6f60f7292b996171becadfd603dc939aa8b64758046f7dfc874e5842759067d0",
+      "transforms": [
+        {
+          "before": "alpha2-mac-finder-preview",
+          "after": "rc2-mac-finder-preview",
+          "count": 1,
+          "inputSha256": "ab0f8d2c5f1fda7023e563caf9203951bdfd538aae7d1431559f411caeb8790e",
+          "resultSha256": "6f60f7292b996171becadfd603dc939aa8b64758046f7dfc874e5842759067d0"
+        }
+      ]
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-test-main.m",
+      "result": "installer-test-main.m",
+      "sourceSha256": "6c588c90e2d1828e046682f8f91deabd5068b0d511aa602f02a3066d139c494a",
+      "resultSha256": "6c588c90e2d1828e046682f8f91deabd5068b0d511aa602f02a3066d139c494a",
+      "transforms": []
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-observer.m",
+      "result": "installer-observer.m",
+      "sourceSha256": "6adee71f937e2e00444495f06298b88214c3ca5a51575e855c44d870ea305f36",
+      "resultSha256": "6adee71f937e2e00444495f06298b88214c3ca5a51575e855c44d870ea305f36",
+      "transforms": []
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-main-result.test.mjs",
+      "result": "installer-main-result.test.mjs",
+      "sourceSha256": "fd3b4f0acdaf0056482833fd9e5bd207317485fea7c64d8667d78683bb0bf338",
+      "resultSha256": "fd3b4f0acdaf0056482833fd9e5bd207317485fea7c64d8667d78683bb0bf338",
+      "transforms": []
+    },
+    {
+      "source": "tools/alpha2-macos/native-revalidation/installer-source-binding.mjs",
+      "result": "installer-source-binding.mjs",
+      "sourceSha256": "d86a85537fdd8d402130206dd5c5c221e8a73fc2ca4fe63a55d9c4cad3767a77",
+      "resultSha256": "b4a2aa44ece9b1ab1655e5759277203fd50675810349ee0d5ea51e23a542b6bd",
+      "transforms": [
+        {
+          "before": "379be1413b87ec063eeee3b3029a160ce4d76e150efefa63567f7b6740780d71",
+          "after": "44a5df38dbed999e03418d83f72e6f708b0b931e85bd1cc1b3ce8200ef7f5a8d",
+          "count": 1,
+          "inputSha256": "d86a85537fdd8d402130206dd5c5c221e8a73fc2ca4fe63a55d9c4cad3767a77",
+          "resultSha256": "b4a2aa44ece9b1ab1655e5759277203fd50675810349ee0d5ea51e23a542b6bd"
+        }
+      ]
+    }
+  ]
+}

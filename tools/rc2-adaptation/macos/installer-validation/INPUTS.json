@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "scope": "committed independent installer verification inputs",
+  "files": [
+    {
+      "path": "installer-binding.mjs",
+      "bytes": 8807,
+      "sha256": "7d5600fe8e005c858afc10e7eaa8bb8d8bd853e75defc5c60266bb444955fcc8"
+    },
+    {
+      "path": "installer-binding.test.mjs",
+      "bytes": 7273,
+      "sha256": "49a674762f8f3412e0474109ccf18d6b724f2030ed06b5b0c9dd2cefcf422c32"
+    },
+    {
+      "path": "installer-download.mjs",
+      "bytes": 4978,
+      "sha256": "e534a490bfe6bfb0b03b64d6c832e572db69dd57e5e523f771c707c120f4b3e1"
+    },
+    {
+      "path": "installer-installed-startup.mjs",
+      "bytes": 10591,
+      "sha256": "6f60f7292b996171becadfd603dc939aa8b64758046f7dfc874e5842759067d0"
+    },
+    {
+      "path": "installer-installed-startup.origin.json",
+      "bytes": 758,
+      "sha256": "b1d1a03889ee9bbd4452f271b441c6165dfb480c31514667acb67cd297d5f632"
+    },
+    {
+      "path": "installer-installed-startup.pre-rc2.mjs",
+      "bytes": 10594,
+      "sha256": "ab0f8d2c5f1fda7023e563caf9203951bdfd538aae7d1431559f411caeb8790e"
+    },
+    {
+      "path": "installer-main-result.test.mjs",
+      "bytes": 3524,
+      "sha256": "fd3b4f0acdaf0056482833fd9e5bd207317485fea7c64d8667d78683bb0bf338"
+    },
+    {
+      "path": "installer-observer.m",
+      "bytes": 6523,
+      "sha256": "6adee71f937e2e00444495f06298b88214c3ca5a51575e855c44d870ea305f36"
+    },
+    {
+      "path": "installer-pins.json",
+      "bytes": 25665,
+      "sha256": "55765a140b635f47de4b26f4c8624a578a150a074f24da9cf996d6491979eea7"
+    },
+    {
+      "path": "installer-restore-local.mjs",
+      "bytes": 5171,
+      "sha256": "50806b5d0ff4a72ce3bc387062e16cd0f8298c421a4da53094669b0e3b8e6208"
+    },
+    {
+      "path": "installer-run-full.mjs",
+      "bytes": 22016,
+      "sha256": "18f85674f1b61d9a2a79ca3ffe51bca2f89fb8c3f693bacade4bd523b6b7c33e"
+    },
+    {
+      "path": "installer-source-binding.mjs",
+      "bytes": 1057,
+      "sha256": "b4a2aa44ece9b1ab1655e5759277203fd50675810349ee0d5ea51e23a542b6bd"
+    },
+    {
+      "path": "installer-sources.json",
+      "bytes": 8306,
+      "sha256": "44a5df38dbed999e03418d83f72e6f708b0b931e85bd1cc1b3ce8200ef7f5a8d"
+    },
+    {
+      "path": "installer-test-main.m",
+      "bytes": 11309,
+      "sha256": "6c588c90e2d1828e046682f8f91deabd5068b0d511aa602f02a3066d139c494a"
+    },
+    {
+      "path": "installer-transport-pins.json",
+      "bytes": 74941,
+      "sha256": "a13d0adc43d54e8d040874e4cc2b2b2ca8670ebf1fe48085a48218db2d70c256"
+    },
+    {
+      "path": "installer-transport.mjs",
+      "bytes": 2907,
+      "sha256": "6e9660d6f5b86009e2da9f258d986b4d818e35f90d8cd60199db087aafdbe914"
+    },
+    {
+      "path": "installer-transport.test.mjs",
+      "bytes": 2906,
+      "sha256": "5fc60da508d76e316b3363b5cc764bb6d05ec27238a8469e458ff7a7ecfaf2b9"
+    },
+    {
+      "path": "installer-verify-download.py",
+      "bytes": 6878,
+      "sha256": "2708d0bcc2dd67c8b7a425cccdfed1c5c758934702377c55c244216e7a0b4e03"
+    },
+    {
+      "path": "installer-verify-download.test.py",
+      "bytes": 5101,
+      "sha256": "299641f51f885f41024267e7da7bdafca800bd5487c852083da22b69129e3394"
+    },
+    {
+      "path": "OPERATORS-ORIGIN.json",
+      "bytes": 10525,
+      "sha256": "1a9b7228e7277a667e35e2e82996e1a73fdb57f69811676b4ee8199f3ea7a058"
+    },
+    {
+      "path": "origin.test.mjs",
+      "bytes": 2478,
+      "sha256": "8ee4bc22da097fbe8f624256f5aad65d861fdffa687d332651a3b5cd748069be"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1535,
+      "sha256": "dfb8708bdf2dae0723915788ea643779abac1f61387ff660f73a311298a444c9"
+    }
+  ]
+}

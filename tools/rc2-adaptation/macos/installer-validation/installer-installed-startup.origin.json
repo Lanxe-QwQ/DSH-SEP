@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "source": "native-revalidation/installer-installed-startup.pre-rc2.mjs",
+  "sourceSha256": "ab0f8d2c5f1fda7023e563caf9203951bdfd538aae7d1431559f411caeb8790e",
+  "result": "native-revalidation/installer-installed-startup.mjs",
+  "resultSha256": "6f60f7292b996171becadfd603dc939aa8b64758046f7dfc874e5842759067d0",
+  "transforms": [
+    {
+      "before": "alpha2-mac-finder-preview",
+      "after": "rc2-mac-finder-preview",
+      "count": 1,
+      "inputSha256": "ab0f8d2c5f1fda7023e563caf9203951bdfd538aae7d1431559f411caeb8790e",
+      "resultSha256": "6f60f7292b996171becadfd603dc939aa8b64758046f7dfc874e5842759067d0"
+    }
+  ],
+  "scope": "exact one-edit RC.2 successor; original predecessor bytes retained beside the derived operator"
+}
