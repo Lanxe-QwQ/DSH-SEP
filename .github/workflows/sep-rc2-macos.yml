@@ -1,0 +1,36 @@
+name: SEP RC2 native macOS isolated adaptation
+on:
+  push:
+    branches: [codex/sep-rc2-macos-20261018]
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.21.0
+      - name: Prepare pinned RC2 inputs
+        run: node tools/rc2-adaptation/macos/prepare.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Install exact native dependencies without lifecycle scripts
+        run: |
+          set -euo pipefail
+          npm install --prefix "$RUNNER_TEMP/pnpm" --ignore-scripts --no-audit --no-fund pnpm@11.25.0
+          cd "$RUNNER_TEMP/sep-rc2/host"
+          node "$RUNNER_TEMP/pnpm/node_modules/pnpm/bin/pnpm.mjs" install --frozen-lockfile --ignore-scripts --store-dir "$RUNNER_TEMP/pnpm-store" 2>&1 | tee "$RUNNER_TEMP/sep-rc2/install.log"
+      - name: Native APFS and real RC2 host integration
+        run: node tools/rc2-adaptation/macos/run-native.mjs "$RUNNER_TEMP/sep-rc2"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: sep-rc2-macos-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/sep-rc2/evidence
+            ${{ runner.temp }}/sep-rc2/DERIVATION.json
+            ${{ runner.temp }}/sep-rc2/install.log
+          if-no-files-found: error

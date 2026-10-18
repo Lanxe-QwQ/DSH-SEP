@@ -1,0 +1,25 @@
+// Derive a new RC.2 Mac carrier; never relabel the frozen Alpha.2 capture.
+import assert from 'node:assert/strict';
+import {mkdir,cp,readFile,writeFile,readdir,lstat} from 'node:fs/promises';
+import {join,resolve,relative} from 'node:path';
+import {createHash} from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const repo=resolve(import.meta.dirname,'../../..'),out=resolve(process.argv[2]);
+assert.equal(process.platform,'darwin');assert.equal(process.arch,'arm64');assert.equal(process.version,'v24.21.0');assert.equal(resolve(process.env.RUNNER_TEMP),resolve(out,'..'));
+await mkdir(out,{mode:0o700});const carrier=join(out,'carrier'),capture=join(out,'capture'),host=join(out,'host');
+await cp(join(repo,'tools/alpha2-macos'),carrier,{recursive:true,filter:x=>!relative(join(repo,'tools/alpha2-macos'),x).split('/').some(p=>['node_modules','.git','__pycache__'].includes(p))});
+await mkdir(host);await mkdir(capture);const bytes=await readFile(new URL('./candidate.tgz',import.meta.url));assert.equal(sha(bytes),'854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5');
+await writeFile(join(out,'candidate.tgz'),bytes,{flag:'wx',mode:0o600});
+const unpack=spawnSync('/usr/bin/tar',['-xzf',join(out,'candidate.tgz'),'--strip-components=1','-C',capture],{encoding:'utf8'});assert.equal(unpack.status,0,unpack.stderr);
+const inputs=[];async function walk(dir){for(const n of(await readdir(dir)).sort()){const path=join(dir,n),st=await lstat(path);assert(!st.isSymbolicLink());if(st.isDirectory())await walk(path);else{assert(st.isFile()&&st.nlink===1);const b=await readFile(path);inputs.push({path:relative(capture,path).split('\\').join('/'),bytes:b.length,sha256:sha(b)});}}}await walk(capture);
+const manifest={schema:2,source:'pinned RC.2 candidate derived from public Beta.3 Windows Full fixed SEP capture',candidateSha256:sha(bytes),inputs};const body=JSON.stringify(manifest,null,2)+'\n';await writeFile(join(capture,'CAPTURE-RC2.json'),body,{flag:'wx'});
+const transforms=[];async function replace(file,from,to,count=1){const path=join(carrier,file),b=await readFile(path),text=b.toString();assert.equal(text.split(from).length-1,count,file);const changed=text.split(from).join(to);await writeFile(path,changed);transforms.push({file,sourceSha256:sha(b),from,to,count,resultSha256:sha(Buffer.from(changed))});}
+await replace('business/host-modules.mjs',"manifest.version!=='0.2.1-alpha.2'","manifest.version!=='0.2.1-rc.2'");
+await replace('native-revalidation/dependency-hook.mjs',"manifest.version!=='0.2.1-alpha.2'","manifest.version!=='0.2.1-rc.2'");
+await replace('business/bundle-modules.mjs',"import {verifyCapture} from './capture-runtime.mjs';","import {verifyCapture} from './rc2-capture.mjs';");
+await writeFile(join(carrier,'business/rc2-capture.mjs'),`import{readFile,lstat,realpath}from'node:fs/promises';import{join,resolve,isAbsolute}from'node:path';import{createHash}from'node:crypto';const sha=b=>createHash('sha256').update(b).digest('hex');const fail=()=>{throw Error('SEP_MAC_RC2_CAPTURE_CHANGED')};export async function verifyCapture(root){if(!isAbsolute(root)||resolve(root)!==root||await realpath(root)!==root)fail();const b=await readFile(join(root,'CAPTURE-RC2.json'));if(sha(b)!==${JSON.stringify(sha(body))})fail();const m=JSON.parse(b);if(m.schema!==2||m.candidateSha256!=='854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5')fail();for(const row of m.inputs){if(row.path.startsWith('/')||row.path.split('/').some(p=>!p||p==='.'||p==='..')||row.path.includes('\\\\'))fail();const path=join(root,row.path),s=await lstat(path);if(!s.isFile()||s.isSymbolicLink()||s.nlink!==1||await realpath(path)!==path||s.size!==row.bytes||sha(await readFile(path))!==row.sha256)fail();}return m;}\n`,{flag:'wx'});
+await cp(new URL('./host-package.json',import.meta.url),join(host,'package.json'));await cp(new URL('./pnpm-lock.yaml',import.meta.url),join(host,'pnpm-lock.yaml'));
+await writeFile(join(host,'pnpm-workspace.yaml'),'packages:\n  - .\nautoInstallPeers: false\nnodeLinker: hoisted\nminimumReleaseAge: 1440\nminimumReleaseAgeExclude:\n  - "@deepseek-ai/dsh-client-ui-settings-account@0.2.1-rc.2"\n');
+await writeFile(join(out,'DERIVATION.json'),JSON.stringify({schema:1,candidateSha256:sha(bytes),captureSha256:sha(body),inputs:inputs.length,transforms,hostVersion:'0.2.1-rc.2',oldCaptureRetained:true},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:'prepared',out,files:inputs.length}));
