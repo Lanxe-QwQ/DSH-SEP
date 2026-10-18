@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "scope": "official RC.2 apps/desktop/src/runtime-tree.ts generated helper, no policy change",
+  "officialCommit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "sourceSha256": "aaef471a94c1bb295c7aecd080f2bf9f4fa037a8fc3f2d76c63db9b367c80778",
+  "helperSha256": "261a337751be3e2f0f706b267cbb7bde5509a68c436b6f202ca39b2146ace4c2"
+}
