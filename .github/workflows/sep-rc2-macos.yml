@@ -25,6 +25,8 @@ jobs:
           node "$RUNNER_TEMP/pnpm/node_modules/pnpm/bin/pnpm.mjs" install --frozen-lockfile --ignore-scripts --store-dir "$RUNNER_TEMP/pnpm-store" 2>&1 | tee "$RUNNER_TEMP/sep-rc2/install.log"
       - name: Native APFS and real RC2 host integration
         run: node tools/rc2-adaptation/macos/run-native.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Assemble actual RC2 Mac app from verified carrier
+        run: node tools/rc2-adaptation/macos/assemble-app.mjs "$RUNNER_TEMP/sep-rc2"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
@@ -33,4 +35,7 @@ jobs:
             ${{ runner.temp }}/sep-rc2/evidence
             ${{ runner.temp }}/sep-rc2/DERIVATION.json
             ${{ runner.temp }}/sep-rc2/install.log
+            ${{ runner.temp }}/sep-rc2/mac-package/RESULT.json
+            ${{ runner.temp }}/sep-rc2/mac-package/*.log
+            ${{ runner.temp }}/sep-rc2/mac-package/PACKAGE-INVENTORY.json
           if-no-files-found: error

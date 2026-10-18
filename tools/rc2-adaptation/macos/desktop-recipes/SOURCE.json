@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "scope": "Port existing reviewed readiness/product recipes to fresh merged RC.2 managed desktop. Frozen Alpha.2 recipes remain unchanged. Every applied transform remains exact one anchor and has source/result hashes.",
+  "files": [
+    {
+      "source": "renderer-readiness/derive.mjs",
+      "sourceSha256": "39ef278a48c8d95a46d1ef0b33307dadac5df3c6f323c9503e018cc87c8b4b20"
+    },
+    {
+      "source": "renderer-readiness/welcome-derive.mjs",
+      "sourceSha256": "176c8996a8282ab886768190f50b486e89277c4b7b7a550ad75ac5daecb3c6c4"
+    },
+    {
+      "source": "renderer-readiness/product-derive.mjs",
+      "sourceSha256": "05be8342d8e31f059fb09db7c9038307c7913a458e8b724719768dc2a5150794"
+    },
+    {
+      "source": "renderer-readiness/product-gate-derive.mjs",
+      "sourceSha256": "97c9d9f71378a7eeb7b9b444d3a9a3afea6f5cbc315bff178c284e4d9a44c234"
+    },
+    {
+      "source": "renderer-readiness/preload-bridge.mjs",
+      "sourceSha256": "e7246ea11e6e945b6d4b1cec827480fb11f83098e8220b7870cef3dbf8fd0b03"
+    },
+    {
+      "source": "renderer-readiness/welcome-preload.mjs",
+      "sourceSha256": "d058c1316ec44ba1e8ee1044d03f84c5bb391985dc51535c76b0f8af9bcb49fb"
+    }
+  ]
+}
