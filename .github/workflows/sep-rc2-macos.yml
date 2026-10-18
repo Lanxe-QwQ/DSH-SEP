@@ -29,6 +29,21 @@ jobs:
         run: node tools/rc2-adaptation/macos/assemble-app.mjs "$RUNNER_TEMP/sep-rc2"
       - name: Actual RC2 LaunchServices cold boot and normal restart
         run: node tools/rc2-adaptation/macos/run-app-lifecycle.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Build native RC2 installer after app lifecycle passes
+        run: node tools/rc2-adaptation/macos/assemble-installer.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Retain isolated candidate archives (not Release)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-candidate-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/sep-rc2/mac-package/DSH-SEP-macOS-RC2-application-preview.zip
+            ${{ runner.temp }}/sep-rc2/installer/DSH-SEP-macOS-RC2-installer-preview.zip
+            ${{ runner.temp }}/sep-rc2/mac-package/RESULT.json
+            ${{ runner.temp }}/sep-rc2/installer/RESULT.json
+            ${{ runner.temp }}/sep-rc2/mac-package/PACKAGE-INVENTORY.json
+            ${{ runner.temp }}/sep-rc2/installer/PACKAGE-INVENTORY.json
+          if-no-files-found: error
+          compression-level: 0
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
@@ -41,4 +56,7 @@ jobs:
             ${{ runner.temp }}/sep-rc2/mac-package/*.log
             ${{ runner.temp }}/sep-rc2/mac-package/PACKAGE-INVENTORY.json
             ${{ runner.temp }}/sep-rc2/app-lifecycle
+            ${{ runner.temp }}/sep-rc2/installer/RESULT.json
+            ${{ runner.temp }}/sep-rc2/installer/*.log
+            ${{ runner.temp }}/sep-rc2/mac-package/INSTALLER-ORIGIN.json
           if-no-files-found: error
