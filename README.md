@@ -35,3 +35,5 @@ Windows最终ZIP新装/拒绝/冒烟与桌面核心通过，但直接start.ps1�
 自有代码 [MIT](LICENSE)，第三方保留各自许可。反馈请通过 Issues，勿附API Key、私人正文或完整账本。历史说明见 [上版总览](docs/PRE-BETA4-README.md)；其中时点词不替代当前范围。
 
 历史公开发行：[Beta.3](https://github.com/Lanxe-QwQ/DSH-SEP/releases/tag/v0.2.1-beta.3)；它仍对应 Alpha.2 资产，不是当前 RC.2 下载。
+
+[本次公开发布核验回执](release/v0.2.1-beta.4/PUBLICATION.json)：9份附件的服务器摘要与匿名下载HEAD已核对；源码脱敏清单绑定固定发行标签，main上的后续发布状态变更见 POST-PUBLICATION-OVERLAY.json。

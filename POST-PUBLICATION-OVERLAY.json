@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "releaseTag": "v0.2.1-beta.4",
+  "frozenReleaseSourceCommit": "793f7a0ad87a6d1490171571df9a5b52211e526a",
+  "distributionVersion": "0.2.1-beta.4",
+  "sourceScanFrozenAtTag": true,
+  "changes": [
+    {
+      "path": "release/v0.2.1-beta.4/PUBLICATION.json",
+      "beforeSha256": null,
+      "sha256": "f78f3fce782498232199593e2a7474eb97236bcf6d0ecb602f011d42053fdefd",
+      "bytes": 5941
+    },
+    {
+      "path": "RELEASE-STATUS.json",
+      "beforeSha256": "0997768d25ed2d8f5b80d0723ea6b1b153fead1e0a895343ddd9e48e6bbf86d3",
+      "sha256": "f2dc019526d7623f2960ba78644f4c03719246d7beb29c4373a5a7fb37342e18",
+      "bytes": 735
+    },
+    {
+      "path": "VERIFICATION-RESULT.json",
+      "beforeSha256": "b8502c776bbedacae83078d5c59ffe57eb0a87d33082cb39435fe84b2fe20021",
+      "sha256": "1eb7fa166c273378e6756ce69047e58023c7c31c54ab55e8d8f8090be5d68159",
+      "bytes": 1205
+    },
+    {
+      "path": "README.md",
+      "beforeSha256": "b0378d2f024b96760feb20d01bbccff815d946d6c999ffaf4cf71a5019b568a6",
+      "sha256": "dee3d6346f57cb45728b6c6dc923ead720fbf4ba83cd0344220fc870f87e54c6",
+      "bytes": 4300
+    }
+  ],
+  "runtimeModified": false,
+  "installerArchivesModified": false,
+  "scope": "Only receipt and current publication metadata added after anonymous endpoint verification. Immutable tagged source and Release source ZIP retain the original final scan binding."
+}

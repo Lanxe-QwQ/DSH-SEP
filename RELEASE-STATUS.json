@@ -5,10 +5,12 @@
   "hostVersion": "0.2.1-rc.2",
   "releaseTag": "v0.2.1-beta.4",
   "releaseUrl": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/tag/v0.2.1-beta.4",
-  "state": "prepared-for-publication",
-  "published": false,
+  "state": "published-cross-platform-beta",
+  "published": true,
   "prerelease": true,
   "dailyDeploymentPerformed": false,
   "publicationReceipt": "release/v0.2.1-beta.4/PUBLICATION.json",
-  "receiptNote": "The immutable release tag records preparation. Server-verified publication receipt is added to public main after publication."
+  "receiptNote": "Server digests, tag and all nine anonymous download HEAD endpoints verified; immutable release tag retains its preparation snapshot. This main-only publication overlay is separately recorded.",
+  "publishedAt": "2026-10-19T02:16:52Z",
+  "sourceCommit": "793f7a0ad87a6d1490171571df9a5b52211e526a"
 }

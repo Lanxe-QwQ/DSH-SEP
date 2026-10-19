@@ -17,5 +17,5 @@
   "windowsDesktopCore": "pass",
   "privateDailyDeploymentPerformed": false,
   "publicationReceipt": "release/v0.2.1-beta.4/PUBLICATION.json",
-  "publicationNote": "Prepared; the immutable tag records prepublication. Server verified receipt is added to public main after publication."
+  "publicationNote": "Published Beta prerelease. SOURCE-EXPORT/PUBLICATION-OVERLAY/PUBLIC-SOURCE-SCAN bind the immutable release-tag snapshot; subsequent main-only publication receipt/metadata changes are in POST-PUBLICATION-OVERLAY.json. No full re-download, automatic-update E2E or daily switch is claimed."
 }
