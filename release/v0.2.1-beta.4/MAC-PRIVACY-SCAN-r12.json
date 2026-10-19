@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "status": "blocked",
+  "archive": "D:\\AIData\\ProjectWork\\DSH\\rc2-adaptation-20261018-r1\\artifacts\\macos-r12\\DSH-SEP-macOS-RC2-installer-preview.zip",
+  "sha256": "1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77",
+  "bytes": 862171913,
+  "filesScanned": 52992,
+  "uncompressedBytesScanned": 2569838742,
+  "scope": "read-only ASCII byte signatures across every archive file including ASAR/native bytes, plus defined private filename checks; no decryption or exhaustive semantic/binary privacy audit",
+  "patterns": [
+    "known-personal-Windows-home",
+    "private-key-header",
+    "provider-token-like",
+    "github-token-like"
+  ],
+  "findings": [
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Resources/product/payload/host/node_modules/jose/dist/webapi/key/import.js",
+      "pattern": "private-key-header",
+      "offset": 945,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Resources/product/payload/host/node_modules/@shikijs/langs/dist/emacs-lisp.mjs",
+      "pattern": "provider-token-like",
+      "offset": 733224,
+      "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Resources/product/payload/host/node_modules/@deepseek-ai/libreoffice-kit-darwin-arm64/bin/libreoffice-kit",
+      "pattern": "private-key-header",
+      "offset": 118652915,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Helpers/DSH SEP Desktop.app/Contents/Resources/app.asar",
+      "pattern": "private-key-header",
+      "offset": 276107983,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Helpers/DSH SEP Desktop.app/Contents/Resources/app.asar",
+      "pattern": "provider-token-like",
+      "offset": 418931825,
+      "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Helpers/DSH SEP Desktop.app/Contents/Resources/app.asar",
+      "pattern": "private-key-header",
+      "offset": 466829848,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d"
+    }
+  ],
+  "filenameFindings": [],
+  "comprehensivePrivacyAudit": false,
+  "archiveUnchanged": true
+}

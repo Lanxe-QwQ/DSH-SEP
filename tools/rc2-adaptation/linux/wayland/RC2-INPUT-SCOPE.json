@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "scope": "Keep the already certified native input binaries strict historical laboratory prefix. The name is a test socket namespace, not a host version. No pointer guard is removed or widened.",
+  "actualRoot": "/opt/dsh-sep-cross-platform/alpha2-portable-wayland-rc2-r2",
+  "origins": [
+    {
+      "file": "exercise-wayland.mjs",
+      "sourceSha256": "b2d0efbf8385f088e4ac4d0e23ed3e45156c2f3faccbfed7a1af982db21b0f47",
+      "from": "^\\/opt\\/dsh-sep-cross-platform\\/rc2-adaptation-20261018-r1\\/wayland-r\\d+$",
+      "to": "^\\/opt\\/dsh-sep-cross-platform\\/alpha2-portable-wayland-rc2-r\\d+$",
+      "resultSha256": "832365b16ceb6bcbc6fd5a3a6c7adbf8abbb335eabbc92aac9b2baf2a5ce457b"
+    },
+    {
+      "file": "private-wayland.mjs",
+      "sourceSha256": "e5272cb698e0f14858089d46afed5e67b75a7ad36d4597ed4c1e677a7851bc3d",
+      "from": "root.startsWith('/opt/dsh-sep-cross-platform/rc2-adaptation-20261018-r1/wayland-r')",
+      "to": "root.startsWith('/opt/dsh-sep-cross-platform/alpha2-portable-wayland-')",
+      "resultSha256": "26d5b9229b0b4211154cc64fa98ae1d2d0fe5cde905a8e0d341e02f059540841"
+    }
+  ]
+}

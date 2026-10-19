@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "scope": "isolated RC.2 adaptation closeout in the individually stated environments; not complete cross-platform certification",
+  "officialTag": "dsh-v0.2.1-rc.2",
+  "officialCommit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "sepInternalVersion": "0.2.1-beta.3-rc2-adapter.1",
+  "assets": [
+    {
+      "platform": "Windows Full",
+      "path": "windows-packages-r1/DSH-SEP-Full-Windows-x64-RC2-preview-r3.zip",
+      "bytes": 519849282,
+      "sha256": "8d09dfd24964444dca78ba0852ac4e028bb49ae0d0ef45325e11a3bd7ec058c1"
+    },
+    {
+      "platform": "Windows Only",
+      "path": "windows-packages-r1/DSH-SEP-Only-Windows-x64-RC2-preview-r3.zip",
+      "bytes": 429587818,
+      "sha256": "8d50e9b8b64b2969bb9f85bcebfdae7b26a260342fd21d20dd777c9a4dac4754"
+    },
+    {
+      "platform": "Linux",
+      "path": "artifacts/DSH-SEP-Linux-x64-RC2-preview-r2.tar.gz",
+      "bytes": 453019592,
+      "sha256": "e9693f34d1ec23eb1ec5928ce9e476048bda8024467f440074a436fa5ecdaf68"
+    },
+    {
+      "platform": "macOS",
+      "path": "artifacts/macos-r12/DSH-SEP-macOS-RC2-installer-preview.zip",
+      "bytes": 862171913,
+      "sha256": "1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77"
+    }
+  ],
+  "sourceReconciliation": [
+    {
+      "name": "runtime-source",
+      "files": 445,
+      "status": "pass"
+    },
+    {
+      "name": "desktop-overlay",
+      "files": 359,
+      "status": "pass"
+    },
+    {
+      "name": "linux-source",
+      "files": 282,
+      "status": "pass",
+      "scope": "source bytes; product modes separately manifest-bound"
+    }
+  ],
+  "common": {
+    "tests": 49,
+    "passCount": 49,
+    "logSha256": "3052dcbdbe72b6f131914245ea6e3d0bdb7a262bfdac6cc969e4ce22a580c8a5",
+    "replaySha256": "8f15b678b3b86a35a38a9821f2753f807fdaeac0e829ff707cf2c595a7b1a729"
+  },
+  "windows": {
+    "record": "evidence/WINDOWS-CURRENT.json",
+    "sha256": "14344984e5ee78e9ab091c6684311cf5b012f7c5ac2ef199f87fe7009e4d7f83",
+    "desktopOverall": "blocked",
+    "desktopCore": "pass",
+    "dailyEntrySnapshot": "not_run"
+  },
+  "linux": {
+    "record": "evidence/LINUX-DELIVERY-r2.json",
+    "sha256": "d2a584ed8d5f9fb5331c044d03d5cb0301189290e839c3b5ae03a47aa7753883",
+    "nativeDefinitions": 66,
+    "waylandRounds": 2,
+    "stepsPerRound": 10
+  },
+  "mac": {
+    "record": "evidence/MAC-CURRENT.json",
+    "sha256": "4d6d68e182a30dea51c3029113bb9a851c3ab25e3ae5645e031f99e72ed01d6c",
+    "nativeDefinitions": 103,
+    "postBuildDefinitions": 46,
+    "namespaceGuards": 3,
+    "freshIntegrationDefinitions": 6,
+    "coldBootCycles": 2
+  },
+  "notVerified": [
+    "Complete cross-platform public certification",
+    "Current private library continuation in this adaptation",
+    "Paid online providers",
+    "Physical Windows/Mac input and tray interactions",
+    "Windows unsigned start.ps1 under current execution policy",
+    "Mac Developer ID/notarization",
+    "Broader Linux/macOS hardware and desktop environments",
+    "Production public auto-install positive path"
+  ],
+  "dailySwitched": false,
+  "mainChanged": false,
+  "releasePublished": false,
+  "authorizedMacTestBranch": "codex/sep-rc2-macos-20261018"
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "scope": "local offline metadata/guard/source-derivation and immutable-input verification; not a remote publication or native product rerun",
+  "reviewedCommit": "2201098a3359bde5c0d8a0594d1d9b56b5b17457",
+  "fixedDefinitions": 12,
+  "passCount": 12,
+  "failCount": 0,
+  "errors": 0,
+  "testInput": {
+    "path": "review_regressions.py",
+    "sha256": "02f5d0d969aa3f0411ae95047f85c4011fed7aace3454dc37cf3c20df148c846"
+  },
+  "logs": [
+    {
+      "path": "RED.log",
+      "bytes": 19114,
+      "sha256": "465fd3aa045e2fae617eb508f710ec8de6ca280884fe466620096716c88d4992"
+    },
+    {
+      "path": "GREEN.log",
+      "bytes": 11671,
+      "sha256": "c39712f77dd3ab043ce5d4a753a2788396e36f07347a50384726bdde59db4c4e"
+    },
+    {
+      "path": "GREEN-r2.log",
+      "bytes": 1686,
+      "sha256": "ab65e838343cd9033db88cb00b398faef25818034fc0bddfc01a10151ae18c8c"
+    },
+    {
+      "path": "TEST-INPUT-r1.py",
+      "bytes": 7079,
+      "sha256": "2f76fbc224cf243ab9871398e2b427cb79003f5c9eed4f0c28cdcaba9b9f7040"
+    }
+  ],
+  "attempts": [
+    {
+      "log": "RED.log",
+      "status": "fail",
+      "scope": "before repairs, includes missing governance and owner mapping"
+    },
+    {
+      "log": "GREEN.log",
+      "status": "fail",
+      "scope": "11 definitions pass, one test incorrectly used r instead of existing row; no production change was made to satisfy it"
+    },
+    {
+      "log": "GREEN-r2.log",
+      "status": "pass",
+      "tests": 12
+    }
+  ],
+  "reviewDispositions": {
+    "1": "fixed: old byte-identical copy preserved in history/pre-r4; verified current r4 pointer",
+    "2": "fixed locally: current owner/main-only guards and canonical links; explicit single hash-bound Beta2 derivative",
+    "3": "accepted hygiene: frozen generated helper unchanged; comment and module labels recorded; future rebuild required for cleanup",
+    "4": "accepted documented one-shot tooling scope"
+  },
+  "testedArchivesUnchanged": 4,
+  "candidateFilesUnchanged": 445,
+  "remoteWorkflowExecution": "not_run",
+  "nativeRevalidation": "not_run; no delivered program byte changed",
+  "dailySwitched": false,
+  "releasePublished": false,
+  "mainChanged": false
+}

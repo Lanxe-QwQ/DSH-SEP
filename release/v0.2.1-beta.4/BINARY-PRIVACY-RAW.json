@@ -1,0 +1,1436 @@
+{
+  "schema": 1,
+  "status": "scanned-awaiting-review",
+  "rules": [
+    "known-personal-home",
+    "known-messenger-id",
+    "private-device-ip",
+    "provider-like",
+    "github-token-like",
+    "private-key-header"
+  ],
+  "archives": [
+    {
+      "name": "DSH-SEP-Full-0.2.1-beta.4-Windows-x64.zip",
+      "sha256": "8d09dfd24964444dca78ba0852ac4e028bb49ae0d0ef45325e11a3bd7ec058c1",
+      "bytes": 519849282,
+      "filesScanned": 32820,
+      "uncompressedBytesScanned": 1434642681,
+      "hits": [
+        {
+          "entry": "payload/node_modules/@deepseek-ai/libreoffice-kit-win32-x64/bin/libreoffice-kit.exe",
+          "rule": "private-key-header",
+          "offset": 146719553,
+          "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+          "afterHex": "002d2d2d2d2d454e",
+          "entrySha256": "4b60b337f493421cd3b8690c9706494df620d6ba265b99c0cc6ab22b88cb6fd7"
+        },
+        {
+          "entry": "payload/node_modules/@shikijs/langs/dist/emacs-lisp.mjs",
+          "rule": "provider-like",
+          "offset": 733224,
+          "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6",
+          "afterHex": "7c6572696c6f672d",
+          "entrySha256": "5ece43ee61f6a0c74eda144a6394a65c6d8b3ba0e694020b9381a9b2884ff47b"
+        },
+        {
+          "entry": "payload/node_modules/jose/dist/webapi/key/import.js",
+          "rule": "private-key-header",
+          "offset": 945,
+          "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+          "afterHex": "222920213d3d2030",
+          "entrySha256": "ab2f57a9db99e8d48451a8d0a8adf75379381f65b0e3e28ba6c02aa5bb3ee5fa"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_asyncio.pyd",
+          "rule": "known-personal-home",
+          "offset": 39768,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3797580a504f0ff84ea7aed8df7b8d61f8519408604b520c75ca79266599ef12"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_bz2.pyd",
+          "rule": "known-personal-home",
+          "offset": 60456,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "e43567beb7f3f9b9b89c6a40e21790170cf0fc98efcad25e6b074c60b73240eb"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ctypes.pyd",
+          "rule": "known-personal-home",
+          "offset": 82104,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "ce2f528d5d3b91d8ccc4963c7c1685537581304585c9a309dcfbdd5a1a43eaa9"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ctypes_test.pyd",
+          "rule": "known-personal-home",
+          "offset": 13464,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "f559c57f3c6c8334280dcd227e54ceb5311321a090680aafa7f9d690d5603496"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 201536,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 201728,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 202080,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 202312,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_elementtree.pyd",
+          "rule": "known-personal-home",
+          "offset": 98572,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "bb48410256c0d81f1ab0493103f8d1a0daa1afaad2cba7cf23a069922fd8e6db"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_hashlib.pyd",
+          "rule": "known-personal-home",
+          "offset": 34488,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "1c69cdfde46e4c235f8b4ff9d059d752de288a7f4a1c7f1df0927c9925984f5b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_lzma.pyd",
+          "rule": "known-personal-home",
+          "offset": 131640,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "61fdbdee731bc3493014b64d14f0c7a6b6950913a40fae3f561dbee9fa078658"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_msi.pyd",
+          "rule": "known-personal-home",
+          "offset": 19716,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cf29b42b98f1851c7e8507d3c9e549b0e11a32a158ebfe2b4e79a73afa3f1595"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_multiprocessing.pyd",
+          "rule": "known-personal-home",
+          "offset": 12520,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "56440369c73cc7378adcfff3da6338e2e7c937ed62fd60dbcb92bcda0699b8f6"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_overlapped.pyd",
+          "rule": "known-personal-home",
+          "offset": 27496,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "9b631b8f3d78d32e93d2cf31bd4f0988823632ae856c2fb4b6ea9471b20a6f72"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_queue.pyd",
+          "rule": "known-personal-home",
+          "offset": 10936,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cad613e5524c053dc0e5c497cd4bfde569c3583dc1866c9e4b041b3afccd47da"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_socket.pyd",
+          "rule": "known-personal-home",
+          "offset": 53400,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "8aa5ab82bc2908e122754380b56a92fc92f88e0752f63e3db483d7c43b5cb6f5"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_sqlite3.pyd",
+          "rule": "known-personal-home",
+          "offset": 80104,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "4e7c647350cf4cffec72191e4aa4d51bbe2bb2e8ae79fe9e1135857909067cc7"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ssl.pyd",
+          "rule": "known-personal-home",
+          "offset": 101376,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c6871ffbfcc17b66d2b495c9b44fed192fe83e22f7b2f94b00f207525e19559b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ssl.pyd",
+          "rule": "known-personal-home",
+          "offset": 105552,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c6871ffbfcc17b66d2b495c9b44fed192fe83e22f7b2f94b00f207525e19559b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testbuffer.pyd",
+          "rule": "known-personal-home",
+          "offset": 29444,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "bae29d482b6788e388aa2d59a8d73558f6d1e47b5a45e9844f2f98472a12ac46"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testcapi.pyd",
+          "rule": "known-personal-home",
+          "offset": 212612,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "1803ba0ffce7f3f11a3781132a1672aa85bb22a3b6787be04b97cdf9d263da94"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testclinic.pyd",
+          "rule": "known-personal-home",
+          "offset": 38276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "b4dd3789046d5e47029d5dd7274365ddd416e4f4f4376da104a31693c7a199d6"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testconsole.pyd",
+          "rule": "known-personal-home",
+          "offset": 7172,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "8dbf51d49d6e12bf71487e0dbbbb0e39af38e5206d591363bdaf94d02e862279"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testimportmultiple.pyd",
+          "rule": "known-personal-home",
+          "offset": 6276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "eb5bcb191c7f2096b6967b01a8eebe70ddd61d9290b9a50413276c043612d45a"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testinternalcapi.pyd",
+          "rule": "known-personal-home",
+          "offset": 26504,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "bfaa839451f45e519d0f29902fad27edf1f3f2619143744320a6f15a658c7bcf"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testmultiphase.pyd",
+          "rule": "known-personal-home",
+          "offset": 13316,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "67bb7efc1b25dfc69e0515fb938c0a8f0c8220f090eb21e9c2df64a56a681756"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testsinglephase.pyd",
+          "rule": "known-personal-home",
+          "offset": 9348,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3825e3f25e5e28c46cb86fe88b47a0f1670ad378a317ce78af09e3b3e94a8bcd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_tkinter.pyd",
+          "rule": "known-personal-home",
+          "offset": 34752,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c7909bf5bd200e9f0ca1c008c65fa59a298f955a846031735bc4f37e01ec104c"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_tkinter.pyd",
+          "rule": "known-personal-home",
+          "offset": 35924,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c7909bf5bd200e9f0ca1c008c65fa59a298f955a846031735bc4f37e01ec104c"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_uuid.pyd",
+          "rule": "known-personal-home",
+          "offset": 6788,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "14f024dd8fe2490109f812522daebf61a2f5f8cff80513813db246d6455fcf3f"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_wmi.pyd",
+          "rule": "known-personal-home",
+          "offset": 14532,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "b767ab02b35f5d691142b488807b405663c957e90b84377e639056b84a3288ef"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_zoneinfo.pyd",
+          "rule": "known-personal-home",
+          "offset": 23940,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "22605c2ed4a7672c65bfdd330c60a3719916ec811ec44c720cf1cc4349c79776"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 6540992,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 6684432,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7172768,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7200064,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7211824,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7322960,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libffi-8.dll",
+          "rule": "known-personal-home",
+          "offset": 21424,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cf07f9f0b1c635bdc20a5c81e0808986e14eede4329d2994ccab417f59550638"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/pyexpat.pyd",
+          "rule": "known-personal-home",
+          "offset": 153712,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "6bb4d145099a62c3c4d6718a0fd7e0525d9736d7e584171506c2731fec674dc0"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/pyexpat.pyd",
+          "rule": "known-personal-home",
+          "offset": 175660,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "6bb4d145099a62c3c4d6718a0fd7e0525d9736d7e584171506c2731fec674dc0"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/select.pyd",
+          "rule": "known-personal-home",
+          "offset": 10256,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3472a0d2b8c3c6a3f80ea75deb4a8f41c159be541be7fa16337dd18c9067c0e8"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/sqlite3.dll",
+          "rule": "known-personal-home",
+          "offset": 1415928,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "7a424a26235c29e00417fe5e720cb66e107113fdc84a1d0148816ad0b4613bf2"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/unicodedata.pyd",
+          "rule": "known-personal-home",
+          "offset": 1113488,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "8e7401064e85754b8cb27de94c7098b7d798a33c207cec532996036fafbcf429"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/winsound.pyd",
+          "rule": "known-personal-home",
+          "offset": 9860,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "7243978c067fbc01e6ab3298ad42c2be43a05b14ee9a40235f8ea6adb2a24b9b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/Lib/venv/scripts/nt/python.exe",
+          "rule": "known-personal-home",
+          "offset": 155008,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3b5cc4150dc98800ee46b09034187bb2d8ba3c8ea3368d3a46e9bb42876b58db"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/Lib/venv/scripts/nt/pythonw.exe",
+          "rule": "known-personal-home",
+          "offset": 145024,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "54ec62ab209d92d2c5266725a5d18739708621847e6c000103db22091415c227"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python.exe",
+          "rule": "known-personal-home",
+          "offset": 6276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "1a967738a234a3bd90e8fa8b925e20a994326e1eb8b74913026a9449a933e6db"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python3.dll",
+          "rule": "known-personal-home",
+          "offset": 53208,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cd42200fb3a7d5bda472d617e1e7a5515798ff0a0a827b9e3aef42acc87347ed"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3354224,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3355600,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3355888,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3356304,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3356480,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3356800,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3357264,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3357840,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3358544,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3359984,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4843808,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4849088,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4858656,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4872400,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4872704,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4874000,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4874896,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4880192,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4881168,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4882544,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4884496,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4887168,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4887280,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4888368,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4891616,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4892304,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4892672,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4910560,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4926592,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4928176,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4928800,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4939072,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4967704,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/pythonw.exe",
+          "rule": "known-personal-home",
+          "offset": 6276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "9f8994b0dae525935f62749023202b79e7937d010bb884cf97172148ef372712"
+        }
+      ],
+      "privateFilenameFindings": [],
+      "archiveUnmodified": true,
+      "seconds": 36.7
+    },
+    {
+      "name": "DSH-SEP-Only-0.2.1-beta.4-Windows-x64.zip",
+      "sha256": "8d50e9b8b64b2969bb9f85bcebfdae7b26a260342fd21d20dd777c9a4dac4754",
+      "bytes": 429587818,
+      "filesScanned": 28129,
+      "uncompressedBytesScanned": 1170473881,
+      "hits": [
+        {
+          "entry": "payload/node_modules/@shikijs/langs/dist/emacs-lisp.mjs",
+          "rule": "provider-like",
+          "offset": 733224,
+          "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6",
+          "afterHex": "7c6572696c6f672d",
+          "entrySha256": "5ece43ee61f6a0c74eda144a6394a65c6d8b3ba0e694020b9381a9b2884ff47b"
+        },
+        {
+          "entry": "payload/node_modules/jose/dist/webapi/key/import.js",
+          "rule": "private-key-header",
+          "offset": 945,
+          "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+          "afterHex": "222920213d3d2030",
+          "entrySha256": "ab2f57a9db99e8d48451a8d0a8adf75379381f65b0e3e28ba6c02aa5bb3ee5fa"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_asyncio.pyd",
+          "rule": "known-personal-home",
+          "offset": 39768,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3797580a504f0ff84ea7aed8df7b8d61f8519408604b520c75ca79266599ef12"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_bz2.pyd",
+          "rule": "known-personal-home",
+          "offset": 60456,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "e43567beb7f3f9b9b89c6a40e21790170cf0fc98efcad25e6b074c60b73240eb"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ctypes.pyd",
+          "rule": "known-personal-home",
+          "offset": 82104,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "ce2f528d5d3b91d8ccc4963c7c1685537581304585c9a309dcfbdd5a1a43eaa9"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ctypes_test.pyd",
+          "rule": "known-personal-home",
+          "offset": 13464,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "f559c57f3c6c8334280dcd227e54ceb5311321a090680aafa7f9d690d5603496"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 201536,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 201728,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 202080,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_decimal.pyd",
+          "rule": "known-personal-home",
+          "offset": 202312,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "471630e0098c6b610bef10ff015dd95d95894048e8f3b74032ccef317da0ae05"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_elementtree.pyd",
+          "rule": "known-personal-home",
+          "offset": 98572,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "bb48410256c0d81f1ab0493103f8d1a0daa1afaad2cba7cf23a069922fd8e6db"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_hashlib.pyd",
+          "rule": "known-personal-home",
+          "offset": 34488,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "1c69cdfde46e4c235f8b4ff9d059d752de288a7f4a1c7f1df0927c9925984f5b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_lzma.pyd",
+          "rule": "known-personal-home",
+          "offset": 131640,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "61fdbdee731bc3493014b64d14f0c7a6b6950913a40fae3f561dbee9fa078658"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_msi.pyd",
+          "rule": "known-personal-home",
+          "offset": 19716,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cf29b42b98f1851c7e8507d3c9e549b0e11a32a158ebfe2b4e79a73afa3f1595"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_multiprocessing.pyd",
+          "rule": "known-personal-home",
+          "offset": 12520,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "56440369c73cc7378adcfff3da6338e2e7c937ed62fd60dbcb92bcda0699b8f6"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_overlapped.pyd",
+          "rule": "known-personal-home",
+          "offset": 27496,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "9b631b8f3d78d32e93d2cf31bd4f0988823632ae856c2fb4b6ea9471b20a6f72"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_queue.pyd",
+          "rule": "known-personal-home",
+          "offset": 10936,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cad613e5524c053dc0e5c497cd4bfde569c3583dc1866c9e4b041b3afccd47da"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_socket.pyd",
+          "rule": "known-personal-home",
+          "offset": 53400,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "8aa5ab82bc2908e122754380b56a92fc92f88e0752f63e3db483d7c43b5cb6f5"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_sqlite3.pyd",
+          "rule": "known-personal-home",
+          "offset": 80104,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "4e7c647350cf4cffec72191e4aa4d51bbe2bb2e8ae79fe9e1135857909067cc7"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ssl.pyd",
+          "rule": "known-personal-home",
+          "offset": 101376,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c6871ffbfcc17b66d2b495c9b44fed192fe83e22f7b2f94b00f207525e19559b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_ssl.pyd",
+          "rule": "known-personal-home",
+          "offset": 105552,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c6871ffbfcc17b66d2b495c9b44fed192fe83e22f7b2f94b00f207525e19559b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testbuffer.pyd",
+          "rule": "known-personal-home",
+          "offset": 29444,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "bae29d482b6788e388aa2d59a8d73558f6d1e47b5a45e9844f2f98472a12ac46"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testcapi.pyd",
+          "rule": "known-personal-home",
+          "offset": 212612,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "1803ba0ffce7f3f11a3781132a1672aa85bb22a3b6787be04b97cdf9d263da94"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testclinic.pyd",
+          "rule": "known-personal-home",
+          "offset": 38276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "b4dd3789046d5e47029d5dd7274365ddd416e4f4f4376da104a31693c7a199d6"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testconsole.pyd",
+          "rule": "known-personal-home",
+          "offset": 7172,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "8dbf51d49d6e12bf71487e0dbbbb0e39af38e5206d591363bdaf94d02e862279"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testimportmultiple.pyd",
+          "rule": "known-personal-home",
+          "offset": 6276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "eb5bcb191c7f2096b6967b01a8eebe70ddd61d9290b9a50413276c043612d45a"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testinternalcapi.pyd",
+          "rule": "known-personal-home",
+          "offset": 26504,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "bfaa839451f45e519d0f29902fad27edf1f3f2619143744320a6f15a658c7bcf"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testmultiphase.pyd",
+          "rule": "known-personal-home",
+          "offset": 13316,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "67bb7efc1b25dfc69e0515fb938c0a8f0c8220f090eb21e9c2df64a56a681756"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_testsinglephase.pyd",
+          "rule": "known-personal-home",
+          "offset": 9348,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3825e3f25e5e28c46cb86fe88b47a0f1670ad378a317ce78af09e3b3e94a8bcd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_tkinter.pyd",
+          "rule": "known-personal-home",
+          "offset": 34752,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c7909bf5bd200e9f0ca1c008c65fa59a298f955a846031735bc4f37e01ec104c"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_tkinter.pyd",
+          "rule": "known-personal-home",
+          "offset": 35924,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "c7909bf5bd200e9f0ca1c008c65fa59a298f955a846031735bc4f37e01ec104c"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_uuid.pyd",
+          "rule": "known-personal-home",
+          "offset": 6788,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "14f024dd8fe2490109f812522daebf61a2f5f8cff80513813db246d6455fcf3f"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_wmi.pyd",
+          "rule": "known-personal-home",
+          "offset": 14532,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "b767ab02b35f5d691142b488807b405663c957e90b84377e639056b84a3288ef"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/_zoneinfo.pyd",
+          "rule": "known-personal-home",
+          "offset": 23940,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "22605c2ed4a7672c65bfdd330c60a3719916ec811ec44c720cf1cc4349c79776"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 6540992,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 6684432,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7172768,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7200064,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7211824,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libcrypto-3-x64.dll",
+          "rule": "known-personal-home",
+          "offset": 7322960,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "5a4e8f115a4caada73c5f890513b058509885bbb1012f0cb7ab9b5bddedae1dd"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/libffi-8.dll",
+          "rule": "known-personal-home",
+          "offset": 21424,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cf07f9f0b1c635bdc20a5c81e0808986e14eede4329d2994ccab417f59550638"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/pyexpat.pyd",
+          "rule": "known-personal-home",
+          "offset": 153712,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "6bb4d145099a62c3c4d6718a0fd7e0525d9736d7e584171506c2731fec674dc0"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/pyexpat.pyd",
+          "rule": "known-personal-home",
+          "offset": 175660,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "6bb4d145099a62c3c4d6718a0fd7e0525d9736d7e584171506c2731fec674dc0"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/select.pyd",
+          "rule": "known-personal-home",
+          "offset": 10256,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3472a0d2b8c3c6a3f80ea75deb4a8f41c159be541be7fa16337dd18c9067c0e8"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/sqlite3.dll",
+          "rule": "known-personal-home",
+          "offset": 1415928,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "7a424a26235c29e00417fe5e720cb66e107113fdc84a1d0148816ad0b4613bf2"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/unicodedata.pyd",
+          "rule": "known-personal-home",
+          "offset": 1113488,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "8e7401064e85754b8cb27de94c7098b7d798a33c207cec532996036fafbcf429"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/DLLs/winsound.pyd",
+          "rule": "known-personal-home",
+          "offset": 9860,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "7243978c067fbc01e6ab3298ad42c2be43a05b14ee9a40235f8ea6adb2a24b9b"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/Lib/venv/scripts/nt/python.exe",
+          "rule": "known-personal-home",
+          "offset": 155008,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "3b5cc4150dc98800ee46b09034187bb2d8ba3c8ea3368d3a46e9bb42876b58db"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/Lib/venv/scripts/nt/pythonw.exe",
+          "rule": "known-personal-home",
+          "offset": 145024,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "54ec62ab209d92d2c5266725a5d18739708621847e6c000103db22091415c227"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python.exe",
+          "rule": "known-personal-home",
+          "offset": 6276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "1a967738a234a3bd90e8fa8b925e20a994326e1eb8b74913026a9449a933e6db"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python3.dll",
+          "rule": "known-personal-home",
+          "offset": 53208,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "cd42200fb3a7d5bda472d617e1e7a5515798ff0a0a827b9e3aef42acc87347ed"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3354224,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3355600,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3355888,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3356304,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3356480,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3356800,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3357264,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3357840,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3358544,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 3359984,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4843808,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4849088,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4858656,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4872400,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4872704,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4874000,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4874896,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4880192,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4881168,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4882544,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4884496,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4887168,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4887280,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4888368,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4891616,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4892304,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4892672,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4910560,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4926592,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4928176,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4928800,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4939072,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/python312.dll",
+          "rule": "known-personal-home",
+          "offset": 4967704,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "46561f1d4e29afed8db6b8bcde7be110d56d6598ae78cc0cf10b2db8360d9c5e"
+        },
+        {
+          "entry": "runtime/primary-runtime/dependencies/python/pythonw.exe",
+          "rule": "known-personal-home",
+          "offset": 6276,
+          "matchSha256": "c3f4fc0940c4c418a78b90a60d0c3a0f6e87bccc282da970f0afdf33a30f7910",
+          "afterHex": "417070446174615c",
+          "entrySha256": "9f8994b0dae525935f62749023202b79e7937d010bb884cf97172148ef372712"
+        }
+      ],
+      "privateFilenameFindings": [],
+      "archiveUnmodified": true,
+      "seconds": 31.1
+    },
+    {
+      "name": "DSH-SEP-0.2.1-beta.4-Linux-x64.tar.gz",
+      "sha256": "e9693f34d1ec23eb1ec5928ce9e476048bda8024467f440074a436fa5ecdaf68",
+      "bytes": 453019592,
+      "filesScanned": 33979,
+      "uncompressedBytesScanned": 1307862418,
+      "hits": [
+        {
+          "entry": "payload-r8/host/node_modules/@shikijs/langs/dist/emacs-lisp.mjs",
+          "rule": "provider-like",
+          "offset": 733224,
+          "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6",
+          "afterHex": "7c6572696c6f672d",
+          "entrySha256": "5ece43ee61f6a0c74eda144a6394a65c6d8b3ba0e694020b9381a9b2884ff47b"
+        },
+        {
+          "entry": "payload-r8/host/node_modules/jose/dist/webapi/key/import.js",
+          "rule": "private-key-header",
+          "offset": 945,
+          "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+          "afterHex": "222920213d3d2030",
+          "entrySha256": "ab2f57a9db99e8d48451a8d0a8adf75379381f65b0e3e28ba6c02aa5bb3ee5fa"
+        }
+      ],
+      "privateFilenameFindings": [],
+      "archiveUnmodified": true,
+      "seconds": 36.22
+    }
+  ],
+  "scope": "All regular archive members, including raw ASAR/native binaries. Defined ASCII signatures and private filenames; no recursive decoding or semantic privacy certification.",
+  "comprehensivePrivacyAudit": false
+}

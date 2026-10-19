@@ -1,0 +1,739 @@
+{
+  "schema": 1,
+  "sha256": "9ee87c13fc7e6c60fbe68464c8d54f30b330bca1f48a595512dc04696706784b",
+  "historicalInputSha256": "311124a1e9ac177ca6b7e24a5ecc79e33d346ee94c455624b86c801bb3e288c8",
+  "officialCommit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "candidateSha256": "854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5",
+  "inputs": [
+    {
+      "path": "desktop/lib/command-manager-entry.js",
+      "bytes": 13566,
+      "sha256": "86fd191aefe390fecb93cfae66d6d7f1f8fcaeec46dbda8caf589d91287eac1d"
+    },
+    {
+      "path": "desktop/lib/main.js",
+      "bytes": 279010,
+      "sha256": "36b7d25df5af1d63b31698edc70a89dc0367e0cc605e32d05a5eb9c1a7b4bd23"
+    },
+    {
+      "path": "desktop/lib/preload-app.cjs",
+      "bytes": 50605,
+      "sha256": "3b49d2c8ea035fe066e52230321f3cd15b691f8274fa6340ddaa3d5c0e6b5ab2"
+    },
+    {
+      "path": "desktop/lib/preload-mandatory.cjs",
+      "bytes": 1158,
+      "sha256": "daf9c1b2161b789762489cef967af1b5432b053325326d0f5259d00790104ecc"
+    },
+    {
+      "path": "desktop/lib/preload-platform-account.cjs",
+      "bytes": 2224,
+      "sha256": "1fb4a3258deeaba526068007dcbdc4a7e5a0f2841f6b726a6634f098d766e48d"
+    },
+    {
+      "path": "desktop/lib/preload-update-dialog.cjs",
+      "bytes": 1189,
+      "sha256": "5a7c57b1874f3d241ee9938163d2f7cab85d043cde544bde2cff49f2d0103b86"
+    },
+    {
+      "path": "desktop/lib/preload-welcome.cjs",
+      "bytes": 28926,
+      "sha256": "b2b9e5670ffc183c38c60eee307c49e00caa6697a976451c12e590d2dea12173"
+    },
+    {
+      "path": "desktop/lib/project-workflow-product/endpoint.mjs",
+      "bytes": 3872,
+      "sha256": "c3e54a7f3e32c09d6e941730cb2e49f34a58d249df55ad456c448d88bb21c6b7"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/electron-adapter.mjs",
+      "bytes": 1679,
+      "sha256": "7673e4bde5cb6e44bb9a75758364b266818c5609561dfc9a7c05291aa6277986"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/main.mjs",
+      "bytes": 6035,
+      "sha256": "add6c1a03c165c63fe61f007b7f261aaf5a23e5684db104f38f795f90a7b7696"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/native-confirmation.mjs",
+      "bytes": 1285,
+      "sha256": "c4d91dd63e11f80059d7ab1dbd3c4427fec24310cebfb997a75575e8f2cfe7a5"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/rules.mjs",
+      "bytes": 1372,
+      "sha256": "83dc0f51585f6871259bf42cc97b24cd06d8c038c107a16d47768a621acb5b6a"
+    },
+    {
+      "path": "desktop/lib/project-workflow-ui/transport.mjs",
+      "bytes": 4353,
+      "sha256": "65134282e54d2c7b70b98565a55615023740660ec9cb6b1bb5ae9658f2e7a7cb"
+    },
+    {
+      "path": "desktop/lib/sep-mac-entry.mjs",
+      "bytes": 1443,
+      "sha256": "d4e721f233e8d38172e1ba252ddbb13a71dd19f7483ee6e6cf73944cc8355a1a"
+    },
+    {
+      "path": "desktop/lib/sep-platform-update-admission.mjs",
+      "bytes": 167,
+      "sha256": "e860fedd036517c199304582968f2e770d35addb2fb67a609e50be7d5a49381e"
+    },
+    {
+      "path": "desktop/lib/sep-product-control/electron.cjs",
+      "bytes": 3310,
+      "sha256": "0704150b3188173e302692bc23048afa640a25decf44d1158143ed458e41a043"
+    },
+    {
+      "path": "desktop/lib/sep-product-control/fixed-program.cjs",
+      "bytes": 2310,
+      "sha256": "03b08f9700f6d352270fc067af59b812ca1dcc16b9d2144c98559fad5f7e8c07"
+    },
+    {
+      "path": "desktop/lib/sep-product-control/transport.cjs",
+      "bytes": 4563,
+      "sha256": "61413a5b2893b6f305fb570accbe2fbd384b6b657d4aca3c7e18cf37fc7eb436"
+    },
+    {
+      "path": "desktop/lib/sep-product-window-actions.mjs",
+      "bytes": 2683,
+      "sha256": "90bdeb9270851c0134057ec48f783145a905e8dff3f0aad9297839f397d8c37a"
+    },
+    {
+      "path": "desktop/lib/sep-renderer-readiness.mjs",
+      "bytes": 3280,
+      "sha256": "3865ee01158a4eb9a9389fba570392d1d57972f3cb6dbe1f1e9758ac3ecc910e"
+    },
+    {
+      "path": "desktop/lib/sep-update/assessment-input.mjs",
+      "bytes": 1282,
+      "sha256": "f72b2f4af55a1865a425384af0c31df5bbcf2b9885e5e0ae0c3472c5b73c6b95"
+    },
+    {
+      "path": "desktop/lib/sep-update/desktop-composition.mjs",
+      "bytes": 799,
+      "sha256": "d4456a070a0e88e289d1ceb0908bdead73c0c83fb892882a948a7768f32119a5"
+    },
+    {
+      "path": "desktop/lib/sep-update/download-package.mjs",
+      "bytes": 3272,
+      "sha256": "20a9ebce94392e6272cc2bd013e47ae31680d46c3047c3710b94e87051087b6c"
+    },
+    {
+      "path": "desktop/lib/sep-update/extract-sep.mjs",
+      "bytes": 4646,
+      "sha256": "83f6b14dffa492cb977f5df453d853699e95bad58b06dce7848ce7c9dbce9dfa"
+    },
+    {
+      "path": "desktop/lib/sep-update/extract-sep.ps1",
+      "bytes": 3755,
+      "sha256": "4cd87d56deb6d7c2336af830e0f090f7561094e3f19b59af562531b06eec70ab"
+    },
+    {
+      "path": "desktop/lib/sep-update/installed-sep-version.mjs",
+      "bytes": 926,
+      "sha256": "4f5660f6228fbfd22e1b15ba4c5171a591ac8aef2d697d80c64d9552a2087bfb"
+    },
+    {
+      "path": "desktop/lib/sep-update/LIFECYCLE-PORTABILITY.md",
+      "bytes": 2398,
+      "sha256": "a237b02d52bebda6c6e8c8f5f18e55b0f61e7ffe79fa7167e8c4fe9b02dd0a67"
+    },
+    {
+      "path": "desktop/lib/sep-update/maintenance-repair.mjs",
+      "bytes": 4699,
+      "sha256": "5843f630e3602a703949f7fac4724f2dc5ff18b8ea0ffa8de9cfe63d98d93e18"
+    },
+    {
+      "path": "desktop/lib/sep-update/MAINTENANCE.md",
+      "bytes": 3324,
+      "sha256": "1a551782b4273bfe38028f0227af1d0123cda41198a8546b72ed0db15146c5e2"
+    },
+    {
+      "path": "desktop/lib/sep-update/PREPARATION-PORTABILITY.md",
+      "bytes": 2907,
+      "sha256": "0ae739680cf7f4c02919188573a25fb87e9578d9bd89f005687eab14237ec2ae"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-health.mjs",
+      "bytes": 7053,
+      "sha256": "2fb8d2c1d3e3e9acbf761334413d803e06920743ca04f71bee26936c59955784"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-idle.mjs",
+      "bytes": 2856,
+      "sha256": "2e17091ed028b06911a85c85bf69a241d3dbf747111eab97451a6df3046ff5d6"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-offline.mjs",
+      "bytes": 13520,
+      "sha256": "c39637ff02dfd3cfc4be5038bf1e3ce55240663ca1f691d6bc38adaf4d60ffa1"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-package.mjs",
+      "bytes": 7506,
+      "sha256": "af22857528eadbe7ff0fb004bdeecfe65eedaeba97f854f7c067cb45dff646d3"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-preservation.mjs",
+      "bytes": 4113,
+      "sha256": "1c3dcf56aece35d5faf7b6e726bb1432d7343ceb893d511c37740ec298cbb7a8"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-profile.mjs",
+      "bytes": 3707,
+      "sha256": "0cc3d0a68e6759726c2f4384dba914e90d8217eb083afbc6964d5e58ec4d1bb7"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-publish.mjs",
+      "bytes": 325,
+      "sha256": "20841fc054a29bb7411c7486e1d3539577ec1bdd35099c2b160d6f0e0b7fe903"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-queue.mjs",
+      "bytes": 5111,
+      "sha256": "5083ed5e727550c8177fc2877ea8b3c3a649f64373d500b5061f12642a003995"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-review-host.mjs",
+      "bytes": 3792,
+      "sha256": "3bc2b5e2f5fcd970d0e3ea4a6f19673d92f69271ec833dc63ab78ad3435724ae"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-review-ui.mjs",
+      "bytes": 1591,
+      "sha256": "55fae4226c28d3b3ee7bf77d6f3d546faf10a74e8bcbe80272b562e5a1b81188"
+    },
+    {
+      "path": "desktop/lib/sep-update/prepare-worker.mjs",
+      "bytes": 9639,
+      "sha256": "171c15f866292b538e4c6a4138cedac9d3f8e358c8b0e73fdcb2e8569ef1c4a7"
+    },
+    {
+      "path": "desktop/lib/sep-update/README.md",
+      "bytes": 8239,
+      "sha256": "025383b487aea0c611951ac36433fa23f5eca0be2ed2b1e74b55e5447f4e1a23"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/audit-graph.mjs",
+      "bytes": 2036,
+      "sha256": "47dde5109d51d97f472dcef8d976e5bf449573da44fa84593e5a14d1233e025d"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/health-template.json",
+      "bytes": 4272,
+      "sha256": "8b001f35042ad5c198d6bec09af8911c8f874bd4b8975c5e27c3cd225044f3a9"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/checkpoint-inspection.mjs",
+      "bytes": 6917,
+      "sha256": "c284401314c25b2bba9321ed76820f81db48738eb6b2596daa6340c9bce365bd"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/credential-reader.mjs",
+      "bytes": 3027,
+      "sha256": "9fd8002c140506f896fd097e4ba56cc399e7741fdc3cfd3877cf2c2c78f330c2"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/desktop-payload.mjs",
+      "bytes": 3783,
+      "sha256": "b7995eac900f49c65f06b5c01cf4f15427f283e2dc70427dbdf5a5b9cb133f5e"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/desktop-temp.mjs",
+      "bytes": 1199,
+      "sha256": "40c9ff62d07fb52e7e52a8611547b09c957adf50eecf8e860b0a5c5158ecea7b"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/launcher.mjs",
+      "bytes": 9157,
+      "sha256": "80f4d15470160592423a4936e695bfbff7a985fa09e4e6bffa45bb535755c920"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/startup-coordinator.mjs",
+      "bytes": 1333,
+      "sha256": "381ff9d890ededddd6c20c58ea44b015719b454a907bdeff351dcd5004c95130"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/startup-diagnostic.mjs",
+      "bytes": 1193,
+      "sha256": "80206c7c540013846584a1498219f097284e29231c819ee72103ebb996e73267"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/startup-lease.mjs",
+      "bytes": 1890,
+      "sha256": "9d5c180849703fd9741660d6017a98bd39325029ca882740a0b3ce5db48f56f9"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/startup-report.mjs",
+      "bytes": 3904,
+      "sha256": "668f705afcf71658c2a5e3a9cf5b79467673b18a1a26464c53a5de8629853951"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/launcher/validate-bootstrap.mjs",
+      "bytes": 2364,
+      "sha256": "a812d1ec3a9d80a6b3b16a679dee03cbf5f585e4e6f660f55158c8735cd3c1b4"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/native-program.mjs",
+      "bytes": 12918,
+      "sha256": "7c847bbc952358dfcfa405602dcfa00283beae02c1fdf346af9bf2c1bbc189ef"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/offline-publisher.mjs",
+      "bytes": 4618,
+      "sha256": "9a292a369f990e47858590c5f0d1f3cd137be0c66d4173287b97ce2bdb15b525"
+    },
+    {
+      "path": "desktop/lib/sep-update/runtime/profile-transaction.mjs",
+      "bytes": 26747,
+      "sha256": "fa4af8e15a58af40a33caa3422eadac1adaad2cea55af78f16bd26a6fb190c3a"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/assessment-discovery.test.mjs",
+      "bytes": 991,
+      "sha256": "74cf7299612260562f9c85c102d2c12180de324f612167ba37626442e14d17d7"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/assessment-health.mjs",
+      "bytes": 9667,
+      "sha256": "ad3eb31bbbc7f07e5f92170434937c581c4126120b9660cbb6fd2cc43fd0a52d"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/assessment-input.test.mjs",
+      "bytes": 935,
+      "sha256": "1a350058fafc81900c679550eba475bfa1da206ad17f349fd39d0b2f9e27f1fe"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/inventory-binding.test.mjs",
+      "bytes": 4113,
+      "sha256": "da4eebd3e0cf38fe1010981a909785c4c96d8188b9d3dc473fb097f905b3f6de"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/lifecycle-dependencies.mjs",
+      "bytes": 1042,
+      "sha256": "4ea14113fe13fd96ebaeaa25bb0ae90d6b0db8cb71069b84b0a88ed888f0276a"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/lifecycle-portability.test.mjs",
+      "bytes": 12398,
+      "sha256": "7d7b5840164a58f49b34cf3f9a6bea4a703787fb112cae706e48d01b1abef422"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/lifecycle-yaml.cjs",
+      "bytes": 90,
+      "sha256": "919a77f1ff0e5ee9dc9af35061b5836f9b2bb7da404f456dfa40826a589acf65"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/maintenance-review.test.mjs",
+      "bytes": 3690,
+      "sha256": "68c6b543105bc4833a09fd5daf048cb70ab485a4e99379e72d41c1d7324e1667"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/offline-evidence.test.mjs",
+      "bytes": 1631,
+      "sha256": "4e714ee72db7c83f3ec3780a05ecee721812a3c81c0f50d1574de12e498c41c6"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/owned-file-preservation.test.mjs",
+      "bytes": 3028,
+      "sha256": "0c9413e5383ca254645cc2267baaf2f84c90f09826e385837e18ba9608e36d15"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/preparation-dependencies.mjs",
+      "bytes": 382,
+      "sha256": "b22e4369e108f524cadc11917aa7b4fb27e42da6bb63d5b6f8da7e27a3f45233"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/preparation-fixtures.mjs",
+      "bytes": 1228,
+      "sha256": "a24197c2bbe824e1ed19460bc27198e4edb1a18af44be9daa1dffedd469381ea"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/preparation-portability.test.mjs",
+      "bytes": 10271,
+      "sha256": "d989e9db2d09d32f510de828f3783a22abc67d7db5425039889ff706a38d1c2b"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/profile-successor.test.mjs",
+      "bytes": 18739,
+      "sha256": "0f830989466326af7fd56c5c401a6d41fb8f1e5af372e58d8f960e567282d58a"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/update-filter.test.mjs",
+      "bytes": 9127,
+      "sha256": "a80eca1e4f66cc859eeb1130e6fe69d9fd2d9e63a5cabeaab9347eadd30e5cf3"
+    },
+    {
+      "path": "desktop/lib/sep-update/tests/update-preferences.test.mjs",
+      "bytes": 8469,
+      "sha256": "c711a3111784a298f824c79d2add868ce4d638a471e6d25c4c227dfa713f55c4"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-admission.mjs",
+      "bytes": 5942,
+      "sha256": "e8bb6372ab01831f892e6508740b7b65dd78913ec3636382123d0fa698f274d8"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-core.mjs",
+      "bytes": 7522,
+      "sha256": "f50863992c85fa0432e2dce2b2459caed6ad2bd8dda233464466d1da78de8257"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-desktop.d.mts",
+      "bytes": 1535,
+      "sha256": "d5118bb64e2215d03773a68c9f7665f90352cf5f9e5afc3dc5531b794a8635ca"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-desktop.mjs",
+      "bytes": 19063,
+      "sha256": "a7a3873bff6c7c8b20e880711a0fef3c535ff07ed9987b41f33687e2c4192420"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-evidence.mjs",
+      "bytes": 5174,
+      "sha256": "ca89fdbad4f1d6ba52514e9d392b6d2f3b896e669ec23820e95a3119490ff2d5"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-filter.d.mts",
+      "bytes": 678,
+      "sha256": "92875eaeebf5470f18380f0c9987c4d8dfd86582422a3acdc28812be2ee5be25"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-filter.mjs",
+      "bytes": 1245,
+      "sha256": "c02e9f0b026aa8cb656a82fc9a4cb62749679b3cfd4dd46821b5b6ed967c0742"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-inventory.mjs",
+      "bytes": 21310,
+      "sha256": "1c50d1a6f4a189b42fc30244248a6170625685dac6f901131a3935a62f158ca3"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-migration-loader.mjs",
+      "bytes": 2406,
+      "sha256": "9147f39a0eeafd7af644d5104ff74057cce2d756e887423c5ea4fda909ee862b"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-migration-policy.mjs",
+      "bytes": 9405,
+      "sha256": "8743c91f89f407387244dcdfc9d2d63b030b65302ae6f5bb57ed96b2979fc292"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-migration-v2.mjs",
+      "bytes": 11989,
+      "sha256": "83d4d27275fc4a8344abe73e3556d8b2331f2c1e27de3fdd3acdd9d78c3888ee"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-p2.mjs",
+      "bytes": 5132,
+      "sha256": "3aa5784fe4f8d6118d23983891e426c256db9fce918fead8f57acd07e05cf939"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-process-identity.mjs",
+      "bytes": 5654,
+      "sha256": "d3633c6f703888929e9ca4e12939fa5fb3f734ea6f67bc45b6050fce3368c208"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-process.mjs",
+      "bytes": 3077,
+      "sha256": "fb2eb5e30867853c0ebb8b74c343977c3548047f4d9d5548876ee6f5db03e1d8"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-profile.mjs",
+      "bytes": 7946,
+      "sha256": "32ab87668e044845032e15be1ceb48b86909ff1206aaf354e2a0328dcbb8fe81"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-review.mjs",
+      "bytes": 3403,
+      "sha256": "a25ae8d644ff4638bbeac6c4b7da88b74561dbbe34e0d96fee20ff006c6ba0c1"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-sep.mjs",
+      "bytes": 8687,
+      "sha256": "73f60135792494b27f9fff64f74455b9c36edc849a0db7f749a664819d6bf99f"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-transaction.mjs",
+      "bytes": 3562,
+      "sha256": "488cce52942aabf337903777938ab8d66abf9483198fb64cfd9e25d8d7ec17e9"
+    },
+    {
+      "path": "desktop/lib/sep-update/update-worker.mjs",
+      "bytes": 7998,
+      "sha256": "6b40bd27256206bcc18b68752b71ebf51aefb6a1366c98126001350ffe81a666"
+    },
+    {
+      "path": "desktop/lib/sep-welcome-readiness.mjs",
+      "bytes": 4083,
+      "sha256": "a6c79565510df9b1d104f2de6715a7bbc4ec3a4f43d752e556e64aea3d064ec3"
+    },
+    {
+      "path": "desktop/lib/welcome/welcome.css",
+      "bytes": 40250,
+      "sha256": "c9c15ea5803051813d31d4139b4eabb153146eb821fbc34c39f42285fa86b035"
+    },
+    {
+      "path": "desktop/lib/welcome/welcome.js",
+      "bytes": 283028,
+      "sha256": "2fb02a6e5c680d5e1a54433419c4bbf7b87a748b3f881377548b96afa0d54cc0"
+    },
+    {
+      "path": "desktop/package.json",
+      "bytes": 151,
+      "sha256": "bf0f0c59966eb668f3aff5746e2d1b450583b1bd21b7b444befe4533bc5444ff"
+    },
+    {
+      "path": "desktop/RC2-MANAGED-ORIGIN.json",
+      "bytes": 3681,
+      "sha256": "540212950526baf0384580dec2d88054cedc7402fbb6f0e966df5edef794e679"
+    },
+    {
+      "path": "desktop/renderer/assets/welcome-brand.svg",
+      "bytes": 15929,
+      "sha256": "182f040f9d3eccf25b20f5bbfc9d50a21296a88978b91b4dec7e64cbd16b4039"
+    },
+    {
+      "path": "desktop/renderer/assets/window-material.css",
+      "bytes": 529,
+      "sha256": "f1709d565f57db4cf0207b7e4e348f72380665124b7bd711cab92581808855e2"
+    },
+    {
+      "path": "desktop/renderer/mandatory-update-frame.js",
+      "bytes": 1683,
+      "sha256": "ea6ba51f277ce9ae18f972c76d6a23025bd1da62c1758526ec4f87be9eee06fb"
+    },
+    {
+      "path": "desktop/renderer/mandatory-update.css",
+      "bytes": 1237,
+      "sha256": "a1c1340b3c6050d1fe4253ff8d49a7d9709fe18cbcb7d0e4cfd785d611cdfdad"
+    },
+    {
+      "path": "desktop/renderer/mandatory-update.html",
+      "bytes": 1759,
+      "sha256": "17039f20594cadcfe09bf4500e45e1ab4fc57b205525a7f43e199ea4d12d4bc4"
+    },
+    {
+      "path": "desktop/renderer/mandatory-update.js",
+      "bytes": 7160,
+      "sha256": "982d1ded29841061422174355ca41eaf33f475e5377bcd045f3f7955385ad156"
+    },
+    {
+      "path": "desktop/renderer/policy-login-loading.html",
+      "bytes": 1734,
+      "sha256": "5129e856f96a21a29adfa96f393c98087c120cdd6f65ca0adaf7b17ae5b381f6"
+    },
+    {
+      "path": "desktop/renderer/update-close.svg",
+      "bytes": 449,
+      "sha256": "1a1931528c542a460d1db6fde84d82d1a03a06155485265d43634031273b20d5"
+    },
+    {
+      "path": "desktop/renderer/update-dialog.css",
+      "bytes": 2414,
+      "sha256": "a3828fc86b274a6ee31711ecaf721fcf929e389c421d3c3a291f197512d84e91"
+    },
+    {
+      "path": "desktop/renderer/update-dialog.html",
+      "bytes": 985,
+      "sha256": "8e9fd9e60cc8be41f59d930dbec59ec0f77e7b9bb720fbaa530df27f53b08cd7"
+    },
+    {
+      "path": "desktop/renderer/update-dialog.js",
+      "bytes": 2728,
+      "sha256": "669588e0f094c6616001d2bda37caee2f96680de8326647b854326ee2e20b7fd"
+    },
+    {
+      "path": "desktop/renderer/welcome.css",
+      "bytes": 7425,
+      "sha256": "d625b4775d44f218105bebcadeeeee2d8f806eecbe6f2f4bbc6cfdd472cbf91c"
+    },
+    {
+      "path": "desktop/renderer/welcome.html",
+      "bytes": 645,
+      "sha256": "02a6b02c152e6bd93d079597151ddc1d45b6ee349cbe83690af779467fdc9813"
+    },
+    {
+      "path": "desktop/resources/icon-macos.png",
+      "bytes": 279163,
+      "sha256": "28a14336e024c1bb4e94d6e74fd23810dac2b737dfd1b8da6b24482e0191abec"
+    },
+    {
+      "path": "desktop/resources/icon-macos.svg",
+      "bytes": 7354,
+      "sha256": "6ea87fbbb2daeb6aba30ed07ed1e9059e0c2a39a3778d98a475b0ab05034f091"
+    },
+    {
+      "path": "desktop/resources/icon-windows.png",
+      "bytes": 128820,
+      "sha256": "12064ff340e65872715cb18e56cfa9d3afe294fed98c81807d39e230a030d972"
+    },
+    {
+      "path": "desktop/resources/icon-windows.svg",
+      "bytes": 7365,
+      "sha256": "0799d196151083f123a8ae28979471da2276f29664b21c562c82a4b789d2104e"
+    },
+    {
+      "path": "desktop/resources/icon.png",
+      "bytes": 369009,
+      "sha256": "982c2859568d83d2576110a527c545f04641f4008bdb2cfeb6758f333c0fb07a"
+    },
+    {
+      "path": "desktop/resources/icon.svg",
+      "bytes": 7281,
+      "sha256": "0458ed5e4825846a6560e90d3e4de767cd75842f7eb53539dc87a5db380d9146"
+    },
+    {
+      "path": "desktop/resources/tray-windows.ico",
+      "bytes": 15698,
+      "sha256": "ec9354edad3eb348144569250a18843ab8d61ebcca32bebcaa3f10d1f5707a86"
+    },
+    {
+      "path": "native-host/lib/cli.js",
+      "bytes": 4816,
+      "sha256": "6eb7a1d592ddfff87d20995c917e3ad4777b30864dcfbe9f64b3c2888ece393d"
+    },
+    {
+      "path": "native-host/lib/index.js",
+      "bytes": 12644,
+      "sha256": "cdcce7e7df8f2dde5c0d1f68495a16e6958e1d7e05baa7ade7fc70a4fde94ea9"
+    },
+    {
+      "path": "native-host/ORIGIN.json",
+      "bytes": 1750,
+      "sha256": "4ec1b7eb3aa01009d40dcc6e518841321367121a3d1e0078677a1927e0ad59c3"
+    },
+    {
+      "path": "native-host/package.json",
+      "bytes": 1026,
+      "sha256": "bb249d20d3fd4e9a43ddbccf11c3726db97560a6298e3d2fc5686d2a3edf2bbf"
+    },
+    {
+      "path": "clients/BUILD-INPUTS.json",
+      "bytes": 56343,
+      "sha256": "f519c8758886befde6f3af7319e7d99ec4bd76d08792d5c45da5a7aaaf05c638"
+    },
+    {
+      "path": "clients/remotes/client.js",
+      "bytes": 1084977,
+      "sha256": "f21f941faaa0194489ed928151a2e601ed31fa930a66ecc4683c99c77858d01f"
+    },
+    {
+      "path": "clients/remotes/client.js.map",
+      "bytes": 1390535,
+      "sha256": "00e626d997ff52e3b0595c469c2c087adda5b08e1e106c1a7d9358e6f896edd2"
+    },
+    {
+      "path": "clients/remotes.config.mjs",
+      "bytes": 28461,
+      "sha256": "6436abc26d1e910e01d5cb2cfc51d19a4aad8c4f585c462fb39d48bcd2c22e51"
+    },
+    {
+      "path": "clients/tsconfig.client.json",
+      "bytes": 128,
+      "sha256": "a0f59729be2c6262052e2b876e8cb1e08b19d1430459670fc8b98fa47c234d43"
+    },
+    {
+      "path": "clients/ui-chat/client.js",
+      "bytes": 599690,
+      "sha256": "4d69cd43ee46d9403fe4bb492b0d20f247823d12f2b3f7b9edd62bfe4f24d839"
+    },
+    {
+      "path": "clients/ui-chat/client.js.map",
+      "bytes": 980804,
+      "sha256": "8139c8ee6519f68999d80e185d90ff165b8ba353c9dffeffa6b5d96d39c3fa63"
+    },
+    {
+      "path": "clients/ui-chat.config.mjs",
+      "bytes": 29567,
+      "sha256": "7d44022b48098a3d7ffc6ad777419f24fbd6bcf80eff407d52e19e28984b5f15"
+    },
+    {
+      "path": "clients/ui-settings/client.js",
+      "bytes": 57186,
+      "sha256": "ac46963af5e0c9aa3a9e00999ae85623ba4d866a05207fb79f73f0ab4e2cfe6f"
+    },
+    {
+      "path": "clients/ui-settings/client.js.map",
+      "bytes": 110675,
+      "sha256": "33b8653f5a6399c3d5c83a7b13228c59744534603897d64474fd2c018e06712b"
+    },
+    {
+      "path": "clients/ui-settings-account/client.js",
+      "bytes": 3421873,
+      "sha256": "f3da90fe68d2b7490f714c974b9b89b884bd60b80edd395c8834820bb9b894d7"
+    },
+    {
+      "path": "clients/ui-settings-account/client.js.map",
+      "bytes": 3531031,
+      "sha256": "3bb0c5e946bb8c2bdedde8d436b8f9237086f92399ad0e0a3f558ba0f48cfc2a"
+    },
+    {
+      "path": "clients/ui-settings-account.config.mjs",
+      "bytes": 28462,
+      "sha256": "9603df55b7bbac6b8c4149f49053ba436d6433094d659ec855d107063383f2ca"
+    },
+    {
+      "path": "clients/ui-settings-general/client.js",
+      "bytes": 71077,
+      "sha256": "4b9ed3e0a02e6de6dcf685026af7e811724989cb459ce559eca9e96e13083fa7"
+    },
+    {
+      "path": "clients/ui-settings-general/client.js.map",
+      "bytes": 91078,
+      "sha256": "39ae240c14d76f1952e49bd65de6c11f29eec079560d4da7114edd9e1629e906"
+    },
+    {
+      "path": "clients/ui-settings-general.config.mjs",
+      "bytes": 28462,
+      "sha256": "4dc3eb26bac75ef5b0320b6e60af1a6c54813d8e4ccabe7d4f1e02221438e917"
+    },
+    {
+      "path": "clients/ui-settings.config.mjs",
+      "bytes": 28446,
+      "sha256": "0df1cfa81b0659fb4092d90d0b613cf0acc0b67d72912e3a33eb6f5f3bb95f0a"
+    },
+    {
+      "path": "current-project-ui/lib/client.js",
+      "bytes": 6682,
+      "sha256": "43c94f0026e722d7852e3c961241fa1e64119b68d7df878fded7007472d746d3"
+    },
+    {
+      "path": "current-project-ui/lib/index.js",
+      "bytes": 259,
+      "sha256": "63b2b2264c9265702fe435d2ed462d659106c760b033723d02d4ea4710e58e21"
+    },
+    {
+      "path": "current-project-ui/package.json",
+      "bytes": 608,
+      "sha256": "b13824b6586c295c08cac9f33b18835f90bfa9d92530553252952fb6f7925a67"
+    },
+    {
+      "path": "frontend.js",
+      "bytes": 939913,
+      "sha256": "281871871f34cb52425b883d9af8c9fa6fd00e75a27d1e604a2fafb0ca2f9f81"
+    },
+    {
+      "path": "ui-renderer.js",
+      "bytes": 78636,
+      "sha256": "47a7ad0f03a1e2e775870c73895a192e4d2626ca69e8b3eaac9c4566c17c453e"
+    },
+    {
+      "path": "ORIGIN.json",
+      "bytes": 5310,
+      "sha256": "d64a34fa3e22cbdd54480dac00c8de57e3c2d824ec40d174b52d85d9b3c902de"
+    },
+    {
+      "path": "brand/package.json",
+      "bytes": 1579,
+      "sha256": "afa3e8e6f751cba72b1eae29a460f4201eded9100e37d68cd8b63bc639a73d82"
+    },
+    {
+      "path": "brand/lib/client.js",
+      "bytes": 1863,
+      "sha256": "22bb7e181a8d93372e1d14927b201612b09a02c84ea3d0f36933cfff1de47d71"
+    }
+  ]
+}

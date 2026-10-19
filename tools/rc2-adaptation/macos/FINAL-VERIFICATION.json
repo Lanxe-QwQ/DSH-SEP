@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "scope": "specified native macOS 15.7.9 ARM64/APFS isolated preview; not complete public certification",
+  "applicationSourceCommit": "1027e597c53b6d31f734026d97adb1fb4b2426bf",
+  "installerSourceCommit": "fecf8489d4bc98e2cac515b2a705b861bda89b9d",
+  "installationSourceCommit": "5104acfb964edb29d1d1f033fb1d0a0e304f14cd",
+  "runId": 39135657506,
+  "jobId": 117699525433,
+  "artifactId": 12141005709,
+  "rawArtifactSha256": "b650812728f733d36e816410a143a3549277e5e13861721ec1ed87b1e5de6259",
+  "sourceManifestSha256": "0d20ff00bf69bf127551d77752d1f97ee1e271845fad8cb5613e052cf9dc9067",
+  "installer": {
+    "platform": "macOS",
+    "path": "artifacts/macos-r12/DSH-SEP-macOS-RC2-installer-preview.zip",
+    "bytes": 862171913,
+    "sha256": "1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77"
+  },
+  "nativeDefinitions": 103,
+  "postBuildDefinitions": 46,
+  "namespaceNativeGuards": 3,
+  "independentIntegrationDefinitions": {
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "installedColdBootCycles": 2,
+  "currentNamespacePlan": true,
+  "cleanup": [],
+  "cleanupInterpretation": "no recovery/force/test cleanup needed in this successful run; scoped tracked lifetimes only, not a global process census",
+  "originalInstallerExternalButtonInput": "not_run",
+  "fullPublicCertification": "blocked",
+  "notVerified": [
+    "Original byte-identical installer external button input",
+    "Physical mouse or keyboard input",
+    "Developer ID and notarization",
+    "Upgrade or existing private data adoption",
+    "Global process census"
+  ],
+  "supersededInstaller": "bd3316100ac6912728bc5c4fffdb090f125e8e42b7cac684ac3b424a4cb490de"
+}

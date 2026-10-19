@@ -1,22 +1,21 @@
 {
-  "schema": 2,
+  "schema": 3,
   "status": "pass",
-  "distributionVersion": "0.2.1-beta.3",
-  "hostVersion": "0.2.1-alpha.2",
-  "scope": "Publication assembly and source export. This does not promote incomplete platform certification to pass.",
+  "distributionVersion": "0.2.1-beta.4",
+  "hostVersion": "0.2.1-rc.2",
+  "scope": "Publication assembly/source export and individually bound prior runtime checks; not complete platform certification.",
   "runtimeCodeModifiedForPublication": false,
   "sealedInstallerCount": 4,
-  "sealedInstallerHashes": "release/v0.2.1-beta.3/ASSET-BINDINGS.json",
+  "sealedInstallerHashes": "release/v0.2.1-beta.4/ASSET-BINDINGS.json",
+  "privacy": "release/v0.2.1-beta.4/PUBLICATION-PRIVACY.json",
+  "sourceScan": "PUBLIC-SOURCE-SCAN.json",
+  "sourceTransformations": "TRANSFORMS.json",
+  "offlineReviewRegression": "release/v0.2.1-beta.4/REVIEW-PUBLIC-SNAPSHOT.json",
   "linuxFullPublicCertification": "blocked",
   "macOSFullPublicCertification": "blocked",
+  "windowsDesktopAggregate": "blocked",
+  "windowsDesktopCore": "pass",
   "privateDailyDeploymentPerformed": false,
-  "sourceExportResult": "PUBLIC-SOURCE-SCAN.json",
-  "sourceTransformations": "TRANSFORMS.json",
-  "currentPlatformDocuments": [
-    "release/v0.2.1-beta.3/Windows.md",
-    "release/v0.2.1-beta.3/Linux.md",
-    "release/v0.2.1-beta.3/macOS.md"
-  ],
-  "publicationReceipt": "release/v0.2.1-beta.3/PUBLICATION.json",
-  "publicationNote": "Published as a Beta prerelease. See the receipt for server SHA-256/size checks and anonymous HEAD verification; full re-download and automatic-update end-to-end validation are not claimed."
+  "publicationReceipt": "release/v0.2.1-beta.4/PUBLICATION.json",
+  "publicationNote": "Prepared; the immutable tag records prepublication. Server verified receipt is added to public main after publication."
 }

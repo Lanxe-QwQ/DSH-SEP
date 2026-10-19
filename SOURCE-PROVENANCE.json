@@ -1,12 +1,11 @@
 {
-  "schema": 2,
-  "distributionVersion": "0.2.1-beta.3",
-  "originalAuditedTree": "ac69bda3ca63a3bed44780b7804cf090156514de",
-  "export": "PUBLIC-SOURCE-ORIGIN.json",
-  "inventory": "SOURCE-EXPORT-MANIFEST.json",
-  "maintenancePathDerivatives": "TRANSFORMS.json",
-  "excludedHistoricalArchives": "EXCLUSIONS.json",
-  "releaseOverlay": "PUBLICATION-OVERLAY.json",
-  "scope": "source/ and bundle/ blob bytes remain identical to the reviewed tree; platform runtime/capture files unchanged; public documentation and 26 maintenance path templates are explicit derivatives.",
-  "privateGitHistoryExported": false
+  "schema": 3,
+  "distributionVersion": "0.2.1-beta.4",
+  "hostVersion": "0.2.1-rc.2",
+  "inputCommit": "d1498eb646afc5a9028515f90a355061bed262da",
+  "currentCandidate": "tools/rc2-adaptation/candidate",
+  "officialRc2": "upstream/RC2-SOURCE-ORIGIN.json",
+  "guide": "release/v0.2.1-beta.4/SOURCE-GUIDE.md",
+  "privateGitHistoryExported": false,
+  "historicalMetadata": "docs/historical-beta3-source"
 }

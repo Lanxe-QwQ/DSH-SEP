@@ -1,0 +1,1722 @@
+{
+  "schema": 1,
+  "repository": "Lanxe-QwQ/DSH-SEP",
+  "payload": {
+    "status": "ready",
+    "sourceCommit": "1027e597c53b6d31f734026d97adb1fb4b2426bf",
+    "runId": 39125453791,
+    "artifacts": [
+      {
+        "id": 12136948831,
+        "name": "sep-rc2-macos-candidate-39125453791",
+        "bytes": 1710617239,
+        "sha256": "2a198fbb69319c2734394d436a82419c4c50fb8fde6332dd7b4f9aa896ac4c33",
+        "members": [
+          {
+            "path": "mac-package/DSH-SEP-macOS-RC2-application-preview.zip",
+            "bytes": 810931059,
+            "sha256": "ba05f7c66ca616186b7412a6dab822c1a2347f95087423a9b2f216851d27deac"
+          },
+          {
+            "path": "installer/DSH-SEP-macOS-RC2-installer-preview.zip",
+            "bytes": 862171912,
+            "sha256": "bd3316100ac6912728bc5c4fffdb090f125e8e42b7cac684ac3b424a4cb490de"
+          },
+          {
+            "path": "mac-package/RESULT.json",
+            "bytes": 25127,
+            "sha256": "71450688bdc20b746a3e4eb59dbbfacc8692c865933a206c40dde2ffe181e903"
+          },
+          {
+            "path": "installer/RESULT.json",
+            "bytes": 9511,
+            "sha256": "2cbbb7dae9840e32add9f2164afc1e69c975563ef36284f33632b3eb3da8ffb5"
+          },
+          {
+            "path": "mac-package/PACKAGE-INVENTORY.json",
+            "bytes": 17586617,
+            "sha256": "d28938b65db7136e9deee945e8c966f67625b1a364bc3be53a6d15805d17bae6"
+          },
+          {
+            "path": "installer/PACKAGE-INVENTORY.json",
+            "bytes": 19892015,
+            "sha256": "734be50dbbbe8efa2135ef655fd4b25828c23377f48c52dcacb436910029c2d3"
+          }
+        ]
+      },
+      {
+        "id": 12137536013,
+        "name": "sep-rc2-macos-39125453791",
+        "bytes": 2757957,
+        "sha256": "e041f832c05ddbc85da5e78aa226fb4b4d5cbb39a7438c284fe9e5e2bada8da9",
+        "members": [
+          {
+            "path": "evidence/RESULT.json",
+            "bytes": 2571,
+            "sha256": "409d61608fbea94682b024563875cd24f5c131242f0e3c5ed31643a91bb32601"
+          },
+          {
+            "path": "evidence/compile-attachments.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/compile-attachments.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/compile-tree.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/compile-tree.stdout.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/native-io.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/native-io.stdout.log",
+            "bytes": 16403,
+            "sha256": "9f52d32020d9f0e4077eec71c4faa136ea12d7058d98453d33df663861a62edf"
+          },
+          {
+            "path": "evidence/os.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/os.stdout.log",
+            "bytes": 7,
+            "sha256": "3e7f3aac6ec05838460f29272ec4647dbdf438a5b83be784975079531ab79eb1"
+          },
+          {
+            "path": "evidence/rc2-business.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/rc2-business.stdout.log",
+            "bytes": 3756,
+            "sha256": "65930ef02aa314906b54cfeb63d02829753761249916ac89c49f8d83b3cd95f0"
+          },
+          {
+            "path": "evidence/rc2-media.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "evidence/rc2-media.stdout.log",
+            "bytes": 3608,
+            "sha256": "a41a1bf825f13e3bf8115237e1edf6f8082aef0f448da3a165e1fea2c0513f4e"
+          },
+          {
+            "path": "DERIVATION.json",
+            "bytes": 5334,
+            "sha256": "d560c1da77569eeaab917cea7a130f88132242b2bb5c3c5266b689bd6ec0abfe"
+          },
+          {
+            "path": "install.log",
+            "bytes": 1497,
+            "sha256": "863499a38ff221f3893573431e64e1eccbc9ebec9648071a50c6d251973d2792"
+          },
+          {
+            "path": "mac-package/INSTALLER-ORIGIN.json",
+            "bytes": 466,
+            "sha256": "bce3f7f6428922afe12e7afba0117638f26a67aad8755087517420efa363c6ca"
+          },
+          {
+            "path": "mac-package/PACKAGE-INVENTORY.json",
+            "bytes": 17586617,
+            "sha256": "d28938b65db7136e9deee945e8c966f67625b1a364bc3be53a6d15805d17bae6"
+          },
+          {
+            "path": "mac-package/RESULT.json",
+            "bytes": 25127,
+            "sha256": "71450688bdc20b746a3e4eb59dbbfacc8692c865933a206c40dde2ffe181e903"
+          },
+          {
+            "path": "mac-package/archive-app.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/POSTBUILD-ORIGIN.json",
+            "bytes": 2419,
+            "sha256": "1386c8ef4bcb7d503c4a03a761768bbb17f7d47610f2bba88ab9d0c18d42ca8b"
+          },
+          {
+            "path": "mac-package/compile-outer.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/copy-baseline.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/extract-baseline.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/extract-rc2-inputs.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/inner-info.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/install-asar-tool.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/read-inner-info.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/restore-app.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/sign-inner.log",
+            "bytes": 124,
+            "sha256": "b93ccc222ddb7cf066b5af9fc0887c715d7821a85c62b5fc4af60dd2ce26bf61"
+          },
+          {
+            "path": "mac-package/sign-outer.log",
+            "bytes": 87,
+            "sha256": "bbd812814faf65f623d9de94329dfe513894c6b4d3b6d3bee629bd2de5098560"
+          },
+          {
+            "path": "mac-package/verify-inner.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/verify-baseline.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/verify-outer.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "mac-package/verify-restored.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-lifecycle/RESULT.json",
+            "bytes": 2750,
+            "sha256": "b764bbe881cd0c83e91aae29f66b9ab78b68dc33931ea8c600c4ef0cb5b84a57"
+          },
+          {
+            "path": "app-lifecycle/application-observer",
+            "bytes": 52920,
+            "sha256": "55aaab0cfbb73ee6525653b8d5b1960ac4738c6cae560be129169c191f49f9d0"
+          },
+          {
+            "path": "app-lifecycle/cycle-1.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-lifecycle/cycle-1.stdout.log",
+            "bytes": 2825,
+            "sha256": "093bc07f92fba010459139a387bde4f078c9270b3e2709c559dc770dd2cda5ea"
+          },
+          {
+            "path": "app-lifecycle/cycle-2.stderr.log",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-lifecycle/cycle-2.stdout.log",
+            "bytes": 2825,
+            "sha256": "99561c4c5798edb9fca1bab1c53826ef5d76d5d9af296d7ea24c4bb37d27362b"
+          },
+          {
+            "path": "app-lifecycle/observation.jsonl",
+            "bytes": 8387,
+            "sha256": "ee9b13cee68fd9acf2ca8b8e6742a8aa02ca419b35b2ceaf4e4117571bf4a220"
+          },
+          {
+            "path": "app-postbuild/ENV.json",
+            "bytes": 694,
+            "sha256": "fd726e24f9379afa6dabe217edab31eba33038e45c65936f551afb88c632d80e"
+          },
+          {
+            "path": "app-postbuild/RESULT.json",
+            "bytes": 3910,
+            "sha256": "a17c448cf1ae95072bd6c1d67d98578b483c6210ae19ba95acce42d49319e877"
+          },
+          {
+            "path": "app-postbuild/RUNTIME-INPUTS.json",
+            "bytes": 16734,
+            "sha256": "2441373a25e567060408fb71c89e48c32b75b97e73d6072c4a2f5f45b504d77c"
+          },
+          {
+            "path": "app-postbuild/SOURCE-INVENTORY.json",
+            "bytes": 341593,
+            "sha256": "8791b8014cf3eb03992c5a8bff86c1b388f18113d5d0a975671dd57b72513247"
+          },
+          {
+            "path": "app-postbuild/document-contracts/native.tap",
+            "bytes": 6096,
+            "sha256": "9151c2bd877577b9f187c7382923774032de8bddbd57a4a9f8aff664d91dec2e"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/ORIGIN-RECEIPT.json",
+            "bytes": 28194,
+            "sha256": "f4a153485596bf4b5386b39982420498a0d1999c011469ffba08522bb30cfd69"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "12adb7e10608a46e0328cbb670bf82b8676f700ed4571fb752058eb207a3409e"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "e42dea7ed4efb3cf3788c1a88fec06cfc660f00a65e64a01453e62e8de3a1cc2"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-AMAfdQ/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "3cb6fe897e69a778b0236d3697b1ba12ef5cd9750a3441d9d3c4da8fea63dc57"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "79527e3b6fabad8c242242e19eb6f0329f8b00fd032e90ad385bd18e1b8263ac"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NgrGXi/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "8880e53cbdfc55aa0d9f91584f53318aa12e17c227ea9019c59e67e80a72f051"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "f932b9798f3f479bbe0244e49ef4580919af841dec7af87491bd9f1c693f4f4b"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/memory/dsh_enhancement_suite_v1.json",
+            "bytes": 1174,
+            "sha256": "c290421899cd554a72c43b6719285659c88859e383bf6fd03208e44f850a8297"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/memory/dsh_four_layer_memory_v1.json",
+            "bytes": 278,
+            "sha256": "1089b6970ef997df78ef498c5f0ff1de7f8c33d68485aac8de520d82e695ac53"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-NpnrAp/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "269ebdbbeececc286c253c1cab39edf8786d9921418376dac52aa7b5761677bf"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/business-j58gQT/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "e8ceff26910aeccaf27b42b17ed9d7af8e57d20edb94f2ecc183e8b9f9332b74"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-BxoQH0/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-FrpX4N/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-KHQzdZ/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-MjruGE/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-Oex7LZ/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-d8KWiv/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-g9JBKx/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-jGCaa4/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-pNBu52/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-contracts/testdata/context-vf7JkH/snapshot.json",
+            "bytes": 246,
+            "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+          },
+          {
+            "path": "app-postbuild/document-native-context/native.tap",
+            "bytes": 940,
+            "sha256": "9a34e622d479ee38347d8f410a15a4a7d7a506fbe0bcf2974b8553bfc6a3df40"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/authorized-public-snapshot.json",
+            "bytes": 341,
+            "sha256": "0e3669c75a6a0d4f58f2df6b7500fe7bb44fd8fdb4c89ea576e64ac5ebf79436"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "7ad2ac3d63409363d1120c321d93488ba9e35121973b0a07866fb46a76fc517d"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "707e7ea74794b508b72dcbea555aee10fe9812cf65c717666349997511ee3e21"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/parser/context-authority/b0486c0f5e31d4cd554ab42548ed87319ef7285d84826afa99a882dc6ef7d32b.task.jsonl",
+            "bytes": 710,
+            "sha256": "31f7b8569b752bba051b94afa94ac47d369fa7b57aa940c77a9ec4186c1588ac"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-NDzE0n/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/cordis.yml",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "82260cff4f129a7ec31ff3a4474be80f1335e0e2dc200801e208dca612345b31"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/managed/generations/1/data/digital.pdf",
+            "bytes": 596,
+            "sha256": "8927e98ace79d490d05be9621d74997aa41e9534046e1298c04603881da1af99"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "df40747f6b98275fd4004808ba28293d98a968cdc12f0780a875b834bf0b65d5"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/memory/dsh_enhancement_suite_v1.json",
+            "bytes": 1646,
+            "sha256": "58d852905c1dd8068c508677bde52519c00c61d62573c707bcc019ddbbbb8208"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/memory/dsh_four_layer_memory_v1.json",
+            "bytes": 278,
+            "sha256": "1089b6970ef997df78ef498c5f0ff1de7f8c33d68485aac8de520d82e695ac53"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/parser/document-authority/038050e4b5db353461b55aeee9f4944054529b863b4e69082514de636d8fa6d9.task.jsonl",
+            "bytes": 710,
+            "sha256": "098669ab16af079f9b87ccce05a264a787c8586bf86e71cb1eaa22ae3bff5baf"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/parser/document-authority/94b8903d7bdba48b69a72758c6b58747cc13eaf46eb72f41bb122898c6e5972e.task.jsonl",
+            "bytes": 710,
+            "sha256": "a3255b23b62276f84a80a3539c523ecb853ffe51dfae717f2570c06a926e4a0b"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/parser/document-authority/f072e46b05b7aa03eb00c1a35bbee6eea625cd7a59174c1589c457c91b322c19.task.jsonl",
+            "bytes": 710,
+            "sha256": "bc1ca43a38de7c5fab31f250ad3ffc88f578b20b7bd23e02f40aa03cb75ba703"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/parser/document-authority/faa07d5497a5a2379a6e094a588b665d96594539d50c60540deec9a28ea110df.task.jsonl",
+            "bytes": 710,
+            "sha256": "316c1926b6d78d302e5343134d6a238dea7bc2b865e8f12efa249a1d89e27dc9"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/source/digital.pdf",
+            "bytes": 596,
+            "sha256": "8927e98ace79d490d05be9621d74997aa41e9534046e1298c04603881da1af99"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-YeJu7s/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "265444f000c319d61b7f5e61032d634e836e715a283d33640ad66cb4f7ec7dc1"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "32dad127c4cec5b35218c985c34f5370d458ecce01cd1f00fd81964b78d9f10d"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/memory/dsh_enhancement_suite_v1.json",
+            "bytes": 634,
+            "sha256": "b9eed0f8452509b02739ad0fbc6117692445e963bde4b40e99c97264074185b1"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/memory/dsh_four_layer_memory_v1.json",
+            "bytes": 695,
+            "sha256": "4c8f025b5dc042a4f448cda4a35e56cb5ff51174343c56101fb76cce48ecefb6"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/parser/document-authority/aed7e92ea9772b1bc6442c3510fe7feb90b1d2773db7bf4cafb84c19ada44350.task.jsonl",
+            "bytes": 710,
+            "sha256": "e3df54dcdaf97132ca04a61f9efbfccd23e85a1288e2948ea14a9cbf54e9e185"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-native-context/testdata/business-rl7zCG/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-standalone/native.tap",
+            "bytes": 434,
+            "sha256": "0e62ef8f4e55ed52fa212e0b89b6a50f9cb62c9937adcb4221d8d8e04f772708"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/BOOTSTRAP.json",
+            "bytes": 2077,
+            "sha256": "3b5acb58463c0f75ebdf9bad0b874c76887d24ff46392c88f369b40ab67e6474"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/PROFILE.json",
+            "bytes": 2077,
+            "sha256": "3b5acb58463c0f75ebdf9bad0b874c76887d24ff46392c88f369b40ab67e6474"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/home/profiles/desktop/cordis.patch.yml",
+            "bytes": 6745,
+            "sha256": "320de8c1a5eba3d1307b020df827c5ba586f001fda94bcea177e242209f44081"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/home/profiles/desktop/cordis.yml",
+            "bytes": 223,
+            "sha256": "c300dcf2ebc5f02062d6591268d29d3db6fe45e0cb138f5467276fe2ba06076e"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/home/profiles/desktop/initialize.patch.yml",
+            "bytes": 2113,
+            "sha256": "a3c3a50225859fe9851d9405982d1a487b7aaef3b17a220d1c0ab68ca09385af"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/home/profiles/desktop/package.json",
+            "bytes": 116,
+            "sha256": "a554f64c7aa98f7ee5f2709514284e3f2531d474a635678fcd28cb7d6a0382dc"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "f1ca48b99b8d9f630df9d3a192896a1084b2e7165ef33b80e97ebb284b2dd6ae"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "e13457924c46bf0dd7f2dd4d079ff103cc00f6aac90f3141f213972b98cf1147"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/memory/workspace.json",
+            "bytes": 616,
+            "sha256": "4ee65e0ad656246c3c64b5779a1feb1ba3a3f6eb1590c4efc7fd07279efd1887"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/data/profile-authority/READY.json",
+            "bytes": 2077,
+            "sha256": "3b5acb58463c0f75ebdf9bad0b874c76887d24ff46392c88f369b40ab67e6474"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/round-1.log",
+            "bytes": 83,
+            "sha256": "62778b68a28273fab4a52f02c1ee92da399b47dfac2fa5e4c02f405c6148dfc5"
+          },
+          {
+            "path": "app-postbuild/document-standalone/testdata/standalone-JZzg6w/round-2.log",
+            "bytes": 83,
+            "sha256": "eb860ce6cb6ed7b9031c220a61dbfb4dabd9c60edd20b762e47068e9eca01351"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/native.tap",
+            "bytes": 1884,
+            "sha256": "f4c1bf79032bdf0072aa1166a84d70fea3b6c64e317c2128edcff4426c2d9a51"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/budget/ledger.json",
+            "bytes": 1539,
+            "sha256": "9516517532f4ad4cb4169446616de363156f2acafdd1b08c920afdbd52e7b574"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "dc15902da0cb3b8a96bd9ec8f024fc1d7c3b1c252413b7ee8bb93d611ca5f5f6"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "54fe26fcfb1db3a2e9940a692c30cfb5c6a628780e48181c142d3c29fd06adc2"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/memory/dsh_four_layer_memory_v1.json",
+            "bytes": 527,
+            "sha256": "947bfa485cfcfb4b57e100d164371d47fbf935f9a234748dbb9b7228da5051b2"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-EyoJzd/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/budget/ledger.json",
+            "bytes": 1578,
+            "sha256": "5c5a35c7b0bc17847d6b2994593b025231b8106470f00566b85c476cd39466b1"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "ca713cc6f21b374dade4303820c348a63b891f2b1c0e93f020fc911062b6c20b"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "cd9f0053987a5b1e9eac2b25462036b826bd3030259314f815b7d9e875c7f494"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-RH0N78/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "f88bcfb3257909b826da24615be355e94e712e75fcb5058cb0b937450fd1ccf1"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "6495e957b039f0215d41a22ba89077b74f26f95f11ebddffdeb8f5614585877f"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-bY3NBK/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/budget/ledger.json",
+            "bytes": 1539,
+            "sha256": "81fd8b6313b09d82430c6f61e815555f18337461e249d82a44307820a3410815"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/cordis.yml",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "de62b146751be7fa87dfc45afad9906c7ac27f21d4640d2799672b0079f902de"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "70e8008990f4de88578fe17d49cf17ec08cba5d96f659791246ebeb3c818fa90"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/memory/dsh_four_layer_memory_v1.json",
+            "bytes": 527,
+            "sha256": "ab6956a413c388ca97b17f1253d73f24d0dc8e0647ad00961643dea443f5a72e"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-dvABrd/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "3346af71838ef57552f6a79f16f5457a762bf2ee4d4fda3049e10a6d51e0c653"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "ddf69f99bea925b3112ea211f25370c0ff73a97afc8a59b2baaab4ddf5525c74"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-u8Am95/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "e43f9524f6e948a101f9b96ef5667be14a3ff23181b756bbb06a0ef34dbe7ec3"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "fbee394bc437ec46d3d3afb05590d2e6bdcb37e404e13e8ebd22e887e516112f"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-uAAWLQ/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/budget/ledger.json",
+            "bytes": 282,
+            "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "456fc18e9e6dc1f88b65329714c822a1b1345602e466210661cd4f7504f621c0"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/managed/generations/1/data/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "00af377b4cd2f76f23e8c3d666d3d40372169757abc2bd7ef655a37f01fa3490"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/document-vision-loader/testdata/business-yJNkvY/source/\u56fe\u50cf.png",
+            "bytes": 108,
+            "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+          },
+          {
+            "path": "app-postbuild/parser-fixture.json",
+            "bytes": 227,
+            "sha256": "41ae166206693de3bf8321bd9dc4189e51d5a3a0101600628099c5f36bc06663"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/native.tap",
+            "bytes": 2206,
+            "sha256": "97389a237a6bba8485495b8c8dce9726eaa57fa50f9a77d11a49c48a610a8ae1"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/receipts/FINGERPRINT.json",
+            "bytes": 203,
+            "sha256": "3b7d5330a4e9004809c73734c91323ab1d2623600eb55da25162677a9435fe8c"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/receipts/LOADER-REPRO.json",
+            "bytes": 4387,
+            "sha256": "a91c99a2d230c707a6e76ee558e48d1fbd515e1eb5bbe8407eb6df7e1edc8c8b"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9RyLUm/cordis.yml",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9RyLUm/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9RyLUm/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9RyLUm/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "d704e60ef5c867b486de9c3dd4870aae4a66d43c8bcde42a8b719ec020160e7e"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9RyLUm/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/budget/ledger.json",
+            "bytes": 221,
+            "sha256": "519a3bfa656c483bbca5734557886459460c90e1252ead18657a692292278017"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/cordis.yml",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "c9c4161fd27bb7687c825d7a7600c08ec372336e42dc0575a66e0f85a08c3c3c"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "23e148fc14582f16430d3f31dc1d26a3a975eff7066b42a0abb2931b2df71ea8"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-9SyPfb/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-NJT7nQ/cordis.yml",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-NJT7nQ/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-NJT7nQ/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-NJT7nQ/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "e4b3fc111e35ab17ee30632932303a3a3ee465eecd2fe1d365fa6ce59c481cb6"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-NJT7nQ/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/budget/ledger.json",
+            "bytes": 281,
+            "sha256": "1c99f7ede70f347f7bc52c527cf8dac07b46aaf3f95f299aa62c30fe153870c7"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/budget/ledger.json.lock.guard.sqlite3",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/cordis.yml",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+            "bytes": 8192,
+            "sha256": "82f84a844ba9c4d18f3ef9f62ae6efd64e1e092e7763b4a4cb884eb14af3a6bc"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "ebd166cadaf7bf54d274366dbdb36fb32a9f96ad2199206471900e091f77857f"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/managed/transactions/45723f05-668c-472a-adc3-14d06f1a6c3c/candidate/data.txt",
+            "bytes": 27,
+            "sha256": "ecc7cc3f3f66ba59659e97e5238f3c96bf71c6cea758ddd90d6445a4529a753a"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-cgcKAm/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-sq1C7q/cordis.yml",
+            "bytes": 3,
+            "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-sq1C7q/managed/generations/1/data/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-sq1C7q/managed/owner.sqlite",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-sq1C7q/managed/state.sqlite",
+            "bytes": 36864,
+            "sha256": "537e212d746371aadffc6c198febb71579b099e54f47333cfb863278e7a9f3a8"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/business-sq1C7q/source/data.txt",
+            "bytes": 8,
+            "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-P8yu8J/business/BOOTSTRAP.json",
+            "bytes": 1885,
+            "sha256": "e69d336b26c0fb4af24b1d23ca24b5c0b0b4b74be4b900dab62f08d2e59a722c"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-P8yu8J/business/PROFILE.json",
+            "bytes": 1885,
+            "sha256": "e69d336b26c0fb4af24b1d23ca24b5c0b0b4b74be4b900dab62f08d2e59a722c"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-P8yu8J/business/home/profiles/desktop/initialize.patch.yml",
+            "bytes": 1919,
+            "sha256": "a3a4dc999ef7ae3035d8f3e73163aa1050fefa55d884559318ed4d89f99f20f4"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-P8yu8J/business/home/profiles/desktop/cordis.patch.yml",
+            "bytes": 6868,
+            "sha256": "e261043ea36dee09199a3f2e6153ba697e97d659a4bd2e7126ed9a1f9657031b"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-P8yu8J/business/home/profiles/desktop/package.json",
+            "bytes": 116,
+            "sha256": "a554f64c7aa98f7ee5f2709514284e3f2531d474a635678fcd28cb7d6a0382dc"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-P8yu8J/business/profile-authority/READY.json",
+            "bytes": 1885,
+            "sha256": "e69d336b26c0fb4af24b1d23ca24b5c0b0b4b74be4b900dab62f08d2e59a722c"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-ezY9jB/business/BOOTSTRAP.json",
+            "bytes": 1885,
+            "sha256": "69e487639afd47b9d2029ecc0497b5aebc90cb2eb209ee5be3c7c65749dce951"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-ezY9jB/business/home/profiles/desktop/initialize.patch.yml",
+            "bytes": 1919,
+            "sha256": "339efc161da540ed6b5ea75f618079852918647b621e0759e1f6776770ff9511"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-ezY9jB/business/home/profiles/desktop/cordis.patch.yml",
+            "bytes": 6868,
+            "sha256": "9ac448c520d7d5abbba41c6fab894dc0d477beaf0a89a086187947467e0d106d"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-ezY9jB/business/PROFILE.json",
+            "bytes": 1885,
+            "sha256": "69e487639afd47b9d2029ecc0497b5aebc90cb2eb209ee5be3c7c65749dce951"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-ezY9jB/business/home/profiles/desktop/package.json",
+            "bytes": 116,
+            "sha256": "a554f64c7aa98f7ee5f2709514284e3f2531d474a635678fcd28cb7d6a0382dc"
+          },
+          {
+            "path": "app-postbuild/pending-loader-restart/testdata/layout-ezY9jB/business/profile-authority/READY.json",
+            "bytes": 1885,
+            "sha256": "69e487639afd47b9d2029ecc0497b5aebc90cb2eb209ee5be3c7c65749dce951"
+          },
+          {
+            "path": "app-postbuild/tmp/node-addon-native-custom-loader-501/native-cache/node-addon-require-builtin-darwin-arm64/0.1.9/darwin-arm64/darwin-arm64-napi-v9.node",
+            "bytes": 226120,
+            "sha256": "93947abf5edc337b9b2b20267e1b99a26a3a5616dc857f1c2b67122d0057c752"
+          },
+          {
+            "path": "installer/RESULT.json",
+            "bytes": 9511,
+            "sha256": "2cbbb7dae9840e32add9f2164afc1e69c975563ef36284f33632b3eb3da8ffb5"
+          },
+          {
+            "path": "installer/archive.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/compile-installer.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/info.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/restore.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/sign-outer.log",
+            "bytes": 96,
+            "sha256": "cba9d9af39a2b27ad537168c7c9e6b7eda972d87d2cf6450e84a5d4852dd12f5"
+          },
+          {
+            "path": "installer/verify-outer.log",
+            "bytes": 184,
+            "sha256": "8b427d2f4d357e2cad28d48c9c7d0c328b2a3b560322b144c55a81f4bc8c4611"
+          },
+          {
+            "path": "installer/verify-restored.log",
+            "bytes": 202,
+            "sha256": "75d50d8900566b57bf5f795432d65895a9a1b48784c9def9cc6533a381910299"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "RESULT.json",
+        "artifactId": 12136948831,
+        "member": "mac-package/RESULT.json"
+      },
+      {
+        "name": "PACKAGE-INVENTORY.json",
+        "artifactId": 12136948831,
+        "member": "mac-package/PACKAGE-INVENTORY.json"
+      },
+      {
+        "name": "APP-POST-VERIFICATION.json",
+        "artifactId": 12137536013,
+        "member": "app-postbuild/RESULT.json"
+      },
+      {
+        "name": "APP-LIFECYCLE.json",
+        "artifactId": 12137536013,
+        "member": "app-lifecycle/RESULT.json"
+      }
+    ],
+    "parts": [
+      {
+        "index": 1,
+        "artifactId": 12136948831,
+        "member": "mac-package/DSH-SEP-macOS-RC2-application-preview.zip",
+        "bytes": 810931059,
+        "sha256": "ba05f7c66ca616186b7412a6dab822c1a2347f95087423a9b2f216851d27deac"
+      }
+    ]
+  },
+  "installer": {
+    "status": "ready",
+    "sourceCommit": "fecf8489d4bc98e2cac515b2a705b861bda89b9d",
+    "runId": 39133136770,
+    "artifacts": [
+      {
+        "id": 12139612132,
+        "name": "sep-rc2-macos-repaired-evidence-39133136770",
+        "bytes": 2481275,
+        "sha256": "fdc0877d7f8ab2bbc598c51ffad490113e7068c7c0427dc7870426f9460b9895",
+        "members": [
+          {
+            "path": "REPAIRED-INSTALLER-BUILD-ORIGIN.json",
+            "bytes": 935,
+            "sha256": "369558ab86fea67725b707a49c50320bf0b00e5f7871ff512c311dced09b7e79"
+          },
+          {
+            "path": "namespace-guard/RESULT.json",
+            "bytes": 1761,
+            "sha256": "bc8d8ee2cee8ada21b328b528e2143fea27017635a74a0deb411e96215eed3c8"
+          },
+          {
+            "path": "INSTALLER-NAMESPACE-ORIGIN.json",
+            "bytes": 826,
+            "sha256": "1f917d5efd91476a6f64c057bc33101fb588dd12d3d77c5d9a04e435be25c0d8"
+          },
+          {
+            "path": "namespace-guard/core-install.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "namespace-guard/legacy-account.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "namespace-guard/rc2-account.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/PACKAGE-INVENTORY.json",
+            "bytes": 19892015,
+            "sha256": "34033cb61a0a04d991db01f239c515e8a2f566ea43dbd95daab63ed98c491cec"
+          },
+          {
+            "path": "installer/RESULT.json",
+            "bytes": 9511,
+            "sha256": "cd2715f6ba2638ecacbf967e9ccc9ba84b75f231cc0d9ab026d2472453e1a14b"
+          },
+          {
+            "path": "installer/archive.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/compile-installer.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/info.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/restore.log",
+            "bytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          {
+            "path": "installer/sign-outer.log",
+            "bytes": 96,
+            "sha256": "cba9d9af39a2b27ad537168c7c9e6b7eda972d87d2cf6450e84a5d4852dd12f5"
+          },
+          {
+            "path": "installer/verify-outer.log",
+            "bytes": 184,
+            "sha256": "8b427d2f4d357e2cad28d48c9c7d0c328b2a3b560322b144c55a81f4bc8c4611"
+          },
+          {
+            "path": "installer/verify-restored.log",
+            "bytes": 202,
+            "sha256": "75d50d8900566b57bf5f795432d65895a9a1b48784c9def9cc6533a381910299"
+          },
+          {
+            "path": "installer-parts/PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139133902,
+        "name": "sep-rc2-macos-repaired-part-1-39133136770",
+        "bytes": 268436709,
+        "sha256": "f854c72a24ea3c1f10ad4c6f4884a5326a41c86e38efe2610a1380b2fba957f6",
+        "members": [
+          {
+            "path": "installer-part-1.bin",
+            "bytes": 268435456,
+            "sha256": "5ac29d8888c65ad6777d320b5fd9205347ec3eec92a3ded0ccd40f5f36af8446"
+          },
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139676396,
+        "name": "sep-rc2-macos-repaired-part-2-39133136770",
+        "bytes": 268436709,
+        "sha256": "a6ea5773ad77bed31867f7c9630b39547cc59d2dc131245cab8675adea00bc3c",
+        "members": [
+          {
+            "path": "installer-part-2.bin",
+            "bytes": 268435456,
+            "sha256": "5ccbb4442292d883e5a9d05d3bdad4b218e037a10bf66a93399dc1892e9a065d"
+          },
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139024412,
+        "name": "sep-rc2-macos-repaired-part-3-39133136770",
+        "bytes": 268436709,
+        "sha256": "b681d884b4c7be611c64e2e27b6bd571fae6b7609312eb880b7a6c8054f68988",
+        "members": [
+          {
+            "path": "installer-part-3.bin",
+            "bytes": 268435456,
+            "sha256": "eef7c6e9cf25e1155839e406aacf3d23c9f9c8b4ba9b70d18ed428943bddb4f8"
+          },
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          }
+        ]
+      },
+      {
+        "id": 12139487680,
+        "name": "sep-rc2-macos-repaired-part-4-39133136770",
+        "bytes": 56866798,
+        "sha256": "11c07c8dda64896750a0b92d87ec3299c3a1a946b4dbfc11fd0255892c0b4200",
+        "members": [
+          {
+            "path": "PARTS.json",
+            "bytes": 987,
+            "sha256": "4cc5d56c10dd3791f6bc0305a5d8da031ffd1e0aa2c5b1893aaf05e5d70482f4"
+          },
+          {
+            "path": "installer-part-4.bin",
+            "bytes": 56865545,
+            "sha256": "85760cad119a5f6b9bf77ed318f3e86ea32c6e13c34e7c8b9c878abbd7f8a6dd"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "RESULT.json",
+        "artifactId": 12139612132,
+        "member": "installer/RESULT.json"
+      },
+      {
+        "name": "PACKAGE-INVENTORY.json",
+        "artifactId": 12139612132,
+        "member": "installer/PACKAGE-INVENTORY.json"
+      }
+    ],
+    "parts": [
+      {
+        "index": 1,
+        "artifactId": 12139133902,
+        "member": "installer-part-1.bin",
+        "bytes": 268435456,
+        "sha256": "5ac29d8888c65ad6777d320b5fd9205347ec3eec92a3ded0ccd40f5f36af8446"
+      },
+      {
+        "index": 2,
+        "artifactId": 12139676396,
+        "member": "installer-part-2.bin",
+        "bytes": 268435456,
+        "sha256": "5ccbb4442292d883e5a9d05d3bdad4b218e037a10bf66a93399dc1892e9a065d"
+      },
+      {
+        "index": 3,
+        "artifactId": 12139024412,
+        "member": "installer-part-3.bin",
+        "bytes": 268435456,
+        "sha256": "eef7c6e9cf25e1155839e406aacf3d23c9f9c8b4ba9b70d18ed428943bddb4f8"
+      },
+      {
+        "index": 4,
+        "artifactId": 12139487680,
+        "member": "installer-part-4.bin",
+        "bytes": 56865545,
+        "sha256": "85760cad119a5f6b9bf77ed318f3e86ea32c6e13c34e7c8b9c878abbd7f8a6dd"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "product": "dsh-sep",
+  "distributionVersion": "0.2.1-beta.4",
+  "hostVersion": "0.2.1-rc.2",
+  "hostCommit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "prerelease": true,
+  "internalCandidateVersion": "0.2.1-beta.3-rc2-adapter.1",
+  "internalBuilds": {
+    "Windows": "RC2-preview-r3",
+    "Linux": "RC2-preview-r2",
+    "macOSInstaller": "RC2-r12; unchanged R9 application"
+  },
+  "freshInstallOnly": true,
+  "automaticUpdateEligible": false,
+  "dailyDeploymentPerformed": false,
+  "installers": [
+    {
+      "name": "DSH-SEP-Full-0.2.1-beta.4-Windows-x64.zip",
+      "size": 519849282,
+      "sha256": "8d09dfd24964444dca78ba0852ac4e028bb49ae0d0ef45325e11a3bd7ec058c1"
+    },
+    {
+      "name": "DSH-SEP-Only-0.2.1-beta.4-Windows-x64.zip",
+      "size": 429587818,
+      "sha256": "8d50e9b8b64b2969bb9f85bcebfdae7b26a260342fd21d20dd777c9a4dac4754"
+    },
+    {
+      "name": "DSH-SEP-0.2.1-beta.4-Linux-x64.tar.gz",
+      "size": 453019592,
+      "sha256": "e9693f34d1ec23eb1ec5928ce9e476048bda8024467f440074a436fa5ecdaf68"
+    },
+    {
+      "name": "DSH-SEP-0.2.1-beta.4-macOS-arm64.zip",
+      "size": 862171913,
+      "sha256": "1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77"
+    }
+  ],
+  "candidate": {
+    "path": "tools/rc2-adaptation/candidate",
+    "files": 445,
+    "tgzSha256": "854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5"
+  },
+  "sourceInputCommit": "d1498eb646afc5a9028515f90a355061bed262da",
+  "interpretation": "Public distribution identity does not replace immutable internal build IDs or authorize automatic installation. These four archive bytes were not rebuilt or edited during publication.",
+  "notVerified": [
+    "fullCrossPlatformCertification",
+    "paidProviders",
+    "currentPrivateLibraryContinuation",
+    "publicDownloadNativeConfirmAutomaticInstallSinglePositive",
+    "macOSNotarization",
+    "physicalInput"
+  ]
+}

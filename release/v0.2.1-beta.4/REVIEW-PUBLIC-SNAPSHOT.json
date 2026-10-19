@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "tests": 12,
+  "passed": 12,
+  "failed": 0,
+  "test": "tools/rc2-adaptation/review-followup/review_regressions.py",
+  "testSha256": "02f5d0d969aa3f0411ae95047f85c4011fed7aace3454dc37cf3c20df148c846",
+  "sourceInputCommit": "d1498eb646afc5a9028515f90a355061bed262da",
+  "greenLogSha256": "ddf971b1b282c3228f86f2b965f2fdfe5dd7baa376e3a6f5e081ddacdb10ed2f",
+  "historicalRed": {
+    "failed": 1,
+    "reason": "The fixed repository-link regression requires a direct historical Beta.3 link; current Beta.4 README originally linked only the historical overview. Added a clearly labelled historical release link, without changing the runtime or assertion.",
+    "logSha256": "fbdfd8fae3707ad675e546648d3479edc046aaf2d5e6b14d4df6bb0312591fb9"
+  },
+  "scope": "Offline review-followup process regression against public snapshot; local artifact paths resolve only to fixed prior verified files. No model, installation or desktop operation."
+}

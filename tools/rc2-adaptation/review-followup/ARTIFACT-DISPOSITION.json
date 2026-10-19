@@ -1,0 +1,34 @@
+{
+  "current": {
+    "schema": 1,
+    "status": "ready",
+    "readinessScope": "current exact candidate input only; not a public Release or daily-install approval",
+    "publicInstallable": false,
+    "path": "r4/dsh-sep-bundle-0.2.1-beta.3-rc2-adapter.1.tgz",
+    "sha256": "854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5",
+    "bytes": 1295509,
+    "obsoleteRootName": "dsh-sep-bundle-0.2.1-beta.3-rc2-adapter.1.tgz",
+    "historical": "history/pre-r4/SUPERSEDED.json"
+  },
+  "historical": {
+    "schema": 1,
+    "status": "superseded",
+    "installAllowed": false,
+    "originalPath": "D:\\AIData\\ProjectWork\\DSH\\rc2-adaptation-20261018-r1\\artifacts\\dsh-sep-bundle-0.2.1-beta.3-rc2-adapter.1.tgz",
+    "path": "D:\\AIData\\ProjectWork\\DSH\\rc2-adaptation-20261018-r1\\artifacts\\history\\pre-r4\\dsh-sep-bundle-0.2.1-beta.3-rc2-adapter.1.tgz",
+    "sha256": "f80533561f1c91beab7656f014fa56e05936489a94224cd1f9913766416c8ca8",
+    "bytes": 1294941,
+    "currentPath": "r4/dsh-sep-bundle-0.2.1-beta.3-rc2-adapter.1.tgz",
+    "currentSha256": "854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5",
+    "differentBodyMembers": [
+      "package/RC2-ADAPTATION.json",
+      "package/bundle/host/p1-policy/alpha2-subagent.js",
+      "package/bundle/lib/project-binding.js",
+      "package/bundle/lib/session-parent-proof.js"
+    ],
+    "scope": "historical unreviewed pre-r4 candidate; current reviewed security bridge differs",
+    "copyVerifiedBeforeOriginalRemoval": true,
+    "usageReview": "current builders, Mac pins, Linux input capture and CONTINUATION explicitly select r4 or embedded pinned copy; historical traces retain original paths",
+    "historicalLogsRewritten": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "scope": "current source bytes only; not an execution receipt",
+  "isExecutionEvidence": false,
+  "files": [
+    {
+      "path": "build-integrated-client.mjs",
+      "bytes": 5242,
+      "sha256": "1653f22726acecb1704ce34c4f338e298c9a9703182e4cb414d11d369ab9518a"
+    },
+    {
+      "path": "build-integrated-desktop.mjs",
+      "bytes": 7566,
+      "sha256": "93f751967d5df70294334abab2f8062691208680a7c036d6642d343f8c86568f"
+    },
+    {
+      "path": "daily-launcher.mjs",
+      "bytes": 4666,
+      "sha256": "76a4a75540da240c21607d4961f4287ae64127240bf631e83392b6be7514874c"
+    },
+    {
+      "path": "materialize-windows.mjs",
+      "bytes": 6342,
+      "sha256": "8b9e05d60aeeae6501177d589ce81c1d7dc456dd0681c3fe3123ed587bcfa1c1"
+    },
+    {
+      "path": "native-desktop.mjs",
+      "bytes": 3089,
+      "sha256": "3326cc8c608443d35f4999d364b9e8be62541c05ae8ba67a6627c84135e789d3"
+    },
+    {
+      "path": "native-host.mjs",
+      "bytes": 1977,
+      "sha256": "738e25e552cd4acf93ee24bc41a0c5c6f4fa6cb95446ea4be75719a2b48d9002"
+    },
+    {
+      "path": "ORIGIN-INITIAL.json",
+      "bytes": 2753,
+      "sha256": "ba90389a5cb0c15d6adfc1ab220d38315465b53009d43179e7a8bc61a4890c9c"
+    },
+    {
+      "path": "ORIGIN.json",
+      "bytes": 228,
+      "sha256": "e4c76e6d35a4e13834f4d8c5175603b1a1215ec8d1de696514ec2dcedc69212d"
+    },
+    {
+      "path": "posix-managed-desktop.mjs",
+      "bytes": 3745,
+      "sha256": "93a61de4f2af5bbb6d410a3a2b68599804c25c9ca91efa700a6389b9a71fe76d"
+    },
+    {
+      "path": "WINDOWS-DERIVATION.json",
+      "bytes": 1458,
+      "sha256": "0655fadcd31fff7846d74929649c262681ed966d10c8cb7274a503a0f0ce2414"
+    },
+    {
+      "path": "windows-package-seal.mjs",
+      "bytes": 3168,
+      "sha256": "1d1df5ed93ff6b33647f0d50e50432a5faaa7d754f9d651aa9ec28719591c075"
+    }
+  ]
+}

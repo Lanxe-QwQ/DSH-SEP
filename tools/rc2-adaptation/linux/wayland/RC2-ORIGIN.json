@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "scope": "test-only private compositor and synthetic profile inspection; no production source injection",
+  "origins": [
+    {
+      "file": "exercise-wayland.mjs",
+      "sourceSha256": "17c7836224a42cca8cac32beaba706243828d0a72fe0ce9b2fee3ba5b9135f63",
+      "transforms": [
+        {
+          "from": "/opt/dsh-sep-cross-platform/alpha2-portable-wayland-installed-r1",
+          "to": "/opt/dsh-sep-cross-platform/rc2-adaptation-20261018-r1/installed-r1",
+          "count": 1
+        },
+        {
+          "from": "^\\/opt\\/dsh-sep-cross-platform\\/alpha2-portable-wayland-actual-r\\d+$",
+          "to": "^\\/opt\\/dsh-sep-cross-platform\\/rc2-adaptation-20261018-r1\\/wayland-r\\d+$",
+          "count": 1
+        },
+        {
+          "from": "actual closeout.12 native Wayland",
+          "to": "actual RC.2 native Wayland",
+          "count": 1
+        }
+      ],
+      "resultSha256": "b2d0efbf8385f088e4ac4d0e23ed3e45156c2f3faccbfed7a1af982db21b0f47"
+    },
+    {
+      "file": "private-wayland.mjs",
+      "sourceSha256": "26d5b9229b0b4211154cc64fa98ae1d2d0fe5cde905a8e0d341e02f059540841",
+      "transforms": [
+        {
+          "from": "root.startsWith('/opt/dsh-sep-cross-platform/alpha2-portable-wayland-')",
+          "to": "root.startsWith('/opt/dsh-sep-cross-platform/rc2-adaptation-20261018-r1/wayland-r')",
+          "count": 1
+        }
+      ],
+      "resultSha256": "e5272cb698e0f14858089d46afed5e67b75a7ad36d4597ed4c1e677a7851bc3d"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "origins": [
+    {
+      "source": "tools/alpha2-desktop/daily-adaptation/build/daily-composition.mjs",
+      "sourceSha256": "de4eb9096a870ddd04ca78b99ae65d90d012b8135ec9bf549f1b91c66ab90dfa",
+      "output": "tools/rc2-adaptation/runtime/daily-composition.mjs",
+      "resultSha256": "04f4fe6c098558e03b153854a6f8f4f73deddbbf6bc0b5fac3cce7263b1d871f",
+      "transforms": [
+        {
+          "from": "0.2.1-alpha.2",
+          "to": "0.2.1-rc.2",
+          "count": 1
+        },
+        {
+          "from": "0.2.1-beta.3-alpha2-adapter.1",
+          "to": "0.2.1-beta.3-rc2-adapter.1",
+          "count": 1
+        },
+        {
+          "from": "dsh-sep-daily-alpha2-adapter",
+          "to": "dsh-sep-daily-rc2-adapter",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "tools/alpha2-desktop/daily-adaptation/build/daily-launcher.mjs",
+      "sourceSha256": "bf30ad3898e548276ac6c2ca99dfe9e8d26c5cd6423f77d48d641d9bc13247bb",
+      "output": "tools/rc2-adaptation/build/daily-launcher.mjs",
+      "resultSha256": "76a4a75540da240c21607d4961f4287ae64127240bf631e83392b6be7514874c",
+      "transforms": [
+        {
+          "from": "0.2.1-alpha.2",
+          "to": "0.2.1-rc.2",
+          "count": 5
+        },
+        {
+          "from": "0.2.1-beta.3-alpha2-adapter.1",
+          "to": "0.2.1-beta.3-rc2-adapter.1",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

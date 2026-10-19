@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "disposition": "retained-frozen-generated-input",
+  "path": "tools/rc2-adaptation/macos/runtime-helper.mjs",
+  "sha256": "261a337751be3e2f0f706b267cbb7bde5509a68c436b6f202ca39b2146ace4c2",
+  "moduleIdsAlsoContainPaths": true,
+  "commentLabels": 53,
+  "moduleFactoryLabels": 46,
+  "rebuilt": false,
+  "candidateAndPackagesChanged": false,
+  "classification": "nonsecret local build-stage labels; generated module keys as well as comments",
+  "notClaimed": "no exhaustive privacy/taint certification",
+  "futureBuildRequirement": "Generate with controlled relative source roots and new input/output pins; native revalidation before replacing the fixed helper. Removing comments alone is insufficient.",
+  "oneShotOperators": "retained as documented lab tooling, not product installation entries"
+}

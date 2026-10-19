@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "build-integrated-desktop.mjs",
+      "sourceSha256": "264224ac095eca59cbf525831f7ed31397d63cddd3646c5815e8c15ce0d20b13",
+      "resultSha256": "93f751967d5df70294334abab2f8062691208680a7c036d6642d343f8c86568f",
+      "transforms": [
+        {
+          "from": "join(base,'source-r1/desktop-source')",
+          "to": "join(base,'desktop-source')",
+          "count": 1
+        },
+        {
+          "from": "const official='D:/AIData/ProjectWork/DSH/alpha2-desktop-continuation-20261012/source-r1/desktop-source';",
+          "to": "const official=join(base,'official-source');",
+          "count": 1
+        },
+        {
+          "from": "join(base,'alpha2-runtime-r2')",
+          "to": "join(base,'host-rc2')",
+          "count": 1
+        },
+        {
+          "from": "'0.2.1-alpha.2'",
+          "to": "'0.2.1-rc.2'",
+          "count": 2
+        },
+        {
+          "from": "\"0.2.1-alpha.2\"",
+          "to": "\"0.2.1-rc.2\"",
+          "count": 1
+        },
+        {
+          "from": "const startup=resolve(process.env.SEP_DAILY_ADAPTER_SOURCE,'lib/daily-startup.mjs');",
+          "to": "const startup=resolve(base,'source/tools/rc2-adaptation/runtime/daily-startup.mjs');",
+          "count": 1
+        },
+        {
+          "from": "join(base,'native-desktop-r2/app/lib/welcome')",
+          "to": "'D:/AIData/ProjectWork/DSH/alpha2-windows-packages-20261015-r1/program/node_modules/@deepseek-ai/dsh-desktop/lib/welcome'",
+          "count": 1
+        },
+        {
+          "from": "versionHelper=resolve(process.env.SEP_DAILY_ADAPTER_SOURCE,'lib/installed-sep-version.mjs')",
+          "to": "versionHelper=resolve(base,'source/tools/alpha2-desktop/daily-adaptation/lib/installed-sep-version.mjs')",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "build-integrated-client.mjs",
+      "sourceSha256": "33aee21d4b7a6c71fcf9ffa673d79892f619518134426f0c2ca08b98d1346f0b",
+      "resultSha256": "c7d8adf2b24d66ae75a602d6edce66a909cde53f40d20403431fc3eccbc6c8f0",
+      "transforms": [
+        {
+          "from": "join(base,'source-r1/desktop-source')",
+          "to": "join(base,'desktop-source')",
+          "count": 1
+        },
+        {
+          "from": "const official='D:/AIData/ProjectWork/DSH/alpha2-desktop-continuation-20261012/source-r1/desktop-source';",
+          "to": "const official=join(base,'official-source');",
+          "count": 1
+        },
+        {
+          "from": "join(base,'alpha2-runtime-r2')",
+          "to": "join(base,'host-rc2')",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "status": "historical",
+  "supersededBy": "CURRENT-INPUTS.json"
+}

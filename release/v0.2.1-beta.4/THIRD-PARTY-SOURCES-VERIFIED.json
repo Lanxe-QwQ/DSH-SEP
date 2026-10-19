@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "asset": "THIRD-PARTY-SOURCES.zip",
+  "bytes": 251343178,
+  "sha256": "237d0644ab6280a6771dc79addd579a95050cb74321c7e5021829069c5cc896b",
+  "members": 1136,
+  "sourceAndLicenseRowsVerified": 1121,
+  "applicationArchivesModified": false,
+  "allProductThirdPartySourcesIncluded": false,
+  "binaryRebuildPerformed": false,
+  "historicalManifestUnmodified": true,
+  "matchingCurrentBinaries": [
+    {
+      "platform": "Windows Full",
+      "installerSha256": "8d09dfd24964444dca78ba0852ac4e028bb49ae0d0ef45325e11a3bd7ec058c1",
+      "packageSha256": "697b3d89590e3b988b51764bd22dfd6f4a1b35cd4eb12c664eca7987e8ee6115",
+      "versionsSha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4",
+      "dependencyVersionsMatched": 28
+    },
+    {
+      "platform": "Windows Only",
+      "installerSha256": "8d50e9b8b64b2969bb9f85bcebfdae7b26a260342fd21d20dd777c9a4dac4754",
+      "packageSha256": "697b3d89590e3b988b51764bd22dfd6f4a1b35cd4eb12c664eca7987e8ee6115",
+      "versionsSha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4",
+      "dependencyVersionsMatched": 28
+    },
+    {
+      "platform": "Linux",
+      "installerSha256": "e9693f34d1ec23eb1ec5928ce9e476048bda8024467f440074a436fa5ecdaf68",
+      "packageSha256": "2c5f6f9abf74c1492622d5dc4e4da056ab0712fd71de61e03a687c88b8cdab4e",
+      "versionsSha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4",
+      "dependencyVersionsMatched": 28
+    },
+    {
+      "platform": "macOS",
+      "installerSha256": "1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77",
+      "packageSha256": "394ecfe4e823ebf6ddc9f9b7155046aad1f0492300920323ddfb84cae85dbac0",
+      "versionsSha256": "e2611d5d854815a8b33c8a3d2ec649511a9596ccf16844e8eae7cf81e79881c4",
+      "dependencyVersionsMatched": 28
+    }
+  ],
+  "scope": "Exact sharp/libvips package metadata and dependency-version tables match the prior source companion; no claim of binary reproducible rebuild or exhaustive whole-product source coverage."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "scope": "current source bytes only; not an execution receipt",
+  "isExecutionEvidence": false,
+  "files": [
+    {
+      "path": "daily-composition.mjs",
+      "bytes": 9922,
+      "sha256": "04f4fe6c098558e03b153854a6f8f4f73deddbbf6bc0b5fac3cce7263b1d871f"
+    },
+    {
+      "path": "daily-presets.mjs",
+      "bytes": 1862,
+      "sha256": "a5b3afb458146a57acbffe015e1b311795b9d7310838b4cb5f427ca3b647acbf"
+    },
+    {
+      "path": "daily-startup.mjs",
+      "bytes": 9218,
+      "sha256": "5025538b420edc51243996e2c7854255a2389239a354a339edecdb6ad8e77a8c"
+    },
+    {
+      "path": "rc2-subagent.mjs",
+      "bytes": 2042,
+      "sha256": "9610c931eb47160cdc9f1fdd3879fe54e7619f4c6a77f1e518e29353cf74d47e"
+    }
+  ]
+}

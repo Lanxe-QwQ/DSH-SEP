@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "sourceSha256": "fa6054e2d5211c4d808e7d542859b35b7dc2b71abdf2a2e776f76f653d7d9578",
+  "resultSha256": "1cbf0da2001b7a73bc625834e05384b5810caca9d83806ae5baea8e3bc416877",
+  "manifestSha256": "a87480b33603863335d6ae144b11ffa3187799c0ab4ab27caaa05184ab4988d1",
+  "installed": "installed-r7",
+  "candidate": "payload-r7",
+  "reason": "actual RC.2 desktop identity and managed dependency closure"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "scope": "current review follow-up source and evidence byte index; logs are separate execution evidence",
+  "files": [
+    {
+      "path": "ARTIFACT-DISPOSITION.json",
+      "bytes": 1725,
+      "sha256": "a93dfd389769d4a935925baecc90222ffcaaf231132b15b20f43e2cfbe22f43a"
+    },
+    {
+      "path": "GENERATED-PATHS.json",
+      "bytes": 815,
+      "sha256": "c5416d32925b5491701f3e792abfbba58b381cec5d83469c070fa71f4260fc54"
+    },
+    {
+      "path": "rc2-review-closeout-docs.py",
+      "bytes": 7117,
+      "sha256": "c38d1684a44518b6bd25d8dfb7b3e3815dfdf7bff01d6edf28be046d4b2d7e88"
+    },
+    {
+      "path": "rc2-review-inspect.py",
+      "bytes": 916,
+      "sha256": "baf516d8f9cc93efec1ce396da01454f3f5079aae5894ece3bc15b9a1afde7b1"
+    },
+    {
+      "path": "rc2-review-quarantine.py",
+      "bytes": 3455,
+      "sha256": "467180a8b544df6b78b43a86ffcba3591218341c8a9c3fbb38c0e58ee70f61f3"
+    },
+    {
+      "path": "rc2-review-repository-repair.py",
+      "bytes": 3954,
+      "sha256": "de5e66fcf1b4520f32fddc5b57255740e78dca7ce37ce09229b6b7b28d878762"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4010,
+      "sha256": "1dfb96dd466cededcd0c48716b1f215af1d217540e99741567c75922993eddac"
+    },
+    {
+      "path": "REPOSITORY-RENAME.json",
+      "bytes": 1586,
+      "sha256": "2fae5de56ee3bd8560129e6fc9c1c88beb8f206811d1f85e46e653d2016b0d8d"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 2208,
+      "sha256": "33b3143c8223b018d059a02daaf87ef13bba0ce6e0cb20e84eb0f41b927b32a6"
+    },
+    {
+      "path": "review_regressions.py",
+      "bytes": 7081,
+      "sha256": "02f5d0d969aa3f0411ae95047f85c4011fed7aace3454dc37cf3c20df148c846"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+name: SEP RC2 fixed Mac candidate transport
+on:
+  push:
+    branches: [codex/sep-rc2-macos-20261018]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  transport:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.21.0
+      - name: Verify exact prior artifact and split without rebuilding
+        env:
+          SEP_ARTIFACT_TOKEN: ${{ github.token }}
+        run: node tools/rc2-adaptation/macos/split-fixed-artifact.mjs "$RUNNER_TEMP/rc2-transfer"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-transfer-part-1-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/rc2-transfer/part-1.bin
+            ${{ runner.temp }}/rc2-transfer/TRANSFER.json
+          if-no-files-found: error
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-transfer-part-2-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/rc2-transfer/part-2.bin
+            ${{ runner.temp }}/rc2-transfer/TRANSFER.json
+          if-no-files-found: error
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-transfer-part-3-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/rc2-transfer/part-3.bin
+            ${{ runner.temp }}/rc2-transfer/TRANSFER.json
+          if-no-files-found: error
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-transfer-part-4-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/rc2-transfer/part-4.bin
+            ${{ runner.temp }}/rc2-transfer/TRANSFER.json
+          if-no-files-found: error
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-transfer-part-5-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/rc2-transfer/part-5.bin
+            ${{ runner.temp }}/rc2-transfer/TRANSFER.json
+          if-no-files-found: error
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-transfer-part-6-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/rc2-transfer/part-6.bin
+            ${{ runner.temp }}/rc2-transfer/TRANSFER.json
+          if-no-files-found: error
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-rc2-macos-transfer-part-7-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/rc2-transfer/part-7.bin
+            ${{ runner.temp }}/rc2-transfer/TRANSFER.json
+          if-no-files-found: error
+          compression-level: 0

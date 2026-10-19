@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "scope": "archived one-shot stage operators used to assemble or cross-check the fixed D: generations; not portable product entry points and not automatic rerun authorization",
+  "originalBase": "C:\\Users\\PUBLIC_USER\\Documents\\ChatGPT\\DSH ENHANCEMENGT SUITE",
+  "files": [
+    {
+      "path": "rc2-windows-archive-r2.py",
+      "bytes": 3438,
+      "sha256": "ced57914d20f103b6c46aa71338ce0424d31869ee54151e03607c47bc600f120",
+      "originalExecutedSha256": "c06fbc3b09d47e91abf88fb1b98b32528a9ad0253f6d4cdc9108ff0a8b8090d9",
+      "originalExecutedBytes": 3434,
+      "publicTemplateDerivative": true
+    },
+    {
+      "path": "rc2-windows-delivery.py",
+      "bytes": 6124,
+      "sha256": "dff376c8470eecb387035a5ba0f9312e1080fa33b829b017bad8b7675708ca8c",
+      "originalExecutedSha256": "7ffcd13f9479b353bdeea4519b93bbc955c6fa13c1686465a6aa0d5638425339",
+      "originalExecutedBytes": 6114,
+      "publicTemplateDerivative": true
+    },
+    {
+      "path": "rc2-windows-desktop-r2.py",
+      "bytes": 1593,
+      "sha256": "901c41deb34b865f0ef8ed7d827d77aab926ff4f4acd502223727ae7c41e04b6"
+    },
+    {
+      "path": "rc2-windows-docs-final.py",
+      "bytes": 4471,
+      "sha256": "3a56276216148d83ff3d4ad78c957ee62848163ca1e177fc08b1b21e0b8a06d0"
+    },
+    {
+      "path": "rc2-windows-install-r2.py",
+      "bytes": 1261,
+      "sha256": "3e1350bfa4fc93e0b7a1b38e62c9a909d22eae07933f952d1dbd709c1a643eaa"
+    },
+    {
+      "path": "rc2-windows-package-inputs.py",
+      "bytes": 5771,
+      "sha256": "c5827824e137292df2a9dae02ad309403d289a165076d04700cb9d9c631ddb24"
+    },
+    {
+      "path": "rc2-windows-test-installed.py",
+      "bytes": 1187,
+      "sha256": "d82a0f1645310d9085a51af49c6f8a64587de4e36570ae78889821c9fb00f467"
+    },
+    {
+      "path": "rc2-linux-code-delta.py",
+      "bytes": 1538,
+      "sha256": "7d0f772563ecbcfdd208f3315b3df6924ca2b04d4b7fcd32d7f983f51e591497"
+    },
+    {
+      "path": "rc2-closeout-static-evidence.py",
+      "bytes": 5069,
+      "sha256": "1283f567f640d4b114893d62944fd12962ab714170dbb9d07051495c08e2c365"
+    },
+    {
+      "path": "rc2-index-current.py",
+      "bytes": 2359,
+      "sha256": "0c17b08af8c2df6c82329cb7b9b071ef4a58278af079f1321499a70108ed5cf1"
+    },
+    {
+      "path": "rc2-capture-review-source.py",
+      "bytes": 1387,
+      "sha256": "f3d49a0ce7a2cb7b36129be6129546eb32eeb3486bc0a874a46d37f3996ec43a"
+    },
+    {
+      "path": "rc2-windows-final-install-r4.py",
+      "bytes": 826,
+      "sha256": "d7e5b5929077b91e91e5d537a12babfeb7795cf150b505202526b29d6bfd6239"
+    }
+  ],
+  "publicExportDerivative": true,
+  "originalManifestSha256": "2384ac1758c91c2602d8c84aaf2edf6fef7e1c6f6981359cc8d4793368925cbe",
+  "verificationMeaning": "originalExecuted fields bind historical local inputs; current sha256/bytes bind declared public templates, not a claim that the templates were executed"
+}

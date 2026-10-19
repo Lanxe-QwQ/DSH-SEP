@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "scope": "Actual installed RC.2 frontend/renderer/layout/sidebar source binding, retaining original DOM readiness requirements; not a product modification",
+  "files": [
+    {
+      "path": "node_modules/@deepseek-ai/dsh-web-frontend/dist/assets/index-CN7NIWNw.js",
+      "bytes": 939867,
+      "sha256": "4bc914bfbb6adbdd63953a29f63835eb7127defd2a973149d64cdab489f1a9a5"
+    },
+    {
+      "path": "node_modules/@deepseek-ai/dsh-client-ui-renderer/lib/client.js",
+      "bytes": 78299,
+      "sha256": "dbdb3f26bfbc1d143bc8a0eed5982a2507c4f0cf8027e7c170f3bed3604be356"
+    },
+    {
+      "path": "node_modules/@deepseek-ai/dsh-client-ui-layout/lib/client.js",
+      "bytes": 32825,
+      "sha256": "686fb83c91c8ff8d03c365bb666ef34dacc3dd110eb768deacbc7998b885c8c1"
+    },
+    {
+      "path": "node_modules/@deepseek-ai/dsh-client-ui-sidebar/lib/client.js",
+      "bytes": 31995,
+      "sha256": "4d4535b9ac9160e13067b1f8a8510d158da2aaf6a15191b418a5956261ff9b3e"
+    }
+  ],
+  "officialCommit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "historicalInputSha256": "8086b1451952a1fb7d23c7d5b918aef29e653ce803449e90b22a91503e2dad65"
+}

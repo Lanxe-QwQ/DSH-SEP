@@ -1,0 +1,6 @@
+{
+  "schema": 2,
+  "scope": "initial transformation history plus current byte bindings; historical records are not a current re-execution claim",
+  "historical": "ORIGIN-INITIAL.json",
+  "current": "CURRENT-INPUTS.json"
+}

@@ -1,189 +1,133 @@
 {
-  "schema": 1,
+  "schema": 2,
   "status": "pass",
-  "sourceCommit": "ac69bda3ca63a3bed44780b7804cf090156514de",
-  "entriesScanned": 19498,
-  "bytesScanned": 224729168,
+  "distributionVersion": "0.2.1-beta.4",
+  "inputCommit": "d1498eb646afc5a9028515f90a355061bed262da",
+  "entriesScanned": 20493,
+  "nestedArchiveMembersScanned": 17247,
+  "bytesScanned": 458327955,
+  "fileSetSha256": "f4a5e6c0daafcd111ca319b3b9ddaafe4dc77baeabd1c21879871411250cf0d0",
+  "inventoryRule": "sorted relative UTF8 path + NUL + content SHA256 ASCII + NUL; excludes only current PUBLIC-SOURCE-SCAN.json to avoid self-reference",
   "rules": [
+    "known-account",
     "account-home",
-    "personal-wechat",
+    "personal-messenger",
     "private-device-ip",
     "provider-key",
     "github-token",
-    "private-key-block"
+    "private-key-header"
   ],
   "unexpectedFindings": [],
-  "allowlist": {
-    "reason": "Exact unchanged upstream synthetic credential in test: never puts a credential value in a diagnostic. Used only in intentionally malformed test YAML; no provider call.",
-    "fileSha256": "330f94fd2e7a79afaafcad5832f83c60d97e4ad1d630a364438f209c9d0b5495",
-    "matches": [
-      {
-        "path": "source/packages/credentials/credentials-local/tests/local.spec.ts",
-        "rule": "provider-key",
-        "matchSha256": "5b9a77e8eb2d1dde8444837e9086c12fa832d2c575a2aee076b5602908bfa5c4",
-        "lineInNormalizedBytes": 286
-      }
-    ]
-  },
-  "genericBuildLayoutFiles": 242,
-  "genericBuildLayoutInterpretation": "D:/AIData build roots retained by explicit publication decision; not account identity.",
-  "transformedOperatorSyntaxChecks": [
+  "exactNonsecretAllowlist": [
     {
-      "path": "tools/alpha2-adaptation/verify-candidate.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "release/v0.2.1-beta.4/MAC-PRIVACY-REVIEW-r12.json",
+      "rule": "provider-key",
+      "offset": 2197,
+      "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6",
+      "fileSha256": "b5030d0004eae4224260a0f15007f20ea7db91ecc4b625da126ddcc05e58394d",
+      "followingBytesHex": "220d0a202020207d",
+      "classification": "exact bound Mac privacy-review record quoting the independently verified public Shiki grammar identifier"
     },
     {
-      "path": "tools/alpha2-macos/bootstrap.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "release/v0.2.1-beta.4/MAC-PRIVACY-REVIEW-r12.json",
+      "rule": "provider-key",
+      "offset": 4443,
+      "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6",
+      "fileSha256": "b5030d0004eae4224260a0f15007f20ea7db91ecc4b625da126ddcc05e58394d",
+      "followingBytesHex": "220d0a202020207d",
+      "classification": "exact bound Mac privacy-review record quoting the independently verified public Shiki grammar identifier"
     },
     {
-      "path": "tools/alpha2-macos/seal-native.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "source/apps/desktop/tests/welcome-flow.e2e.ts",
+      "rule": "provider-key",
+      "offset": 8329,
+      "matchSha256": "0bcfaaff12c71f9bd0a6c337c3a1c93170c061fcfa7dd20f1a764e843bd07c63",
+      "fileSha256": "4251fd969048369d7340a95ca65a7c860d1ac048e4b3f5cac8f32581c571f6f0",
+      "followingBytesHex": "2729292e746f4571",
+      "classification": "upstream local onboarding storage fixture, no real credential"
     },
     {
-      "path": "tools/alpha2-portable/finish-vision-sync.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "source/packages/credentials/credentials-local/tests/local.spec.ts",
+      "rule": "provider-key",
+      "offset": 15297,
+      "matchSha256": "5b9a77e8eb2d1dde8444837e9086c12fa832d2c575a2aee076b5602908bfa5c4",
+      "fileSha256": "330f94fd2e7a79afaafcad5832f83c60d97e4ad1d630a364438f209c9d0b5495",
+      "followingBytesHex": "270a202020202f2f",
+      "classification": "frozen upstream synthetic malformed-YAML credential test; no provider call"
     },
     {
-      "path": "tools/alpha2-portable/seal-attachment-ui.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "source/packages/session/session-telemetry-otel/tests/fixtures/driver.ts",
+      "rule": "provider-key",
+      "offset": 2047,
+      "matchSha256": "2271b5c070f2aab92fc80415e1e3c27ac1a7c96bf034018fa18a7e42b8d80d50",
+      "fileSha256": "e0066bc0e7bb35f6cc23f580d3688adc5c9c20b02e73f805488cbd06d575c92b",
+      "followingBytesHex": "27207d290a202020",
+      "classification": "upstream mock collector/model telemetry redaction fixture"
     },
     {
-      "path": "tools/alpha2-portable/seal-certification.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "source/packages/session/session-telemetry-otel/tests/loader-composition.e2e.ts",
+      "rule": "provider-key",
+      "offset": 863,
+      "matchSha256": "2271b5c070f2aab92fc80415e1e3c27ac1a7c96bf034018fa18a7e42b8d80d50",
+      "fileSha256": "168e28ac108cfff527582d3a7498c4a73161173ed84183654453ea94627dc7dc",
+      "followingBytesHex": "270a636f6e737420",
+      "classification": "upstream explicitly named fixture secret used with a mock model"
     },
     {
-      "path": "tools/alpha2-portable/seal-closeout.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "tools/rc2-adaptation/operators/closeout/rc2-mac-privacy-review-r12.py",
+      "rule": "private-key-header",
+      "offset": 904,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+      "fileSha256": "644337baaed1ca197b3a197e05aafba6b58417c401136b3ee2f8f43ca258caa7",
+      "followingBytesHex": "273b617373657274",
+      "classification": "quoted PEM header format marker in exact privacy-review script; no key body"
     },
     {
-      "path": "tools/alpha2-portable/seal-context.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "upstream/DeepSeek-Harness-0.2.1-rc.2-source.zip!/deepseek-harness-687f282e8625c6b8d11ff58211a90524be2e4317/apps/desktop/tests/welcome-flow.e2e.ts",
+      "rule": "provider-key",
+      "offset": 8329,
+      "matchSha256": "0bcfaaff12c71f9bd0a6c337c3a1c93170c061fcfa7dd20f1a764e843bd07c63",
+      "fileSha256": "4251fd969048369d7340a95ca65a7c860d1ac048e4b3f5cac8f32581c571f6f0",
+      "followingBytesHex": "2729292e746f4571",
+      "classification": "upstream local onboarding storage fixture, no real credential"
     },
     {
-      "path": "tools/alpha2-portable/seal-desktop-continuation.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "upstream/DeepSeek-Harness-0.2.1-rc.2-source.zip!/deepseek-harness-687f282e8625c6b8d11ff58211a90524be2e4317/packages/client/ui-secret-mask/tests/secret-rule.client.spec.ts",
+      "rule": "provider-key",
+      "offset": 3362,
+      "matchSha256": "5108e7f9281ed23cf62eb0324ec9da3bec5cf08bee6ab2373714cac34ee91350",
+      "fileSha256": "b38430472e39132d89dd301d85c07b96f3bb624d640cde3e4bc5403aa595cf3c",
+      "followingBytesHex": "275d2c0a20202020",
+      "classification": "upstream negative recognizer test for a hyphenated identifier"
     },
     {
-      "path": "tools/alpha2-portable/seal-documents.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "upstream/DeepSeek-Harness-0.2.1-rc.2-source.zip!/deepseek-harness-687f282e8625c6b8d11ff58211a90524be2e4317/packages/credentials/credentials-local/tests/local.spec.ts",
+      "rule": "provider-key",
+      "offset": 16024,
+      "matchSha256": "5b9a77e8eb2d1dde8444837e9086c12fa832d2c575a2aee076b5602908bfa5c4",
+      "fileSha256": "10afdea76a5c0e277de17f5eb3fd89d1207525f70f6dbeb16eb1bf4e2e33e565",
+      "followingBytesHex": "270a202020202f2f",
+      "classification": "exact official RC2 malformed-YAML credential test fixture"
     },
     {
-      "path": "tools/alpha2-portable/seal-file-attachments.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "upstream/DeepSeek-Harness-0.2.1-rc.2-source.zip!/deepseek-harness-687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-telemetry-otel/tests/fixtures/driver.ts",
+      "rule": "provider-key",
+      "offset": 2047,
+      "matchSha256": "2271b5c070f2aab92fc80415e1e3c27ac1a7c96bf034018fa18a7e42b8d80d50",
+      "fileSha256": "e0066bc0e7bb35f6cc23f580d3688adc5c9c20b02e73f805488cbd06d575c92b",
+      "followingBytesHex": "27207d290a202020",
+      "classification": "upstream mock collector/model telemetry redaction fixture"
     },
     {
-      "path": "tools/alpha2-portable/seal-finalization.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-portable/seal-profile.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-portable/seal-review.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-portable/seal-sep.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-portable/seal-transactions.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-portable/seal-validation.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-portable/seal-vision.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-portable/wayland-certification/seal-local.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-windows/build/checkpoint-source.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/alpha2-windows/build/resume-checkpoint.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/daily-adaptation/build/materialize-integrated-runtime.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/daily-adaptation/build/prepare-daily-candidate.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/daily-adaptation/tests/prepare-managed-desktop.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "tools/daily-adaptation/tests/private-session-readonly.mjs",
-      "exitCode": 0,
-      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "path": "upstream/DeepSeek-Harness-0.2.1-rc.2-source.zip!/deepseek-harness-687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-telemetry-otel/tests/loader-composition.e2e.ts",
+      "rule": "provider-key",
+      "offset": 863,
+      "matchSha256": "2271b5c070f2aab92fc80415e1e3c27ac1a7c96bf034018fa18a7e42b8d80d50",
+      "fileSha256": "168e28ac108cfff527582d3a7498c4a73161173ed84183654453ea94627dc7dc",
+      "followingBytesHex": "270a636f6e737420",
+      "classification": "upstream explicitly named fixture secret used with a mock model"
     }
   ],
-  "runtimeAndCaptureChanged": false,
-  "limits": [
-    "Format-based read-only scan; not a universal secrets detector.",
-    "Windows symlink blobs remain link-text placeholders; publication index/archive must restore Git mode120000.",
-    "Historical evidence hashes are original and were not rewritten to match derivatives.",
-    "No platform runtime or installed package testing performed by this export."
-  ]
+  "comprehensivePrivacyAudit": false,
+  "scope": "Defined raw-byte signatures plus ZIP/TAR/GZIP members through depth 3; includes official RC.2 source ZIP and captured archives. No Git history or untracked inputs. Not a semantic, arbitrary encoding or exhaustive binary audit."
 }

@@ -1,172 +1,225 @@
 {
-  "schema": 1,
-  "baseExportManifestSha256": "675661b277f633cb1db554022bb505d9406f68810bcec770025a0bad4817a3c0",
-  "distributionVersion": "0.2.1-beta.3",
+  "schema": 3,
+  "distributionVersion": "0.2.1-beta.4",
+  "sourceInputCommit": "d1498eb646afc5a9028515f90a355061bed262da",
+  "exportedInventorySha256": "9b27246775e30533728e1a6b364a6091d0f5e54941192c8f5647ffcabeffe455",
   "changes": [
     {
-      "path": "docs/PRE-BETA3-README.md",
-      "beforeSha256": null,
-      "sha256": "4282e51b54dd3c55bd4bdbfd846eb2a87c7fdf91f538f40dfc96b9af5d46d1f5",
-      "bytes": 10875,
-      "reason": "Preserve historical README bytes under an explicitly historical entry."
+      "path": "docs/DOCS_INDEX.md",
+      "exportedSha256": "bc3b937e59398f42e85abbbc5bfe9c8bae6c398f53ac7693a2ebfd9686a7bd3a",
+      "sha256": "1689242510abf42db75e602ea1c1dede44f9e63329d2b17d86ef1d947ad20778",
+      "bytes": 1044
+    },
+    {
+      "path": "docs/historical-beta3-source/PUBLIC-SOURCE-ORIGIN.json",
+      "exportedSha256": null,
+      "sha256": "a98892368e00e928a57f1fd8361358dbb613b67e59e99dff41fb8286eaa263ad",
+      "bytes": 1494
+    },
+    {
+      "path": "docs/historical-beta3-source/PUBLIC-SOURCE-SCAN.json",
+      "exportedSha256": null,
+      "sha256": "7dbb37010b52b8df2eda91a5245651784328fb8e3aa2b119ce8fe14c86618e84",
+      "bytes": 8421
+    },
+    {
+      "path": "docs/historical-beta3-source/PUBLICATION-OVERLAY.json",
+      "exportedSha256": null,
+      "sha256": "7c7c57afb31c243bd3d5336685d2648bc553258ed7e8f1a66e63b65cdbea1837",
+      "bytes": 7418
+    },
+    {
+      "path": "docs/historical-beta3-source/SOURCE-EXPORT-MANIFEST.json",
+      "exportedSha256": null,
+      "sha256": "675661b277f633cb1db554022bb505d9406f68810bcec770025a0bad4817a3c0",
+      "bytes": 9074591
+    },
+    {
+      "path": "docs/historical-beta3-source/SOURCE-PROVENANCE.json",
+      "exportedSha256": null,
+      "sha256": "902604bae2fe93ea572b85e95d9627263df14d2f8c55fcbf6cdf1d6a71111e8f",
+      "bytes": 610
+    },
+    {
+      "path": "docs/historical-beta3-source/TRANSFORMS.json",
+      "exportedSha256": null,
+      "sha256": "b297571b943450882d6fc8e14fd7e2e0bdfa61667072ff4f19e412dbf3f03b63",
+      "bytes": 22326
+    },
+    {
+      "path": "docs/historical-beta3-source/VERIFICATION-RESULT.json",
+      "exportedSha256": null,
+      "sha256": "3d1e4debdbce74afa0974091b9638dca1c3021b6eb073df90607b2d7617e4700",
+      "bytes": 1041
+    },
+    {
+      "path": "docs/PRE-BETA4-README.md",
+      "exportedSha256": null,
+      "sha256": "8e6877d0045e7e667eba4ec30b054ffd519603ee9dfadb134c42dbad11534e81",
+      "bytes": 5370
+    },
+    {
+      "path": "PUBLIC-SOURCE-ORIGIN.json",
+      "exportedSha256": "a98892368e00e928a57f1fd8361358dbb613b67e59e99dff41fb8286eaa263ad",
+      "sha256": "94818aa786f09b3a67be730e5b912c0ca2c492749e0211d39c6d1b8499a36a6d",
+      "bytes": 516
     },
     {
       "path": "README.md",
-      "beforeSha256": "4282e51b54dd3c55bd4bdbfd846eb2a87c7fdf91f538f40dfc96b9af5d46d1f5",
-      "sha256": "946666c2607d9dc98b89e7f308b4ccbef1f29dbcf8d018d9f5f9d9aa0ca014ef",
-      "bytes": 4585,
-      "reason": "Make current three-platform Beta download and scope visible first."
+      "exportedSha256": "3e837fbda33f4c7220160b6de28b32180d3bd6ef0af61743098e3a883b0aca6e",
+      "sha256": "b0378d2f024b96760feb20d01bbccff815d946d6c999ffaf4cf71a5019b568a6",
+      "bytes": 4049
     },
     {
-      "path": "release/v0.2.1-beta.3/Windows.md",
-      "beforeSha256": null,
-      "sha256": "136a6ca6ec361b264dd5da751c737a808d9db33a34c81e96c42079a50382ed34",
-      "bytes": 4876,
-      "reason": "Public current-release documentation or sealed installer binding."
+      "path": "release/v0.2.1-beta.4/ASSET-BINDINGS.json",
+      "exportedSha256": null,
+      "sha256": "80f4995db976de6704004800c514a92ab33c4301c8f46421ed0dd30ff38a6941",
+      "bytes": 1917
     },
     {
-      "path": "release/v0.2.1-beta.3/Linux.md",
-      "beforeSha256": null,
-      "sha256": "ad86ca6bb31051600f83388580d005df46147811a652f4b217f4e42200fa9252",
-      "bytes": 5979,
-      "reason": "Public current-release documentation or sealed installer binding."
+      "path": "release/v0.2.1-beta.4/BINARY-PRIVACY-RAW.json",
+      "exportedSha256": null,
+      "sha256": "1ebddbcbd0bfebee52a9e40fcf8268b4ea50acb263cd4ea660dcf505dc8ec2ff",
+      "bytes": 72265
     },
     {
-      "path": "release/v0.2.1-beta.3/macOS.md",
-      "beforeSha256": null,
-      "sha256": "23794328d7f233d55f9453eb4b0001d7cf9d01cd6d7691fbee6f3899539bb837",
-      "bytes": 4627,
-      "reason": "Public current-release documentation or sealed installer binding."
+      "path": "release/v0.2.1-beta.4/Linux.md",
+      "exportedSha256": null,
+      "sha256": "a9e43d33e0ea8a37641d78b6eea54548dd433fdc69156828ef334c3889433e36",
+      "bytes": 1394
     },
     {
-      "path": "release/v0.2.1-beta.3/RELEASE-NOTES.md",
-      "beforeSha256": null,
-      "sha256": "dc31bbc8f351704d0ec07f9a2af39dc7b7fd7adf8a4bbfcc8d50c634a9d4e158",
-      "bytes": 4492,
-      "reason": "Public current-release documentation or sealed installer binding."
+      "path": "release/v0.2.1-beta.4/MAC-PRIVACY-REVIEW-r12.json",
+      "exportedSha256": null,
+      "sha256": "b5030d0004eae4224260a0f15007f20ea7db91ecc4b625da126ddcc05e58394d",
+      "bytes": 5186
     },
     {
-      "path": "release/v0.2.1-beta.3/UPGRADING.md",
-      "beforeSha256": null,
-      "sha256": "132779ad968df54ed157f98c2280a67ada6adf6042b4b6c0901b06cf7c3cf797",
-      "bytes": 1241,
-      "reason": "Public current-release documentation or sealed installer binding."
+      "path": "release/v0.2.1-beta.4/MAC-PRIVACY-SCAN-r12.json",
+      "exportedSha256": null,
+      "sha256": "8fe9276b59ced5b4d8d151e59cc7448354acbe58d3edf42bbb4a0cbf183bb41c",
+      "bytes": 2796
     },
     {
-      "path": "release/v0.2.1-beta.3/TECHNICAL-NOTES.md",
-      "beforeSha256": null,
-      "sha256": "7758128646e8580828bb923e3eb5d4224758d8af052b8626e40d70100a17dae7",
-      "bytes": 2487,
-      "reason": "Public current-release documentation or sealed installer binding."
+      "path": "release/v0.2.1-beta.4/macOS.md",
+      "exportedSha256": null,
+      "sha256": "490de3a406fcf690aac8515ab51a03db3010bb155f0095c1e4024ba4e43c0366",
+      "bytes": 1641
     },
     {
-      "path": "release/v0.2.1-beta.3/ASSET-BINDINGS.json",
-      "beforeSha256": null,
-      "sha256": "1da5ae214ed85825de7eef179b392c6384fed00d70f39e15cc546cad36ea68e8",
-      "bytes": 2711,
-      "reason": "Public current-release documentation or sealed installer binding."
+      "path": "release/v0.2.1-beta.4/PUBLICATION-PRIVACY.json",
+      "exportedSha256": null,
+      "sha256": "6a3c08619dfe492cf94e97fa463ff8a16e122b87bffd711c759be1ea4389fa69",
+      "bytes": 102157
     },
     {
-      "path": "release/v0.2.1-beta.3/THIRD-PARTY.md",
-      "beforeSha256": null,
-      "sha256": "5fb51fff98b0935d1652c3229e86ce7977c46efef460fe40c9b1f8b24fbb2c34",
-      "bytes": 4602,
-      "reason": "Preserve third-party licensing scope and provide matching source attachment."
+      "path": "release/v0.2.1-beta.4/RELEASE-NOTES.md",
+      "exportedSha256": null,
+      "sha256": "f3e9029281ec32a07e7879dbef8767d1d71cf43ac6c2d20a4995eb564600e78c",
+      "bytes": 2473
     },
     {
-      "path": "release/v0.2.1-beta.3/THIRD-PARTY-SOURCE-MANIFEST.json",
-      "beforeSha256": null,
+      "path": "release/v0.2.1-beta.4/REVIEW-PUBLIC-SNAPSHOT.json",
+      "exportedSha256": null,
+      "sha256": "1b9c2c6f0686cd37255b760afea2406c07a6ceca080c28fbcdc21831a889e38c",
+      "bytes": 990
+    },
+    {
+      "path": "release/v0.2.1-beta.4/SOURCE-GUIDE.md",
+      "exportedSha256": null,
+      "sha256": "1d61ce4825096e0377890272419f935f545a0ceb6add9dcd42769f1907752212",
+      "bytes": 1822
+    },
+    {
+      "path": "release/v0.2.1-beta.4/TECHNICAL-NOTES.md",
+      "exportedSha256": null,
+      "sha256": "08de615cb43d2ccf695fa6239a2d8081fe8e1b8b227dfa53f86d08049380ac90",
+      "bytes": 2410
+    },
+    {
+      "path": "release/v0.2.1-beta.4/THIRD-PARTY-SOURCE-MANIFEST.json",
+      "exportedSha256": null,
       "sha256": "c6cf0371a1554382f844006084f481c5f27055668cdbfdba2969c32ad5249a0f",
-      "bytes": 406629,
-      "reason": "Exact upstream source and license inventory; no local credentials."
+      "bytes": 406629
     },
     {
-      "path": "release/v0.2.1-beta.3/THIRD-PARTY-SOURCES-VERIFIED.json",
-      "beforeSha256": null,
-      "sha256": "fd9c200b340673bf50d122b3cb94bde5d16692f84a48d7c2695c2e6d0132d273",
-      "bytes": 428,
-      "reason": "Bind verified companion ZIP bytes."
+      "path": "release/v0.2.1-beta.4/THIRD-PARTY-SOURCES-VERIFIED.json",
+      "exportedSha256": null,
+      "sha256": "c62dc984b9318ec2f7baea6b58e543bdb197733b1c8ff431cb5168e2437cbdb6",
+      "bytes": 2065
+    },
+    {
+      "path": "release/v0.2.1-beta.4/THIRD-PARTY.md",
+      "exportedSha256": null,
+      "sha256": "f23e94d1ded7ab101c4338389fdbc54d3f9b6cb98622d3dc706af88a87de7a0c",
+      "bytes": 1116
+    },
+    {
+      "path": "release/v0.2.1-beta.4/UPGRADING.md",
+      "exportedSha256": null,
+      "sha256": "17d0e9582ccbb47e50127af7d7d536d7c258699bf867916285459ce66aa3ce8b",
+      "bytes": 1081
+    },
+    {
+      "path": "release/v0.2.1-beta.4/WINDOWS-BETA3-EXCEPTION-REFERENCE.json",
+      "exportedSha256": null,
+      "sha256": "1b620e79cf525aea0a829ebfc2f398d85c3a4f944093e5aed3b9b28ebdfd4004",
+      "bytes": 227809
+    },
+    {
+      "path": "release/v0.2.1-beta.4/Windows.md",
+      "exportedSha256": null,
+      "sha256": "477b06cf0aa8552da1a94a8d8b306a132a1f44f237416c0d1d18c7126b03ed4a",
+      "bytes": 2422
     },
     {
       "path": "RELEASE-STATUS.json",
-      "beforeSha256": "87342a9f95e87a436f6fd024f88d2efd15d3da04bb2eb41f736ae99ea4a690db",
-      "sha256": "6403dedf54cb62afb50e31e566f4dd1045187ca4dfeae783d6c337d80a600295",
-      "bytes": 777,
-      "reason": "Replace historical Beta.2 latest status with explicit Beta.3 preparation, no publication claim yet."
+      "exportedSha256": "a55826a4d8d6b6dfd978e2489f81dcf767877662bc724143c7012f12b9953451",
+      "sha256": "0997768d25ed2d8f5b80d0723ea6b1b153fead1e0a895343ddd9e48e6bbf86d3",
+      "bytes": 562
+    },
+    {
+      "path": "SOURCE-EXPORT-MANIFEST.json",
+      "exportedSha256": "675661b277f633cb1db554022bb505d9406f68810bcec770025a0bad4817a3c0",
+      "sha256": "9b27246775e30533728e1a6b364a6091d0f5e54941192c8f5647ffcabeffe455",
+      "bytes": 8284666
     },
     {
       "path": "SOURCE-PROVENANCE.json",
-      "beforeSha256": "c96599ac0fee6177a9599318d214a36fc2395164a2a01af165f8f6c3b018c924",
-      "sha256": "902604bae2fe93ea572b85e95d9627263df14d2f8c55fcbf6cdf1d6a71111e8f",
-      "bytes": 610,
-      "reason": "Expose current source provenance instead of old Beta.2 status."
+      "exportedSha256": "902604bae2fe93ea572b85e95d9627263df14d2f8c55fcbf6cdf1d6a71111e8f",
+      "sha256": "295a1a510d5388e805e495d714ec91c634eb9f8d69bd7fe3ec48372934f5a42d",
+      "bytes": 405
     },
     {
-      "path": "docs/DOCS_INDEX.md",
-      "beforeSha256": "1d47b72ff422e18a4ec2a7946416564206f05466f8d289b16ead8e2e6e0047c1",
-      "sha256": "bc3b937e59398f42e85abbbc5bfe9c8bae6c398f53ac7693a2ebfd9686a7bd3a",
-      "bytes": 958,
-      "reason": "Put current platform docs before historical documents."
-    }
-  ],
-  "runtimeCodeModified": false,
-  "archivesModified": false,
-  "publicationFinalDocumentationChanges": [
-    {
-      "path": "LICENSING.md",
-      "beforeSha256": "79dc2e893c2275d0c705fbc936673d4d97395e46a76608fa20b85c9bb0ecb6ec",
-      "sha256": "49e868383ba616d395dee4e314f26d45848e69c74c93a2ab0c9eefbf056a3e5c",
-      "bytes": 466,
-      "reason": "Point current licensing to the actual cross-platform assets."
+      "path": "TRANSFORMS.json",
+      "exportedSha256": "b297571b943450882d6fc8e14fd7e2e0bdfa61667072ff4f19e412dbf3f03b63",
+      "sha256": "38929204fa79adc64d9a56a80b997a4156409f1e969d243310abcd8b1263ea11",
+      "bytes": 5944
     },
     {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "beforeSha256": "f336c241abb8e269991ac3859c316975910890c9b09fa70b7ba84a810f290ce3",
-      "sha256": "414efac7a6ad3695d213af49478d1e100651c35bd39ab9b9e880a70eeb760b44",
-      "bytes": 706,
-      "reason": "Distinguish current notices from historical Windows component inventories."
+      "path": "upstream/DeepSeek-Harness-0.2.1-rc.2-source.zip",
+      "exportedSha256": null,
+      "sha256": "828bbbebaf507d2b1fc335a608e1c8174e2dd5c5c80ebb64d5146ddc5ecb511f",
+      "bytes": 46562322
     },
     {
-      "path": "docs/LICENSING.md",
-      "beforeSha256": "9d41030b55c14d77a5f3a03f16b72a50fb367c3487ab419ff3b11cd75249564f",
-      "sha256": "66268f7578b2adcbcd990111443a4fd0fa8cf12e04b9c93257904e7f64827fed",
-      "bytes": 3061,
-      "reason": "Mark old version-specific license inventories as historical."
-    },
-    {
-      "path": "docs/THIRD_PARTY_NOTICES.md",
-      "beforeSha256": "27b91de0cf052bb06c6a48d24bf462bf37fdf5096b9427bbb188243544d8cb30",
-      "sha256": "a73cc7d4e5a7abc526fc72ad9bcefe5df9da3c7c2bebd5761b36d600e8a971f5",
-      "bytes": 3417,
-      "reason": "Mark old version-specific license inventories as historical."
+      "path": "upstream/RC2-SOURCE-ORIGIN.json",
+      "exportedSha256": null,
+      "sha256": "71c90e26d9924aba79bb3cc0ecb1700db236664e331a90afe2e43466b82b79d8",
+      "bytes": 679
     },
     {
       "path": "VERIFICATION-RESULT.json",
-      "beforeSha256": "6ba2a5e2e4ff097904b68b3171ca5d8b94ca135bd2baf347fa84a7a1acdbf697",
-      "sha256": "da7e99aab22225599be82ae0a71fd72388cce451fd45dd0858eafe162ef035db",
-      "bytes": 978,
-      "reason": "Replace root historical Beta.2 verification with accurately scoped Beta.3 assembly status."
-    },
-    {
-      "path": "release/v0.2.1-beta.3/MAC-PUBLICATION-PRIVACY.json",
-      "beforeSha256": null,
-      "sha256": "b39a9c0b188c4856ff367c3c42daba0d8b008bb45ca40af976f1bf29e10c8cdb",
-      "bytes": 53240,
-      "reason": "Publish the bounded privacy or actual Windows Full/Only dependency correspondence check."
-    },
-    {
-      "path": "release/v0.2.1-beta.3/WINDOWS-ONLY-SHARP-COVERAGE.json",
-      "beforeSha256": null,
-      "sha256": "17359ed7254acbecc733e995f651612d3c0c42b2638bac43236a77181752b421",
-      "bytes": 3177,
-      "reason": "Publish the bounded privacy or actual Windows Full/Only dependency correspondence check."
-    },
-    {
-      "path": "release/v0.2.1-beta.3/THIRD-PARTY.md",
-      "beforeSha256": "5fb51fff98b0935d1652c3229e86ce7977c46efef460fe40c9b1f8b24fbb2c34",
-      "sha256": "0383e33f030824f1cb6f644d687719b9f867fb17bfdb0742218d3031915c5b07",
-      "bytes": 4677,
-      "reason": "Clarify three platform binary sets versus four installers and bind Only directly."
+      "exportedSha256": "3d1e4debdbce74afa0974091b9638dca1c3021b6eb073df90607b2d7617e4700",
+      "sha256": "b8502c776bbedacae83078d5c59ffe57eb0a87d33082cb39435fe84b2fe20021",
+      "bytes": 1058
     }
-  ]
+  ],
+  "excludedSelfAndScan": [
+    "PUBLICATION-OVERLAY.json",
+    "PUBLIC-SOURCE-SCAN.json"
+  ],
+  "runtimeModified": false,
+  "installerArchivesModified": false,
+  "scope": "Exact changes relative to post-template-redaction export. Original template transforms in TRANSFORMS.json. Scan fileSetSha256 binds every current public file except the scan itself."
 }

@@ -1,15 +1,13 @@
-# DSH SEP 文档导航 · Beta.3
+# DSH SEP 文档导航 · Beta.4
 
-当前版本先读 [三平台发布说明](../release/v0.2.1-beta.3/RELEASE-NOTES.md)。
+当前：[发布说明](../release/v0.2.1-beta.4/RELEASE-NOTES.md) · [Windows](../release/v0.2.1-beta.4/Windows.md) · [Linux](../release/v0.2.1-beta.4/Linux.md) · [macOS](../release/v0.2.1-beta.4/macOS.md)
 
-- [Windows Full / Only](../release/v0.2.1-beta.3/Windows.md)
-- [Linux x64 隔离预览](../release/v0.2.1-beta.3/Linux.md)
-- [macOS ARM64 隔离预览](../release/v0.2.1-beta.3/macOS.md)
-- [旧版本与更新边界](../release/v0.2.1-beta.3/UPGRADING.md)
-- [BM25、四层记忆与执行保护](../release/v0.2.1-beta.3/TECHNICAL-NOTES.md)
-- [第三方许可与源码](../release/v0.2.1-beta.3/THIRD-PARTY.md)
-- [源码导出来源](../PUBLIC-SOURCE-ORIGIN.json) · [脱敏变换](../TRANSFORMS.json)
+- [已有用户/更新边界](../release/v0.2.1-beta.4/UPGRADING.md)
+- [四层记忆、BM25、预算与委派范围](../release/v0.2.1-beta.4/TECHNICAL-NOTES.md)
+- [源码与宿主overlay导航](../release/v0.2.1-beta.4/SOURCE-GUIDE.md)
+- [第三方许可与对应源码](../release/v0.2.1-beta.4/THIRD-PARTY.md)
+- [安装资产绑定](../release/v0.2.1-beta.4/ASSET-BINDINGS.json)
+- [RC.2适配与范围记录](../tools/rc2-adaptation/README.md)
+- [公开源码出处](../PUBLIC-SOURCE-ORIGIN.json) · [变换记录](../TRANSFORMS.json)
 
-其他 docs 文件保留各自阶段、版本及认证范围；其中“当前”“尚未上传”属于成文时点。最新发布范围以上述 Beta.3 平台页为准，固定验收标准与历史失败证据没有降低或改写。
-
-[历史阶段总览](PRE-BETA3-README.md) · [历史详细技术说明](TECHNICAL_OVERVIEW.md)
+其他阶段文档保留成文时的版本、未发布与未认证状态，当前范围以上述入口为准。未修改或降低固定验收标准。历史：[Beta.3](../release/v0.2.1-beta.3/RELEASE-NOTES.md) · [更早技术说明](TECHNICAL_OVERVIEW.md)。

@@ -1,0 +1,7 @@
+{
+  "schema": 2,
+  "scope": "initial transformation history plus current byte bindings; historical records are not a current re-execution claim",
+  "historical": "TEST-ORIGIN-INITIAL.json",
+  "current": "tests/CURRENT-INPUTS.json",
+  "historicalNote": "Initial transform record was annotated as historical when copied; it is not claimed to be an unmodified raw log. Execution TAPs and source snapshots are retained separately."
+}

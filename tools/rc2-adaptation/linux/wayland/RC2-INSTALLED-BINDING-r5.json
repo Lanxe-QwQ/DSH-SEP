@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "sourceSha256": "acb5ee03aa1faf3eabee363821f1a78c2eb99948e02ff1b6bd2592619459ef6d",
+  "resultSha256": "7f79d72848e0d31e88f396d835fdb08454f5592038eede6ac6509a4c4557ccb0",
+  "from": "/opt/dsh-sep-cross-platform/rc2-adaptation-20261018-r1/installed-r4",
+  "to": "/opt/dsh-sep-cross-platform/rc2-adaptation-20261018-r1/installed-r5",
+  "installedPayloadManifestSha256": "78511a1733b80a5e0ebf527baa01c896b650fffcddf54da6093103011a0bf06b"
+}

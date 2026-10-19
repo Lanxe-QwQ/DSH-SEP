@@ -1,0 +1,332 @@
+{
+  "schema": 2,
+  "scope": "current source bytes only; not an execution receipt",
+  "isExecutionEvidence": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 13,
+      "sha256": "06ba2d5db36c4f5334da5d4234d3a5034b1d926b17d2c517cd134ce4d9ce5235"
+    },
+    {
+      "path": "app-lifecycle-template.mjs",
+      "bytes": 10330,
+      "sha256": "156fceb25c702c8dc70203b6ffb785f1eee77ff3d15e1b27ddb7053d496146a4"
+    },
+    {
+      "path": "assemble-app.mjs",
+      "bytes": 15802,
+      "sha256": "98352abcf6886b0db4ddba8605805a109340ed11efed7a437668c644800698cb"
+    },
+    {
+      "path": "assemble-installer.mjs",
+      "bytes": 3802,
+      "sha256": "63fc34511226ea862208dbada8d38b7efc80ce95e4af85b7f05fd62412c1cec4"
+    },
+    {
+      "path": "build-repaired-installer.mjs",
+      "bytes": 2044,
+      "sha256": "3fa5cee35a5b06940a46547c3fbbefa06bcfe7b122e2b6a53951754cb8540749"
+    },
+    {
+      "path": "build-workflow-r9.yml",
+      "bytes": 3489,
+      "sha256": "2fb225cbcb2adee88cd81fbc05bc7179064c5fa09bd3b6f499ffc659b951a85e"
+    },
+    {
+      "path": "candidate.tgz",
+      "bytes": 1295509,
+      "sha256": "854b8dd3c82c7a2d7b26b6a5a14ba3488b293b39b922cd4f5e35347f0ecf40a5"
+    },
+    {
+      "path": "context-preflight.mjs",
+      "bytes": 1606,
+      "sha256": "9cd66d66d2469429e1e76932e376f82266db3888ec5fdef68f842a6d1f45952a"
+    },
+    {
+      "path": "derive-desktop.mjs",
+      "bytes": 5764,
+      "sha256": "bce2314a93191c1068212624ff184f1bce266ddd466760ca80c49a4c05d069cd"
+    },
+    {
+      "path": "derive-installer-namespace.mjs",
+      "bytes": 1457,
+      "sha256": "9095d3bb4bb86a58eeb0d4cac12f382181b1e5f484bb65d24812b3e1fb8bfcf6"
+    },
+    {
+      "path": "derive-project-desktop.mjs",
+      "bytes": 3503,
+      "sha256": "658a2c4f436fe82cdfa9d6026da22399f4a6305e33015f72010cfb4d65109680"
+    },
+    {
+      "path": "DESKTOP-INPUTS.json",
+      "bytes": 26752,
+      "sha256": "206e15c1c86f2bf16740f4f708ef4c79be4281146694b6b053ddd8e5f59579e7"
+    },
+    {
+      "path": "desktop-inputs.zip",
+      "bytes": 7209767,
+      "sha256": "9ee87c13fc7e6c60fbe68464c8d54f30b330bca1f48a595512dc04696706784b"
+    },
+    {
+      "path": "desktop-recipes/derive.mjs",
+      "bytes": 6697,
+      "sha256": "39ef278a48c8d95a46d1ef0b33307dadac5df3c6f323c9503e018cc87c8b4b20"
+    },
+    {
+      "path": "desktop-recipes/preload-bridge.mjs",
+      "bytes": 1183,
+      "sha256": "e7246ea11e6e945b6d4b1cec827480fb11f83098e8220b7870cef3dbf8fd0b03"
+    },
+    {
+      "path": "desktop-recipes/product-derive.mjs",
+      "bytes": 3953,
+      "sha256": "05be8342d8e31f059fb09db7c9038307c7913a458e8b724719768dc2a5150794"
+    },
+    {
+      "path": "desktop-recipes/product-gate-derive.mjs",
+      "bytes": 1148,
+      "sha256": "97c9d9f71378a7eeb7b9b444d3a9a3afea6f5cbc315bff178c284e4d9a44c234"
+    },
+    {
+      "path": "desktop-recipes/SOURCE.json",
+      "bytes": 1238,
+      "sha256": "37edce061fbe0a8abc526e7279a023e567a6594012d2014f78b2754b0e372e5e"
+    },
+    {
+      "path": "desktop-recipes/welcome-derive.mjs",
+      "bytes": 6503,
+      "sha256": "176c8996a8282ab886768190f50b486e89277c4b7b7a550ad75ac5daecb3c6c4"
+    },
+    {
+      "path": "desktop-recipes/welcome-preload.mjs",
+      "bytes": 1153,
+      "sha256": "d058c1316ec44ba1e8ee1044d03f84c5bb391985dc51535c76b0f8af9bcb49fb"
+    },
+    {
+      "path": "FINAL-VERIFICATION.json",
+      "bytes": 1729,
+      "sha256": "4d6d68e182a30dea51c3029113bb9a851c3ab25e3ae5645e031f99e72ed01d6c"
+    },
+    {
+      "path": "host-package.json",
+      "bytes": 19279,
+      "sha256": "1ca8ae9dcb7a6debf9e432e80bf9107421dff2e04e48ca7fd6b7e11903c8d65b"
+    },
+    {
+      "path": "independent-installer-workflow.yml",
+      "bytes": 2848,
+      "sha256": "96b8b8bbdc54e37a73096a6cd23a682f153fa6cbac1a58f3a611fdca8c7e3603"
+    },
+    {
+      "path": "installer-namespace-native.test.mjs",
+      "bytes": 5628,
+      "sha256": "307bb34380e66ffd1c544019ff688073a7a70c2a935374af9120cfa9c6dfb5d0"
+    },
+    {
+      "path": "installer-namespace.test.mjs",
+      "bytes": 2317,
+      "sha256": "de644c8047d1a25ce65fd578bd07a61ee618acdaf8f29d2b8f79221149ddd9bf"
+    },
+    {
+      "path": "installer-validation/INPUTS.json",
+      "bytes": 3630,
+      "sha256": "8b82a795863cc4b875be049b0210921b4dfbf25f0311820d4a448d9723a51633"
+    },
+    {
+      "path": "installer-validation/installer-binding.mjs",
+      "bytes": 8807,
+      "sha256": "7d5600fe8e005c858afc10e7eaa8bb8d8bd853e75defc5c60266bb444955fcc8"
+    },
+    {
+      "path": "installer-validation/installer-binding.test.mjs",
+      "bytes": 7273,
+      "sha256": "49a674762f8f3412e0474109ccf18d6b724f2030ed06b5b0c9dd2cefcf422c32"
+    },
+    {
+      "path": "installer-validation/installer-download.mjs",
+      "bytes": 4978,
+      "sha256": "e534a490bfe6bfb0b03b64d6c832e572db69dd57e5e523f771c707c120f4b3e1"
+    },
+    {
+      "path": "installer-validation/installer-installed-startup.mjs",
+      "bytes": 10591,
+      "sha256": "6f60f7292b996171becadfd603dc939aa8b64758046f7dfc874e5842759067d0"
+    },
+    {
+      "path": "installer-validation/installer-installed-startup.origin.json",
+      "bytes": 758,
+      "sha256": "b1d1a03889ee9bbd4452f271b441c6165dfb480c31514667acb67cd297d5f632"
+    },
+    {
+      "path": "installer-validation/installer-installed-startup.pre-rc2.mjs",
+      "bytes": 10594,
+      "sha256": "ab0f8d2c5f1fda7023e563caf9203951bdfd538aae7d1431559f411caeb8790e"
+    },
+    {
+      "path": "installer-validation/installer-main-result.test.mjs",
+      "bytes": 3524,
+      "sha256": "fd3b4f0acdaf0056482833fd9e5bd207317485fea7c64d8667d78683bb0bf338"
+    },
+    {
+      "path": "installer-validation/installer-observer.m",
+      "bytes": 6523,
+      "sha256": "6adee71f937e2e00444495f06298b88214c3ca5a51575e855c44d870ea305f36"
+    },
+    {
+      "path": "installer-validation/installer-pins.json",
+      "bytes": 25665,
+      "sha256": "6e3245f00efb73fe699721926e09e93e3a19c85c2f314151cf7abc1464a8adc3"
+    },
+    {
+      "path": "installer-validation/installer-restore-local.mjs",
+      "bytes": 5171,
+      "sha256": "50806b5d0ff4a72ce3bc387062e16cd0f8298c421a4da53094669b0e3b8e6208"
+    },
+    {
+      "path": "installer-validation/installer-run-full.mjs",
+      "bytes": 22264,
+      "sha256": "5899ade4fab821f0fba92b3efef8bcaa3437222deaf6b0428de145064319d1c9"
+    },
+    {
+      "path": "installer-validation/installer-source-binding.mjs",
+      "bytes": 1057,
+      "sha256": "c9f599df7b2fa991f58cc9076b62e99cee5c01c51c1240655afcec7ec3683808"
+    },
+    {
+      "path": "installer-validation/installer-sources.json",
+      "bytes": 9008,
+      "sha256": "0d20ff00bf69bf127551d77752d1f97ee1e271845fad8cb5613e052cf9dc9067"
+    },
+    {
+      "path": "installer-validation/installer-test-main.m",
+      "bytes": 11303,
+      "sha256": "7a1c138ccbc386920f2cbe41e48497bba26cacfa4109c10dbd52093e806b280a"
+    },
+    {
+      "path": "installer-validation/installer-transport-pins.json",
+      "bytes": 79882,
+      "sha256": "8b2a9fcbfcdf80e75821495c790bab471f74bc8d7328fca3fcbf1d894b9ee513"
+    },
+    {
+      "path": "installer-validation/installer-transport.mjs",
+      "bytes": 2907,
+      "sha256": "6e9660d6f5b86009e2da9f258d986b4d818e35f90d8cd60199db087aafdbe914"
+    },
+    {
+      "path": "installer-validation/installer-transport.test.mjs",
+      "bytes": 2906,
+      "sha256": "5fc60da508d76e316b3363b5cc764bb6d05ec27238a8469e458ff7a7ecfaf2b9"
+    },
+    {
+      "path": "installer-validation/installer-verify-download.py",
+      "bytes": 6878,
+      "sha256": "2708d0bcc2dd67c8b7a425cccdfed1c5c758934702377c55c244216e7a0b4e03"
+    },
+    {
+      "path": "installer-validation/installer-verify-download.test.py",
+      "bytes": 5101,
+      "sha256": "299641f51f885f41024267e7da7bdafca800bd5487c852083da22b69129e3394"
+    },
+    {
+      "path": "installer-validation/OPERATORS-ORIGIN.json",
+      "bytes": 11972,
+      "sha256": "db0c8362dcd42ffe7f44539d0a1d59f57500ac9493b5200b61b9ebcdb7362565"
+    },
+    {
+      "path": "installer-validation/origin.test.mjs",
+      "bytes": 2551,
+      "sha256": "5af8562ba2712e8f0440102d1153afd4bdd876865c2f36dece716e96902c27ab"
+    },
+    {
+      "path": "installer-validation/README.md",
+      "bytes": 2000,
+      "sha256": "d8a69b14c178abe3cec3ea794fc2f7690c34e41b8f81c1106873dec0840cd7ad"
+    },
+    {
+      "path": "namespace-build-workflow-r12.yml",
+      "bytes": 4105,
+      "sha256": "ed553ccb01af2cd39675bc2a55961faa2b86896b96f5dc01df965a1eaeaa0805"
+    },
+    {
+      "path": "NAMESPACE-REPAIR-PRE-CLOSEOUT.md",
+      "bytes": 2107,
+      "sha256": "fb73e506e43fa75923a99196f20ba5a43f97f043c6ccba479cab2d83be9c37c2"
+    },
+    {
+      "path": "NAMESPACE-REPAIR.md",
+      "bytes": 2509,
+      "sha256": "db70d2ea424201ae042de8f8df09ad0ad1169bf4ef9806e88db11f9249826b64"
+    },
+    {
+      "path": "NAMESPACE-SOURCE-CONTRACT.json",
+      "bytes": 1366,
+      "sha256": "09392fa408d9857146e2d1e0b4404f51c9fb9728617809519dfb18ee0cdf9114"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 785732,
+      "sha256": "4a16160242b83b2e747da2083a36247bf7781441e27b779c3c30fb92c109b70f"
+    },
+    {
+      "path": "prepare-installer-validation.mjs",
+      "bytes": 2828,
+      "sha256": "9a4e932ce62f149c6ee3955ea9d271cb7fe551c0e170d1ab3a038c352562e20d"
+    },
+    {
+      "path": "prepare-repaired-installer.mjs",
+      "bytes": 961,
+      "sha256": "ca7fda3028c099ccb03a219403bc5550822e87da098acdfd4d461eed722a55bb"
+    },
+    {
+      "path": "prepare.mjs",
+      "bytes": 8084,
+      "sha256": "d686349ac997478ed5c6ce78e65c60dc0504d8280f58faaddbcaa81cb7ec673a"
+    },
+    {
+      "path": "repaired-installer-workflow.yml",
+      "bytes": 4105,
+      "sha256": "ed553ccb01af2cd39675bc2a55961faa2b86896b96f5dc01df965a1eaeaa0805"
+    },
+    {
+      "path": "run-app-lifecycle.mjs",
+      "bytes": 866,
+      "sha256": "748e1451bd31d7dc66324e934617d628a410c800248549f4406d8a72ff031b2f"
+    },
+    {
+      "path": "run-native.mjs",
+      "bytes": 4486,
+      "sha256": "3486091e0d15e5ec9c7d2f0dc823e2353c2ca148140942283fb230c728f84cb8"
+    },
+    {
+      "path": "run-postbuild.mjs",
+      "bytes": 2401,
+      "sha256": "0c183ba97987d672334f02c6ebd855ef9a25b64c20169ffd41fef3e0bff30182"
+    },
+    {
+      "path": "RUNTIME-HELPER-ORIGIN.json",
+      "bytes": 357,
+      "sha256": "0581ec578796ef83d09757eb5e8778881b698c0fc7259d66203934d76547a46c"
+    },
+    {
+      "path": "runtime-helper.mjs",
+      "bytes": 82535,
+      "sha256": "261a337751be3e2f0f706b267cbb7bde5509a68c436b6f202ca39b2146ace4c2"
+    },
+    {
+      "path": "split-fixed-artifact.mjs",
+      "bytes": 3875,
+      "sha256": "cd3c238fb084d6d595f6f3f7b8a2c6e3adbd38bae2976fe979bf65393a178d6e"
+    },
+    {
+      "path": "split-repaired-installer.mjs",
+      "bytes": 1700,
+      "sha256": "732ab8ea2d0d0ded0f6fa0c7c3440eeb9567f0ccfc079abef107f34cab0ad7cc"
+    },
+    {
+      "path": "transport-workflow-r10.yml",
+      "bytes": 3197,
+      "sha256": "6e9f8105766006ee54e89902e026379c2c6ec3cbc9939e6db42e17e17c4d6676"
+    }
+  ]
+}

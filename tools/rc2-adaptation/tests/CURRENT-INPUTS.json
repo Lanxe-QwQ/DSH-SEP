@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "scope": "current source bytes only; not an execution receipt",
+  "isExecutionEvidence": false,
+  "files": [
+    {
+      "path": "desktop-lifecycle.mjs",
+      "bytes": 7008,
+      "sha256": "16df3e944b4dc1bf3877043c9419816031fe30b899312d6dc686fe578cbb6f72"
+    },
+    {
+      "path": "fixture.mjs",
+      "bytes": 9674,
+      "sha256": "afdb7a544973532af8a21fb59f8cdc163ed5bf404be79e58bdd5f2d8b185f5d8"
+    },
+    {
+      "path": "full-profile.test.mjs",
+      "bytes": 4237,
+      "sha256": "588d683129593b23a579eb840b7dbafa6dc2af8293220528d44909e0ad547829"
+    },
+    {
+      "path": "host-compatibility.test.mjs",
+      "bytes": 12593,
+      "sha256": "0466843377bb3f0f6c4334a23a7ae2a20836e6c4ad06c1b1f9cbea14a71cd330"
+    },
+    {
+      "path": "managed-host.mjs",
+      "bytes": 3989,
+      "sha256": "2df1357304351e6edac37532390b1a18dc382efe1b8ec5d586c92cb6f307d80d"
+    },
+    {
+      "path": "native-settings.test.mjs",
+      "bytes": 12514,
+      "sha256": "5833aeffe6e57638ea789c91a37236ed1189565cc76f919f96cb58cbecf617bf"
+    },
+    {
+      "path": "prepare-desktop.mjs",
+      "bytes": 6793,
+      "sha256": "285fb9f63eda34c299673cd10f1fccb2622b191fa3528e7aae6006ceee2afaa6"
+    },
+    {
+      "path": "profile-worker.mjs",
+      "bytes": 3570,
+      "sha256": "7e31696a58e0317cc81a941ec4f9c90d8b231aad449fc2e3f931e2a14bf74b88"
+    },
+    {
+      "path": "rc2-contracts.test.mjs",
+      "bytes": 6018,
+      "sha256": "27e9ac279d018fdd739e413d67c7a14994a8df1ae8e44a89098e5e1deccbb984"
+    },
+    {
+      "path": "shared-consumers.test.mjs",
+      "bytes": 9274,
+      "sha256": "7c6bd8cc2cb359dd4f741d52e027a91973074c635c100110ef59b9b9744b3484"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "scope": "defined-signature privacy review of this exact RC.2 installer, not comprehensive semantic/binary privacy certification",
+  "archiveSha256": "1c3a62ae966fe21b58e9ee6a63841cd5e9a30b8415e292b5008dec03b9941a77",
+  "scanRecordSha256": "8fe9276b59ced5b4d8d151e59cc7448354acbe58d3edf42bbb4a0cbf183bb41c",
+  "rawScanStatus": "blocked",
+  "rawSignatureHits": 6,
+  "reviewedNonsecretHits": 6,
+  "unresolved": 0,
+  "filenameFindings": 0,
+  "knownPersonalPathHits": 0,
+  "githubTokenHits": 0,
+  "comprehensivePrivacyAudit": false,
+  "rows": [
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Helpers/DSH SEP Desktop.app/Contents/Resources/app.asar",
+      "pattern": "private-key-header",
+      "offset": 276107983,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+      "contextSha256": "d3c9209a12ae53a287d127ddf24041c945b99130e51210b56337429edaa10e8d",
+      "scope": "classification of this exact bounded signature hit only",
+      "classification": "nonsecret-format-marker",
+      "evidence": "header is immediately terminated by a string quote or NUL, not followed by a PEM key body",
+      "followingBytesHex": "002d2d2d"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Helpers/DSH SEP Desktop.app/Contents/Resources/app.asar",
+      "pattern": "provider-token-like",
+      "offset": 418931825,
+      "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6",
+      "contextSha256": "f8283de6e03a29b29055c23b17add3ea294bb3a2c3dff2d51b6b3340d5344875",
+      "scope": "classification of this exact bounded signature hit only",
+      "referenceEntry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Resources/product/payload/host/node_modules/@shikijs/langs/dist/emacs-lisp.mjs",
+      "referenceSha256": "5ece43ee61f6a0c74eda144a6394a65c6d8b3ba0e694020b9381a9b2884ff47b",
+      "evidence": "same grammar identifier and exact 320-byte context embedded in ASAR",
+      "classification": "public-grammar-identifier",
+      "identifier": "sk-prompt-state-selector"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Helpers/DSH SEP Desktop.app/Contents/Resources/app.asar",
+      "pattern": "private-key-header",
+      "offset": 466829848,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+      "contextSha256": "50aa193a0b10bb49134be7106afc91ed94802f812a838433ab5085079fa146dd",
+      "scope": "classification of this exact bounded signature hit only",
+      "classification": "nonsecret-format-marker",
+      "evidence": "header is immediately terminated by a string quote or NUL, not followed by a PEM key body",
+      "followingBytesHex": "22292021"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Resources/product/payload/host/node_modules/@deepseek-ai/libreoffice-kit-darwin-arm64/bin/libreoffice-kit",
+      "pattern": "private-key-header",
+      "offset": 118652915,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+      "contextSha256": "d3c9209a12ae53a287d127ddf24041c945b99130e51210b56337429edaa10e8d",
+      "scope": "classification of this exact bounded signature hit only",
+      "classification": "nonsecret-format-marker",
+      "evidence": "header is immediately terminated by a string quote or NUL, not followed by a PEM key body",
+      "followingBytesHex": "002d2d2d"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Resources/product/payload/host/node_modules/@shikijs/langs/dist/emacs-lisp.mjs",
+      "pattern": "provider-token-like",
+      "offset": 733224,
+      "matchSha256": "ea96254155e2ec96df1aa27e8f7e40353a9d0c6301e0e3bf50f7482d73407ce6",
+      "contextSha256": "f8283de6e03a29b29055c23b17add3ea294bb3a2c3dff2d51b6b3340d5344875",
+      "scope": "classification of this exact bounded signature hit only",
+      "referenceSha256": "5ece43ee61f6a0c74eda144a6394a65c6d8b3ba0e694020b9381a9b2884ff47b",
+      "reference": "same exact public @shikijs/langs emacs-lisp grammar bytes in locked RC.2 official dependencies",
+      "classification": "public-grammar-identifier",
+      "identifier": "sk-prompt-state-selector"
+    },
+    {
+      "entry": "DSH SEP Installer.app/Contents/Resources/payload/DSH SEP.app/Contents/Resources/product/payload/host/node_modules/jose/dist/webapi/key/import.js",
+      "pattern": "private-key-header",
+      "offset": 945,
+      "matchSha256": "3021d90eb9437b2d8f30e8363695c4418b5e5f1870801b5c317e9398ee0f572d",
+      "contextSha256": "50aa193a0b10bb49134be7106afc91ed94802f812a838433ab5085079fa146dd",
+      "scope": "classification of this exact bounded signature hit only",
+      "classification": "nonsecret-format-marker",
+      "evidence": "header is immediately terminated by a string quote or NUL, not followed by a PEM key body",
+      "followingBytesHex": "22292021"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ PATTERNS = {
     'private-key-header': re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----'),
     'provider-token-like': re.compile(r'(?<![A-Za-z0-9])sk-(?:proj-|ant-|or-v1-)?[A-Za-z0-9_-]{20,}'),
     'github-token-like': re.compile(r'(?<![A-Za-z0-9])(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,})'),
-    'known-personal-home-prefix': re.compile(r'C:[/\\]+Users[/\\]+(?:23849|Administrator)(?:[/\\]+)', re.I),
+    'known-personal-home-prefix': re.compile(r'C:[/\\]+Users[/\\]+(?:PUBLIC_USER|Administrator)(?:[/\\]+)', re.I),
     'local-build-root-prefix': re.compile(r'D:[/\\]+AIData[/\\]+ProjectWork[/\\]+DSH(?:[/\\]+)', re.I),
     'runner-build-prefix': re.compile(r'(?:/Users/runner/|/home/runner/|/opt/hostedtoolcache/|D:[/\\]+a[/\\]+)', re.I),
 }

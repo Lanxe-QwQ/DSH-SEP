@@ -1,0 +1,11 @@
+from pathlib import Path
+import json,hashlib
+s=Path(r'D:\AIData\ProjectWork\DSH\rc2-adaptation-20261018-r1');root=s/'source/tools/rc2-adaptation';sha=lambda b:hashlib.sha256(b).hexdigest();js=lambda v:json.dumps(v,ensure_ascii=False,indent=2)+'\n'
+for folder in ['tests','runtime','build','windows-verification','linux','macos']:
+ directory=root/folder;rows=[]
+ for p in sorted(directory.rglob('*')):
+  if p.is_file() and p.name!='CURRENT-INPUTS.json' and 'node_modules' not in p.parts:
+   b=p.read_bytes();rows.append({'path':p.relative_to(directory).as_posix(),'bytes':len(b),'sha256':sha(b)})
+ (directory/'CURRENT-INPUTS.json').write_text(js({'schema':2,'scope':'current source byte index, not an execution receipt; actual run inputs are also archived separately per test generation','isExecutionEvidence':False,'files':rows}),encoding='utf-8')
+p=root/'TEST-ORIGIN.json';v=json.loads(p.read_bytes());v['current']='tests/CURRENT-INPUTS.json';v['historicalNote']='Initial transform record was annotated as historical when copied; it is not claimed to be an unmodified raw log. Execution TAPs and source snapshots are retained separately.';p.write_text(js(v),encoding='utf-8')
+o=s/'windows-packages-r1';data={'schema':1,'status':'pass','scope':'completed Windows and Linux adaptation checks; Mac remains separately tracked, not included in this pass','hostVersion':'0.2.1-rc.2','sepVersion':'0.2.1-beta.3-rc2-adapter.1','common':{'tests':49,'pass':49,'logSha256':sha((s/'evidence/core-regression-r3.tap').read_bytes()),'recipeReplayFiles':445,'replayRecordSha256':sha((s/'evidence/REPLAY-COMPARISON.json').read_bytes())},'windows':{'currentRecord':'WINDOWS-CURRENT.json','currentRecordSha256':sha((s/'evidence/WINDOWS-CURRENT.json').read_bytes()),'finalArchiveRecordSha256':sha((o/'FINAL-ARCHIVES.json').read_bytes())},'linux':{'record':'LINUX-DELIVERY-r2.json','recordSha256':sha((s/'evidence/LINUX-DELIVERY-r2.json').read_bytes())},'notIncluded':['macOS current native app/installer completion','private data continuation','paid online model/API verification','physical Windows/Mac input','broader Linux hardware/desktop certification','daily switch','public Release']};(s/'evidence/COMPLETED-WINDOWS-LINUX.json').write_text(js(data),encoding='utf-8');print(js({'status':'indexed','folders':6,'windowsLinux':'pass','mac':'separate and still in progress'}))

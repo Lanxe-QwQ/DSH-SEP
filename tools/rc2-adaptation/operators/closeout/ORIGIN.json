@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "scope": "exact one-shot local lab operators captured for review, not execution proof or a public product entry; many outputs exclusive and not rerunnable",
+  "files": [
+    {
+      "path": "rc2-closeout-docs-prepare.py",
+      "bytes": 5562,
+      "sha256": "7a38bf5cedfc75b9d2dd1d838d50c412fc7b06732226eb345ecadcaf6d8d660f"
+    },
+    {
+      "path": "rc2-final-closure.py",
+      "bytes": 13553,
+      "sha256": "2da470eb5e8db0b63695bedd047f5f45b2f3e8d1b26ca5ee2afb383d64bc7893"
+    },
+    {
+      "path": "rc2-local-source-checkpoint.py",
+      "bytes": 4065,
+      "sha256": "93d7a030ef5889dda7c09b810c5c489f8e099e427891690e3417d66e006d5acf"
+    },
+    {
+      "path": "rc2-download-verified-artifact.py",
+      "bytes": 1992,
+      "sha256": "8aa44a25f25a55c613cb068b01028febc0bcb11b01ffab36c9bcf3e4fb2aa4e5"
+    },
+    {
+      "path": "rc2-mac-privacy-scan-r12.py",
+      "bytes": 3178,
+      "sha256": "1dd3b59ec90c6f73015e4654e3a3ef9c3e36773e2d610c0349b0e9d2801f695a",
+      "originalExecutedSha256": "cd1173dad65102d56e8d680f8d1c6601e7e189245bd9173b29a0f2d3cc0c7ea9",
+      "originalExecutedBytes": 3172,
+      "publicTemplateDerivative": true
+    },
+    {
+      "path": "rc2-mac-privacy-review-r12.py",
+      "bytes": 3130,
+      "sha256": "644337baaed1ca197b3a197e05aafba6b58417c401136b3ee2f8f43ca258caa7"
+    },
+    {
+      "path": "rc2-review-repaired-installer.py",
+      "bytes": 5769,
+      "sha256": "a7befe38799e642b4bf6154b226a602fc68d28b56263fdf65f942eba5cdf3db3"
+    },
+    {
+      "path": "rc2-actual-repaired-pin-review.mjs",
+      "bytes": 1333,
+      "sha256": "6bbda1a83a91795fa0735fd8efbe15284149e43f27468b5df8a52e8760114550"
+    },
+    {
+      "path": "rc2-new-source-contract-smoke.mjs",
+      "bytes": 1420,
+      "sha256": "edec3a1a2d6a9b30d5d9b9552b20bd6e0b69de24a1e64625ea74f214bacb5097"
+    },
+    {
+      "path": "rc2-local-source-checkpoint-r2.py",
+      "bytes": 4275,
+      "sha256": "5cd4f3c6d0253ee03c035541134022eefa169c0a07fc4485c235036dae45a794"
+    },
+    {
+      "path": "rc2-restore-attributes-repair.py",
+      "bytes": 1666,
+      "sha256": "6623ec30b107db9b9242cf10d5ee048a1115e760630c86d2125aff47b0ed27d3"
+    }
+  ],
+  "publicExportDerivative": true,
+  "originalManifestSha256": "94e56699ae6fab37d4efad8e8be219a06554c96818cc465c47f66500e0e8a381",
+  "verificationMeaning": "originalExecuted fields bind historical local inputs; current sha256/bytes bind declared public templates, not a claim that the templates were executed"
+}

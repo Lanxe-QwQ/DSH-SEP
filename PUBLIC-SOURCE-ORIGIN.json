@@ -1,20 +1,13 @@
 {
-  "schema": 1,
-  "sourceCommit": "ac69bda3ca63a3bed44780b7804cf090156514de",
-  "sourceSelection": "Only tracked blobs of this exact Git tree, retrieved through git cat-file. No Git directory/history, worktree changes, untracked files or local user state exported.",
-  "exportKind": "Public tracked-source snapshot with explicit maintenance-path derivatives.",
-  "preservedScope": [
-    "All source/ and bundle/ blob bytes are unchanged.",
-    "Production runtime/capture/origin and trusted manifests retain original bytes.",
-    "Generic D:/AIData/ProjectWork/DSH build layout is intentionally retained; it is not an account identity.",
-    "528 upstream tracked test/snapshot JSONL fixtures are retained, not private user sessions."
-  ],
-  "symlinkContract": "14 mode-120000 blobs are materialized as link-text regular files on Windows (core.symlinks=false representation). The publication Git index and source archive MUST restore mode 120000 and target semantics from SOURCE-EXPORT-MANIFEST.json. Do not follow them when copying.",
-  "limits": [
-    "This does not prove every platform binary can be reproduced from this snapshot.",
-    "Historical checksums and receipts bind original inputs, not redacted maintenance templates.",
-    "Four historical diagnostic ZIPs are omitted and identified by EXCLUSIONS.json.",
-    "Current release README/status are updated separately by publication owner.",
-    "Specific-format scans cannot guarantee absence of arbitrary encoded secrets."
-  ]
+  "schema": 2,
+  "distributionVersion": "0.2.1-beta.4",
+  "inputCommit": "d1498eb646afc5a9028515f90a355061bed262da",
+  "basePublicCommit": "7d72aaa0635972c4ca3cfa130241174d0eafaf5a",
+  "gitHistoryIncluded": false,
+  "untrackedIncluded": false,
+  "inventory": "SOURCE-EXPORT-MANIFEST.json",
+  "inventorySha256": "9b27246775e30533728e1a6b364a6091d0f5e54941192c8f5647ffcabeffe455",
+  "transforms": "TRANSFORMS.json",
+  "officialRc2Source": "upstream/RC2-SOURCE-ORIGIN.json",
+  "historicalRootSourceAndBundle": true
 }

@@ -1,0 +1,12 @@
+{
+  "schema": 2,
+  "distributionVersion": "0.2.1-beta.3",
+  "originalAuditedTree": "ac69bda3ca63a3bed44780b7804cf090156514de",
+  "export": "PUBLIC-SOURCE-ORIGIN.json",
+  "inventory": "SOURCE-EXPORT-MANIFEST.json",
+  "maintenancePathDerivatives": "TRANSFORMS.json",
+  "excludedHistoricalArchives": "EXCLUSIONS.json",
+  "releaseOverlay": "PUBLICATION-OVERLAY.json",
+  "scope": "source/ and bundle/ blob bytes remain identical to the reviewed tree; platform runtime/capture files unchanged; public documentation and 26 maintenance path templates are explicit derivatives.",
+  "privateGitHistoryExported": false
+}

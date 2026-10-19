@@ -1,0 +1,185 @@
+{
+  "schema": 1,
+  "status": "not_run",
+  "scope": "RC.2 isolated adaptation; no desktop, installer or full platform certification yet",
+  "baselineAssetSha256": "bdc09894307cbd53c8f120c454e3a80d5ee687341ff8de15d9079a15fbc64b04",
+  "host": {
+    "version": "0.2.1-rc.2",
+    "commit": "687f282e8625c6b8d11ff58211a90524be2e4317"
+  },
+  "files": [
+    {
+      "path": "bundle/lib/session-persistence.js",
+      "kind": "replayed-transform",
+      "sourceSha256": "924f161c982b25ae3337283ce7cffdd20b323300262c00624fa9c24f48357e95",
+      "resultSha256": "158a8ce168495d67b52035b9d8fd3ac060ace1ec1277aa3cf8fa4da259a8ba46",
+      "transforms": [
+        {
+          "from": "'0.2.1-alpha.2'",
+          "to": "'0.2.1-rc.2'",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/file-protection.js",
+      "kind": "replayed-transform",
+      "sourceSha256": "b42ded519715967b088672b85bef205cde7de6f1f55389f93c62be421ec52fe7",
+      "resultSha256": "dba9e1b11d4f20a2958bb82f0ecbc86cbbecc86b68caa2f7c45c3d4a87702fce",
+      "transforms": [
+        {
+          "from": "'0.2.1-alpha.2'",
+          "to": "'0.2.1-rc.2'",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/protected-file-tools.js",
+      "kind": "replayed-transform",
+      "sourceSha256": "3f9739aed981936baeccc074f44fb78e89a4b2a2790b33ec8306a32de475a4b1",
+      "resultSha256": "378df619f37eb5066d7c6c7e3b306a54bf6fa06ad3e447190a8e0edda56519e2",
+      "transforms": [
+        {
+          "from": "'0.2.1-alpha.2'",
+          "to": "'0.2.1-rc.2'",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/host/session-jsonl/index.js",
+      "kind": "official-rc2-capture",
+      "officialPackage": "@deepseek-ai/dsh-session-persistence-jsonl@0.2.1-rc.2",
+      "sourceSha256": "973dd78679b2661d6f492343bc22b124ae958aa597d3b36c698a2c650f909984",
+      "resultSha256": "07c7134ac45b3d0196698c61cbefa6f1a2c3633228af3bef24e96392ee0d52a7",
+      "transforms": [
+        {
+          "from": "\"@deepseek-ai/dsh-session-format-catalog\"",
+          "to": "\"../../lib/session-catalog.js\"",
+          "count": 1
+        },
+        {
+          "from": "\"@deepseek-ai/dsh-session\"",
+          "to": "\"../../lib/session-vocabulary.js\"",
+          "count": 1
+        },
+        {
+          "from": "\"@deepseek-ai/dsh-session-persistence\"",
+          "to": "\"../../lib/session-storage-validation.js\"",
+          "count": 1
+        },
+        {
+          "from": "async function apply(ctx, config) {",
+          "to": "async function apply(ctx, config, Backend = JsonlSessionPersistence) {",
+          "count": 1
+        },
+        {
+          "from": "new JsonlSessionPersistence(serviceCtx, config, tracker);",
+          "to": "new Backend(serviceCtx, config, tracker);",
+          "count": 1
+        },
+        {
+          "from": "export { Config, JsonlCompressionSchema, apply, name };",
+          "to": "export { Config, JsonlCompressionSchema, JsonlSessionPersistence, apply, name };",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/host/session-jsonl/worker.cjs",
+      "kind": "official-rc2-capture",
+      "officialPackage": "@deepseek-ai/dsh-session-persistence-jsonl@0.2.1-rc.2",
+      "sourceSha256": "4b0f235e772792d7d2ccffc8446ef1a47b080fafc00b71fca899af5886f91066",
+      "resultSha256": "7f14c11641962f012830f8f6b562396ef8759b7532d38ee65e2ebe6a85b70f2e",
+      "transforms": [
+        {
+          "from": ")(\"../package.json\")",
+          "to": ") (\"@deepseek-ai/dsh-llm/package.json\")",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/project-binding.js",
+      "kind": "replayed-transform",
+      "sourceSha256": "56e6648718ae3d4e19dc4f6df9f263dffe96b3927221aa846d6f0049d49a3d08",
+      "resultSha256": "398fd1e429b97a97980850993c475251df09ffda8f1496815310f9eb998d002e",
+      "transforms": [
+        {
+          "from": "import SepSessionPersistence from './session-persistence.js';",
+          "to": "import {SepSessionPersistence} from './session-persistence.js';",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/session-parent-proof.js",
+      "kind": "replayed-transform",
+      "sourceSha256": "256e76e43c3156605005a40c7809718fc1649f8ff6ef12ee4a2e2f25c3613cdd",
+      "resultSha256": "074f3af012f3e559753de04d3505df25e98a0ec55b9f3f483155ac1812e3b97f",
+      "transforms": [
+        {
+          "from": "import JsonlSessionPersistence from '../host/session-jsonl/index.js';",
+          "to": "import {JsonlSessionPersistence} from '../host/session-jsonl/index.js';",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/session-persistence.js",
+      "kind": "replayed-transform",
+      "sourceSha256": "158a8ce168495d67b52035b9d8fd3ac060ace1ec1277aa3cf8fa4da259a8ba46",
+      "resultSha256": "316ad7d12909552ea67f550d79fb2bb6a6132eb8460e0dbec658af51a4b10c99",
+      "transforms": [
+        {
+          "from": "import JsonlSessionPersistence from '../host/session-jsonl/index.js';",
+          "to": "import {JsonlSessionPersistence,Config,apply as mountNativeJsonl} from '../host/session-jsonl/index.js';",
+          "count": 1
+        },
+        {
+          "from": "export default class SepSessionPersistence extends JsonlSessionPersistence{",
+          "to": "export class SepSessionPersistence extends JsonlSessionPersistence{",
+          "count": 1
+        },
+        {
+          "from": "constructor(ctx,config){",
+          "to": "constructor(ctx,config,tracker){",
+          "count": 1
+        },
+        {
+          "from": "super(ctx,config);",
+          "to": "super(ctx,config,tracker);",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/session-persistence.js",
+      "kind": "append",
+      "sourceSha256": "316ad7d12909552ea67f550d79fb2bb6a6132eb8460e0dbec658af51a4b10c99",
+      "resultSha256": "aa917085f807f45a0d66fb6f64a8648035a84c2cdfc71187cf2f51e0716d6e3e",
+      "append": "\n// Retain the RC.2 provider's consumer-before-storage shutdown ordering.\nexport {Config};\nexport const name='dsh-sep-session-persistence';\nexport function apply(ctx,config){return mountNativeJsonl(ctx,config,SepSessionPersistence);}\nexport default {name,Config,apply};\n"
+    },
+    {
+      "path": "bundle/host/p1-policy/alpha2-subagent.js",
+      "kind": "owned-rc2-bridge",
+      "sourceSha256": "f58d84b0b043b1da64f8be061a4e8545e5a04421798913ecae54019d96e5ba6c",
+      "resultSha256": "9610c931eb47160cdc9f1fdd3879fe54e7619f4c6a77f1e518e29353cf74d47e",
+      "currentSource": "tools/rc2-adaptation/runtime/rc2-subagent.mjs"
+    },
+    {
+      "path": "package.json",
+      "kind": "manifest",
+      "sourceSha256": "b99954d30f4d5d8ca6edba7897dd2f675433143b61345ce0e004783c591a6498",
+      "resultSha256": "d387d6f1b7c17c83f61c7671e7f0b5cd83bb606f0402609bc9d6f7d5b8d55bcb",
+      "note": "Exact RC.2 host and released peers; legacy invariant leaf remains exact 0.2.0-rc.2, no range exemption."
+    },
+    {
+      "path": "bundle/host/session-jsonl/origin.json",
+      "kind": "origin-supersession",
+      "sourceSha256": "b1207ff9f489f58c19a28bc7980c5fe63c6a909c2caf706dd39c052a1204a522",
+      "resultSha256": "fd34286a2197fc95ca1615508a3d817672ee84e17ff32d14a5fc2d772786fb41"
+    }
+  ]
+}

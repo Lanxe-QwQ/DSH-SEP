@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   assemble:
-    if: github.repository == 'Lance-QwQ/DSH-SEP' && github.ref == 'refs/heads/main'
+    if: github.repository == 'Lanxe-QwQ/DSH-SEP' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -53,7 +53,7 @@ jobs:
           import os,json,base64,http.client,urllib.parse,urllib.request,time
           
           def main():
-           repo='Lance-QwQ/DSH-SEP';api_root='/repos/'+repo
+           repo='Lanxe-QwQ/DSH-SEP';api_root='/repos/'+repo
            assert os.environ['GITHUB_REPOSITORY']==repo and os.environ['GITHUB_REF']=='refs/heads/main'
            token=os.environ['GITHUB_TOKEN'];headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2026-03-10','User-Agent':'DSH-SEP-byte-bound-release-relay'}
            def api(method,path,data=None):

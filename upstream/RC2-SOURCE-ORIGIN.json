@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "version": "0.2.1-rc.2",
+  "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "url": "https://codeload.github.com/deepseek-ai/deepseek-harness/zip/687f282e8625c6b8d11ff58211a90524be2e4317",
+  "archive": "upstream/DeepSeek-Harness-0.2.1-rc.2-source.zip",
+  "bytes": 46562322,
+  "sha256": "828bbbebaf507d2b1fc335a608e1c8174e2dd5c5c80ebb64d5146ddc5ecb511f",
+  "overlay": "tools/rc2-adaptation/desktop-source-overlay.zip",
+  "overlaySha256": "4e18119158c0c42a5595b315225b8d93bf2c7c71ff4f2ccb0cfa6a831a4da070",
+  "oldSourceTree": "source/ remains historical Alpha2 baseline; use this exact RC2 source archive and overlay for current host source"
+}

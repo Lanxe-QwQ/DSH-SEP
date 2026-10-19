@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   transfer:
-    if: github.repository == 'Lance-QwQ/DSH-SEP' && github.ref == 'refs/heads/main'
+    if: github.repository == 'Lanxe-QwQ/DSH-SEP' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -33,16 +33,27 @@ jobs:
         run: |
           python3 - <<'PY_RELAY'
           import os,json,urllib.request,base64,hashlib,tempfile,pathlib,subprocess,sys,re
+          def adapt_repository_source(name,data):
+              if name!='relay.py':return data
+              assert hashlib.sha256(data).hexdigest()=='66440f56b84d4cc7d8388601721b64412845989f5e6c56aa81da8482a6350829'
+              old=b"REPO='Lance-QwQ/DSH-SEP';API="
+              new=b"REPO='Lanxe-QwQ/DSH-SEP';API="
+              assert data.count(old)==1
+              derived=data.replace(old,new)
+              assert hashlib.sha256(derived).hexdigest()=='d5f7715f57a640b1f66912f67b6f3f075d073db055ef3617e09fced529fa68b9'
+              return derived
+          assert os.environ['GITHUB_REPOSITORY']=='Lanxe-QwQ/DSH-SEP' and os.environ['GITHUB_REF']=='refs/heads/main'
           c=os.environ['EXPECTED_COMMIT'];assert re.fullmatch('[a-f0-9]{40}',c) and c==os.environ['ACTUAL_COMMIT']
           bindings={'RELAY-PLAN.json': '75dd5684d9844290dfcaaa68db5a7327d6ea8c66486456504a1274eb788509a8', 'zip_rewrite.py': 'f7cd1ad840b58119ded24e87f50862f50e05b06e2322ae0a82fc2e9d8eef2261', 'relay.py': '66440f56b84d4cc7d8388601721b64412845989f5e6c56aa81da8482a6350829'}
           with tempfile.TemporaryDirectory(prefix='sep-beta2-code-') as temp:
               root=pathlib.Path(temp)
               for name,expected in bindings.items():
-                  url='https://api.github.com/repos/Lance-QwQ/DSH-SEP/contents/release/v0.2.1-beta.2/'+name+'?ref='+c
+                  url='https://api.github.com/repos/Lanxe-QwQ/DSH-SEP/contents/release/v0.2.1-beta.2/'+name+'?ref='+c
                   request=urllib.request.Request(url,headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'DSH-SEP-transfer'})
                   with urllib.request.urlopen(request,timeout=60) as response:
                       body=response.read(2*1024*1024+1);assert len(body)<=2*1024*1024
                   value=json.loads(body);assert value['encoding']=='base64';data=base64.b64decode(value['content']);assert hashlib.sha256(data).hexdigest()==expected
-                  (root/name).write_bytes(data)
+                  (root/name).write_bytes(adapt_repository_source(name,data))
+              if name=='relay.py':print(json.dumps({'adaptation':'repository-owner','sourceSha256':expected,'resultSha256':hashlib.sha256((root/name).read_bytes()).hexdigest()}),flush=True)
               subprocess.run([sys.executable,str(root/'relay.py')],check=True,timeout=2400)
           PY_RELAY

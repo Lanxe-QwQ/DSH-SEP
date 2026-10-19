@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "scope": "Actual RC.2 Loader/Agent/P2/storage integration; synthetic model adapter, no paid requests",
+  "files": [
+    {
+      "path": "fixture.mjs",
+      "sourceSha256": "e4e52a20b060820e68305c40d216436de1daf26d1c351bc05f340eee273861e4",
+      "resultSha256": "e4e52a20b060820e68305c40d216436de1daf26d1c351bc05f340eee273861e4"
+    },
+    {
+      "path": "host-compatibility.test.mjs",
+      "sourceSha256": "fe945fa49ba4cf3c8b96c87538d2a67498ebde4f6c8113a74646fb5c6774516b",
+      "resultSha256": "0466843377bb3f0f6c4334a23a7ae2a20836e6c4ad06c1b1f9cbea14a71cd330"
+    },
+    {
+      "path": "native-settings.test.mjs",
+      "sourceSha256": "5833aeffe6e57638ea789c91a37236ed1189565cc76f919f96cb58cbecf617bf",
+      "resultSha256": "5833aeffe6e57638ea789c91a37236ed1189565cc76f919f96cb58cbecf617bf"
+    },
+    {
+      "path": "shared-consumers.test.mjs",
+      "sourceSha256": "7c6bd8cc2cb359dd4f741d52e027a91973074c635c100110ef59b9b9744b3484",
+      "resultSha256": "7c6bd8cc2cb359dd4f741d52e027a91973074c635c100110ef59b9b9744b3484"
+    },
+    {
+      "path": "full-profile.test.mjs",
+      "sourceSha256": "d8427114273caf22e812fba851b60242acafe24a5e3d4f76f16f32947b6b1588",
+      "resultSha256": "b2a4ded73aae83366c576a8b723fae799de59da1fdae2de2959d299413ab406e"
+    },
+    {
+      "path": "profile-worker.mjs",
+      "sourceSha256": "59c0e2bced9d4f44efc2131dfcf1a33c338f49eed950fc1c278b92d7d13a8eaa",
+      "resultSha256": "59c0e2bced9d4f44efc2131dfcf1a33c338f49eed950fc1c278b92d7d13a8eaa"
+    },
+    {
+      "path": "daily-startup.mjs",
+      "sourceSha256": "d8f07ef41bbda9b07a90f3843f2c61774f460a9caf4804e243625eb00609b9ed",
+      "resultSha256": "c0e130c80d44dd5d6cbc19e3b5c61a9d2d5541d7b5d7ec866f29ef4008f03561"
+    },
+    {
+      "path": "daily-presets.mjs",
+      "sourceSha256": "ffc2f1bc34846552a1ab5caac95bcd73928b9eb8ff9addf94e594993feaf2ad0",
+      "resultSha256": "ffc2f1bc34846552a1ab5caac95bcd73928b9eb8ff9addf94e594993feaf2ad0"
+    }
+  ],
+  "sourceBaselineCommit": "7d72aaa0635972c4ca3cfa130241174d0eafaf5a",
+  "status": "historical",
+  "supersededBy": "CURRENT-INPUTS.json"
+}

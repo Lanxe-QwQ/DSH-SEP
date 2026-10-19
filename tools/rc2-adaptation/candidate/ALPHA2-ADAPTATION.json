@@ -1,0 +1,414 @@
+{
+  "schema": 1,
+  "baselineCommit": "dfa74e727dd5bfba677d8468c1490714c73e4f87",
+  "host": {
+    "from": "0.2.1-alpha.1",
+    "to": "0.2.1-alpha.2",
+    "commit": "d743267388641bc76f17c45ce8b4c231aed1d32c"
+  },
+  "scope": "isolated-windows-x64-interface-adaptation",
+  "files": [
+    {
+      "path": "bundle/lib/session-persistence.js",
+      "sourceSha256": "8e9663203b2fc573e905734ed776b0bb7e47a99fb80ff09f6ff5de2c4b7a426c",
+      "resultSha256": "924f161c982b25ae3337283ce7cffdd20b323300262c00624fa9c24f48357e95",
+      "transforms": [
+        {
+          "from": "'0.2.1-alpha.1'",
+          "to": "'0.2.1-alpha.2'",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/file-protection.js",
+      "sourceSha256": "524e61b75c800642d4bbcaee53c7fd997e1af2aea951700ba9869fd71c839ba2",
+      "resultSha256": "b42ded519715967b088672b85bef205cde7de6f1f55389f93c62be421ec52fe7",
+      "transforms": [
+        {
+          "from": "'0.2.1-alpha.1'",
+          "to": "'0.2.1-alpha.2'",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/protected-file-tools.js",
+      "sourceSha256": "b7a1fdf9de2b17ec6447a71de3fd55c176f5394a74b4c7b1ac91be1bcc8f4ebc",
+      "resultSha256": "74bc0faf45f1dfb488f2efb52d325e3b6b0e389f1eb5f02b4a8430fc98e85143",
+      "transforms": [
+        {
+          "from": "'0.2.1-alpha.1'",
+          "to": "'0.2.1-alpha.2'",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/protected-file-tools.js",
+      "sourceSha256": "74bc0faf45f1dfb488f2efb52d325e3b6b0e389f1eb5f02b4a8430fc98e85143",
+      "resultSha256": "3f9739aed981936baeccc074f44fb78e89a4b2a2790b33ec8306a32de475a4b1",
+      "transforms": [
+        {
+          "from": "return super.writeText(target,content,expected,signal,policy);",
+          "to": "// Alpha.2's native tool output is closed. Keep the recovery id in its\n  // durable internal record, outside the native model-facing result schema.\n  const outcome={...await super.writeText(target,content,expected,signal,policy)};delete outcome.mutationId;return outcome;",
+          "count": 1
+        },
+        {
+          "from": "return super.editText(target,edit,expected,signal,policy);",
+          "to": "const outcome={...await super.editText(target,edit,expected,signal,policy)};delete outcome.mutationId;return outcome;",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/settings-runtime.js",
+      "sourceSha256": "d3b5e436f87325fc01934a0733b22bea48f14be7503deb7b9793f845927f4b05",
+      "resultSha256": "4297213f85f412a25e6458d7085d11941f706e32e854615d121da3686b7763b7",
+      "transforms": [
+        {
+          "from": "'agents','subagents','approval'",
+          "to": "'agents','approval'",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/host/p1-policy/alpha2-subagent.js",
+      "kind": "added",
+      "resultSha256": "f58d84b0b043b1da64f8be061a4e8545e5a04421798913ecae54019d96e5ba6c"
+    },
+    {
+      "path": "bundle/host/p1-policy/index.js",
+      "sourceSha256": "318f9c6469353809e7ae073777646b487e961a7d4fa2e2f5ffbe0bd052e78bf2",
+      "resultSha256": "00816ae8048e82d33cd27929f9715e4a958211059efbb2e4f6c69ecaaaf64d50",
+      "transforms": [
+        {
+          "from": "import {z} from 'zod';",
+          "to": "import {z} from 'zod';\nimport {startSuiteActivation} from './alpha2-subagent.js';",
+          "count": 1
+        },
+        {
+          "from": "ctx.subagents.start('spawn',",
+          "to": "startSuiteActivation(ctx,",
+          "count": 1
+        },
+        {
+          "from": "const cwd=agent?.session?.header?.cwd;",
+          "to": "const cwd=agent?.session&&ctx.get('workingDirectory').get(agent.session);",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/scope.js",
+      "sourceSha256": "2f3562e636383cf7474777689ed7c851b0922d0cdfac48bb8003feb06d40d8a3",
+      "resultSha256": "7365862e781dd934d5c4d2b258ff8eb1965ef331778cbe94c67d3d51e463188e",
+      "transforms": [
+        {
+          "from": "const cwd = exec.agent?.session?.header?.cwd;",
+          "to": "const cwd = this.recoveryOptions.workingDirectory?.get(exec.agent?.session);",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/settings-runtime.js",
+      "sourceSha256": "4297213f85f412a25e6458d7085d11941f706e32e854615d121da3686b7763b7",
+      "resultSha256": "e9382243eb9241079ae3db9f25bdcd280fb3d589dc6af767c46cb221f2000aa1",
+      "transforms": [
+        {
+          "from": "const cwd=exec.agent?.session?.header?.cwd;",
+          "to": "const cwd=exec.agent?.session&&ctx.get('workingDirectory').get(exec.agent.session);",
+          "count": 1
+        },
+        {
+          "from": "enabled:true,followRegisteredProjects:false,recoveryHost:ctx.recoveryHost",
+          "to": "enabled:true,followRegisteredProjects:false,recoveryHost:ctx.recoveryHost,workingDirectory:ctx.get('workingDirectory')",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/business-runtime.js",
+      "sourceSha256": "8131ea71ba52e693f5a7962973507eabc4d79e466960b35ff9366c24b1be50e6",
+      "resultSha256": "c997e99fb6e7faaf3ca71445c7bd35d5ee8513da9d23804992b70636a6dc7b22",
+      "transforms": [
+        {
+          "from": "const cwd=exec.agent?.session?.header?.cwd;",
+          "to": "const cwd=exec.agent?.session&&ctx.get('workingDirectory').get(exec.agent.session);",
+          "count": 1
+        },
+        {
+          "from": "enabled:true,followRegisteredProjects:false,recoveryHost:ctx.recoveryHost",
+          "to": "enabled:true,followRegisteredProjects:false,recoveryHost:ctx.recoveryHost,workingDirectory:ctx.get('workingDirectory')",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/p1-runtime.js",
+      "sourceSha256": "7b76f227ca66e45f0f17f26e6d10267949d1f6d0cf387555c0e37d9679d599a2",
+      "resultSha256": "0491709731f707d3f2a9dfd3c5c3d8a87e99778e6a19c411f487edb3bccff35f",
+      "transforms": [
+        {
+          "from": "const cwd=exec.agent?.session?.header?.cwd;",
+          "to": "const cwd=exec.agent?.session&&ctx.get('workingDirectory').get(exec.agent.session);",
+          "count": 1
+        },
+        {
+          "from": "enabled:true,recoveryHost:ctx.recoveryHost",
+          "to": "enabled:true,recoveryHost:ctx.recoveryHost,workingDirectory:ctx.get('workingDirectory')",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/lib/project-binding.js",
+      "sourceSha256": "be53b6f01cb1839b82967d16513a5654225230edc2bec617d58eccc48385ff21",
+      "resultSha256": "56e6648718ae3d4e19dc4f6df9f263dffe96b3927221aa846d6f0049d49a3d08",
+      "transforms": [
+        {
+          "from": "if(typeof session.header.cwd!=='string'||!same(session.header.cwd,active.result.project.root))",
+          "to": "const cwd=ctx.get('workingDirectory').get(session);if(typeof cwd!=='string'||!same(cwd,active.result.project.root))",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/host/plugin-group/index.mjs",
+      "sourceSha256": "670c827722e6fba45abfd778b637e32cbf67e1d226d19b8c366f2411242399df",
+      "resultSha256": "ff9e815c45b0f09cb1ee533c54b0224ea177c23aa546f0bae779c2b7c49fb387",
+      "transforms": [
+        {
+          "from": "session?.header?.cwd??''",
+          "to": "ctx.get('workingDirectory').get(session)??''",
+          "count": 2
+        },
+        {
+          "from": "session.header.cwd??''",
+          "to": "ctx.get('workingDirectory').get(session)??''",
+          "count": 1
+        },
+        {
+          "from": "realpath(session.header.cwd)",
+          "to": "realpath(ctx.get('workingDirectory').get(session))",
+          "count": 3
+        },
+        {
+          "from": "const cwd=exec?.agent?.session?.header?.cwd;",
+          "to": "const cwd=exec?.agent?.session&&ctx.get('workingDirectory').get(exec.agent.session);",
+          "count": 1
+        },
+        {
+          "from": "p=>cwd&&inside(p.root,cwd)",
+          "to": "p=>cwd&&inside(p.root,cwd)&&isAbsolute(session.header.cwd??'')&&inside(p.root,session.header.cwd)",
+          "count": 1
+        },
+        {
+          "from": "p=>inside(p.root,cwd)",
+          "to": "p=>inside(p.root,cwd)&&isAbsolute(session.header.cwd??'')&&inside(p.root,session.header.cwd)",
+          "count": 2
+        },
+        {
+          "from": "p=>inside(p.root,canonical)",
+          "to": "p=>inside(p.root,canonical)&&isAbsolute(exec.agent.session.header.cwd??'')&&inside(p.root,exec.agent.session.header.cwd)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/host/context-preparation/index.mjs",
+      "sourceSha256": "110c74099985b81caf70a285ecd9662a8f7ae0cf8902437ceb131fcbb4ceff29",
+      "resultSha256": "32364edece8f70a972d784c051b6da256c2ab3cb074232be078fec551928a1de",
+      "transforms": [
+        {
+          "from": "session.header.cwd??''",
+          "to": "ctx.get('workingDirectory').get(session)??''",
+          "count": 1
+        },
+        {
+          "from": "realpath(session.header.cwd)",
+          "to": "realpath(ctx.get('workingDirectory').get(session))",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "bundle/host/session-jsonl/index.js",
+      "officialPackage": "@deepseek-ai/dsh-session-persistence-jsonl@0.2.1-alpha.2",
+      "sourceSha256": "027803dde72aac7038253f0a8ff9fdcdbf0eb8cad53ed26efa3ec610f01587e7",
+      "resultSha256": "d215f9227b49a72d498a0edae96886d7733ffccaea84d9a562cfe752a7e38f0f",
+      "transforms": [
+        {
+          "from": "\"@deepseek-ai/dsh-session-format-catalog\"",
+          "to": "\"../../lib/session-catalog.js\"",
+          "count": 1
+        },
+        {
+          "from": "\"@deepseek-ai/dsh-session\"",
+          "to": "\"../../lib/session-vocabulary.js\"",
+          "count": 1
+        },
+        {
+          "from": "\"@deepseek-ai/dsh-session-persistence\"",
+          "to": "\"../../lib/session-storage-validation.js\"",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/host/session-jsonl/worker.cjs",
+      "officialPackage": "@deepseek-ai/dsh-session-persistence-jsonl@0.2.1-alpha.2",
+      "sourceSha256": "2589f80da04b1848af377da5583def9dc847bf1136c020c655576b6f68078eec",
+      "resultSha256": "0ee633d963c3db6039b315884e5107628247a94df8380ccb2032e879f01c5105",
+      "transforms": [
+        {
+          "from": ")(\"../package.json\")",
+          "to": ") (\"@deepseek-ai/dsh-llm/package.json\")",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "bundle/contracts/modules.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "64ce92eedf4deae711b166a4fb6bac4b157e58c7c2ba5e948b522ed3fc49aaf5",
+      "resultSha256": "f9a510d25ee41d6d7f147dda19fea0acdb5c55f1af712cfa807904b4073c6028"
+    },
+    {
+      "path": "bundle/contracts/configuration.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "12c9a72199da2d8660edd0a8825d568c5a4e16774b14536d6e0a84c56b65fe4d",
+      "resultSha256": "adf978e5e907df28abf068f6f328922afe36e27a0fafbd3e867d40d894bb7d03"
+    },
+    {
+      "path": "bundle/contracts/session-persistence.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "6e26e34b4c56e552a3d3a3453811631c25d4151c38ef80c3279d6ead849f6cc2",
+      "resultSha256": "2da4fe889dd0b6188d45483edf78e5a41268184510707eab8867ea8bf02a7c68"
+    },
+    {
+      "path": "bundle/contracts/file-protection.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "963174c59e8a495b95d156dd3461c2dd8c68ea462ce23c1bbf05790008935ea5",
+      "resultSha256": "92941c17ff2e6843ffe699b5ef5e6f007900f153c19b63544616ec95f9cde31f"
+    },
+    {
+      "path": "bundle/contracts/file-consumers.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "e5672672830d7831059b6789e560acbf933532d868d2975335f03583e95efd10",
+      "resultSha256": "fff6ec7befaefc44499cadfa0b397ea987abde748eb09344323874b45c892583"
+    },
+    {
+      "path": "bundle/contracts/project-binding.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "eb8e0a622c66ba75ebe45b2134c23faf53e94a82006003276ab0b2414c77b1e1",
+      "resultSha256": "94d9baff258478800fe7d739947cd339b7813ff395c74b6806d407d3af7e6473"
+    },
+    {
+      "path": "bundle/contracts/protected-profile.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "4165c61cde874bd197a1ce181827fa6202c8e71030f87f9a6b16544684d31f99",
+      "resultSha256": "13423697d0b45e720d19311284682e181fb39c78b4449bf23ee17a24c3407e8d"
+    },
+    {
+      "path": "bundle/contracts/compaction-group.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "0297637ed329c7c7a3a3258a4a052cee1d661c00a3049cb94b6c949791d8d5c6",
+      "resultSha256": "3dceb16363da771f14d83af612d54176209ef3cbd61feb559d5520ce8dd9c99a"
+    },
+    {
+      "path": "bundle/contracts/native-compaction.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "0fb38cc15371ffed184095668eaba4210f9d343b012d440e181a2287b9c07571",
+      "resultSha256": "0f2773b3c635c1d6560a34327095b94877c2154cb28a1354364f4f0c0c1894e7"
+    },
+    {
+      "path": "bundle/contracts/p1-runtime.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "20628d68b4ae94f73575ab2cd3fdeda934e1b6cfc92f964f1e92c8726941ccf9",
+      "resultSha256": "b6fa7a211379d252a45eb9d29bbcfe0b915494071370a1ce2b13abd82a829369"
+    },
+    {
+      "path": "bundle/contracts/business-runtime.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "2903170a2ebd07ff95069349e48c916d74975432f698f3e8bb56e09da2f2fe09",
+      "resultSha256": "2030a9e661a834da1d39e476a0cc0fb10a300906f91de642941b89ea86f0c0bf"
+    },
+    {
+      "path": "bundle/contracts/settings-installation.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "b786e0369211dfb4ac6e8fcbe9230a628d3a5dfd164d45258ccdbab3de34a238",
+      "resultSha256": "4498f2537732249e330827951be5dcd3005a73b634c9b3a981dba7de0dc5f12d"
+    },
+    {
+      "path": "bundle/contracts/host-dependencies.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "d1cab9b714ee1fbfa6d319843686ff0f40910735059d65be0fb9b20a5c31e53a",
+      "resultSha256": "792d8701aa980d338df048770c2e38f443710967da57ce2124484be13cc5facd"
+    },
+    {
+      "path": "bundle/contracts/native-settings-installation.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "698f72e6a7d0c0767aa3f9c29a1e41a7bc577ea9a1c28221238dadd1f5132548",
+      "resultSha256": "9d3bc16ea55d60feb365b96a943c911a32545ce3de5aadd74deaa2214cf328cf"
+    },
+    {
+      "path": "bundle/contracts/context-preparation.json",
+      "kind": "baseline-contract-scope",
+      "sourceSha256": "5df17968b8501ffea5ca88244ac9a835757d0ff4250cb40fe8364baac1823e57",
+      "resultSha256": "9fac1490d7419d6ba61a77c70df0475ae27ec99a92f74c897f5e77468079a973"
+    },
+    {
+      "path": "package.json",
+      "kind": "manifest",
+      "sourceSha256": "c3c1532fac53c66e2e1621c3c9976f7dd1f9b35234f01e453c70956547893c42",
+      "resultSha256": "bba4c9830a3f7c194a08133b6d381895b38a165b86747abf35fb7f353d7455d4",
+      "scope": "isolated alpha2 candidate version and exact peers; default admission unchanged"
+    },
+    {
+      "path": "bundle/lib/settings-runtime.origin.json",
+      "kind": "origin-supersession",
+      "sourceSha256": "1b1eccfab9759d91c1a9f3091f0fdc3aa150e30487837f7e2f10287ac5297911",
+      "resultSha256": "8faf29bc0517c7339d867852ef3317aad7f921b13c9ddd1bac75efa78d71bee0"
+    },
+    {
+      "path": "bundle/lib/business-runtime-origin.json",
+      "kind": "origin-supersession",
+      "sourceSha256": "649c7c690e4f621855eca3605f5d75970791fd9eb8c7e1d865fca09af09444a5",
+      "resultSha256": "08419e6e20f55c881748a61f604091264ab7f10925f1dd009ac70cdb5873d700"
+    },
+    {
+      "path": "bundle/host/p1-policy/origin.json",
+      "kind": "origin-supersession",
+      "sourceSha256": "514985b7f946eb4079d29ed9f37f39a86991a16a01099e5a4ee473695ecedb1a",
+      "resultSha256": "bdec73d9c8c2d66ae504a7e6bfd36d4cb2cdd36ce1665487c3591202f253342e"
+    },
+    {
+      "path": "bundle/host/plugin-group/origin.json",
+      "kind": "origin-supersession",
+      "sourceSha256": "b5c82ad27b7a11b7f5733c010e2dc970cba58fff488b955f842f1c8f91eb3ef1",
+      "resultSha256": "df85ca446888c58b9f418d356102d10fab452e41df5b2ba70f8394a6723ba6bf"
+    },
+    {
+      "path": "bundle/host/context-preparation/origin.json",
+      "kind": "origin-supersession",
+      "sourceSha256": "cb4d9ea838ec188622f74d0a31781517efa3a3b3aed1b708c02aa25519165267",
+      "resultSha256": "a31de87bb2a156e86a767b7a68fb8be790695b35ce6d6e2d076b9cb6790acda6"
+    },
+    {
+      "path": "bundle/host/session-jsonl/origin.json",
+      "kind": "origin-supersession",
+      "sourceSha256": "9ebc62dd65899ac605a362edf134049dbf90b199c4b266ce5c7f8278121b12a8",
+      "resultSha256": "b1207ff9f489f58c19a28bc7980c5fe63c6a909c2caf706dd39c052a1204a522"
+    }
+  ],
+  "officialGateBridge": {
+    "package": "@deepseek-ai/dsh-invariants",
+    "installedVersion": "0.2.0-rc.2",
+    "hostVersion": "0.2.1-alpha.2",
+    "range": "0.2.0-rc.2 || 0.2.1-alpha.2",
+    "reason": "fixed-host gate bridge only; no alpha.2 invariants package is asserted"
+  }
+}
