@@ -3,7 +3,8 @@
 // Local changes: remove TypeScript-only types and host search wrapper.
                                                                                                
 
-const WORD = /[\p{Script=Han}]|[\p{Letter}\p{Number}]+/gu
+// Non-Han word runs stop before Han; punctuation and other scripts remain boundaries.
+const WORD = /\p{Script=Han}|(?:(?!\p{Script=Han})[\p{Letter}\p{Number}])+/gu
 
                                                    
 
@@ -13,8 +14,11 @@ export function tokenizeUnicode(value        )           {
 
 export function tokenize(value        )           {
   const base = tokenizeUnicode(value)
-  const han = base.filter(token => /^\p{Script=Han}$/u.test(token))
-  const bigrams = han.slice(0, -1).map((token, index) => `${token}${han[index + 1] ?? ''}`)
+  // Pair only consecutive code points in an original uninterrupted Han run.
+  const bigrams = [...value.matchAll(/\p{Script=Han}+/gu)].flatMap(match => {
+    const han = [...match[0]]
+    return han.slice(0, -1).map((token, index) => token + han[index + 1])
+  })
   return [...base, ...bigrams]
 }
 

@@ -1,0 +1,1421 @@
+{
+  "schema": 1,
+  "scope": "Consumer source byte binding from the pre-execution transfer inventory; final actual package is separately bound by native core/storage INPUTS. sandbox-runtime must be a physical copy, not the earlier rejected test symlink.",
+  "sourceFiles": [
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/ALPHA2-LINUX-PROFILE-VERIFICATION.json",
+      "bytes": 31836,
+      "sha256": "959bcb63e83f8890451a381920471105edadbc9ac53c493509b300b22c5d781a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/ATTACHMENT-UI.md",
+      "bytes": 11804,
+      "sha256": "31d8529e2a57421fce39e5aad663dadaaae37b5082629dfa60f4743de317c044"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/CONTEXT-MEDIA.md",
+      "bytes": 6301,
+      "sha256": "ca16a356609ad6683b936c514641e41db32e4ccba4c86d207047db01b48202e7"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/DESKTOP-CONTINUATION.md",
+      "bytes": 8933,
+      "sha256": "a5608dd757df4b23751f23150d9592cdaff503440bda50d0df4e22ec476b650d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/DOCUMENTS.md",
+      "bytes": 8842,
+      "sha256": "cb2c2168dbd836eb51f2e695c0a7414a5271f746ce07f03bf9c46f25b9b64d05"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/FILE-ATTACHMENTS.md",
+      "bytes": 10664,
+      "sha256": "1fb8b7ef443548046413a2ec15857e786e1fa90c7ccabe6b997a750d3f3c7781"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/LINUX-CERTIFICATION.md",
+      "bytes": 7935,
+      "sha256": "f2120c7b8d8607f6281a6dcac389aa51340c863e2b955c0846cf02582e2beeb2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/LINUX-CLOSEOUT.md",
+      "bytes": 10679,
+      "sha256": "f09597c7ccd77e6b2b4b366e728d8e2623999dc4581a102d8e781df566f1ae11"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/LINUX-FINALIZATION.md",
+      "bytes": 9332,
+      "sha256": "931c286a401b382880001af6039f408964efeb5dec94f163d8d5d9c386946292"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/LINUX-PREVIEW-README.md",
+      "bytes": 8502,
+      "sha256": "3f03f9efac8de52b40505e25e1a2ce547e6db8e9a530e2b737428ad70b621ce9"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/LINUX-REVIEW-REPAIR.md",
+      "bytes": 5043,
+      "sha256": "6a3bc97dd7f8e867eba9a7fba92c680cc8369813c50d5ee31bee5d66e08a3726"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/LINUX-VALIDATION.md",
+      "bytes": 6331,
+      "sha256": "2e7c71cd12941cd7caf3511a8fe08de6d70522d64e7f5e2625c10d04b955e6ff"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/PHASE-REPORT.md",
+      "bytes": 3521,
+      "sha256": "ed34f0a12990b0e43b5df8ebad77874149de228a749fe0f4c51003c7c06228a2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/PROFILE.md",
+      "bytes": 9496,
+      "sha256": "513d3e3ff146b94f0d93e1e6d994873b70a74bf637697f6f5c2b91cab5bf57c2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/README.md",
+      "bytes": 12116,
+      "sha256": "a317232aee4d15c5d5009a3c1decf5d6ae71f4f2374b407acc37558fbaecc899"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/SEP-CORE.md",
+      "bytes": 10214,
+      "sha256": "420d60d021aacab8b07520a1240dcf566e230356a8d816ab6faff827b0694956"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/TRANSACTIONS.md",
+      "bytes": 8977,
+      "sha256": "87c0e6d59b8dfabec606c3e59aa734a9b2021ff7cc2f5dfa03cfe7dd8f6133b2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/VISION.md",
+      "bytes": 9535,
+      "sha256": "3c83b98c6296720f7be77410bb6953cb96851c260acda8a17eb4d858210e2b39"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/active-inspection-fixture.mjs",
+      "bytes": 2382,
+      "sha256": "38b43d12dc196e008ddd1ebbdd5477d1d7313dc134760221561614b74204431b"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/active-work-fixture.mjs",
+      "bytes": 2971,
+      "sha256": "a8d0a4abef23029fab82578502b67ccb9b912f1321378f72a2f5a5444bece431"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/attachment-fixture.mjs",
+      "bytes": 322,
+      "sha256": "a9340caee70823d95abb7b79a0578a8e8dce76aeb0266778afc9382aa06b86db"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/attachment-recovery.test.mjs",
+      "bytes": 6548,
+      "sha256": "dad3ea1925d94b22a8a85a3951dd7e799bcfec7de347de3d8b99f9868ff99595"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/attachment-worker.mjs",
+      "bytes": 516,
+      "sha256": "620f66500b6b785639c614afc87871965f5fc59d249aaf69ff311cb17ac04adb"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/build-documentation-candidate.mjs",
+      "bytes": 2070,
+      "sha256": "8656af4906275e4d26eec94459e1d921bad587fdb2b557a83df902f575bd834e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/build-linux-payload.mjs",
+      "bytes": 5616,
+      "sha256": "2f1803a025b9e56290c0fd60cd8cd13abc81ff0482ecfd71453aa3599580a01e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/bundle-modules.mjs",
+      "bytes": 388,
+      "sha256": "4db62259483ddfc7440568ce66f2a1469f4356ac5d1a908cb9b831a80520d10d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/clarify-validation-ui.mjs",
+      "bytes": 2123,
+      "sha256": "3e77969dc5708c2c870ee83f9e3346c59e35bc6e550ba9ee05dabcccbdb5543c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/cleanup-cli.mjs",
+      "bytes": 885,
+      "sha256": "f71f6ea6f16836b07ead2d96bfebf20b2dd5b773faf02525a4ce757b6eea8efc"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/cleanup-closeout-history.py",
+      "bytes": 1547,
+      "sha256": "e2475deb7db8c5215b78769288673b89699b918f8bb9b5c186a8ea1e26c538b6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/cleanup-historical-fixtures.py",
+      "bytes": 1683,
+      "sha256": "fe364542abb5184fbe820bd2b79eca46047ba45d789b5469c0df743f2247c69c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/cleanup-recovery.test.mjs",
+      "bytes": 7656,
+      "sha256": "dc8c3129858698535332413e84b1d5c802b4e5788b8e5e35818df50f6af6e521"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/collect-attachment-ui.ps1",
+      "bytes": 953,
+      "sha256": "512a56b0425a963b7cfcc9fa688cb6279f097ac95fc156b94bdd81ae50107721"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/collect-context.ps1",
+      "bytes": 949,
+      "sha256": "91fc6e3bccd8176644f7b8144eb7a2631fbb7c1bdb688529f5d5dcdb15b6f2f6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/collect-desktop-continuation.ps1",
+      "bytes": 988,
+      "sha256": "56d7398c3330f998deeeb4159b762df0c6ee95f82c15eb373f14632944dab6c4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/collect-file-attachments.ps1",
+      "bytes": 962,
+      "sha256": "96b5ea2734becae39a796c40d06b221a3addaa7281b4f6c2b9477b4e7956a408"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/collect-vision.ps1",
+      "bytes": 942,
+      "sha256": "4a4ad14a3d9d4a0cbd32df705abd25427f0966301ef3affee0177bc04048cc01"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/context-origin.mjs",
+      "bytes": 1050,
+      "sha256": "9668d199f922f3d4b4db899c119a93d6c9d6c6b59e9e02fdbf5a48935ad8ce2f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/continuation-export-paths.mjs",
+      "bytes": 933,
+      "sha256": "9c4eea97ba345bf157a4a746e424540ebcd9003c84eed7fa5eae2178976e169c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/continuation-export.test.mjs",
+      "bytes": 1275,
+      "sha256": "04e9dd65e8509be4312b3cbfdabe9e68082f80461d9d6bdacd9462d76b5f50c6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/desktop-attachment-probe.cjs",
+      "bytes": 8468,
+      "sha256": "64371e855e35158398c92c6877b683a542a5d0ebaa2c5a948268f1362348e984"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/desktop-continuation-probe.cjs",
+      "bytes": 5095,
+      "sha256": "f767837ed70ead968902247757d2a3274539a708d704244376d2869823e0409d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/desktop-continuation.test.mjs",
+      "bytes": 2259,
+      "sha256": "423747c0a972f268121debe62f4fd467be68737e39540f21cd7300d7620f5c3f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/desktop-file-probe.cjs",
+      "bytes": 4285,
+      "sha256": "208961a997d0113b1795d5ad01cc80d94ee382ca6b0919175671b2386cc27e4a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/desktop-probe.cjs",
+      "bytes": 3811,
+      "sha256": "de3c061bb346783613e65545ad38dd0e502936eb069d79cef2cf519bd88808f3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/desktop-settings-probe.cjs",
+      "bytes": 2628,
+      "sha256": "15ffc628dfa923f4e0af7ddfb64530176dc926989eba0081d1a1b4f0d07caee0"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/document-copies.mjs",
+      "bytes": 9419,
+      "sha256": "79d30cdbec67024d59fa27fc8730bdff8c0036cba62f973f730ac06ac5fcebfb"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/document-transactions.test.mjs",
+      "bytes": 6398,
+      "sha256": "2df3dbdd3e809776398ef81dae6c90c7061ae918077a5314c5159a5d70e453d5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/document-worker.mjs",
+      "bytes": 360,
+      "sha256": "3f9b35c2b2528bdce65c10a9068201b3cce5da0c63252b5970a4f5ed914c6e50"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/electron-quit-repro.cjs",
+      "bytes": 1162,
+      "sha256": "6969144efca5af71f8b013ca5d70dddb39aae8030b324be029af2e9fd42e968d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-active-inspection.mjs",
+      "bytes": 3584,
+      "sha256": "57e3783fd026ce2b8557dbce6f9a3e1f558466b79d7a8de905210566aa11ab42"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-certification-final.mjs",
+      "bytes": 2076,
+      "sha256": "49b955cef7430a815542684bc4ecf83c1e38f7b24b2e66cffb0af7dd36ae1684"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-context-desktop.mjs",
+      "bytes": 162,
+      "sha256": "88ea313f8656121e49a9b9d8c4c981a11c78efd3170d32f597b2e38557e26d98"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-desktop-continuation.mjs",
+      "bytes": 131,
+      "sha256": "f55ff73caccb2de416079d28f21805243d10a7aade203a8793092720fb28d401"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-electron-quit-repro.mjs",
+      "bytes": 2232,
+      "sha256": "11841653e59fa5d531217b9875246ab05c39a2490ad2a41667b7a3ce7e6c24c3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-evaluation-controls.mjs",
+      "bytes": 2384,
+      "sha256": "648afdc869de090108d011f581784ac6f67a49754de1485d8f50600e7e7c7e40"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-finalization-continuation.mjs",
+      "bytes": 2160,
+      "sha256": "02c07a7603b74b036034bc8c14a9b4724872a61067771d5c7d1a482576d31463"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-finalization.mjs",
+      "bytes": 2409,
+      "sha256": "202875919be13b10dbe7ed383d20cc745c8acca624421f886a698eb9e7ec3724"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-installed-core.mjs",
+      "bytes": 2970,
+      "sha256": "ffe046950c04f00ed066cd8ee2b572b569e2fcda6dc85c367ded56687fc7f751"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-installed-desktop.mjs",
+      "bytes": 4951,
+      "sha256": "08c20a634f0240737ce57c3cb7a8554c46dcf57e110fbb90fd7f93474bf00d74"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-installed-linux.mjs",
+      "bytes": 4515,
+      "sha256": "da9672f2fb585c0035fe88cc83636e8d97978b5bf3348a9290ce35d1226b040d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-main-quit.mjs",
+      "bytes": 5748,
+      "sha256": "abba8fc10237f84f267ff20a025466c5b36e2ea04ce7cc079d214da35929097f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-native-click.mjs",
+      "bytes": 6617,
+      "sha256": "2a5ec38e961235e0679044a004e5a8fcc337b19cb01d10d6464a01b5d400c102"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-native-quit.mjs",
+      "bytes": 5269,
+      "sha256": "42a880840e233a40be239350e8962c685f4892b63170ee1211a81e55a2270a12"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-owner-crash.mjs",
+      "bytes": 4121,
+      "sha256": "88e85279107f7a635347c979fa6cb57f0c881e6887e5b638f22860d3b25bb0f6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-signal-restart.mjs",
+      "bytes": 3794,
+      "sha256": "08d64f3d6fd6c3d141ac766dc04fddca129e3cf761c765974a7a2149cdcdaced"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-supervision.mjs",
+      "bytes": 8261,
+      "sha256": "c038dd1f39d8439e5fa9a1cffa605f736ce0926150e13d7ac6f80d1682797882"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/exercise-validation-boundary.mjs",
+      "bytes": 4638,
+      "sha256": "d52b20b66f0ba8562f3e492bd23434773a8306e63f2b4e6d8ed2fcbaa674da43"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-attachment-ui.mjs",
+      "bytes": 1195,
+      "sha256": "6a3906a956cf6ba13804a5de8855c091f9d2d04cce1699c1109b3db398e36e89"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-certification-evidence.mjs",
+      "bytes": 1269,
+      "sha256": "8a5b956fe26c1d5198abd776b04596290399c242a2bda76a95a0e0e999dc6a95"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-certification-final.mjs",
+      "bytes": 1296,
+      "sha256": "302cf3daab5ee6b82f508a457b3c78410a061d07331ae40c51ab3ed2780edd84"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-certification.mjs",
+      "bytes": 1289,
+      "sha256": "fb6b6f922efa9f110f30852733452d14cbf362c5cc52ac4063080274eafa9937"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-closeout.mjs",
+      "bytes": 3047,
+      "sha256": "2a6dd74997ccf03cb99db45123202051af7321e1bc3825de13d355d1ed9d37e2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-context.mjs",
+      "bytes": 1201,
+      "sha256": "efaddb0f168d480a0ceda45a46814d2b8c36ea6a933e963463ccdec6e1b1877d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-continuation-file.mjs",
+      "bytes": 739,
+      "sha256": "4f7a369d56725137bd8427925595b48e6c64f9ad77aa66c60367eacd9e5885b0"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-desktop-continuation.mjs",
+      "bytes": 1227,
+      "sha256": "d8ed870c9e659cd5c15a2ba8f0224c328a3898408c81398dbadaf6aa64a7fe86"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-documents.mjs",
+      "bytes": 1187,
+      "sha256": "4f1bd18a750d516c6be6b80dd1e0263c0d17bd3033bbf9fbe4d58ecff080a702"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-evaluation-controls.mjs",
+      "bytes": 1523,
+      "sha256": "4b14397fe6d66dae850e209c4c06ddda1d80f3195340d275224aedef8920e1f3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-file-attachments.mjs",
+      "bytes": 1201,
+      "sha256": "7cc51bddd54e3b8d1d294539636d1c9dc5ed5f824bafe842f01e02a4b66423e1"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-finalization-ui.mjs",
+      "bytes": 640,
+      "sha256": "53ebebe2dea849613658b62fd2ddb03820751a14efa358a9df967f5488a2f55d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-linux-desktop.mjs",
+      "bytes": 1775,
+      "sha256": "ba62096e29827eae244ab7c61163ac90c9fc1909b639c43b31e98e0f75bd35e5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-profile.mjs",
+      "bytes": 1178,
+      "sha256": "ebb1d1cdaee68199ac60e58c6d6dee1472debd0568df7dda0894c4d300f0391d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-ready-evidence.mjs",
+      "bytes": 1221,
+      "sha256": "0914a915c90af8f57910dd3f9d1b3c25dc8747a36047e654a490975d1341d527"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-ready-ui.mjs",
+      "bytes": 1056,
+      "sha256": "a0157b84661363af4c4135afbd74ef22f12d0d6f126485f4c7e2b834d87d49cf"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-review.mjs",
+      "bytes": 1798,
+      "sha256": "4f2029d8412fd9492362150d09e2730e11d9d92af284b2ed0d0ba95da8624011"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-sep.mjs",
+      "bytes": 1213,
+      "sha256": "d5ea0ae353a09e3fa181916bfe3619a60c917b3726ea59464a08ff89112d9e7c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-transactions.mjs",
+      "bytes": 1171,
+      "sha256": "b25b7ba54a6a03451da50af1d7855eb8219d3e5b9a4e8e1d2d1a89ef0bb2837f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-validation-evidence.mjs",
+      "bytes": 1260,
+      "sha256": "dfa6e1a4a71ed4742ca0cc35f126ed83e1c987feb26c9f47ee11b1e068d2fe74"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-validation.mjs",
+      "bytes": 1284,
+      "sha256": "2d06893108ecce108c8e94fa7055bf81a8760494aefa6a9bb8f1355ed8ca3128"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export-vision.mjs",
+      "bytes": 1181,
+      "sha256": "c5e355cc3d0fbf6fa9071235c97bab54286883c83e8213e3e4a50292785baa29"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/export.mjs",
+      "bytes": 1866,
+      "sha256": "041dc832f7fc19dcee88649804fdea1c361a524345d08aec2c92f15f53daf0b8"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-attachment-ui.mjs",
+      "bytes": 9665,
+      "sha256": "1bcca6403e79f96d4521975c053929d4c06b9336b55c577ae132f9c9884e3f43"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-certification.mjs",
+      "bytes": 11006,
+      "sha256": "761ecc3dc3689f635cc208c518f9280321ce2a23283da1677fc3f24a695b0a3f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-closeout.mjs",
+      "bytes": 14351,
+      "sha256": "7598cc43da883c676763748243f7fdf89e67517ec343a791132aa118c9a721f0"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-context.mjs",
+      "bytes": 10002,
+      "sha256": "faebc15bf162970b4bdc3b2cdf12a5701abdd77f08f358ff72181022e6fd90d1"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-desktop-continuation.mjs",
+      "bytes": 11112,
+      "sha256": "e1cd248a08258117dc555c31763201e8e0fdccf5a4fbc66ce22899c6f1cab267"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-documents.mjs",
+      "bytes": 8435,
+      "sha256": "feb60cf895588828156ad1a6797cf1625b4ec90112386b6b03a33968eda99bd7"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-file-attachments.mjs",
+      "bytes": 9582,
+      "sha256": "eaafeb0844872f507cbfa149ca3f873f66894ae4c96b371d0c62bf59bc4f98a9"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-linux-delivery.mjs",
+      "bytes": 12024,
+      "sha256": "133a5670b295aa1745115a85c24bee08c5095cd0b3028b2b0c8479c48401ca93"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-linux.mjs",
+      "bytes": 5493,
+      "sha256": "3d11435e5085cf045c11d0bbd3c9d27d5e5746d260c9f104abe2fd1914bec230"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-profile.mjs",
+      "bytes": 9291,
+      "sha256": "7c1c97aa5da5e6ea47a3fface44f36a0f52b93bac343bd6607c05154816e4ea6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-review.mjs",
+      "bytes": 8610,
+      "sha256": "b8be699d0c995629c6875cca0ea3476f2e67abe6b0eebd17716424cd2f3b96f6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-sep.mjs",
+      "bytes": 9916,
+      "sha256": "3863fcc4292e67d3c0b11efda8dc722d3fdfa9366725ac2d2568613398bb1ad5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-transactions.mjs",
+      "bytes": 4310,
+      "sha256": "e2496304929fd8f11621dfe1ae69c423e1d1592c80dffa9773795dc61bd1ce80"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-validation.mjs",
+      "bytes": 9635,
+      "sha256": "da7e729055b78dbc374f383f2d02a09237df346314bd8ae55cc1f72a280538de"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finalize-vision.mjs",
+      "bytes": 10708,
+      "sha256": "3568f2cfd95c70bb51cd53fed8f1a5ac60500e67a9e679a21ae6bbafa75591c7"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/finish-vision-sync.mjs",
+      "bytes": 4098,
+      "sha256": "f1e8453d57c235b0398faf090d54de97580fff722c49561a8479afdf243f7e9d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/host-modules.mjs",
+      "bytes": 730,
+      "sha256": "95030408ffcdc90af5a3c3776f640dc48fc1e2686ed55f4710e5e40bc0065b72"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/inputs.mjs",
+      "bytes": 1056,
+      "sha256": "282492daedec695f7341991957699fc7670a6e643051324d1a6762eec98bf70e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/inputs.test.mjs",
+      "bytes": 1772,
+      "sha256": "23606123bdac10da5f12510e84ee588932aa1a3df2962056a072fce2a3dd0425"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-certification-baseline.mjs",
+      "bytes": 1339,
+      "sha256": "3178be25ee9a09d01c07d0b54c26e4854b33da3890e43f5922630c8fe2d8c205"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-certification-candidate.mjs",
+      "bytes": 1329,
+      "sha256": "87b503de0b7f5c1b994be47e6068758ee0ee33715811db81312b2a6c0443ea20"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-certification-final.mjs",
+      "bytes": 1325,
+      "sha256": "fc5dac724d1e92c0dd8693c467ef7b3fbbcbb0032f8772e1af99a1177ad1fab3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-delivery.mjs",
+      "bytes": 1434,
+      "sha256": "7af2660ea307d25c3cea54548dbe4692bb1828be97514d259646b5b392fee32f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-finalization-final.mjs",
+      "bytes": 1432,
+      "sha256": "c469140608de914a8341a594e0b8e5eb45cd44b529a689da752c8f5ab93236e5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-finalization.mjs",
+      "bytes": 1353,
+      "sha256": "8092dea64be135ee2b0fd9094fa98fdac6cec45f587ae495c1a7a5600f70c226"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-ready.mjs",
+      "bytes": 1424,
+      "sha256": "219d66b934b00ae332a8368fb91b3eb0fbb735d02bb0bb95aa59d1775f397c72"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-validation-candidate.mjs",
+      "bytes": 1323,
+      "sha256": "1017f5d8c7e6a08e12f0baba2965d9da65ee8815ae07ef75b361badd7d47384a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/install-validation-input.mjs",
+      "bytes": 1311,
+      "sha256": "02765f742865985ab6d52b38fb2387d81336b61235bb0e6c9f34f9426cc84e9b"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/installed-core-fixture.mjs",
+      "bytes": 2964,
+      "sha256": "91d5acc676a80c32c5d7e8a7a9ed7de485dfce7c160623e8677b21380f4f9ca5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/isolation-transactions.test.mjs",
+      "bytes": 2671,
+      "sha256": "b142459cfdab077499d546bb06810aab5a586ec9aa3325b83992c68109e8f1dd"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/isolation.test.mjs",
+      "bytes": 4828,
+      "sha256": "912bfcbca13c84042d250777005ad0e34c6386908b97d672176982623f4b1fde"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-atspi.py",
+      "bytes": 7011,
+      "sha256": "fcc3183f56e0bbfa21f992accb4c75bef23f30f89b8ae2bc8fc614ad8bb64b2e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-attachment-cli.mjs",
+      "bytes": 1945,
+      "sha256": "3d4aaff2b815d112f1e537e7b623ae0bc478ff681201c19b5ceacb92df1e8406"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-attachment-intake.test.mjs",
+      "bytes": 6195,
+      "sha256": "227dc5259033f3e940ee6cd1fc120136df335d8c3632266d55e4bcacc3d45954"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-attachment-maintenance.mjs",
+      "bytes": 4003,
+      "sha256": "e7900242062acaf18b6d8ae8ae0d877dd7ae25db5c51688a23527105c81337e9"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-attachments.mjs",
+      "bytes": 7013,
+      "sha256": "32431341bf09b715bc559f0c27c4b8af75f13ab92b198d602bb37d566fd3bdaf"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-attachments.test.mjs",
+      "bytes": 5381,
+      "sha256": "0283aed993078b70d41111c519eacf38d50a627c496609d07bee806619b78db4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-binary-media.test.mjs",
+      "bytes": 3471,
+      "sha256": "89cbe689b85fe7e3e1779d62c40871f80148e0ab7005054754551627dfd95686"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-click.mjs",
+      "bytes": 7178,
+      "sha256": "69d2a277f068db3a2f2c1107fd19c1ff23c1c6eb3c1ee996bf0be2cfa9bec71c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-click.test.mjs",
+      "bytes": 1741,
+      "sha256": "e88de101edbc3f23c75e0cc521b98f84cb4219fdde71e9ccdb6f815c96c9d89b"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-consumers.mjs",
+      "bytes": 3170,
+      "sha256": "c4e8c516b95c97660b349869c842e3f4ae11f35d530c7bca95ad6034bb7f7664"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-context-preparation.mjs",
+      "bytes": 2623,
+      "sha256": "93be82091bdbb6da70ff1bb1c519f40150a0977ff011178d8e770ef95e6e2f10"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-context.test.mjs",
+      "bytes": 10487,
+      "sha256": "4d1902b7677ba8cc7760293fb69474193ddcc2ae17e8e5ce86b164a1100630df"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-continuation-host.mjs",
+      "bytes": 3944,
+      "sha256": "f4ab93a8684e30a2866b868e5df271a7148b672d739344847cf85c6d3767c73a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-desktop-adaptation.mjs",
+      "bytes": 1495,
+      "sha256": "0f0840d058b0f0db06c43bfb96da54b3643c2ec4ea08833e18578ba81faacd25"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-desktop-adaptation.test.mjs",
+      "bytes": 2162,
+      "sha256": "8e76d60d385177a73b361c012eb387c130789a480fecfe55b967ee0370574fdb"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-desktop-contract.mjs",
+      "bytes": 806,
+      "sha256": "927136a019c82104c8b9147411fbbdc8dfa7763de8392017b5d5fbb62b5f08fc"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-desktop-contract.test.mjs",
+      "bytes": 2650,
+      "sha256": "169ec4aaa05737491a5a451cae1cdbe327c180943dc29cd134dd9d1a9948a1fe"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-desktop-fonts.mjs",
+      "bytes": 1965,
+      "sha256": "97cf30a9d740553da5d4a7ca87486c0ffc76f1c734e60afc6ac2490889e02567"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-desktop-host.mjs",
+      "bytes": 3563,
+      "sha256": "4f210b53723d66575d7f48fde25d4a8df6f44c835953996994a6f7ecda78ba3b"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-diagnostics.test.mjs",
+      "bytes": 3796,
+      "sha256": "1e82e617977f9cbf6bf7c2ba8c1314daffc3d4498a519705289f7a7d6c6a8dde"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-document-worker.mjs",
+      "bytes": 716,
+      "sha256": "43e1bd69281b0814c30a7af1f596f194605f5910069a2378ce3735e56158e272"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-documents.mjs",
+      "bytes": 4751,
+      "sha256": "7d51629937f709a2180c72e624ee144a5dcf3c931ed49214aaf211faff3b5d83"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-documents.test.mjs",
+      "bytes": 6107,
+      "sha256": "ba1b767af3dbdfc2edfe1be8133292adff8c58e7d669fdfbd595e26273f2bbe3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-evaluation-paths.mjs",
+      "bytes": 704,
+      "sha256": "14cc1dcf7529c9416e8d73d4e53144aa45c7718a26a39da418a15877197b8588"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-evaluation.mjs",
+      "bytes": 6635,
+      "sha256": "1ec9d5177034fb9fc02df523d184f5dcb37a820d806292a17b63f4344c5064a6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-evaluation.test.mjs",
+      "bytes": 4140,
+      "sha256": "996ed34b556c6870cd0f1bc6e08c8f29a5df6dab3191c8f1c223438a005693ce"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-file-access.mjs",
+      "bytes": 2569,
+      "sha256": "7960cd62c2cb6554515448bf83a253c2a41743713e6afcf641f6256d286a5e4d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-file-attachments.test.mjs",
+      "bytes": 14732,
+      "sha256": "bad23c0e7bc4436f020bc6784450a81478b8463e593921a67e864f357fd0d507"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-filesystem.mjs",
+      "bytes": 4671,
+      "sha256": "a0b01f04c2b76501c92dffb06e421316198beef1df800be1b188a40e4c31584b"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-host-failure.test.mjs",
+      "bytes": 2692,
+      "sha256": "c26ccf3fcfb80aa3f2fce92581549f07b658ad60e263fe4df242b66c6786056f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-image-preset.mjs",
+      "bytes": 545,
+      "sha256": "da634f3919ea99b40cfa01cbc0fd5b4ba43cd5a0ec9516c1550398079aafd607"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-install.mjs",
+      "bytes": 8480,
+      "sha256": "6abd10b72018962f872629a815a654f6def9532e3cb0afa31f24e17332c4ca4b"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-install.test.mjs",
+      "bytes": 4528,
+      "sha256": "89cc1b3ba15f4eeca11a30cef70bbbd5e11f769effda171b63ce80045f0332b2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-installed-window.py",
+      "bytes": 5383,
+      "sha256": "1a20fb6c960070012862a1ab752ed3a29c72687b9d5c129bd286de1f1991ccaf"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-isolation.mjs",
+      "bytes": 7075,
+      "sha256": "eecfebb69ee74fff3e70308b2f58eec43133f27bdc221cc73eee205db3af17c4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-launch-lifecycle.mjs",
+      "bytes": 2210,
+      "sha256": "ff2b30e900b5e6abf9df33e197bd66c0daacceec9a0995d517a917f611727e4e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-launch-lock.py",
+      "bytes": 7266,
+      "sha256": "c033c2d0825aab6ebf59e19ab1282f253d6edcc876eaa2016f318b8b89198fa4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-launch-owner.test.mjs",
+      "bytes": 5517,
+      "sha256": "c1f1907716e66186e3b7378ad11d449d26b0254c3715b1c390c16be89103103e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-launch.mjs",
+      "bytes": 7359,
+      "sha256": "1bef08c822fa1344ecff7c4cdc5511709b21ccecb4396737cfa84a9e8d4b3942"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-lifecycle-review.test.mjs",
+      "bytes": 3303,
+      "sha256": "23ec91842122e28c44d30722ac180c5f7b16993051baad2bb7b5da185bafe48e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-native-file-store.mjs",
+      "bytes": 1676,
+      "sha256": "18c768e5b9e8795007f98c31e80f0edda0a7ac6285ce20b76555937ae6249616"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-origin-review.test.mjs",
+      "bytes": 1252,
+      "sha256": "12fc4a8f2c752fb38fbfbb0faa99245ade24d059ad764f623c8e6388221b3f28"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-payload-runtime.mjs",
+      "bytes": 1212,
+      "sha256": "dbdb2ed5ae9da0001be29d7696c56f01c7b93d13db97c720fce001b3b3a102f0"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-payload-runtime.test.mjs",
+      "bytes": 1460,
+      "sha256": "7c733dccc50f1750eadf7dd603ce80ac64fe9bce34c090d41887355a84fc25ab"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-picker-driver.py",
+      "bytes": 7525,
+      "sha256": "8cfc48a49c393fbbcfe43cfb21cacb2e78187566091bdf2c14f6c54e796d23ab"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-probes.test.mjs",
+      "bytes": 7078,
+      "sha256": "bbb594a1a6b21ff8cf593140e6521ac3ee7563522f1fee328d33a7ad32942851"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-process-owner.mjs",
+      "bytes": 3173,
+      "sha256": "752879b4dedb4d69037d967d8132eb2be55e2285e611ac0a3c83ab037e934f28"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-profile-plugin.mjs",
+      "bytes": 10251,
+      "sha256": "82b821a07e3a3bd164fd9c03436ead56cd3b4e96f62528e42bb4d6ad4a2aa820"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-profile.test.mjs",
+      "bytes": 13946,
+      "sha256": "19fbc3f0797fdc9c8e14ef7b4a1faf76b52029ea1aa1613e4f34074e1795aedb"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-quit-dialog-driver.py",
+      "bytes": 5457,
+      "sha256": "ebd5fe791f2467c875ab7e0df9b1cbd629644dbbb298851d8bae539ca21758b5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-sep-runtime.mjs",
+      "bytes": 13923,
+      "sha256": "7e3d21d798a9ba38bfd4685b89516dec1ec5b45648b2b7aeea5555c5dc935306"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-sep.test.mjs",
+      "bytes": 18289,
+      "sha256": "094dd5468b744a0e7602869f767cc3e6ab449a47aeeb540cc43c56b350aa401e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-snapshot-scope.mjs",
+      "bytes": 3582,
+      "sha256": "8931c10eac16575a3893104992b0ddb5b0f323c084765d848ce54f4ee57b5e16"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-standalone-host.mjs",
+      "bytes": 2244,
+      "sha256": "af83ff75201653f42ab16e0f9898ed0d79240976ad5882207669c6e34e6eed18"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-standalone-profile.mjs",
+      "bytes": 4911,
+      "sha256": "1f895308dbd5625ddfcb504f25c446a798ca92747663e449b11d6627802be4ba"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-standalone.test.mjs",
+      "bytes": 3897,
+      "sha256": "441fdc37fc79710838af97be0d3d839370cd9a455f627555646b10a08ced9489"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-supervision.test.mjs",
+      "bytes": 8219,
+      "sha256": "2e8905e4b48c391af9b0a6fdac0254eee20abf1e52bf6b2164d6d08541b837f1"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-vision-llm.mjs",
+      "bytes": 371,
+      "sha256": "127f56e8fca0196a98619ed20a602f6e68c2cab9cb919aca0962e766592e36a9"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-vision.test.mjs",
+      "bytes": 6892,
+      "sha256": "55c3399a62f84cc768da6e755cac1243ec5cac52b2bcdc9e624d3e190ddfa0c6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/linux-workspace-driver.py",
+      "bytes": 6646,
+      "sha256": "c38403d5dc26f289d1a0cf415591dcc735a076ee9a632e58395157c72af74e35"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/managed-project.mjs",
+      "bytes": 19782,
+      "sha256": "eafca35fc4a4c882f4a3e59bb855dc1f4a5d04bcc3da376668274e5b58e9d156"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/mcp-stdio-client.py",
+      "bytes": 2195,
+      "sha256": "f5211b7e562644c8c9d680e6018a85e11f71e2b71c22105f4290c93069b76a0d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/native-click-fixture.cjs",
+      "bytes": 1230,
+      "sha256": "bd764f6fb7be629ca179a6e1202f6f637e53d9a49d37427e10bc5fc7fae34722"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/native-evaluation-exercise.mjs",
+      "bytes": 3151,
+      "sha256": "0688af1a2df85f544ae959c1b1ba2a5739fe1fc4fa15ebaaf91b341b0ab3c58f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/observe-subprocess.mjs",
+      "bytes": 730,
+      "sha256": "e38af5de164df7a9e1d8bf55fc78c11f874653bc84b267db3719c6f99814f648"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/orphan-launch-fixture.mjs",
+      "bytes": 965,
+      "sha256": "6e261e823ec2566b045b6e52ef85f7a3609dea13acc52fa8b1f8e3ea47e3db31"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/package-delivery.mjs",
+      "bytes": 2379,
+      "sha256": "a1f2cea91767b67e47977fab57eb78afe5e8948e708019e6195676d5243f219c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/package-finalization-final.mjs",
+      "bytes": 2385,
+      "sha256": "ac8c3f05ee96597a101ef1fe4b6ce2d4b1499cbcdd4e038237f11a0a2275684b"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/package-finalization.mjs",
+      "bytes": 2103,
+      "sha256": "49935cd1cfedb40711784bc4abf341a9a64ae1ee4f80e4c730ac4e5fb8a7d85d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/package-ready.mjs",
+      "bytes": 2364,
+      "sha256": "a724cf4cb14eb2bfb3bb7b2bbd00e2dd2d706c8d5c025e0ecf770225c0a5594f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-desktop-assets.py",
+      "bytes": 1330,
+      "sha256": "dd125a5a3a7f031aad88b12c83b93abff3eca1d5d29512978e534bce36d899ef"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-desktop-continuation.mjs",
+      "bytes": 82,
+      "sha256": "7e95212b03474078a7e4c376299cd49555e11322adc3bdfcd49ee9d0ff42d931"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-evaluation-controls.py",
+      "bytes": 2723,
+      "sha256": "cbbbd6202930435238961d31fddc640b3845caa6b7a5f7dc384c289d9d545602"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-linux-attachment-ui-desktop.mjs",
+      "bytes": 1116,
+      "sha256": "ed93fd8d637f2abfc7365ec5dcbc21dc0d7e394fb9ad97dd3b652c573e86fa8f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-linux-context-desktop.mjs",
+      "bytes": 1258,
+      "sha256": "bcb2c547454242e9455611cb7aa3690e25da7c04b99d0dd6576396a669315afc"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-linux-continuation-desktop.mjs",
+      "bytes": 1020,
+      "sha256": "237b3f55cf2263d68f577c54390b5cc3e6a1f401438e43667164ff3716a8e1a6"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-linux-desktop.mjs",
+      "bytes": 3115,
+      "sha256": "f510e9c8618fac0d6a83f160908135e8e52f587a01bfc3b8b6241842546d0962"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-linux-file-ui-desktop.mjs",
+      "bytes": 664,
+      "sha256": "1d783abe55e8741b7e4eee994aaefe67c466f159d57de512d2935a197768ddf8"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-linux-sep-desktop.mjs",
+      "bytes": 3054,
+      "sha256": "29593ea990a0d885a5ed3d013628b4d2a0407543f005e05bb84cca48df62b188"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-linux-vision-desktop.mjs",
+      "bytes": 1419,
+      "sha256": "be43c4098157588c7fac71db5534388cd814e35a8e364659a820808c7241e4af"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare-native-evaluation.py",
+      "bytes": 1761,
+      "sha256": "882653b51397e4cd5a3aacc19bae3d26c9d392b6148fdf3a2568cad38d8e3cc4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/prepare.mjs",
+      "bytes": 4357,
+      "sha256": "3afcab12c99ffd69705e2ac0f9fc59f0b2cb2458bcc7078ee344a37d8ef77e19"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/preview-desktop.mjs",
+      "bytes": 517,
+      "sha256": "4c6985beeddc5c2aa5073161db6523e27dea69dcbda66ff8f4463f4c11c1d518"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/private-xorg.mjs",
+      "bytes": 2263,
+      "sha256": "b39e0b56991e7342c62d2f70229a6ae1766252bad00188bba5e41cdde64d5cec"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/probe-export-scope.mjs",
+      "bytes": 1623,
+      "sha256": "b72c6d296d51fdf03d71444e71ada958706942f858e3c4dcf7caf74200d8a35f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/project-tree.mjs",
+      "bytes": 4544,
+      "sha256": "b41a6392d395f40678108bbbc9a1f23df67f69e2ff0a78debc0dea7174de1eb8"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/review-inputs/tracked-context.mjs",
+      "bytes": 7103,
+      "sha256": "29baf1bcb7ecfb37f797219c41141ff886d1ccf7620081b53ba773edc75dbe81"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-attachment-ui.ps1",
+      "bytes": 1472,
+      "sha256": "ae419e9ee75f3828b5ff75c2275bb2b6cb28a62792873a14e704d19bece16bad"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-certification.ps1",
+      "bytes": 1468,
+      "sha256": "252f24e87e34ee931fac4860015b28600ec70a56dd792c73898129ae0c94a6a2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-closeout.ps1",
+      "bytes": 1448,
+      "sha256": "d010906c6b83177ba2e82890be6f5c17e1f6097934f3bf36277ead213b74ac74"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-context.ps1",
+      "bytes": 1494,
+      "sha256": "86387b10e69c4f55b770697b63607699aef06628186dadfbc8d3b22a8c0f32c3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-desktop-continuation.ps1",
+      "bytes": 1483,
+      "sha256": "4401975c6ab1d50c86f4280c4057cfb13f0ffbf70986c2bfd57b51ab704f91a7"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-documents.ps1",
+      "bytes": 1462,
+      "sha256": "b11ee838770f8133859b9b6b3d3f30ebf191ef71e6d5c805289f4562e736645a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-file-attachments.ps1",
+      "bytes": 1477,
+      "sha256": "735dfbb50d1c829f98aece3c5ee66f05bd42bb62fe738890db12a2733037af1c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-finalization-evaluation.mjs",
+      "bytes": 2516,
+      "sha256": "878df2230d3952ceff4c3df097544ba6726db32dc646d8e4b29dd74c8688711a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-finalization.ps1",
+      "bytes": 1809,
+      "sha256": "bacf1ee8530827e088277cf7a02b11dc92c152e471e22a494bf23238e6074a58"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-full-sep.ps1",
+      "bytes": 1381,
+      "sha256": "de018f2c43d91db5255cb40905963ecb75c12dde345386527208cb53553e6a5f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-linux-desktop-continuation.mjs",
+      "bytes": 9986,
+      "sha256": "57252ea7fc04bdde18109df3f8c3b7cf5e59985ca3a453989bd44c38f3f2e3f3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-linux-desktop.mjs",
+      "bytes": 9339,
+      "sha256": "9b4a3070d394215c81b2caaf08d3fb6fb9b96c9d46315329d5542a750093f976"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-native-evaluation.mjs",
+      "bytes": 1973,
+      "sha256": "be32c4498070a8bb38221e8a3dabeb62143af35636e7fb86e919bcab14143ed1"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-profile.ps1",
+      "bytes": 1363,
+      "sha256": "8a6b0b49c1e65b5a27c94b385a47ed31f6fae8c8f2e78acb623c71dda9489748"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-review.ps1",
+      "bytes": 1454,
+      "sha256": "2a3a2d3ec877e3921d09fd811215e1fe9323a8e230d6e85f86cd829e0f654509"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-validation.ps1",
+      "bytes": 1455,
+      "sha256": "0a86783b937432fbbe650ad415d47434dec03192d47c598b080cceb66b00999d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-virtual-continuation.mjs",
+      "bytes": 2570,
+      "sha256": "b1de10dbc92f8831b22df473caf113b8c2f590599d6ce38d5f38f66eb6af6b28"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/run-vision.ps1",
+      "bytes": 1447,
+      "sha256": "3e6455daf29f6714986531292cb582a21f652c9f05e0cf0c99882c6cdf70a1ec"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-attachment-ui.mjs",
+      "bytes": 6545,
+      "sha256": "4a57f5f785877dc191631e6329dc3618873be8dac7e12a573213482dcee8b92a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-certification.mjs",
+      "bytes": 7078,
+      "sha256": "2e0744881c94f13fabcdae4289637599659474908b3949b9ab79609cf1438fb4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-closeout.mjs",
+      "bytes": 7083,
+      "sha256": "f85489f319f395a7b33889849f817c98e2682fd5e934747b4b246b0cea32dccd"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-context.mjs",
+      "bytes": 7154,
+      "sha256": "74d7e910d944c8d1444a0de7c469ae4691f423d6e861ad8e0117d713e8c573d9"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-desktop-continuation.mjs",
+      "bytes": 6556,
+      "sha256": "766d9305b279eb761c315ead37fe55dbe4742292085e8beb3d5d99d3a31ec2a1"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-documents.mjs",
+      "bytes": 6278,
+      "sha256": "ac4859ce80c74c2c4df26a25e1ae2dccc2055230eab1b47d63b166815e948dc4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-evaluation-controls.py",
+      "bytes": 2938,
+      "sha256": "6385aee4e405d0570fa7695f191d652b54663178435009aa22a75c773c07dc30"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-file-attachments.mjs",
+      "bytes": 6680,
+      "sha256": "125fc4782f48551994364089775720ded8e047e3792cb8eee4e3ca04166c9cc5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-finalization.mjs",
+      "bytes": 7897,
+      "sha256": "86c269926517a8284241f992e9a2858f0fdfb142bd0da904aefadaadceb265f8"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-profile.mjs",
+      "bytes": 6179,
+      "sha256": "65e59bb0edd8001afb3c2c0f8c15fa1e353a955e09c71be527d79f616ab9b562"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-review.mjs",
+      "bytes": 6750,
+      "sha256": "12c658effc18fdb82a410f4883ca8d5566f0c1a594c2e0b36c30e2e3e20fd557"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-sep.mjs",
+      "bytes": 6636,
+      "sha256": "889358497b7032dc915afc6a2ea772101f99f8ec606d59b878e26f695a8d0de4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-transactions.mjs",
+      "bytes": 4067,
+      "sha256": "0a11a67de160131d88d956371f4abecdd247ea0521bdcac2dc1738f244ba16f2"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-validation.mjs",
+      "bytes": 6332,
+      "sha256": "6ded00e08e57bcabf7fbbb60f05ae5eb6ac9d763eae744d8038b6c385b19e43d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/seal-vision.mjs",
+      "bytes": 6311,
+      "sha256": "855304c458245e1e033188b869815b523e1a80941ff7f65f7b4af54516290825"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/sep-fixture.mjs",
+      "bytes": 4377,
+      "sha256": "596451d92a4f1a4fa01a7c744456ba9391e39d01d5f4e79d7bdd0fef607537dc"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/snapshot-bootstrap.py",
+      "bytes": 2812,
+      "sha256": "5f0100944ec01e4bd8c807031676b824300ca788dfa3b94f30c6767196adaaf0"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/stage-certification-candidate.mjs",
+      "bytes": 1324,
+      "sha256": "4ac8c492565ffc8ed71820c663b49b944f3786ed332366cf17270c823115368d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/stage-certification-final.mjs",
+      "bytes": 1326,
+      "sha256": "7a8c09bc684112abfa4b268694ffb290d2fbc851d07fd31540ea741575dc8e7a"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/stage-validation-candidate.mjs",
+      "bytes": 1318,
+      "sha256": "cfce51ccef36e4a9437a5bed0145b4cf986ce150d7b0d8c1f324989ee047091f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/stage-validation.mjs",
+      "bytes": 1431,
+      "sha256": "15798644cf4ebfaa95dbc6cafe731cf8e29fdb5b8f37b8b7bd66fcdaeb026e95"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/transaction-fixtures.mjs",
+      "bytes": 2022,
+      "sha256": "691e42749f368b4196b3f318739bedb0794ddde63c3e7cc43de5093a39c9b47d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/transaction-worker.mjs",
+      "bytes": 806,
+      "sha256": "ca3981125586968e9f62ff86f5f88ffe0e42668e5f26b031d53995397388cf26"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/transactions.test.mjs",
+      "bytes": 17548,
+      "sha256": "1a9cfa694484147132a009da1ec2cbe9afba8158a3153a21da19b30777bdeab3"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/transfer-evaluation-fixture.mjs",
+      "bytes": 1497,
+      "sha256": "fc99cda96f24484d0825419ad55ebbc57e7e620b29274b51cde940fcb5462976"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/transfer.mjs",
+      "bytes": 854,
+      "sha256": "4940d46947163d36ae7d24afc1a9c4735283f5646b71a8174f313750840ccac5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/verify-linux-context-desktop.mjs",
+      "bytes": 1588,
+      "sha256": "b854fd037835247141802054c998e06ceda04cf7679ea314dacccc6b65f2f784"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/verify-linux-vision-desktop.mjs",
+      "bytes": 4761,
+      "sha256": "7a9f8133659ae1beafa57ebf45feb1935e5a8b025f8874bb214b85cdce19534d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/vision-fixture.mjs",
+      "bytes": 1521,
+      "sha256": "4137279b9c5f2c6876b347b21f6e5a60cbcccb532ceab8edb309d8c84478d4ff"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/PLAN.md",
+      "bytes": 2060,
+      "sha256": "099c462e28cd38787376beee059019e99e97deb3ddd8f6005e66dfdcd83eb895"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/README.md",
+      "bytes": 5876,
+      "sha256": "f155198af2f7aa026edb8bd45207c3303c7209076fa8a3f1b06377a2e67c70b5"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/REPRODUCTION.md",
+      "bytes": 4792,
+      "sha256": "cf5d46ce5639c49392713a16d0adf911d8d63bd44d6c40d8eaf8fa42a2a6ea3e"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/active-inspection-fixture.mjs",
+      "bytes": 2386,
+      "sha256": "298d189fc1ec9650a1c8d3afea359b0fe02d287e79c9b5089020c363724cf5f7"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/audit-installed.py",
+      "bytes": 3069,
+      "sha256": "790ab9e1f707c548e5792db9399578fd9a96a5447290b6db3f63958bfda4013f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/build-keyboard.py",
+      "bytes": 1269,
+      "sha256": "8097072142a1da600a18a340bb38c6f7cf02700f69fa7215c25e35bbceb8aaf0"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/build-pointer.py",
+      "bytes": 1333,
+      "sha256": "15da6e55f46c79a25d334e892dd42bd98620dbfce8e51200834bbc574341ab20"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/cdp-observation.mjs",
+      "bytes": 1899,
+      "sha256": "1aec89ac5d9c6450f5be70987d3dedc449f96653a2045ad1293c77249183e66d"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/collect-final.mjs",
+      "bytes": 5775,
+      "sha256": "6e48a10a91388220e51e64828f4dc1136f520b82aaad6f10dce363281f26fdf4"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/complete-assets.py",
+      "bytes": 2166,
+      "sha256": "7d05245485c80ed46b37fcd403100118cdbd3e4cd3b7178d7683899d888fd349"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/debug-observer.mjs",
+      "bytes": 1206,
+      "sha256": "4455ddc6fe9cee3bcbacc36cd71a6546679ebefd924c71f98178e2a0c2dd8e5f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/exercise-atspi.mjs",
+      "bytes": 5551,
+      "sha256": "081d96cfc9c4f72ed111936412f3acf0aae7ab49584a7adf4866a5769e077bc1"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/exercise-wayland.mjs",
+      "bytes": 14484,
+      "sha256": "17c7836224a42cca8cac32beaba706243828d0a72fe0ce9b2fee3ba5b9135f63"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/export-evidence.mjs",
+      "bytes": 1189,
+      "sha256": "870f0d692d53952a78e93f98e5fbc3d664d7edd214d87782ad51087b008733db"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/gtk-observation.py",
+      "bytes": 7651,
+      "sha256": "d8077ab5e99d8d035164fd9f2655d9c9fad6e61e916b5e047accce1460b3852f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/gtk-query.mjs",
+      "bytes": 844,
+      "sha256": "db704a8dbd97245e9f1c0ffec08b32026308e6f94d01d780cc3092394dee23bf"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/host-modules.mjs",
+      "bytes": 730,
+      "sha256": "95030408ffcdc90af5a3c3776f640dc48fc1e2686ed55f4710e5e40bc0065b72"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/input-scope.test.mjs",
+      "bytes": 1177,
+      "sha256": "35856fbae7063cd247e546af0cdc4d57348dccddaee058fefa16821d75b5f1af"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/install-fixture.mjs",
+      "bytes": 1353,
+      "sha256": "1c4469b5f92432190e66480e4f0bd8d2d8bebc84cefe73c63b8bd5bd323fd82f"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/prepare-assets.py",
+      "bytes": 2867,
+      "sha256": "8d68eda362c5ad1b22c7cb610715abb57344d4245149fa6fa82505260fe9986c"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/private-wayland.mjs",
+      "bytes": 7739,
+      "sha256": "26d5b9229b0b4211154cc64fa98ae1d2d0fe5cde905a8e0d341e02f059540841"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/seal-local.mjs",
+      "bytes": 8036,
+      "sha256": "219e83c2f0bbb8a5c0fbef60c2f692c321afe4f9d4665140e9041cf8a73390a8"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/smoke-compositor.mjs",
+      "bytes": 650,
+      "sha256": "00f93012e7324bcadb4dacb0615fada4e09d6f2fd8041798c861d1fd859836e0"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/virtual-keyboard-unstable-v1.xml",
+      "bytes": 4999,
+      "sha256": "b9f3d663b353d79b2db090084d21ae226a8e3db6a9a53c8b8254a08003d91248"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/virtual-keyboard.c",
+      "bytes": 3525,
+      "sha256": "491658173f2da39bcfbd099479ff89363fc0aa535b9bb4a90d690069b0a36219"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/virtual-pointer.c",
+      "bytes": 2571,
+      "sha256": "7affbbf05d28a76ad7ec3e7442a49fdf7307ad61b038b9ec68c73eee46be75ac"
+    },
+    {
+      "path": "source/tools/rc2-adaptation/linux/runtime/wayland-certification/wlr-virtual-pointer-unstable-v1.xml",
+      "bytes": 7047,
+      "sha256": "4f84b169263ec08e16d41886eaf825ae90ad1b43c6a7094e53cc5197aecda870"
+    }
+  ],
+  "finalPackage": {
+    "path": "artifacts/dsh-sep-bundle-0.2.1-beta.3-rc2-adapter.1.tgz",
+    "bytes": 1302492,
+    "sha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500"
+  }
+}

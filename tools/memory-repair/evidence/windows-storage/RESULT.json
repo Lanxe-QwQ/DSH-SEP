@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "mode": "storage",
+  "platform": "win32",
+  "arch": "x64",
+  "exitCode": 0,
+  "signal": null,
+  "tests": 3,
+  "passed": 3,
+  "failed": 0,
+  "skipped": 0,
+  "logSha256": "a963b29318e61bf9cedb3a0c1675f4b8658b75c9579db296c4de2ee8dd67a344",
+  "inputSha256": "1567b477d03fbfa1a923c9d22febe33e9f7251a540ef10df16cb184f6e9b82d6",
+  "model": "synthetic/no paid model"
+}

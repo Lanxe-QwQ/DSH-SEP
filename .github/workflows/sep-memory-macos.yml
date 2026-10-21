@@ -1,0 +1,35 @@
+name: SEP memory repair native Mac regression
+on:
+  push:
+    branches: [codex/sep-memory-macos-20261021]
+permissions:
+  contents: read
+jobs:
+  memory-native:
+    runs-on: macos-15
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.21.0'
+      - name: Run fixed native common-memory and governed storage regressions
+        run: node tools/memory-repair/mac-ci.mjs "$RUNNER_TEMP/sep-memory-repair"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: sep-memory-mac-${{ github.run_id }}
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            ${{ runner.temp }}/sep-memory-repair/RESULT.json
+            ${{ runner.temp }}/sep-memory-repair/CANDIDATE.json
+            ${{ runner.temp }}/sep-memory-repair/*.log
+            ${{ runner.temp }}/sep-memory-repair/core/RESULT.json
+            ${{ runner.temp }}/sep-memory-repair/core/INPUTS.json
+            ${{ runner.temp }}/sep-memory-repair/core/tests.log
+            ${{ runner.temp }}/sep-memory-repair/storage/RESULT.json
+            ${{ runner.temp }}/sep-memory-repair/storage/INPUTS.json
+            ${{ runner.temp }}/sep-memory-repair/storage/tests.log

@@ -1,3 +1,5 @@
+> 记忆修复候选 memory-repair.1：三项缺陷的当前实现与证据见 [修复入口](tools/memory-repair/README.md)。这是隔离候选；公开下载和日常版仍为原 Beta.4。下文原适配/发布记录保留历史语义。
+
 # DSH SEP · Windows / Linux / macOS Beta
 
 **DEEPSEEK HARNESS SYSTEM ENHANCEMENT PACKAGE（DSH 系统增强套件）**：为 DeepSeek Harness 提供分层记忆、本地 RAG、预算护栏、受管委派、受控文件修改与恢复。

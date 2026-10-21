@@ -61,7 +61,7 @@ export async function installLayeredAutomaticMemory(ctx,{scope,store,layers,sign
         checkAbort(combined);project=await scope.caller({agent:payload.agent,signal:combined});
         const fresh=decision.messages.filter(human).map(textOf).join('\n').slice(-300);
         const settings=controls(store.read(project));
-        if(config.recall&&settings.recall&&fresh&&directSession(payload.agent))await layers.observeUserQuery?.(project,fresh,{signal:combined});
+        // A query, repeated tool step, or context injection never renews memory.
         await layers.maintain(project,{signal:combined});
         const query=fresh||queries.get(payload.agent)||'';if(query)queries.set(payload.agent,query);
         const selection=config.recall&&settings.recall?await layers.select(project,query,{agent:payload.agent}):{records:[],pending:[]};
@@ -101,7 +101,7 @@ export async function installLayeredAutomaticMemory(ctx,{scope,store,layers,sign
       });
       if(!messages.length)return;
       await layers.maintain(project,{signal:combined});
-      const all=(await layers.read(project)).filter(active);
+      const all=(await layers.readForRecall(project)).filter(active);
       const query=messages.map(message=>message.text).join('\n').slice(-2000);
       const ranked=rankBm25(all,query,25,selectTokenizer(query)).map(hit=>all.find(record=>record.id===hit.id));
       const recent=[...all].sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));

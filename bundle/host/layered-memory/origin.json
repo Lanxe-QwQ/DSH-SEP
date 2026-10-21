@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "bundle/modules/system-enhancement-package/src/layered-memory.js",
-  "sourceSha256": "2e9c22aa8b041942335842c190b96feb17c911db82acba5c9f70702913d7235d",
+  "sourceSha256": "4999890c989bf1527e4f78836e5d7a0594317ce0b0603c3248c03763e3355d82",
   "changes": [
     {
       "old": "      },\n    },\n    async close(){if(closed)return;closed=true;await tail;await coldDomain.close();await domain.close();},\n  };\n  try{for(const project of scope.projects){if(legacy.read(project).memories.length&&!catalog().migrations[project.key]){if(!config.migrateLegacy)fail('MEMORY_MIGRATION_REQUIRED');await manager.migrateLegacy(project,{});}}}\n",
@@ -16,9 +16,9 @@
       "new": "import {messageProvenance,mergeProvenance,assertSourceOutside} from '../../modules/system-enhancement-package/src/source-provenance.js';\nimport {z} from 'zod';\nimport {randomUUID} from 'node:crypto';\nimport {digest,fail,checkAbort} from '../../modules/system-enhancement-package/src/errors.js';\nimport {rankBm25,selectTokenizer} from '../../modules/system-enhancement-package/src/vendor/bm25.js';\nimport {classifyMemory,archiveReason} from '../../modules/system-enhancement-package/src/layer-policy.js';\nimport {commitMemoryWrite} from '../../modules/system-enhancement-package/src/memory-commit.js';\nimport {sessionEvents} from '../../modules/system-enhancement-package/src/session-events.js';\n\nconst category=z.enum(['preference','personal','goal','task','project','temporary']);\n"
     }
   ],
-  "resultSha256": "5061e63f10bb0aa2aeb76956eeab870cd910132b79d0695a1299c4e440c128bf",
+  "resultSha256": "e68bf825c809dd83a9be1a8d74e6c9728db39318773439617e14c4ea77c2b2af",
   "textNormalization": "Replay converts CRLF to LF; SHA-256 always binds original raw bytes.",
-  "supersedesOriginSha256": null,
-  "predecessorCommit": null,
-  "scope": "Current bundle24 exact replay; recorded predecessor remains in Git and sealed bundle23."
+  "supersedesOriginSha256": "1399fbc1f11931b41bae5e4f43ad238178c12252e126bc92b7e34e955a8e3864",
+  "predecessorCommit": "a69a754d65664af151e0afd9d95cbb32f3c94371",
+  "scope": "Memory repair current exact derivation; predecessor preserved in the baseline bundle and Git."
 }

@@ -1,0 +1,12 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {load} from './fixture.mjs';
+const bm=await load('modules/system-enhancement-package/src/vendor/bm25.js');
+test('original example contains legal adjacent pairs and no cross-sentence pair',()=>{for(const tokenize of [bm.tokenize,bm.tokenizeHybridSegmented]){const terms=tokenize('买了苹果。今天吃香蕉');assert(!terms.includes('果今'));for(const term of ['苹果','今天','香蕉'])assert(terms.includes(term));}});
+for(const boundary of ['。','，',' ','\n','\t','API','123','🙂','-','/','\u200d'])test('Han run stops at '+JSON.stringify(boundary),()=>{for(const tokenize of [bm.tokenize,bm.tokenizeHybridSegmented]){const terms=tokenize('甲'+boundary+'乙');assert(terms.includes('甲')&&terms.includes('乙'));assert(!terms.includes('甲乙'));}});
+test('mixed English and digits cannot swallow later Han characters',()=>{assert.deepEqual(bm.tokenizeUnicode('甲API乙123丙'),['甲','api','乙','123','丙']);assert(!bm.tokenize('甲API乙123丙').includes('甲乙'));});
+test('supplementary-plane Han uses code points rather than UTF16 units',()=>{assert(bm.tokenize('𠀀甲').includes('𠀀甲'));assert(!bm.tokenize('𠀀。甲').includes('𠀀甲'));assert(bm.tokenizeUnicode('X𠀀Y').includes('𠀀'));});
+test('English numeric and accented words retain their original matching behavior',()=>{assert.deepEqual(bm.tokenize('Hello API 123 café'),['hello','api','123','café']);assert.equal(bm.rankBm25([{id:'a',text:'hello 123'},{id:'b',text:'other'}],'HELLO')[0].id,'a');});
+test('query and document use the identical Han boundary rule',()=>{assert.deepEqual(bm.rankBm25([{id:'a',text:'甲。乙'},{id:'b',text:'甲乙'}],'甲乙',2,bm.selectTokenizer('甲乙')).map(r=>r.id),['b','a']);});
+test('the twenty-document counterexample no longer ranks the unrelated sentence first',()=>{const rows=[{id:'unrelated',text:'买了苹果。今天吃香蕉'},...Array.from({length:19},(_,i)=>({id:'price-'+i,text:'今天的苹果价格已经更新'}))];const hits=bm.rankBm25(rows,'苹果今天价格',20,bm.selectTokenizer('苹果今天价格'));assert(hits[0].id.startsWith('price-'));assert(hits.find(r=>r.id==='unrelated').score<hits[0].score);});
+test('empty input and zero limit keep existing BM25 contracts',()=>{assert.deepEqual(bm.tokenize(''),[]);assert.deepEqual(bm.rankBm25([{id:'a',text:'苹果'}],'苹果',0),[]);assert.deepEqual(bm.rankBm25([],'苹果'),[]);});

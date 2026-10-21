@@ -43,7 +43,9 @@
     "bundle/config",
     "bundle/host",
     "ALPHA2-ADAPTATION.json",
-    "RC2-ADAPTATION.json"
+    "RC2-ADAPTATION.json",
+    "MEMORY-REPAIR.json",
+    "bundle/MEMORY-REPAIR.md"
   ],
   "engines": {
     "node": ">=24.0.0",
@@ -51,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lance-QwQ/DSH-SEP.git"
+    "url": "git+https://github.com/Lanxe-QwQ/DSH-SEP.git"
   },
   "dsh": {
     "bundle": {
@@ -232,5 +234,9 @@
     "@deepseek-ai/dsh-attachment-local": {
       "optional": true
     }
+  },
+  "dshSepMemoryRepair": {
+    "buildId": "beta4-memory-repair.1",
+    "manifest": "MEMORY-REPAIR.json"
   }
 }

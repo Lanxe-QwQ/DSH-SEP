@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "mode": "consumers",
+  "exitCode": 0,
+  "tests": 19,
+  "pass": 19,
+  "fail": 0,
+  "skipped": 0,
+  "logSha256": "f3934e90f71880f04be31c6fea9e960984b7142161b570a47ec09e790b19f98c"
+}

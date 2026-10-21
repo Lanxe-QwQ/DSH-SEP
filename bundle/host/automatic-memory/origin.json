@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "bundle/modules/system-enhancement-package/src/automatic-layered-memory.js",
-  "sourceSha256": "f4ff39a28a616af3ddb666b24633e3ddbf91a8d831c064f510bec1aed3be4827",
+  "sourceSha256": "083c0e6e092fec0a233a09af689f173f135d9e4a73ad3a7d19f58a44b27745a8",
   "changes": [
     {
       "old": "from './provider-diagnostics.js'",
@@ -59,6 +59,8 @@
       "occurrences": 2
     }
   ],
-  "resultSha256": "37ff35b7a311528bf5f19f676afee6514a413ee3bf1e64a58a8c543d957483fd",
-  "scope": "Shared already-open budget reference; extraction routed through native P1 model guard; original evidence/retention/settings rules preserved"
+  "resultSha256": "de9a3a6cf566b1256fb9ff2fc9a05cbbddee779879e3edcf3dd1d65a8cfc669a",
+  "scope": "Memory repair: no incidental query renewal; exact shared-budget/native-model derivation. Previous origin preserved in baseline Git.",
+  "supersedesOriginSha256": "8f90427efbd42a14e82faa8d353222345c2b92fe83e7f6288c651f8e97245fcd",
+  "predecessorCommit": "a69a754d65664af151e0afd9d95cbb32f3c94371"
 }

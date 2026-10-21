@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "buildId": "beta4-memory-repair.1",
+  "sourceBaselineCommit": "a69a754d65664af151e0afd9d95cbb32f3c94371",
+  "approvedPlanSha256": "99df3ea6f44dbccf9db2e2599a84641faeb49e1a0e39fc7f0bf3820bd855dc9f",
+  "implementation": {
+    "status": "pass",
+    "recordSchema": 1,
+    "changes": [
+      {
+        "path": "bundle/host/layered-memory/index.js",
+        "sourceSha256": "5061e63f10bb0aa2aeb76956eeab870cd910132b79d0695a1299c4e440c128bf",
+        "resultSha256": "e68bf825c809dd83a9be1a8d74e6c9728db39318773439617e14c4ea77c2b2af",
+        "bytes": 43912
+      },
+      {
+        "path": "bundle/host/layered-memory/origin.json",
+        "sourceSha256": "1399fbc1f11931b41bae5e4f43ad238178c12252e126bc92b7e34e955a8e3864",
+        "resultSha256": "4e88794989c853dcb05b5af3f828a1cda805f50910c5bb728b896c7d00579387",
+        "bytes": 3976
+      },
+      {
+        "path": "bundle/host/automatic-memory/index.js",
+        "sourceSha256": "37ff35b7a311528bf5f19f676afee6514a413ee3bf1e64a58a8c543d957483fd",
+        "resultSha256": "de9a3a6cf566b1256fb9ff2fc9a05cbbddee779879e3edcf3dd1d65a8cfc669a",
+        "bytes": 18133
+      },
+      {
+        "path": "bundle/host/automatic-memory/origin.json",
+        "sourceSha256": "8f90427efbd42a14e82faa8d353222345c2b92fe83e7f6288c651f8e97245fcd",
+        "resultSha256": "2207e5f9c83a82b4d0ed6bdf542cac5860ebd3bd254fab17782edae9588e55f5",
+        "bytes": 2594
+      },
+      {
+        "path": "bundle/modules/system-enhancement-package/src/layered-memory.js",
+        "sourceSha256": "2e9c22aa8b041942335842c190b96feb17c911db82acba5c9f70702913d7235d",
+        "resultSha256": "4999890c989bf1527e4f78836e5d7a0594317ce0b0603c3248c03763e3355d82",
+        "bytes": 43386
+      },
+      {
+        "path": "bundle/modules/system-enhancement-package/src/automatic-layered-memory.js",
+        "sourceSha256": "f4ff39a28a616af3ddb666b24633e3ddbf91a8d831c064f510bec1aed3be4827",
+        "resultSha256": "083c0e6e092fec0a233a09af689f173f135d9e4a73ad3a7d19f58a44b27745a8",
+        "bytes": 17910
+      },
+      {
+        "path": "bundle/modules/system-enhancement-package/src/vendor/bm25.js",
+        "sourceSha256": "4bdea400e13e17df9541731bcc523b96da84c02a51df23c8c8d59b6e2aaa0e10",
+        "resultSha256": "738f36db194ab77ad403a92f6d012b9d0602270793eb5cfc5c027fe490a4a532",
+        "bytes": 3501
+      }
+    ]
+  },
+  "artifact": {
+    "path": "artifacts/dsh-sep-bundle-0.2.1-beta.3-rc2-adapter.1.tgz",
+    "bytes": 1302492,
+    "sha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500"
+  },
+  "packaging": [
+    {
+      "path": "package.json",
+      "transform": "remove exactly one final LF",
+      "sourceSha256": "3b4d0c2049c6225042f411beddc883a0db03d53c27f2139f953bb92d23421c5b",
+      "resultSha256": "e3177633b35ab8fa80fd2a5b11e118f3b06285b64d12e4623a0064b141b0eca6"
+    }
+  ],
+  "privacy": {
+    "status": "pass",
+    "scope": "all package filenames and selected textual patterns; not comprehensive secret/PII detection",
+    "findings": []
+  },
+  "windows": {
+    "status": "pass",
+    "executions": 91,
+    "groups": [
+      {
+        "group": "core",
+        "status": "pass",
+        "executions": 65,
+        "passed": 65,
+        "failed": 0,
+        "skipped": 0,
+        "evidence": "evidence/windows-core",
+        "logSha256": "04196b19d368b1ab33ac82ec6bfaa7630133973930a1974b0c33369d91ded75a",
+        "inputSha256": "7080aeafa30db942efdc79fa1cc0c403853c949c39621646e3bb1fcc03c613d0"
+      },
+      {
+        "group": "storage",
+        "status": "pass",
+        "executions": 3,
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "evidence": "evidence/windows-storage",
+        "logSha256": "a963b29318e61bf9cedb3a0c1675f4b8658b75c9579db296c4de2ee8dd67a344",
+        "inputSha256": "1567b477d03fbfa1a923c9d22febe33e9f7251a540ef10df16cb184f6e9b82d6"
+      },
+      {
+        "group": "integration",
+        "status": "pass",
+        "executions": 5,
+        "passed": 5,
+        "failed": 0,
+        "skipped": 0,
+        "evidence": "evidence/windows-integration",
+        "logSha256": "8cb717d4bdf6ecff14cf5324cc57fdea86f860e9de6ee922c2bcbfad2c5a6e5e",
+        "inputSha256": "81e18c2390917182a338d6ed6ba14ad724eae0526836982b7c048ac219700deb"
+      },
+      {
+        "group": "existing",
+        "status": "pass",
+        "executions": 18,
+        "passed": 18,
+        "failed": 0,
+        "skipped": 0,
+        "evidence": "evidence/windows-existing",
+        "logSha256": "0a1f23ced6de6f10fed3d6c1057098b061dcf4f333c6fb61dac28937ee38aa43",
+        "inputSha256": "fc20da31311a92520b054229077043feb60f5a2486225cff918255c1e4992071"
+      }
+    ]
+  },
+  "linux": {
+    "status": "pass",
+    "scope": "WSL2 ext4 D-backed native isolated runtime; full Linux certification limits remain",
+    "executions": 87,
+    "groups": [
+      {
+        "group": "core",
+        "status": "pass",
+        "executions": 65,
+        "passed": 65,
+        "failed": 0,
+        "skipped": 0,
+        "evidence": "evidence/linux-core",
+        "logSha256": "7bf3b3f5cf2b7f74fac6c1c472531d3b9a40da1687e6eb039c2368375667233c",
+        "inputSha256": "c2293bb2bde8734961428cf823f9a53df49360dc77b5515910f334fe5f49bcb1"
+      },
+      {
+        "group": "storage",
+        "status": "pass",
+        "executions": 3,
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "evidence": "evidence/linux-storage",
+        "logSha256": "720a2ab49f11c4aafc9e29acb0bc648828fa31f90cdda205b1829a86d1ea0df6",
+        "inputSha256": "745f2ff660426391dec2efbec4a02aaca6d188a18d9f403a0e765eb93ebee3d5"
+      },
+      {
+        "group": "consumers",
+        "status": "pass",
+        "executions": 19,
+        "passed": 19,
+        "failed": 0,
+        "skipped": 0,
+        "evidence": "evidence/linux-consumers",
+        "logSha256": "f3934e90f71880f04be31c6fea9e960984b7142161b570a47ec09e790b19f98c"
+      }
+    ]
+  },
+  "macOS": {
+    "status": "not_run",
+    "reason": "No local Mac; dedicated CI branch authorization pending",
+    "preparedWorkflow": ".github/workflows/sep-memory-macos.yml",
+    "preparedRunner": "tools/memory-repair/mac-ci.mjs"
+  },
+  "repetitions": {
+    "storage": "same flow repeated 3 times per platform",
+    "integration": "two Loader definitions + same combined flow repeated 3 times on Windows",
+    "notUniqueProblemTypes": true
+  },
+  "dailyDeployment": {
+    "status": "not_run",
+    "preserved": true,
+    "requiresNewFingerprintPlan": true
+  },
+  "githubPublication": {
+    "status": "not_run",
+    "pushed": false
+  },
+  "paidModelCalls": 0,
+  "limitations": [
+    "No reconstruction of historical genuine lastUsedAt",
+    "No forced eviction of pinned/open/dependent or durable confirmed L3 records",
+    "Existing event and archive capacity limits preserved",
+    "Windows Map fault injection is distinct from actual filesystem crash/I/O fault coverage",
+    "Mac native behavior and full application/package refresh pending",
+    "No live private corpus or paid provider evaluation",
+    "No exhaustive PII/secret scan claim"
+  ],
+  "historicalAttempts": [
+    {
+      "stage": "red-conflicts",
+      "interpretation": "5 controls passed, 15 new assertions failed on baseline as expected"
+    },
+    {
+      "stage": "red-tokenizer",
+      "interpretation": "2 controls passed, 16 boundary/ranking assertions failed on baseline as expected"
+    },
+    {
+      "stage": "red-corrected-r1",
+      "interpretation": "corrected valid raw-record fixture confirms baseline 9 pass/15 fail; early fixture accidentally used display-only fields"
+    },
+    {
+      "stage": "extra-red-r1",
+      "interpretation": "2 capacity checks passed; capture eligibility assertion failed before the additional patch"
+    },
+    {
+      "stage": "integration-r2",
+      "interpretation": "single-character overlap was incorrectly expected to return no match; changed test to fixed-corpus ranking, not an algorithm threshold"
+    },
+    {
+      "stage": "existing-r1",
+      "interpretation": "initial clone CRLF conversion broke pinned input hashes; restored exact unchanged Git blob bytes, did not lower origin checks"
+    },
+    {
+      "stage": "Linux initial consumers",
+      "interpretation": "two guards correctly rejected symlinked sandbox-runtime fixture; a new physical copy passed all19"
+    },
+    {
+      "stage": "pack review",
+      "interpretation": "pnpm removes exactly one final LF in package.json; explicit byte transform recorded, no semantic differences"
+    }
+  ]
+}

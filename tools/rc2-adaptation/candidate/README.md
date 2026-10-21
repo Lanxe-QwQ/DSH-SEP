@@ -1,3 +1,5 @@
+> 当前为 memory-repair.1 隔离修复候选，见 [当前记忆规则](bundle/MEMORY-REPAIR.md) 和 MEMORY-REPAIR.json。以下是保留的原始适配说明。
+
 # Alpha.2 isolated interface candidate
 
 Version `0.2.1-beta.3-alpha2-adapter.1`; host `0.2.1-alpha.2`. This is an isolated Windows x64 compatibility candidate, not an install/update authorization or a public release. Only the native settings cold composition is being certified. The default bundle admission remains pending. Complete Electron, private-data continuation, updater host migration, Linux/macOS and paid providers are not certified by this candidate. `ALPHA2-ADAPTATION.json` binds its source transformations; superseded origins explicitly preserve historical provenance.

@@ -1,0 +1,125 @@
+TAP version 13
+# Subtest: Linux real SEP RAG indexes the controlled candidate and detects changes without reading the original source
+ok 1 - Linux real SEP RAG indexes the controlled candidate and detects changes without reading the original source
+  ---
+  duration_ms: 946.656212
+  type: 'test'
+  ...
+# Subtest: Linux L3 direct-user memory persists across a real owner close and restart
+ok 2 - Linux L3 direct-user memory persists across a real owner close and restart
+  ---
+  duration_ms: 696.721757
+  type: 'test'
+  ...
+# Subtest: Linux SEP stays closed before activation and rejects foreign late tools and wrong plans
+ok 3 - Linux SEP stays closed before activation and rejects foreign late tools and wrong plans
+  ---
+  duration_ms: 327.787793
+  type: 'test'
+  ...
+# Subtest: Linux P1 model policy uses the actual shared ledger; changing settings cannot erase prior charges
+ok 4 - Linux P1 model policy uses the actual shared ledger; changing settings cannot erase prior charges
+  ---
+  duration_ms: 439.795599
+  type: 'test'
+  ...
+# Subtest: Linux settings CAS keeps project controls and bodies out of metadata responses
+ok 5 - Linux settings CAS keeps project controls and bodies out of metadata responses
+  ---
+  duration_ms: 480.110704
+  type: 'test'
+  ...
+# Subtest: Linux archive remains demand-only and withdrawn L3 never revives after restart
+ok 6 - Linux archive remains demand-only and withdrawn L3 never revives after restart
+  ---
+  duration_ms: 971.809066
+  type: 'test'
+  ...
+# Subtest: Linux unconfirmed activation detects changed ledger and never dispatches a paid request
+ok 7 - Linux unconfirmed activation detects changed ledger and never dispatches a paid request
+  ---
+  duration_ms: 325.629078
+  type: 'test'
+  ...
+# Subtest: Linux business tooling rejects foreign sessions and closed owner references
+ok 8 - Linux business tooling rejects foreign sessions and closed owner references
+  ---
+  duration_ms: 324.142527
+  type: 'test'
+  ...
+# Subtest: Linux suite_delegate completes with real native child Agents without holding the snapshot queue
+ok 9 - Linux suite_delegate completes with real native child Agents without holding the snapshot queue
+  ---
+  duration_ms: 686.292039
+  type: 'test'
+  ...
+# Subtest: Linux cancelled queued settings cannot commit after the snapshot queue becomes free
+ok 10 - Linux cancelled queued settings cannot commit after the snapshot queue becomes free
+  ---
+  duration_ms: 390.996231
+  type: 'test'
+  ...
+# Subtest: Linux close deadline reports retained work then truly settles after an uncooperative model returns
+ok 11 - Linux close deadline reports retained work then truly settles after an uncooperative model returns
+  ---
+  duration_ms: 456.514268
+  type: 'test'
+  ...
+# Subtest: Linux P2 owner exclusion survives the full business composition
+ok 12 - Linux P2 owner exclusion survives the full business composition
+  ---
+  duration_ms: 417.439371
+  type: 'test'
+  ...
+# Subtest: Linux local media reads Chinese paths from the candidate without any model or ledger charge
+ok 13 - Linux local media reads Chinese paths from the candidate without any model or ledger charge
+  ---
+  duration_ms: 464.906896
+  type: 'test'
+  ...
+# Subtest: Linux history expansion requires a current direct request and never runs for a child
+ok 14 - Linux history expansion requires a current direct request and never runs for a child
+  ---
+  duration_ms: 357.418352
+  type: 'test'
+  ...
+# Subtest: Linux automatic Mem0 capture uses only this turn direct evidence and the shared session ledger
+ok 15 - Linux automatic Mem0 capture uses only this turn direct evidence and the shared session ledger
+  ---
+  duration_ms: 745.524821
+  type: 'test'
+  ...
+# Subtest: Linux PinchBench prework completes three governed samples before the real child dispatch
+ok 16 - Linux PinchBench prework completes three governed samples before the real child dispatch
+  ---
+  duration_ms: 802.541878
+  type: 'test'
+  ...
+# Subtest: Linux paused capture prevents auxiliary model requests and leaves no newly learned record
+ok 17 - Linux paused capture prevents auxiliary model requests and leaves no newly learned record
+  ---
+  duration_ms: 651.873389
+  type: 'test'
+  ...
+# Subtest: Linux automatic recall supplies an untrusted L3 snapshot and respects the next-operation switch
+ok 18 - Linux automatic recall supplies an untrusted L3 snapshot and respects the next-operation switch
+  ---
+  duration_ms: 858.840302
+  type: 'test'
+  ...
+# Subtest: Linux explicit userProfile reaches the real Scope instead of silently keeping personal facts project-only
+ok 19 - Linux explicit userProfile reaches the real Scope instead of silently keeping personal facts project-only
+  ---
+  duration_ms: 364.972836
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11002.494705
+

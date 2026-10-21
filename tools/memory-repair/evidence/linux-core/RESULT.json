@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "mode": "core",
+  "platform": "linux",
+  "arch": "x64",
+  "exitCode": 0,
+  "signal": null,
+  "tests": 65,
+  "passed": 65,
+  "failed": 0,
+  "skipped": 0,
+  "logSha256": "7bf3b3f5cf2b7f74fac6c1c472531d3b9a40da1687e6eb039c2368375667233c",
+  "inputSha256": "c2293bb2bde8734961428cf823f9a53df49360dc77b5515910f334fe5f49bcb1",
+  "model": "synthetic/no paid model"
+}

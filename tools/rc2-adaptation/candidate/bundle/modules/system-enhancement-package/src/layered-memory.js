@@ -110,6 +110,80 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
     }
     o.records=o.records.filter(r=>r.id!==record.id);
   };
+  // Conflict bindings live in the existing JSON event domain: record schema 1
+  // stays readable. Relationship-only revisions never renew lifecycle clocks.
+  const relationKey=record=>'conflict:'+record.id;
+  const peerIdentity=record=>({id:record.id,content:digest(JSON.stringify({owner:record.owner,key:record.semanticKey,text:record.text,status:record.status,category:record.category,pinned:record.pinned,dependsOn:record.dependsOn,dueAt:record.dueAt,taskState:record.taskState,updatedAt:record.updatedAt}))});
+  const peersOf=(state,record)=>owner(state,record.owner).records.filter(other=>other.id!==record.id&&other.semanticKey===record.semanticKey);
+  const peerSnapshot=peers=>peers.map(peerIdentity).sort((a,b)=>a.id.localeCompare(b.id));
+  function conflictEvent(o,key,value){if(!Object.hasOwn(o.events,key)&&Object.keys(o.events).length>=5000)fail('MEMORY_EVENT_LIMIT');o.events[key]=value;}
+  function bindConflicts(state,record,ids,{bump=true,reason='relations_changed'}={}){
+    const o=owner(state,record.owner),previousRevision=record.revision;
+    const next=[...new Set(ids)].sort();if(next.length)record.conflictsWith=next;else delete record.conflictsWith;
+    if(bump)record.revision++;
+    const binding={kind:'conflict-binding-v1',revision:record.revision,peers:peerSnapshot(peersOf(state,record)),ids:next,at:stamp()};
+    conflictEvent(o,relationKey(record),binding);
+    if(bump)conflictEvent(o,'conflict-audit:'+record.id+':'+record.revision,{kind:'conflict-relations',id:record.id,previousRevision,revision:record.revision,reason,ids:next,at:stamp()});
+  }
+  function refreshPeers(state,slot,{retired=[],skipBump=[]}={}){
+    const o=owner(state,slot.owner),retiredIds=new Set(retired),skip=new Set(skipBump);
+    for(const record of o.records.filter(r=>r.semanticKey===slot.semanticKey&&r.status==='candidate')){
+      const peers=peersOf(state,record),currentIds=new Set(peers.map(r=>r.id));
+      // Unknown legacy references are deliberately retained until exact-ID proof
+      // is checked by confirmation. Only this transaction's known exits retire.
+      const ids=[...new Set([...currentIds,...(record.conflictsWith??[]).filter(id=>!retiredIds.has(id)&&!currentIds.has(id))])].sort();
+      const prior=o.events[relationKey(record)];
+      if(!prior||JSON.stringify(prior.peers)!==JSON.stringify(peerSnapshot(peers))||JSON.stringify(record.conflictsWith??[])!==JSON.stringify(ids)||prior.revision!==record.revision)
+        bindConflicts(state,record,ids,{bump:!skip.has(record.id)});
+    }
+    for(const id of retiredIds)delete o.events['conflict:'+id];
+  }
+  function verifiedConflictExit(state,record,id){
+    const o=owner(state,record.owner),keyHash=digest(record.semanticKey);
+    if(o.markers.some(m=>m.id===id&&m.keyHash===keyHash&&['withdrawn','purged'].includes(m.status)&&/^[a-f0-9]{64}$/.test(m.textHash??'')))return true;
+    for(const meta of Object.values(state.archives)){
+      if(meta.owner!==record.owner||meta.recordId!==id||meta.keyHash!==keyHash||meta.sourceType!=='memory'||!['historical','superseded'].includes(meta.validity))continue;
+      if(meta.archiveId!==digest(record.owner+':'+id+':'+meta.revision+':'+meta.reason))continue;
+      const payload=archiveTable.get(meta.archiveId),parsed=recordSchema.safeParse(payload?.record);if(!parsed.success)continue;
+      const previous=parsed.data;
+      if(previous.owner===record.owner&&previous.semanticKey===record.semanticKey&&previous.id===id&&previous.revision===meta.revision&&digest(normalized(previous.text))===meta.textHash&&['archiveId','owner','recordId','revision','reason','keyHash','textHash','sourceType'].every(key=>payload[key]===meta[key]))return true;
+    }return false;
+  }
+  function reviewConflicts(state,record){
+    const peers=peersOf(state,record),ids=new Set(peers.map(r=>r.id));
+    for(const id of record.conflictsWith??[])if(!ids.has(id)&&!verifiedConflictExit(state,record,id))fail('MEMORY_CONFLICT_UNVERIFIED');
+    const prior=owner(state,record.owner).events[relationKey(record)];
+    const exactIds=JSON.stringify([...(record.conflictsWith??[])].filter(id=>ids.has(id)).sort())===JSON.stringify([...ids].sort());
+    if(peers.length&&(!exactIds||!prior||prior.revision!==record.revision||JSON.stringify(prior.peers)!==JSON.stringify(peerSnapshot(peers)))){
+      bindConflicts(state,record,[...ids],{reason:'confirmation_refresh'});
+      return {status:'conflict_refresh_required',code:'MEMORY_CONFLICT_REFRESH_REQUIRED',id:record.id,record:cleanView(record)};
+    }
+    return null;
+  }
+  // Selection, maintenance and quota recovery share the same complete authorized
+  // dependency context. Foreign project bodies are never returned by selection.
+  function activeForOwner(state,key){
+    const project=scope.projects.find(p=>'project:'+p.key===key);
+    const related=key.startsWith('user:')?scope.projects.filter(p=>p.userProfile&&ownerFor(p,'user')===key):project?.userProfile?scope.projects.filter(p=>p.userProfile===project.userProfile):project?[project]:[];
+    return [...new Map(related.flatMap(p=>visible(state,p)).map(r=>[r.id,r])).values()];
+  }
+  const eligibility=(state,record)=>archiveReason(record,{now:now(),active:activeForOwner(state,record.owner)});
+  const usable=(state,project)=>visible(state,project).filter(record=>!eligibility(state,record));
+  function collectEligible(state,writes,key){
+    const o=owner(state,key),changes=[];
+    for(const record of [...o.records]){
+      const reason=eligibility(state,record);if(!reason)continue;
+      const archiveId=archive(state,writes,record,reason);o.records=o.records.filter(r=>r.id!==record.id);
+      refreshPeers(state,record,{retired:[record.id]});changes.push({id:record.id,archiveId,reason});
+    }return changes;
+  }
+  function admitGrowth(state,writes,key){
+    const o=owner(state,key);if(o.records.length<500)return;
+    // Do not nest the public transaction queue. Cold payloads are still durably
+    // written before the single active catalog publication in transact().
+    collectEligible(state,writes,key);if(o.records.length>=500)fail('MEMORY_LIMIT');
+  }
+  const useKey=(exec,messageId,id)=>'usage:'+digest(JSON.stringify([exec.agent.session.header.id,messageId,id]));
   function directMessage(exec,messageId){
     if(exec.agent?.session?.header?.origin==='subagent')fail('DIRECT_USER_REQUIRED');
     const events=sessionEvents(exec.agent?.session);
@@ -139,27 +213,32 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
     const targetOwner=target?.owner??ownerFor(project,classify.scope),o=owner(state,targetOwner);
     if(Object.keys(o.events).length>=5000)fail('MEMORY_EVENT_LIMIT');
     if(target&&target.revision!==args.expectedRevision)fail('REVISION_CONFLICT');
-    let record=target;
+    let record=target;const originalSlot=target?{owner:target.owner,semanticKey:target.semanticKey}:null;const retired=[];
     if(operation==='save'){
-      if(o.records.length>=500)fail('MEMORY_LIMIT');
       const key=normalized(args.semanticKey??(automatic?.key||`${classify.category}:${args.text}`));
       if(o.markers.some(m=>m.keyHash===digest(key)||m.textHash===digest(normalized(args.text))))fail('REVOKED');
       const duplicate=o.records.find(r=>normalized(r.text)===normalized(args.text));
-      if(duplicate){duplicate.source.historyProvenance=mergeProvenance(duplicate.source.historyProvenance,messageProvenance(exec,automatic?.messageId));duplicate.lastUsedAt=time;o.events[eventKey]={fingerprint,id:duplicate.id};return {status:'deduplicated',record:cleanView(duplicate)};}
+      if(duplicate){duplicate.source.historyProvenance=mergeProvenance(duplicate.source.historyProvenance,messageProvenance(exec,automatic?.messageId));o.events[eventKey]={fingerprint,id:duplicate.id};return {status:'deduplicated',record:cleanView(duplicate)};}
+      admitGrowth(state,writes,targetOwner);
       const conflict=o.records.find(r=>r.semanticKey===key);
       record={id:randomUUID(),owner:targetOwner,...classify,text:args.text,status:conflict?'candidate':args.status??'candidate',revision:1,createdAt:time,updatedAt:time,lastUsedAt:time,source:{sessionId:exec.agent.session.header.id,callId:exec.callId??`automatic:${automatic?.messageId}`,reason:args.reason,historyProvenance:messageProvenance(exec,automatic?.messageId)},semanticKey:key,pinned:args.pinned??false,dependsOn:args.dependsOn??[],taskState:args.taskState??(classify.category==='task'?'open':'active'),historyRefs:[],...args.dueAt?{dueAt:args.dueAt}:{},...automatic?{automatic}:{},...conflict?{conflictsWith:[conflict.id]}:{}};
       if(['completed','cancelled'].includes(record.taskState))record.closedAt=time;
-      o.records.push(record);
+      o.records.push(record);refreshPeers(state,record,{skipBump:[record.id]});
     }else if(operation==='revoke'||operation==='purge'){
       if(operation==='revoke')archive(state,writes,record,'withdrawn','withdrawn');
-      mark(state,record,operation==='purge'?'purged':'withdrawn');
+      mark(state,record,operation==='purge'?'purged':'withdrawn');retired.push(record.id);
     }else if(operation==='archive'){
-      archive(state,writes,record,'user_requested');o.records=o.records.filter(r=>r.id!==record.id);
+      archive(state,writes,record,'user_requested');o.records=o.records.filter(r=>r.id!==record.id);retired.push(record.id);
     }else{
+      const usage=automatic?.messageId?useKey(exec,automatic.messageId,record.id):null;
+      if(usage&&o.events[usage]){o.events[eventKey]={fingerprint,id:record.id};return {status:'replayed',id:record.id,record:cleanView(record)};}
+      if(args.status==='confirmed'&&(record.status==='candidate'||record.conflictsWith?.length)){const refresh=reviewConflicts(state,record);if(refresh)return refresh;}
       const old=archive(state,writes,record,'superseded','superseded');
-      if(record.conflictsWith?.length&&args.status==='confirmed'){
-        for(const id of record.conflictsWith){const previous=locate(state,project,id);archive(state,writes,previous,'superseded','superseded');owner(state,previous.owner).records=owner(state,previous.owner).records.filter(r=>r.id!==id);}
-        delete record.conflictsWith;
+      if(args.status==='confirmed'){
+        // A confirmation supersedes reviewed established values, never silently
+        // approves or deletes the other unconfirmed contenders in the slot.
+        for(const previous of peersOf(state,record).filter(r=>r.status==='confirmed')){archive(state,writes,previous,'superseded','superseded');o.records=o.records.filter(r=>r.id!==previous.id);retired.push(previous.id);}
+        delete record.conflictsWith;delete o.events[relationKey(record)];
       }
       const nextProvenance=messageProvenance(exec,automatic?.messageId);
       record.historyRefs.push(old);record.text=args.text;record.status=args.status??record.status;record.revision++;
@@ -173,11 +252,14 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
         if(classify.category==='preference'&&!standing(proof)||classify.category==='personal'&&!/我的|我本人|my |I was/i.test(proof)||classify.category==='goal'&&!/总目标|最终目标|总体目标|overall goal/i.test(proof))fail('MEMORY_PROMOTION_NOT_EXPLICIT');
         const nextOwner=ownerFor(project,classify.scope),destination=owner(state,nextOwner);
         if(destination.records.some(r=>r.id!==record.id&&r.semanticKey===record.semanticKey))fail('MEMORY_PROMOTION_CONFLICT');
-        if(nextOwner!==record.owner){o.records=o.records.filter(r=>r.id!==record.id);destination.records.push(record);}
+        if(nextOwner!==record.owner){admitGrowth(state,writes,nextOwner);o.records=o.records.filter(r=>r.id!==record.id);destination.records.push(record);}
         Object.assign(record,classify,{owner:nextOwner});
         destination.events[eventKey]={fingerprint,id:record.id};
       }
     }
+    if(!['archive','revoke','purge'].includes(operation)&&automatic?.messageId)conflictEvent(owner(state,record.owner),useKey(exec,automatic.messageId,record.id),{kind:'direct-memory-use',id:record.id,messageId:automatic.messageId,at:time});
+    if(originalSlot)refreshPeers(state,originalSlot,{retired,skipBump:[record.id]});
+    if(originalSlot&&record.owner!==originalSlot.owner)refreshPeers(state,record,{skipBump:[record.id]});
     o.events[eventKey]={fingerprint,id:record.id};
     return {status:'saved',id:record.id,...['revoke','purge','archive'].includes(operation)?{}:{record:cleanView(record)}};
   }
@@ -239,12 +321,13 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
       const active=visible(state,project),blocked=[];
       for(const key of permitted)for(const marker of state.owners[key]?.markers??[])blocked.push(marker.historyProvenance);
       for(const meta of Object.values(state.archives))if(permitted.has(meta.owner)&&!verifiedDocumentArchive(project,meta))blocked.push(meta.historyProvenance);
-      for(const record of active)if(archiveReason(record,{now:now(),active}))blocked.push(record.source?.historyProvenance);
+      for(const record of active)if(eligibility(state,record))blocked.push(record.source?.historyProvenance);
       assertSourceOutside(blocked,source);
     },
     read(project){return visible(catalog(),project).map(cleanView);},
+    readForRecall(project){return usable(catalog(),project).map(cleanView);},
     select(project,query,{agent}={}){
-      const all=manager.read(project),rows=all.filter(r=>r.status==='confirmed');
+      const state=catalog(),all=usable(state,project).map(cleanView),rows=all.filter(r=>r.status==='confirmed');
       const pinned=[...rows.filter(r=>r.category==='goal'&&r.taskState==='active').slice(0,1),...rows.filter(r=>r.category==='preference').sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt)).slice(0,2)];
       const ranked=rankBm25(rows,query,6,selectTokenizer(query)).map(h=>rows.find(r=>r.id===h.id));
       const reserved=agent?catalog().audits.filter(a=>a.turn===turnOf(agent)&&a.operation==='read').reduce((n,a)=>n+(a.reservedContextChars??1600),0):0;
@@ -252,20 +335,16 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
       const pending=rankBm25(all.filter(r=>r.status==='candidate'&&r.conflictsWith?.length),query,2,selectTokenizer(query)).map(h=>({id:h.id,status:'needs_confirmation'}));
       return {records,pending};
     },
-    observeUserQuery(project,text,{signal}={}){
-      if(!/\?|？|查询|查一下|在哪里|是什么|记下|记住|记得|沿用|继续使用|还用|where|what|remember|recall/i.test(text))return Promise.resolve({touched:[]});
-      return transact(state=>{const rows=visible(state,project).filter(r=>r.status==='confirmed');const hits=rankBm25(rows,text,5,selectTokenizer(text));for(const hit of hits)rows.find(r=>r.id===hit.id).lastUsedAt=stamp();return {touched:hits.map(h=>h.id)};},signal);
+    observeUserQuery(project,_text,{signal}={}){
+      // Compatibility entry: lexical similarity is not evidence of usage.
+      if(closed)return Promise.reject(new Error('DISPOSED'));keys(project);checkAbort(signal);
+      return Promise.resolve({touched:[],policy:'query_is_not_usage'});
     },
     maintain(project,{signal}={}){return transact((state,writes)=>{
       const time=stamp(),changes=[];
       for(const key of keys(project)){
         const o=owner(state,key);if(o.lastMaintenanceAt&&now()-Date.parse(o.lastMaintenanceAt)<86400000)continue;
-        for(const record of [...o.records]){
-          const relatedProjects=key.startsWith('user:')?scope.projects.filter(p=>p.userProfile&&ownerFor(p,'user')===key):[project];
-          const active=[...new Map(relatedProjects.flatMap(p=>visible(state,p)).map(r=>[r.id,r])).values()];
-          const reason=archiveReason(record,{now:now(),active});if(!reason)continue;
-          const id=archive(state,writes,record,reason);o.records=o.records.filter(r=>r.id!==record.id);changes.push({id:record.id,archiveId:id,reason});
-        }o.lastMaintenanceAt=time;
+        changes.push(...collectEligible(state,writes,key));o.lastMaintenanceAt=time;
       }return {changes};
     },signal);},
     async applyExtracted(project,{items,messages,existing,sessionId},exec){
@@ -289,7 +368,7 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
           }
           const key=normalized(item.key),automatic={kind:cat,key,evidence:item.evidence,messageId:item.messageId,origin:'user-message-extraction'};
           const args={eventId:`extract:${sessionId}:${item.messageId}:${digest(JSON.stringify(item))}`,text:complete?target.text:item.text,category:cat,semanticKey:key,status:item.assertion==='explicit'?'confirmed':'candidate',reason:'Direct user statement',...target?{id:target.id,expectedRevision:target.revision}:{},...complete?{taskState:operation==='complete'?'completed':'cancelled'}:{}};
-          const out=putRecord(state,writes,project,args,exec,complete?'revise':operation,automatic);changes.push({id:out.id??out.record.id,operation:item.operation,status:out.record?.status??'withdrawn',layer:out.record?.layer??'L4'});
+          const out=putRecord(state,writes,project,args,exec,complete?'revise':operation,automatic);changes.push({id:out.id??out.record.id,operation:item.operation,status:out.status==='conflict_refresh_required'?'needs_confirmation':out.record?.status??'withdrawn',...out.code?{code:out.code}:{},layer:out.record?.layer??'L4'});
         }return changes;
       },exec.signal);
     },
@@ -333,7 +412,7 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
     },
     tools:{
       save:(p,a,e)=>manual('save',p,a,e),revise:(p,a,e)=>manual('revise',p,a,e),revoke:(p,a,e)=>manual('revoke',p,a,e),archive:(p,a,e)=>manual('archive',p,a,e),purge:(p,a,e)=>manual('purge',p,a,e),
-      async recall(p,{query,limit=5}){const rows=manager.read(p).filter(r=>r.status==='confirmed');return {records:rankBm25(rows,query,limit,selectTokenizer(query)).map(h=>rows.find(r=>r.id===h.id)),trust:'untrusted_memory_data'};},
+      async recall(p,{query,limit=5}){const rows=usable(catalog(),p).filter(r=>r.status==='confirmed').map(cleanView);return {records:rankBm25(rows,query,limit,selectTokenizer(query)).map(h=>rows.find(r=>r.id===h.id)),trust:'untrusted_memory_data'};},
       async get(p,{id}){return {record:cleanView(locate(catalog(),p,id)),trust:'untrusted_memory_data'};},
       async export(p,{offset=0}={}){const rows=manager.read(p);return {schemaVersion:4,records:rows.slice(offset,offset+1),totalRecords:rows.length,nextOffset:offset+1<rows.length?offset+1:null,trust:'untrusted_memory_data'};},
       async archive_search(p,args,exec){
@@ -353,7 +432,7 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
         return boundedHistory({archive,textOffset,trust:'untrusted_historical_data'},r=>r.archive.parts??[r.archive.record]);
       },
       async restore(p,args,exec){
-        need(exec,args,true);return transact(state=>{
+        need(exec,args,true);return transact((state,writes)=>{
           const meta=state.archives[args.archiveId];if(!meta||!keys(p).includes(meta.owner)||meta.validity==='withdrawn')fail('NOT_FOUND');
           const o=owner(state,meta.owner),eventKey=digest(args.eventId);
           if(o.events[eventKey])return {status:'replayed'};
@@ -362,7 +441,7 @@ export async function createLayeredMemory({facility,scope,legacy,config:input={}
           if(r.status!=='confirmed'||meta.validity==='superseded')fail('RESTORE_CONFLICT');
           const restored={...structuredClone(r),revision:r.revision+1,updatedAt:stamp(),lastUsedAt:stamp(),historyRefs:[...r.historyRefs,meta.archiveId]};
           if(['task','goal'].includes(restored.category)){restored.taskState=restored.category==='task'?'open':'active';delete restored.closedAt;}
-          o.records.push(restored);o.events[eventKey]={id:r.id,fingerprint:digest(JSON.stringify(args))};return {status:'restored',record:cleanView(restored)};
+          admitGrowth(state,writes,meta.owner);o.records.push(restored);o.events[eventKey]={id:r.id,fingerprint:digest(JSON.stringify(args))};return {status:'restored',record:cleanView(restored)};
         },exec.signal);
       },
     },

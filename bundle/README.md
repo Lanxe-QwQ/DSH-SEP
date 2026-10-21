@@ -1,3 +1,5 @@
+> 记忆修复候选 memory-repair.1：三项缺陷的当前实现与证据见 [修复入口](MEMORY-REPAIR.md)。这是隔离候选；公开下载和日常版仍为原 Beta.4。下文原适配/发布记录保留历史语义。
+
 > bundle.24 审查修复候选。默认包入口仍为 Cordis 的 pending 准入，不自动开启业务。显式 settings-runtime/native-settings-installation 与旧 business-runtime 是不同入口：旧入口只接受 capture:false；设置组合默认 capture:false，可在绑定项目与精确计划后启用受同一 Profile 账本保护的捕获、按需历史及显式授权视觉。配置与限制以 contracts/settings-installation.json / business-runtime.json 分别为准。
 >
 > 写入保护拒绝 null/空/无版本覆盖回执；仅 createIfAbsent 可不带观察版本，仍由原生提供方拒绝覆盖已有文件。评测入口/config 必须是 /opt/dsh-sep-eval/ 内无空段、点段、反斜杠和控制字符的规范路径；这是词法约束，受信任 WSL 文件部署与完整性校验仍是独立前提。评测收尾有界返回 blocked，不强制杀后端；保持根租约，修复或实际退出后显式重试 close。初始化状态仅保留错误码/类型，不返回正文或路径。

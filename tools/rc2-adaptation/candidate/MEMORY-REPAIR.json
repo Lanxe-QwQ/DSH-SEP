@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "buildId": "beta4-memory-repair.1",
+  "baseCommit": "a69a754d65664af151e0afd9d95cbb32f3c94371",
+  "host": "0.2.1-rc.2",
+  "internalAdapterVersion": "0.2.1-beta.3-rc2-adapter.1",
+  "planSha256": "99df3ea6f44dbccf9db2e2599a84641faeb49e1a0e39fc7f0bf3820bd855dc9f",
+  "changes": [
+    {
+      "path": "bundle/host/layered-memory/index.js",
+      "sourceSha256": "5061e63f10bb0aa2aeb76956eeab870cd910132b79d0695a1299c4e440c128bf",
+      "resultSha256": "e68bf825c809dd83a9be1a8d74e6c9728db39318773439617e14c4ea77c2b2af",
+      "bytes": 43912
+    },
+    {
+      "path": "bundle/host/layered-memory/origin.json",
+      "sourceSha256": "1399fbc1f11931b41bae5e4f43ad238178c12252e126bc92b7e34e955a8e3864",
+      "resultSha256": "4e88794989c853dcb05b5af3f828a1cda805f50910c5bb728b896c7d00579387",
+      "bytes": 3976
+    },
+    {
+      "path": "bundle/host/automatic-memory/index.js",
+      "sourceSha256": "37ff35b7a311528bf5f19f676afee6514a413ee3bf1e64a58a8c543d957483fd",
+      "resultSha256": "de9a3a6cf566b1256fb9ff2fc9a05cbbddee779879e3edcf3dd1d65a8cfc669a",
+      "bytes": 18133
+    },
+    {
+      "path": "bundle/host/automatic-memory/origin.json",
+      "sourceSha256": "8f90427efbd42a14e82faa8d353222345c2b92fe83e7f6288c651f8e97245fcd",
+      "resultSha256": "2207e5f9c83a82b4d0ed6bdf542cac5860ebd3bd254fab17782edae9588e55f5",
+      "bytes": 2594
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/layered-memory.js",
+      "sourceSha256": "2e9c22aa8b041942335842c190b96feb17c911db82acba5c9f70702913d7235d",
+      "resultSha256": "4999890c989bf1527e4f78836e5d7a0594317ce0b0603c3248c03763e3355d82",
+      "bytes": 43386
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/automatic-layered-memory.js",
+      "sourceSha256": "f4ff39a28a616af3ddb666b24633e3ddbf91a8d831c064f510bec1aed3be4827",
+      "resultSha256": "083c0e6e092fec0a233a09af689f173f135d9e4a73ad3a7d19f58a44b27745a8",
+      "bytes": 17910
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/vendor/bm25.js",
+      "sourceSha256": "4bdea400e13e17df9541731bcc523b96da84c02a51df23c8c8d59b6e2aaa0e10",
+      "resultSha256": "738f36db194ab77ad403a92f6d012b9d0602270793eb5cfc5c027fe490a4a532",
+      "bytes": 3501
+    }
+  ],
+  "recordSchema": 1,
+  "scope": "Isolated repair candidate. No daily deployment or public release authorization.",
+  "privateDataIncluded": false
+}
