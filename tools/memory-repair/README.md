@@ -1,5 +1,7 @@
 # memory-repair.1 源码与复验
 
+当前结果（2026-10-22）：三项修复的 Windows 91/91、WSL2 Linux 87/87、macOS 15.7.9 ARM64 原生68/68均通过，0跳过。Mac当前索引为 [MACOS-VERIFICATION.json](MACOS-VERIFICATION.json)，原 [VERIFICATION.json](VERIFICATION.json) 保留为上传前检查点。仅专用测试分支已推送，未改 main、未发布Release、未切换日常版。上述数量包含重复流程和跨平台相同定义，不能相加当成独立缺陷类型；完整 Mac app/安装器仍未重建或认证。
+
 修复基线：`a69a754d65664af151e0afd9d95cbb32f3c94371`，公开 Beta.4／DSH 0.2.1-rc.2。隔离分支 `codex/sep-memory-fixes-20261021`。本目录不是私人数据导入、日常安装或发布命令。
 
 - 公共实现：`bundle/modules/system-enhancement-package/src/layered-memory.js`、`automatic-layered-memory.js`、`vendor/bm25.js`。

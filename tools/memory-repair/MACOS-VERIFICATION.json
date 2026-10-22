@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "buildId": "beta4-memory-repair.1",
+  "runtimeSourceCommit": "aa3a27072f3fdaf94bb00e8b204866cdbbffde16",
+  "previousLocalVerification": {
+    "path": "VERIFICATION.json",
+    "sha256": "dadd5b250c539a269cfb3679b236d4587ba2fba7bdd7b8ef051c3ae097804485",
+    "interpretation": "Immutable snapshot before dedicated Mac CI authorization; Mac not_run and no GitHub push were true at that checkpoint, superseded only for the Mac native scope by this record."
+  },
+  "github": {
+    "repository": "Lanxe-QwQ/DSH-SEP",
+    "branch": "codex/sep-memory-macos-20261021",
+    "runId": 39697030810,
+    "runUrl": "https://github.com/Lanxe-QwQ/DSH-SEP/actions/runs/39697030810",
+    "headSha": "aa3a27072f3fdaf94bb00e8b204866cdbbffde16",
+    "attempt": 1,
+    "conclusion": "success",
+    "mainModified": false,
+    "releasePublished": false
+  },
+  "macOS": {
+    "status": "pass",
+    "scope": "native common memory and real official JSON/P2 regressions; not complete desktop/installer certification",
+    "system": "macOS 15.7.9 ARM64",
+    "node": "v24.21.0",
+    "core": 65,
+    "storageRepeatedFlow": 3,
+    "passed": 68,
+    "failed": 0,
+    "skipped": 0,
+    "evidence": "evidence/macos-r1",
+    "archive": {
+      "artifactId": 12391357832,
+      "bytes": 58472,
+      "sha256": "5d2a2df7f46215946a961e98643eb4a123733fbc7ee9f0f16085c3a2c525de8d"
+    },
+    "auditSha256": "76746fc04f07edcbd5aa893a76cc54de1583202328182d575de81129c0b0b185",
+    "installedRuntimeFilesVerifiedPerGroup": 441,
+    "sourceCandidateFilesCheckedByCI": 447
+  },
+  "candidateArchives": {
+    "windowsLocal": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500",
+    "macOSReportedByCI": "895be4805dd36a6cb7fd32e25d84354f305b09efba5c71c7327301d12b4f10e1",
+    "macOSArchiveDownloaded": false,
+    "sameArchiveBytesClaimed": false,
+    "identity": "Installed runtime file bytes independently match current source. CI generated and installed its own native archive; Windows and Mac archive hashes differ and are separately recorded."
+  },
+  "paidModelCalls": 0,
+  "dailyDeployment": {
+    "status": "not_run",
+    "dailyModified": false,
+    "privateLibraryTested": false,
+    "requiresNewFingerprintPlan": true
+  },
+  "notVerified": [
+    "new Mac desktop/install package",
+    "physical input",
+    "paid models",
+    "private library",
+    "daily deployment"
+  ]
+}

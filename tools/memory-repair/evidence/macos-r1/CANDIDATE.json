@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "sourceCommit": "aa3a27072f3fdaf94bb00e8b204866cdbbffde16",
+  "candidateSha256": "895be4805dd36a6cb7fd32e25d84354f305b09efba5c71c7327301d12b4f10e1",
+  "installedFiles": 447,
+  "packChanges": [
+    {
+      "path": "package.json",
+      "transform": "remove exactly one terminal LF",
+      "sourceSha256": "3b4d0c2049c6225042f411beddc883a0db03d53c27f2139f953bb92d23421c5b",
+      "resultSha256": "e3177633b35ab8fa80fd2a5b11e118f3b06285b64d12e4623a0064b141b0eca6"
+    }
+  ],
+  "lockSha256": "dafb5fcf5479c6e49faf50054c9b206c6197e2a7013d7433a4b1bb702135421c",
+  "scope": "native common memory/JSON/P2 repair; not complete Mac application certification"
+}

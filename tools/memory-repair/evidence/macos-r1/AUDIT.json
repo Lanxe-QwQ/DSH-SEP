@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "sourceCommit": "aa3a27072f3fdaf94bb00e8b204866cdbbffde16",
+  "runId": 39697030810,
+  "runUrl": "https://github.com/Lanxe-QwQ/DSH-SEP/actions/runs/39697030810",
+  "artifactId": 12391357832,
+  "artifactBytes": 58472,
+  "artifactSha256": "5d2a2df7f46215946a961e98643eb4a123733fbc7ee9f0f16085c3a2c525de8d",
+  "groups": [
+    {
+      "mode": "core",
+      "passed": 65,
+      "failed": 0,
+      "skipped": 0,
+      "verifiedInputFiles": 447,
+      "verifiedInstalledRuntimeFiles": 441,
+      "inputSha256": "9f6ec267de7b03611c8e2bcdf867d784bbee1b3d2aee7cda6660f4a7028db968",
+      "logSha256": "40c6345fffaa118603df39cd2243073ade1a1166e05386072e95f579b6711e78"
+    },
+    {
+      "mode": "storage",
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "verifiedInputFiles": 444,
+      "verifiedInstalledRuntimeFiles": 441,
+      "inputSha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d",
+      "logSha256": "cf194e488ad4cfa1f0236252e6cd69d040061cb6893fc86cb3d627091f44bce6"
+    }
+  ],
+  "totalPassed": 68,
+  "totalFailed": 0,
+  "totalSkipped": 0,
+  "platform": "macOS 15.7.9 ARM64",
+  "node": "v24.21.0",
+  "macPackedArchiveSha256ReportedByCI": "895be4805dd36a6cb7fd32e25d84354f305b09efba5c71c7327301d12b4f10e1",
+  "macArchiveDownloaded": false,
+  "macInstalledRuntimeIndependentByteVerification": true,
+  "macInstalledRuntimeFilesPerGroup": 441,
+  "sourceManifestFilesCheckedByCI": 447,
+  "windowsArchiveSha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500",
+  "archiveIdentityClaimed": false,
+  "dailyRepairFilesUnchanged": 7,
+  "privateStorageRead": false,
+  "privateStorageWritten": false,
+  "releasePublished": false,
+  "dailySwitched": false,
+  "artifactFiles": [
+    {
+      "path": "RESULT.json",
+      "bytes": 706,
+      "sha256": "b143b0103305440430ee7f7ff337e68015506f059ea9f7513d9a0efddaa524d3"
+    },
+    {
+      "path": "CANDIDATE.json",
+      "bytes": 670,
+      "sha256": "1a15d20f82eb10bb43b9c02230c21ade6c9321c120a54609b546556d7978eda7"
+    },
+    {
+      "path": "core/INPUTS.json",
+      "bytes": 89629,
+      "sha256": "9f6ec267de7b03611c8e2bcdf867d784bbee1b3d2aee7cda6660f4a7028db968"
+    },
+    {
+      "path": "core/RESULT.json",
+      "bytes": 402,
+      "sha256": "3dfbc26c18120752fdf34f1caf3bd6e9a94a62986c7614cf9be1b6dde4c21fef"
+    },
+    {
+      "path": "core/tests.log",
+      "bytes": 12208,
+      "sha256": "40c6345fffaa118603df39cd2243073ade1a1166e05386072e95f579b6711e78"
+    },
+    {
+      "path": "core.log",
+      "bytes": 346,
+      "sha256": "8384f9511f7e9c4836de62ab264f9c0416638194c045a19bb3f0ac940ec09a91"
+    },
+    {
+      "path": "install.log",
+      "bytes": 17692,
+      "sha256": "da1872faed6964d70d9790b0014399520cc25881abbcae1059dc049d8b86347c"
+    },
+    {
+      "path": "pack.log",
+      "bytes": 25136,
+      "sha256": "a179beda7f30f59687ae091c929126a8b6b84937eb385dbeb8491d4f412abe1d"
+    },
+    {
+      "path": "pnpm-extract.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "storage/INPUTS.json",
+      "bytes": 89095,
+      "sha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d"
+    },
+    {
+      "path": "storage/RESULT.json",
+      "bytes": 403,
+      "sha256": "7f96366cefc3e74679bc34c379e52cb58f52a25ab36d55a378daf5cfde0c8ed4"
+    },
+    {
+      "path": "storage/tests.log",
+      "bytes": 574,
+      "sha256": "cf194e488ad4cfa1f0236252e6cd69d040061cb6893fc86cb3d627091f44bce6"
+    },
+    {
+      "path": "storage.log",
+      "bytes": 347,
+      "sha256": "2b861b1724c7d577e773780eb099962acf0046af68cd03cfd295f26617ecf2ed"
+    },
+    {
+      "path": "system.log",
+      "bytes": 67,
+      "sha256": "090d9dd0b7a4b8da43cf17381a4c21e5fff2b6a0e75701319dca732a9e8157e9"
+    }
+  ],
+  "metadataSha256": "9bdade401c83209f0fc0b028b32e863f73d3087bd4d504ee9c021c00da8db6b4",
+  "jobLogSha256": "1da5406e82f2d194e02f150cfc2a388903d52de6109b0cc2f7253812e646e77b",
+  "notVerified": [
+    "new Mac desktop/install package",
+    "physical input",
+    "paid models",
+    "private library",
+    "daily deployment"
+  ]
+}

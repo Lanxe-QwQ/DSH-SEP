@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "commands": [
+    {
+      "name": "system",
+      "status": "pass"
+    },
+    {
+      "name": "pnpm-extract",
+      "status": "pass"
+    },
+    {
+      "name": "pack",
+      "status": "pass"
+    },
+    {
+      "name": "install",
+      "status": "pass"
+    },
+    {
+      "name": "core",
+      "status": "pass"
+    },
+    {
+      "name": "storage",
+      "status": "pass"
+    }
+  ],
+  "sourceCommit": "aa3a27072f3fdaf94bb00e8b204866cdbbffde16",
+  "platform": "darwin",
+  "arch": "arm64",
+  "notVerified": [
+    "new Mac desktop/install package",
+    "physical input",
+    "paid models",
+    "private library",
+    "daily deployment"
+  ],
+  "releasePublished": false
+}
