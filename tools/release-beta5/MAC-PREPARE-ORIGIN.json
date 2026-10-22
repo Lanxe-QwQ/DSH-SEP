@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "source": "tools/rc2-adaptation/macos/prepare.mjs",
+  "sourceSha256": "d686349ac997478ed5c6ce78e65c60dc0504d8280f58faaddbcaa81cb7ec673a",
+  "resultSha256": "b87de2aeaeac6cde8f3ef33a2329d5ab0c5e09c53537cc6192d5f5a5155e8bc3",
+  "changes": [
+    "relative repo/input paths",
+    "pinned reviewed memory candidate replaces historical candidate",
+    "exact tarball SHA512 in frozen lock",
+    "reviewed two-source R12 installer namespace port"
+  ],
+  "historicalInputsUnmodified": true
+}

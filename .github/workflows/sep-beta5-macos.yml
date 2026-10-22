@@ -1,0 +1,74 @@
+name: SEP Beta5 native macOS release candidate
+on:
+  push:
+    branches: [codex/sep-beta5-publication-20261022]
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24.21.0
+      - name: Prepare pinned RC2 inputs
+        run: node tools/release-beta5/mac-prepare.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Install exact native dependencies without lifecycle scripts
+        run: |
+          set -euo pipefail
+          npm install --prefix "$RUNNER_TEMP/pnpm" --ignore-scripts --no-audit --no-fund pnpm@11.25.0
+          cd "$RUNNER_TEMP/sep-rc2/host"
+          node "$RUNNER_TEMP/pnpm/node_modules/pnpm/bin/pnpm.mjs" install --frozen-lockfile --ignore-scripts --store-dir "$RUNNER_TEMP/pnpm-store" 2>&1 | tee "$RUNNER_TEMP/sep-rc2/install.log"
+      - name: Native APFS and real RC2 host integration
+        run: node tools/rc2-adaptation/macos/run-native.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Verify repaired candidate through the actual Mac dependency tree
+        run: |
+          export SEP_OFFICIAL_HARNESS="$RUNNER_TEMP/sep-rc2/host"
+          export SEP_MEMORY_BUNDLE="$RUNNER_TEMP/sep-rc2/host/node_modules/dsh-sep-bundle/bundle"
+          node tools/memory-repair/run.mjs core "$RUNNER_TEMP/sep-rc2/memory-core"
+          node tools/memory-repair/run.mjs storage "$RUNNER_TEMP/sep-rc2/memory-storage"
+      - name: Assemble actual RC2 Mac app from verified carrier
+        run: node tools/rc2-adaptation/macos/assemble-app.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Verify actual RC2 app closure and native document/pending/context suites
+        run: node tools/rc2-adaptation/macos/run-postbuild.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Actual RC2 LaunchServices cold boot and normal restart
+        run: node tools/rc2-adaptation/macos/run-app-lifecycle.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Build native RC2 installer after app lifecycle passes
+        run: node tools/rc2-adaptation/macos/assemble-installer.mjs "$RUNNER_TEMP/sep-rc2"
+      - name: Retain isolated candidate archives (not Release)
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: sep-beta5-macos-candidate-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/sep-rc2/installer/DSH-SEP-macOS-RC2-installer-preview.zip
+            ${{ runner.temp }}/sep-rc2/mac-package/RESULT.json
+            ${{ runner.temp }}/sep-rc2/installer/RESULT.json
+            ${{ runner.temp }}/sep-rc2/mac-package/PACKAGE-INVENTORY.json
+            ${{ runner.temp }}/sep-rc2/installer/PACKAGE-INVENTORY.json
+          if-no-files-found: error
+          compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: sep-beta5-macos-evidence-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/sep-rc2/evidence
+            ${{ runner.temp }}/sep-rc2/DERIVATION.json
+            ${{ runner.temp }}/sep-rc2/BETA5-PREPARATION.json
+            ${{ runner.temp }}/sep-rc2/memory-core
+            ${{ runner.temp }}/sep-rc2/memory-storage
+            ${{ runner.temp }}/sep-rc2/install.log
+            ${{ runner.temp }}/sep-rc2/mac-package/RESULT.json
+            ${{ runner.temp }}/sep-rc2/mac-package/*.log
+            ${{ runner.temp }}/sep-rc2/mac-package/PACKAGE-INVENTORY.json
+            ${{ runner.temp }}/sep-rc2/app-lifecycle
+            ${{ runner.temp }}/sep-rc2/app-postbuild
+            ${{ runner.temp }}/sep-rc2/mac-package/POSTBUILD-ORIGIN.json
+            ${{ runner.temp }}/sep-rc2/installer/RESULT.json
+            ${{ runner.temp }}/sep-rc2/installer/*.log
+            ${{ runner.temp }}/sep-rc2/mac-package/INSTALLER-ORIGIN.json
+          if-no-files-found: error
