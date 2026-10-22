@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "releaseUrl": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/tag/v0.2.1-beta.5",
+  "releaseId": 420224331,
+  "tag": "v0.2.1-beta.5",
+  "version": "0.2.1-beta.5",
+  "sourceCommit": "99cebf01f3848a576454c1564be262da6f12a8ab",
+  "publishedAt": "2026-10-22T02:31:06Z",
+  "draft": false,
+  "prerelease": true,
+  "dailyDeploymentPerformed": false,
+  "serverAssets": [
+    {
+      "id": 664373250,
+      "name": "DSH-SEP-0.2.1-beta.5-Linux-x64.tar.gz",
+      "size": 452450410,
+      "digest": "sha256:dbff65eafce37d0cf5dbdeffa1ab1a9da48bdb323ea31779c8b8242759d2689b",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/DSH-SEP-0.2.1-beta.5-Linux-x64.tar.gz"
+    },
+    {
+      "id": 664427417,
+      "name": "DSH-SEP-0.2.1-beta.5-macOS-arm64.zip",
+      "size": 862206847,
+      "digest": "sha256:6c618fa84dc3eeea2c8778ade44124089331278e18d47bb4ecce81311b0b5c4c",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/DSH-SEP-0.2.1-beta.5-macOS-arm64.zip"
+    },
+    {
+      "id": 664439836,
+      "name": "DSH-SEP-Documentation-0.2.1-beta.5.zip",
+      "size": 7613404,
+      "digest": "sha256:97c5f05e898df542ffea38f3efa3e3fa226f28bd85ca3b95fb083cc137bdf0ec",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/DSH-SEP-Documentation-0.2.1-beta.5.zip"
+    },
+    {
+      "id": 664370398,
+      "name": "DSH-SEP-Full-0.2.1-beta.5-Windows-x64.zip",
+      "size": 519199720,
+      "digest": "sha256:07d97df178ff5109f4a127f48fc7a3f3321a1f395ce9d0a60461371433bb5747",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/DSH-SEP-Full-0.2.1-beta.5-Windows-x64.zip"
+    },
+    {
+      "id": 664370394,
+      "name": "DSH-SEP-Only-0.2.1-beta.5-Windows-x64.zip",
+      "size": 429031664,
+      "digest": "sha256:9ca93dfcf704740e2ac45a2f5e608af8d98f778a37602d7fff8550cc7790998f",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/DSH-SEP-Only-0.2.1-beta.5-Windows-x64.zip"
+    },
+    {
+      "id": 664439167,
+      "name": "DSH-SEP-Source-0.2.1-beta.5.zip",
+      "size": 134920587,
+      "digest": "sha256:0f0d5b28aa9fa402ac4f30c296aa4c257c488b7046f1fa6b6c09ed04a0d04e1e",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/DSH-SEP-Source-0.2.1-beta.5.zip"
+    },
+    {
+      "id": 664439953,
+      "name": "RELEASE-MANIFEST.json",
+      "size": 3359,
+      "digest": "sha256:2755b2959250167fe469bd8f75855f4649593fc1763eb819d98fe7a6285a81c0",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/RELEASE-MANIFEST.json"
+    },
+    {
+      "id": 664440005,
+      "name": "SHA256SUMS.txt",
+      "size": 804,
+      "digest": "sha256:7dcc801139b15b5772b42e2c2ae8c9bd0aa3039a44d95171894f1e8dc3ca8e31",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/SHA256SUMS.txt"
+    },
+    {
+      "id": 664383855,
+      "name": "THIRD-PARTY-SOURCES.zip",
+      "size": 251343178,
+      "digest": "sha256:237d0644ab6280a6771dc79addd579a95050cb74321c7e5021829069c5cc896b",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/download/v0.2.1-beta.5/THIRD-PARTY-SOURCES.zip"
+    }
+  ],
+  "anonymousDownloadProbes": [
+    {
+      "name": "DSH-SEP-0.2.1-beta.5-Linux-x64.tar.gz",
+      "status": 200,
+      "contentLength": 452450410,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "DSH-SEP-0.2.1-beta.5-macOS-arm64.zip",
+      "status": 200,
+      "contentLength": 862206847,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "DSH-SEP-Documentation-0.2.1-beta.5.zip",
+      "status": 200,
+      "contentLength": 7613404,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "DSH-SEP-Full-0.2.1-beta.5-Windows-x64.zip",
+      "status": 200,
+      "contentLength": 519199720,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "DSH-SEP-Only-0.2.1-beta.5-Windows-x64.zip",
+      "status": 200,
+      "contentLength": 429031664,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "DSH-SEP-Source-0.2.1-beta.5.zip",
+      "status": 200,
+      "contentLength": 134920587,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "RELEASE-MANIFEST.json",
+      "status": 200,
+      "contentLength": 3359,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "status": 200,
+      "contentLength": 804,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    },
+    {
+      "name": "THIRD-PARTY-SOURCES.zip",
+      "status": 200,
+      "contentLength": 251343178,
+      "finalHost": "release-assets.githubusercontent.com",
+      "authenticated": false,
+      "method": "HEAD"
+    }
+  ],
+  "verificationScope": "All server asset SHA-256/size/state match local verified bytes; anonymous release API and download HEAD verified. Not a full re-download or application auto-update end-to-end test."
+}

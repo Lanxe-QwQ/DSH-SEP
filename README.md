@@ -37,3 +37,5 @@ Windows本轮新ZIP新装/拒绝/运行时冒烟通过；Beta.4历史桌面核�
 自有代码 [MIT](LICENSE)，第三方保留各自许可。反馈请通过 Issues，勿附API Key、私人正文或完整账本。历史说明见 [上版总览](docs/PRE-BETA4-README.md)；其中时点词不替代当前范围。
 
 历史公开发行：[Beta.3](https://github.com/Lanxe-QwQ/DSH-SEP/releases/tag/v0.2.1-beta.3)；它仍对应 Alpha.2 资产，不是当前 RC.2 下载。
+
+[本次公开发布核验回执](release/v0.2.1-beta.5/PUBLICATION.json)：九份附件的服务器SHA-256/大小与匿名下载HEAD已核对；没有将HEAD检查称为完整重新下载或自动更新闭环。发行标签与源码ZIP保留发布前封存快照，main后续回执变更见[POST-PUBLICATION-OVERLAY.json](POST-PUBLICATION-OVERLAY.json)。

@@ -13,5 +13,6 @@
   "currentOverlay": "release/v0.2.1-beta.5/SOURCE-DELTA.json",
   "currentSource": "Git release tag and source ZIP; base inventory remains the Beta.4 export, later public commits are declared separately",
   "rootEntryAndHostBaseRemainHistorical": true,
-  "sharedMemoryModulesUpdated": true
+  "sharedMemoryModulesUpdated": true,
+  "postPublicationOverlay": "POST-PUBLICATION-OVERLAY.json"
 }

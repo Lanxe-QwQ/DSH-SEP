@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "commit": "99cebf01f3848a576454c1564be262da6f12a8ab",
+  "restoredCommit": "99cebf01f3848a576454c1564be262da6f12a8ab",
+  "autocrlfTrueCheckout": true,
+  "existingRegression": {
+    "schema": 1,
+    "status": "pass",
+    "mode": "existing",
+    "platform": "win32",
+    "arch": "x64",
+    "exitCode": 0,
+    "signal": null,
+    "tests": 18,
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "c178db15dfc79287f1c42fd5eb6cd5d5da85dbb3005649e594ce43f68e4a41ea",
+    "inputSha256": "dd4eba29c07f6ea7f7f32d1a7307d0a3316e3d0f49653699951316ea37c28d5f",
+    "model": "synthetic/no paid model"
+  },
+  "scope": "fresh Git clone, scoped checkout of source/test closure, exact origin-chain + existing consumer checks; full source ZIP separately verified20,648 blob files"
+}

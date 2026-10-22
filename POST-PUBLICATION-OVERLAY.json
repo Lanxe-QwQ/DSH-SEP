@@ -1,37 +1,35 @@
 {
   "schema": 1,
-  "status": "pass",
-  "releaseTag": "v0.2.1-beta.4",
-  "frozenReleaseSourceCommit": "793f7a0ad87a6d1490171571df9a5b52211e526a",
-  "distributionVersion": "0.2.1-beta.4",
-  "sourceScanFrozenAtTag": true,
+  "distributionVersion": "0.2.1-beta.5",
+  "releaseSourceCommit": "99cebf01f3848a576454c1564be262da6f12a8ab",
+  "scope": "main-only publication and source-restore receipts; no runtime or released archive modified",
+  "releaseTag": "v0.2.1-beta.5",
   "changes": [
     {
-      "path": "release/v0.2.1-beta.4/PUBLICATION.json",
-      "beforeSha256": null,
-      "sha256": "f78f3fce782498232199593e2a7474eb97236bcf6d0ecb602f011d42053fdefd",
-      "bytes": 5941
+      "path": "README.md",
+      "beforeSha256": "084a44d649cf3677f60ac41fab1416d5ec450c7cd4f4125cb17c231fef1d2dc3",
+      "afterSha256": "4174afb0951650c5ee81ad5d10372d5495924cc396506056734859345276eed7"
     },
     {
       "path": "RELEASE-STATUS.json",
-      "beforeSha256": "0997768d25ed2d8f5b80d0723ea6b1b153fead1e0a895343ddd9e48e6bbf86d3",
-      "sha256": "f2dc019526d7623f2960ba78644f4c03719246d7beb29c4373a5a7fb37342e18",
-      "bytes": 735
+      "beforeSha256": "49d981c2dfa9725b1e0d3463ca979b3bf285341e3516a8347f8e31818c42a57b",
+      "afterSha256": "4cf9a408fac58ac07b0a6c37a47303e82ccc84969646aedcbba1485473f5b3b8"
     },
     {
-      "path": "VERIFICATION-RESULT.json",
-      "beforeSha256": "b8502c776bbedacae83078d5c59ffe57eb0a87d33082cb39435fe84b2fe20021",
-      "sha256": "1eb7fa166c273378e6756ce69047e58023c7c31c54ab55e8d8f8090be5d68159",
-      "bytes": 1205
+      "path": "PUBLIC-SOURCE-ORIGIN.json",
+      "beforeSha256": "7c82862c6072c27ce07c67661bbbaaabbe42bb311840969bb70e52e632e7ba2c",
+      "afterSha256": "eed377925b35769598cfd5776fd9401793f38f57a991f99f52d7e3544abc4a8a"
     },
     {
-      "path": "README.md",
-      "beforeSha256": "b0378d2f024b96760feb20d01bbccff815d946d6c999ffaf4cf71a5019b568a6",
-      "sha256": "dee3d6346f57cb45728b6c6dc923ead720fbf4ba83cd0344220fc870f87e54c6",
-      "bytes": 4300
+      "path": "release/v0.2.1-beta.5/PUBLICATION.json",
+      "beforeSha256": null,
+      "afterSha256": "48b4b5971700f62635ba1824c8c339483243d0cb2578e6a3dac6485c1c49ab3d"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/SOURCE-RESTORE-VERIFIED.json",
+      "beforeSha256": null,
+      "afterSha256": "0fcdf58f36dbed33ac4cf2251c5e8156744d4add9340968d66008b226f71ad04"
     }
   ],
-  "runtimeModified": false,
-  "installerArchivesModified": false,
-  "scope": "Only receipt and current publication metadata added after anonymous endpoint verification. Immutable tagged source and Release source ZIP retain the original final scan binding."
+  "selfExcluded": true
 }
