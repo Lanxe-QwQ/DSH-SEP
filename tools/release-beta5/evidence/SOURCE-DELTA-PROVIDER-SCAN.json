@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "findings": [],
+  "scope": "provider-token signature in changed textual source; archives reviewed separately"
+}

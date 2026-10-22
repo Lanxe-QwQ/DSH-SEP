@@ -1,0 +1,401 @@
+TAP version 13
+# Subtest: normal reviewed conflict confirmation archives its predecessor
+ok 1 - normal reviewed conflict confirmation archives its predecessor
+  ---
+  duration_ms: 58.915875
+  type: 'test'
+  ...
+# Subtest: archive: retirement updates peers atomically without refreshing lifecycle time
+ok 2 - archive: retirement updates peers atomically without refreshing lifecycle time
+  ---
+  duration_ms: 3.877
+  type: 'test'
+  ...
+# Subtest: archive: historical dangling reference is reconciled using durable exit proof
+ok 3 - archive: historical dangling reference is reconciled using durable exit proof
+  ---
+  duration_ms: 2.247
+  type: 'test'
+  ...
+# Subtest: revoke: retirement updates peers atomically without refreshing lifecycle time
+ok 4 - revoke: retirement updates peers atomically without refreshing lifecycle time
+  ---
+  duration_ms: 2.050458
+  type: 'test'
+  ...
+# Subtest: revoke: historical dangling reference is reconciled using durable exit proof
+ok 5 - revoke: historical dangling reference is reconciled using durable exit proof
+  ---
+  duration_ms: 2.321416
+  type: 'test'
+  ...
+# Subtest: purge: retirement updates peers atomically without refreshing lifecycle time
+ok 6 - purge: retirement updates peers atomically without refreshing lifecycle time
+  ---
+  duration_ms: 1.736625
+  type: 'test'
+  ...
+# Subtest: purge: historical dangling reference is reconciled using durable exit proof
+ok 7 - purge: historical dangling reference is reconciled using durable exit proof
+  ---
+  duration_ms: 1.282875
+  type: 'test'
+  ...
+# Subtest: same removal request replays without re-revising peers
+ok 8 - same removal request replays without re-revising peers
+  ---
+  duration_ms: 1.781291
+  type: 'test'
+  ...
+# Subtest: old peer view is rejected after retirement
+ok 9 - old peer view is rejected after retirement
+  ---
+  duration_ms: 1.316416
+  type: 'test'
+  ...
+# Subtest: a third contender remains represented after another contender is confirmed
+ok 10 - a third contender remains represented after another contender is confirmed
+  ---
+  duration_ms: 3.687708
+  type: 'test'
+  ...
+# Subtest: peer substantive revision invalidates candidate view but does not renew candidate
+ok 11 - peer substantive revision invalidates candidate view but does not renew candidate
+  ---
+  duration_ms: 1.596583
+  type: 'test'
+  ...
+# Subtest: unknown missing peer is classified and leaves state unchanged
+ok 12 - unknown missing peer is classified and leaves state unchanged
+  ---
+  duration_ms: 1.065375
+  type: 'test'
+  ...
+# Subtest: foreign owner IDs do not authorize retirement
+ok 13 - foreign owner IDs do not authorize retirement
+  ---
+  duration_ms: 1.554375
+  type: 'test'
+  ...
+# Subtest: tampered archived payload is not accepted as exit proof
+ok 14 - tampered archived payload is not accepted as exit proof
+  ---
+  duration_ms: 1.350667
+  type: 'test'
+  ...
+# Subtest: legacy candidate with a newly discovered rival commits one refresh receipt
+ok 15 - legacy candidate with a newly discovered rival commits one refresh receipt
+  ---
+  duration_ms: 2.485208
+  type: 'test'
+  ...
+# Subtest: automatic replacement uses the same reconciled conflict core
+ok 16 - automatic replacement uses the same reconciled conflict core
+  ---
+  duration_ms: 1.49975
+  type: 'test'
+  ...
+# Subtest: pre-cancelled confirmation cannot publish any relation changes
+ok 17 - pre-cancelled confirmation cannot publish any relation changes
+  ---
+  duration_ms: 0.944916
+  type: 'test'
+  ...
+# Subtest: failed active publication preserves predecessor and candidate revisions
+ok 18 - failed active publication preserves predecessor and candidate revisions
+  ---
+  duration_ms: 1.491583
+  type: 'test'
+  ...
+# Subtest: failed cold publication never frees a predecessor
+ok 19 - failed cold publication never frees a predecessor
+  ---
+  duration_ms: 0.940042
+  type: 'test'
+  ...
+# Subtest: concurrent retirement and old confirmation serializes with stale view rejection
+ok 20 - concurrent retirement and old confirmation serializes with stale view rejection
+  ---
+  duration_ms: 1.199334
+  type: 'test'
+  ...
+# Subtest: capture candidate view excludes expired rows while management view retains them
+ok 21 - capture candidate view excludes expired rows while management view retains them
+  ---
+  duration_ms: 56.242083
+  type: 'test'
+  ...
+# Subtest: restore respects capacity without generic schema failure
+ok 22 - restore respects capacity without generic schema failure
+  ---
+  duration_ms: 47.273458
+  type: 'test'
+  ...
+# Subtest: promotion cannot overflow the shared user owner
+ok 23 - promotion cannot overflow the shared user owner
+  ---
+  duration_ms: 73.542583
+  type: 'test'
+  ...
+# Subtest: original example contains legal adjacent pairs and no cross-sentence pair
+ok 24 - original example contains legal adjacent pairs and no cross-sentence pair
+  ---
+  duration_ms: 3.033333
+  type: 'test'
+  ...
+# Subtest: Han run stops at "。"
+ok 25 - Han run stops at "。"
+  ---
+  duration_ms: 0.79625
+  type: 'test'
+  ...
+# Subtest: Han run stops at "，"
+ok 26 - Han run stops at "，"
+  ---
+  duration_ms: 0.102375
+  type: 'test'
+  ...
+# Subtest: Han run stops at " "
+ok 27 - Han run stops at " "
+  ---
+  duration_ms: 0.063083
+  type: 'test'
+  ...
+# Subtest: Han run stops at "\\n"
+ok 28 - Han run stops at "\\n"
+  ---
+  duration_ms: 0.076916
+  type: 'test'
+  ...
+# Subtest: Han run stops at "\\t"
+ok 29 - Han run stops at "\\t"
+  ---
+  duration_ms: 0.059334
+  type: 'test'
+  ...
+# Subtest: Han run stops at "API"
+ok 30 - Han run stops at "API"
+  ---
+  duration_ms: 0.078167
+  type: 'test'
+  ...
+# Subtest: Han run stops at "123"
+ok 31 - Han run stops at "123"
+  ---
+  duration_ms: 0.052167
+  type: 'test'
+  ...
+# Subtest: Han run stops at "🙂"
+ok 32 - Han run stops at "🙂"
+  ---
+  duration_ms: 0.056125
+  type: 'test'
+  ...
+# Subtest: Han run stops at "-"
+ok 33 - Han run stops at "-"
+  ---
+  duration_ms: 0.098208
+  type: 'test'
+  ...
+# Subtest: Han run stops at "/"
+ok 34 - Han run stops at "/"
+  ---
+  duration_ms: 0.059917
+  type: 'test'
+  ...
+# Subtest: Han run stops at "‍"
+ok 35 - Han run stops at "‍"
+  ---
+  duration_ms: 0.0835
+  type: 'test'
+  ...
+# Subtest: mixed English and digits cannot swallow later Han characters
+ok 36 - mixed English and digits cannot swallow later Han characters
+  ---
+  duration_ms: 0.513291
+  type: 'test'
+  ...
+# Subtest: supplementary-plane Han uses code points rather than UTF16 units
+ok 37 - supplementary-plane Han uses code points rather than UTF16 units
+  ---
+  duration_ms: 0.058625
+  type: 'test'
+  ...
+# Subtest: English numeric and accented words retain their original matching behavior
+ok 38 - English numeric and accented words retain their original matching behavior
+  ---
+  duration_ms: 0.440791
+  type: 'test'
+  ...
+# Subtest: query and document use the identical Han boundary rule
+ok 39 - query and document use the identical Han boundary rule
+  ---
+  duration_ms: 0.384542
+  type: 'test'
+  ...
+# Subtest: the twenty-document counterexample no longer ranks the unrelated sentence first
+ok 40 - the twenty-document counterexample no longer ranks the unrelated sentence first
+  ---
+  duration_ms: 1.763958
+  type: 'test'
+  ...
+# Subtest: empty input and zero limit keep existing BM25 contracts
+ok 41 - empty input and zero limit keep existing BM25 contracts
+  ---
+  duration_ms: 0.11575
+  type: 'test'
+  ...
+# Subtest: ninety days of related questions do not renew temporary memory
+ok 42 - ninety days of related questions do not renew temporary memory
+  ---
+  duration_ms: 59.92075
+  type: 'test'
+  ...
+# Subtest: recall, selection and query observation do not modify lifecycle clocks
+ok 43 - recall, selection and query observation do not modify lifecycle clocks
+  ---
+  duration_ms: 4.632083
+  type: 'test'
+  ...
+# Subtest: expired temporary entries are excluded before physical maintenance
+ok 44 - expired temporary entries are excluded before physical maintenance
+  ---
+  duration_ms: 0.869292
+  type: 'test'
+  ...
+# Subtest: daily maintenance throttle cannot keep a newly expired entry in ordinary recall
+ok 45 - daily maintenance throttle cannot keep a newly expired entry in ordinary recall
+  ---
+  duration_ms: 1.444959
+  type: 'test'
+  ...
+# Subtest: an incidental query cannot rescue an already expired entry
+ok 46 - an incidental query cannot rescue an already expired entry
+  ---
+  duration_ms: 0.781666
+  type: 'test'
+  ...
+# Subtest: duplicate text merges provenance without renewal or revision
+ok 47 - duplicate text merges provenance without renewal or revision
+  ---
+  duration_ms: 0.840041
+  type: 'test'
+  ...
+# Subtest: explicit direct confirmation renews and same event replay does not
+ok 48 - explicit direct confirmation renews and same event replay does not
+  ---
+  duration_ms: 1.349375
+  type: 'test'
+  ...
+# Subtest: same user message cannot renew again under a different tool event
+ok 49 - same user message cannot renew again under a different tool event
+  ---
+  duration_ms: 0.896916
+  type: 'test'
+  ...
+# Subtest: substantive direct edit renews with CAS
+ok 50 - substantive direct edit renews with CAS
+  ---
+  duration_ms: 1.1895
+  type: 'test'
+  ...
+# Subtest: automatic duplicate extraction is not use evidence
+ok 51 - automatic duplicate extraction is not use evidence
+  ---
+  duration_ms: 1.064375
+  type: 'test'
+  ...
+# Subtest: confirmed preference does not gain a blanket TTL
+ok 52 - confirmed preference does not gain a blanket TTL
+  ---
+  duration_ms: 0.508792
+  type: 'test'
+  ...
+# Subtest: confirmed personal does not gain a blanket TTL
+ok 53 - confirmed personal does not gain a blanket TTL
+  ---
+  duration_ms: 1.067333
+  type: 'test'
+  ...
+# Subtest: confirmed project does not gain a blanket TTL
+ok 54 - confirmed project does not gain a blanket TTL
+  ---
+  duration_ms: 0.401625
+  type: 'test'
+  ...
+# Subtest: old candidate and completed task keep their 30 and 7 day policies
+ok 55 - old candidate and completed task keep their 30 and 7 day policies
+  ---
+  duration_ms: 1.230958
+  type: 'test'
+  ...
+# Subtest: pinned memory, open task and live dependencies remain protected
+ok 56 - pinned memory, open task and live dependencies remain protected
+  ---
+  duration_ms: 1.817084
+  type: 'test'
+  ...
+# Subtest: shared owner eligibility uses dependency context from every authorized project
+ok 57 - shared owner eligibility uses dependency context from every authorized project
+  ---
+  duration_ms: 1.409375
+  type: 'test'
+  ...
+# Subtest: full quota permits deduplication before growth admission
+ok 58 - full quota permits deduplication before growth admission
+  ---
+  duration_ms: 29.83625
+  type: 'test'
+  ...
+# Subtest: full quota archives eligible records in the same transaction and admits new content
+ok 59 - full quota archives eligible records in the same transaction and admits new content
+  ---
+  duration_ms: 88.808709
+  type: 'test'
+  ...
+# Subtest: full quota with only protected records rejects without evicting anything
+ok 60 - full quota with only protected records rejects without evicting anything
+  ---
+  duration_ms: 41.825833
+  type: 'test'
+  ...
+# Subtest: cold storage failure cannot claim successful quota recovery
+ok 61 - cold storage failure cannot claim successful quota recovery
+  ---
+  duration_ms: 57.854583
+  type: 'test'
+  ...
+# Subtest: full archive domain never silently discards active memory to make room
+ok 62 - full archive domain never silently discards active memory to make room
+  ---
+  duration_ms: 42.6525
+  type: 'test'
+  ...
+# Subtest: revocation check precedes full-capacity admission
+ok 63 - revocation check precedes full-capacity admission
+  ---
+  duration_ms: 9.19175
+  type: 'test'
+  ...
+# Subtest: capacity publication failure preserves the complete original active set
+ok 64 - capacity publication failure preserves the complete original active set
+  ---
+  duration_ms: 82.134625
+  type: 'test'
+  ...
+# Subtest: pre-step maintenance happens before selection and never reports query hits as usage
+ok 65 - pre-step maintenance happens before selection and never reports query hits as usage
+  ---
+  duration_ms: 11.709375
+  type: 'test'
+  ...
+1..65
+# tests 65
+# suites 0
+# pass 65
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 751.71175
+

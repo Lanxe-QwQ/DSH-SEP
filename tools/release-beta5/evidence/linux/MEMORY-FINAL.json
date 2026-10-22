@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "results": [
+    {
+      "schema": 1,
+      "status": "pass",
+      "mode": "core",
+      "platform": "linux",
+      "arch": "x64",
+      "exitCode": 0,
+      "signal": null,
+      "tests": 65,
+      "passed": 65,
+      "failed": 0,
+      "skipped": 0,
+      "logSha256": "fbb9e193e8786dbbb26207e8f52ba8cd6b067bba89cf51cb9f57c6e2e8c389b1",
+      "inputSha256": "04f69afcf1ec976c20db5082014b3b82ffffc191d21a048f0ae5fc1717d2298a",
+      "model": "synthetic/no paid model"
+    },
+    {
+      "schema": 1,
+      "status": "pass",
+      "mode": "storage",
+      "platform": "linux",
+      "arch": "x64",
+      "exitCode": 0,
+      "signal": null,
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "logSha256": "145f12bfb1ba8285c1228f305e979bc30ab82ab1a3857a5fd42c19df49dabd9f",
+      "inputSha256": "a6989c7f753ee82a0cf2c99612d14e5abeb0a8c4fd5e0b2cd61a4e500dfe4440",
+      "model": "synthetic/no paid model"
+    }
+  ]
+}

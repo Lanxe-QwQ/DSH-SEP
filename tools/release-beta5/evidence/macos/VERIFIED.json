@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "runId": 39706727364,
+  "buildSourceCommit": "850f71076fdadef74cf78ec98e745e79f0fa5dca",
+  "os": "15.7.9",
+  "nativeGroups": [
+    {
+      "name": "native-io",
+      "status": "pass",
+      "tests": 74,
+      "pass": 74,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "rc2-business",
+      "status": "pass",
+      "tests": 15,
+      "pass": 15,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "rc2-media",
+      "status": "pass",
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    }
+  ],
+  "memoryGroups": [
+    {
+      "mode": "core",
+      "passed": 65,
+      "inputSha256": "9f6ec267de7b03611c8e2bcdf867d784bbee1b3d2aee7cda6660f4a7028db968",
+      "logSha256": "49c2af007fb62d232a6ba71f2cb688043da7d923c526af8d30cdca22084dd914"
+    },
+    {
+      "mode": "storage",
+      "passed": 3,
+      "inputSha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d",
+      "logSha256": "eee0eaca613103e52f5cae1ff8e2a841f24ee286b52c0c6ccb7e1432d707cdd3"
+    }
+  ],
+  "postbuildCounts": {
+    "tests": 46,
+    "pass": 46,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "appNormalLaunchServicesCycles": 2,
+  "installerArchiveRestoredAndSignatureVerifiedInCI": true,
+  "installerFilesIndependentlyHashed": 52982,
+  "captureFilesIndependentlyHashed": 447,
+  "programSha256": "b356c8af26c49cc0dbedf1e41d33ad0920ae563ed80007eb087ceb610cee5390",
+  "appTreeSha256": "8a358b50f2f78066e2ddfb034190ef4f1b4b3b707c242b09bb9db6470b6b09f6",
+  "installerTreeSha256": "0020326898baae8bc9f51af983179ca34004433f97b5551480863a3fd44f9065",
+  "asset": {
+    "name": "DSH-SEP-0.2.1-beta.5-macOS-arm64.zip",
+    "path": "D:\\AIData\\ProjectWork\\DSH\\beta5-publication-20261022-r1\\macos\\DSH-SEP-0.2.1-beta.5-macOS-arm64.zip",
+    "size": 862206847,
+    "sha256": "6c618fa84dc3eeea2c8778ade44124089331278e18d47bb4ecce81311b0b5c4c",
+    "kind": "installer"
+  },
+  "privacySummary": {
+    "status": "pass",
+    "filesScanned": 52996,
+    "uncompressedBytesScanned": 2569930662,
+    "comprehensivePrivacyAudit": false
+  },
+  "notVerified": [
+    "Beta.5 installer-button installation",
+    "physical input",
+    "Developer ID/notarization",
+    "paid models",
+    "private environment continuation",
+    "fullMacCertification"
+  ]
+}

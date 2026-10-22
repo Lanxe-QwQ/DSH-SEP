@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "status": "blocked",
+  "observedRunning": true,
+  "exitCode": 1,
+  "paidModelRequests": 0,
+  "stdoutSha256": "45fe56741026bd15c17a862017b301b7c31f05dfde320b97d8963e9ec6bfec26",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "real installed headless startup, 8-second liveness and SIGTERM normal drain; no GUI/model interaction"
+}

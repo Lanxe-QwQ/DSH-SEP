@@ -1,0 +1,8 @@
+{
+  "schema": 2,
+  "scope": "initial port history plus documented closeout correction and current byte bindings; historical digests are not current execution evidence",
+  "historical": "ORIGIN-PRE-CLOSEOUT.json",
+  "documentationCorrection": "ORIGIN-PORT-AND-DOC.json",
+  "current": "CURRENT-INPUTS.json",
+  "note": "initial port file hashes for default-desktop-probe, headless-probe, extraction and source inventory predate later tested changes; current bytes are separately indexed, and original runtime receipts retain each generation"
+}

@@ -1,0 +1,7 @@
+# Keep exact bytes for the scoped hash-pinned SEP inputs and release records.
+# Other source paths retain their existing EOL policy; this is not global -text.
+bundle/** -text !eol
+tools/bundle-install/** -text !eol
+tools/memory-repair/** -text !eol
+tools/release-beta5/** -text !eol
+release/v0.2.1-beta.5/** -text !eol

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "distributionVersion": "0.2.1-beta.5",
+  "archive": "/opt/dsh-sep-cross-platform/beta5-publication-20261022-r2/DSH-SEP-0.2.1-beta.5-Linux-x64.tar.gz",
+  "size": 452450410,
+  "sha256": "dbff65eafce37d0cf5dbdeffa1ab1a9da48bdb323ea31779c8b8242759d2689b",
+  "baselineManifestSha256": "fb1a0ea49ab4b50363dae65003306b783b9aaf8b2a4051ceb0491484d0cf1fdb",
+  "manifestSha256": "f6d14ff0a6ae241b202901bd3358d18c723ca9b2eac4c2693eb46343c24a5aeb",
+  "installation": {
+    "status": "pass",
+    "program": "/opt/dsh-sep-cross-platform/beta5-publication-20261022-r2/installed",
+    "dataRoot": "/opt/dsh-sep-cross-platform/beta5-publication-20261022-r2/data",
+    "planHash": "7e6448155f4e20dae13ae36445ed886cb5a03f8a898461e1c9d8e4cc6c9c2a7d"
+  },
+  "memory": [
+    {
+      "schema": 1,
+      "status": "pass",
+      "mode": "core",
+      "platform": "linux",
+      "arch": "x64",
+      "exitCode": 0,
+      "signal": null,
+      "tests": 65,
+      "passed": 65,
+      "failed": 0,
+      "skipped": 0,
+      "logSha256": "9fbabe0d2d0d39973a5c74bc7e3bdb25c147af707b87c36f3efd8c5d47d9f90f",
+      "inputSha256": "16344ca8bca5e417f01e05618927e6f72e2f8bc1cffb6ffb18498ac76af7dda2",
+      "model": "synthetic/no paid model"
+    },
+    {
+      "schema": 1,
+      "status": "pass",
+      "mode": "storage",
+      "platform": "linux",
+      "arch": "x64",
+      "exitCode": 0,
+      "signal": null,
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "logSha256": "49470b7172a76f3a494b9f53db6ebd6d092abda104fb7ac6be591908818004b5",
+      "inputSha256": "135c1cb402dc027580a00721c72d661b7bd98328d81d248ffcaff8c32f178559",
+      "model": "synthetic/no paid model"
+    }
+  ],
+  "notVerified": [
+    "new physical input",
+    "paid models",
+    "full Linux certification"
+  ]
+}

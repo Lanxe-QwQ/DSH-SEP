@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "product": "dsh-sep",
+  "distributionVersion": "0.2.1-beta.5",
+  "hostVersion": "0.2.1-rc.2",
+  "hostCommit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "prerelease": true,
+  "internalCandidateVersion": "0.2.1-beta.3-rc2-adapter.1",
+  "internalBuild": "beta4-memory-repair.1",
+  "freshInstallOnly": true,
+  "automaticUpdateEligible": false,
+  "dailyDeploymentPerformed": false,
+  "installers": [
+    {
+      "name": "DSH-SEP-Full-0.2.1-beta.5-Windows-x64.zip",
+      "size": 519199720,
+      "sha256": "07d97df178ff5109f4a127f48fc7a3f3321a1f395ce9d0a60461371433bb5747"
+    },
+    {
+      "name": "DSH-SEP-Only-0.2.1-beta.5-Windows-x64.zip",
+      "size": 429031664,
+      "sha256": "9ca93dfcf704740e2ac45a2f5e608af8d98f778a37602d7fff8550cc7790998f"
+    },
+    {
+      "name": "DSH-SEP-0.2.1-beta.5-Linux-x64.tar.gz",
+      "size": 452450410,
+      "sha256": "dbff65eafce37d0cf5dbdeffa1ab1a9da48bdb323ea31779c8b8242759d2689b"
+    },
+    {
+      "name": "DSH-SEP-0.2.1-beta.5-macOS-arm64.zip",
+      "size": 862206847,
+      "sha256": "6c618fa84dc3eeea2c8778ade44124089331278e18d47bb4ecce81311b0b5c4c"
+    }
+  ],
+  "candidate": {
+    "path": "tools/rc2-adaptation/candidate",
+    "files": 447,
+    "tgzSha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500"
+  },
+  "macBuildSourceCommit": "850f71076fdadef74cf78ec98e745e79f0fa5dca",
+  "verification": "VERIFICATION.json",
+  "interpretation": "Public distribution Beta.5 does not replace immutable internal versions or authorize automatic installation. All four packages rebuilt using reviewed memory fixes. Per-platform historical evidence remains separately identified."
+}

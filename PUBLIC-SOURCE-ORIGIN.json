@@ -1,13 +1,17 @@
 {
   "schema": 2,
-  "distributionVersion": "0.2.1-beta.4",
   "inputCommit": "d1498eb646afc5a9028515f90a355061bed262da",
   "basePublicCommit": "7d72aaa0635972c4ca3cfa130241174d0eafaf5a",
   "gitHistoryIncluded": false,
   "untrackedIncluded": false,
-  "inventory": "SOURCE-EXPORT-MANIFEST.json",
   "inventorySha256": "9b27246775e30533728e1a6b364a6091d0f5e54941192c8f5647ffcabeffe455",
   "transforms": "TRANSFORMS.json",
   "officialRc2Source": "upstream/RC2-SOURCE-ORIGIN.json",
-  "historicalRootSourceAndBundle": true
+  "historicalExportVersion": "0.2.1-beta.4",
+  "distributionVersion": "0.2.1-beta.5",
+  "historicalInventory": "SOURCE-EXPORT-MANIFEST.json",
+  "currentOverlay": "release/v0.2.1-beta.5/SOURCE-DELTA.json",
+  "currentSource": "Git release tag and source ZIP; base inventory remains the Beta.4 export, later public commits are declared separately",
+  "rootEntryAndHostBaseRemainHistorical": true,
+  "sharedMemoryModulesUpdated": true
 }

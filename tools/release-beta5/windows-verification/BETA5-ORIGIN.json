@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "source": "tools/rc2-adaptation/windows-verification",
+  "files": [
+    {
+      "path": "bundle-audit.mjs",
+      "sourceSha256": "880bd77cd035dc0ae9aa220a749c96b4af088a47697ca3d1829b092f1225a943",
+      "resultSha256": "880bd77cd035dc0ae9aa220a749c96b4af088a47697ca3d1829b092f1225a943",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "bundle-audit.test.mjs",
+      "sourceSha256": "37e2737c89dd08eaa06bfbffa458e59bb41c5ddd54810b7df7e352d836e30aed",
+      "resultSha256": "53b9906e4e8831f47f8dcd58776f65d5c72b56a4258f8d3fb5508824ec5a874a",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "CURRENT-INPUTS.json",
+      "sourceSha256": "e68f3b4e458df031e87f250233807e641b26e2625b7756f9b3b0d04bdfd6b6a6",
+      "resultSha256": "e68f3b4e458df031e87f250233807e641b26e2625b7756f9b3b0d04bdfd6b6a6",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "default-desktop-probe.mjs",
+      "sourceSha256": "f567f97e82c0f97ce3c46bb773ff0cd8e56772908e2296d69d9583762466a37a",
+      "resultSha256": "51f0c0cc65841fc7b0a3c8f917342e63a215bafcc0745bd852182847a3135df6",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "desktop-outcomes.mjs",
+      "sourceSha256": "9f8411326e4b77bb821479ef8022d56bde1bcb321ab660c48eed09179688e667",
+      "resultSha256": "9f8411326e4b77bb821479ef8022d56bde1bcb321ab660c48eed09179688e667",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "desktop-outcomes.test.mjs",
+      "sourceSha256": "ae334ebc7761c03b2995966d471017f34ee0f056bba2e2f23018175dd28e1c3f",
+      "resultSha256": "ae334ebc7761c03b2995966d471017f34ee0f056bba2e2f23018175dd28e1c3f",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "diagnose-startup.mjs",
+      "sourceSha256": "d023d24a53430e1b469053d0fdf06181ef368a971ee1433af479294738cd2105",
+      "resultSha256": "1b1c13832efa4be72a333e7258b8db664c645899ec2fc7973fc1794b0ad74637",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "freeze-operators.mjs",
+      "sourceSha256": "aaf0fc8ea93ab35a7b75c2c4111085ab871ee9bd008b12f1da178e6cd6166155",
+      "resultSha256": "9c3dfe071303d7d602e377f878ca00e99038c400d6285ff693b56053f3874024",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "fresh-composition.mjs",
+      "sourceSha256": "af053b3f49914592e3fc784d1b7c0624ba68ced50174d9c75788782170797d83",
+      "resultSha256": "af053b3f49914592e3fc784d1b7c0624ba68ced50174d9c75788782170797d83",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "fresh-composition.test.mjs",
+      "sourceSha256": "403d8f2f00658d45dea5bdfa9be865dd46b0152d37ddc536182408af4f261704",
+      "resultSha256": "403d8f2f00658d45dea5bdfa9be865dd46b0152d37ddc536182408af4f261704",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "headless-probe.mjs",
+      "sourceSha256": "dbbe3ead4194fdc8ddb703b391b9ef9fe809134f87ef515b947d5e4dfeb5a28f",
+      "resultSha256": "92476e20a8d996e716c0f5e7d877dde4392b8e17537db7f189cb744da24866a8",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "inspector-client.mjs",
+      "sourceSha256": "f6801d4555a06a72b511a36d9e09ccb55395434a7a32d5d60c05b3d350f5215a",
+      "resultSha256": "f6801d4555a06a72b511a36d9e09ccb55395434a7a32d5d60c05b3d350f5215a",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "install-archives.mjs",
+      "sourceSha256": "40526726004d3c64ab81948135a807d8fc017bcbd4c144365a68a8383b6baa16",
+      "resultSha256": "804fdbe2a74567762c16d4933bac8b8a3c8b9239e9bf214d385561cf92372086",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "installer-refusals.mjs",
+      "sourceSha256": "95508f080057fbedb57604d1b779bfa5d2449a1877d8f8c036e428b7bcf572ab",
+      "resultSha256": "c7b73094069b65dfa7903a70b28ee92c097e29c277cd53c56e25f15551556862",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "inventory-diagnostic.mjs",
+      "sourceSha256": "db26ee6209340e8647c2aaffc22f4a575cec036433c1c6e257fb4f14ffd71259",
+      "resultSha256": "86646928031cb8838640f871c0fd5a1e0247d79ea0e44ec08657fb09fee657ce",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "longpath-audit.py",
+      "sourceSha256": "c4304fb311190c2b9feabef30ddde064770aab7078f9d675f5c21030385208f4",
+      "resultSha256": "7867d03a02e14369740c1709318f5dcefd9af48ae5c5e1b4f607837b75c0c0ec",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "memory-identity.mjs",
+      "sourceSha256": "793a5495435fdab6af2f959d1ebc8fd4924c9bdb155e316205c526b8d5b40d4b",
+      "resultSha256": "793a5495435fdab6af2f959d1ebc8fd4924c9bdb155e316205c526b8d5b40d4b",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "memory-identity.test.mjs",
+      "sourceSha256": "eb1ec847684dc8ea8a17bcaebb1f2d3025365f85c2a48009a4c936eb262e29d0",
+      "resultSha256": "eb1ec847684dc8ea8a17bcaebb1f2d3025365f85c2a48009a4c936eb262e29d0",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "memory-policy.mjs",
+      "sourceSha256": "8d3303ae8620a5c39a3c1cccdba09b2287b62c77813f9afd69a909b257936fc6",
+      "resultSha256": "8d3303ae8620a5c39a3c1cccdba09b2287b62c77813f9afd69a909b257936fc6",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "memory-policy.test.mjs",
+      "sourceSha256": "fcb468499d76ea7dfc050e61f7462825434b8b75ee20cedb432b807fb16b76c8",
+      "resultSha256": "fcb468499d76ea7dfc050e61f7462825434b8b75ee20cedb432b807fb16b76c8",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "ORIGIN-PORT-AND-DOC.json",
+      "sourceSha256": "07dcf7e6da8218cc5a7fdf9bd1dbf9c9c92981e4e0d553ed736d26297585d397",
+      "resultSha256": "07dcf7e6da8218cc5a7fdf9bd1dbf9c9c92981e4e0d553ed736d26297585d397",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "ORIGIN-PRE-CLOSEOUT.json",
+      "sourceSha256": "140e902360b656415764ea350e2adb9d22fc2fcbef5c9bc101df0fcfc6a241a2",
+      "resultSha256": "140e902360b656415764ea350e2adb9d22fc2fcbef5c9bc101df0fcfc6a241a2",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "ORIGIN.json",
+      "sourceSha256": "68690701553ecef4e5a39b55a385235592d09d542a804971f8c2414c00c82819",
+      "resultSha256": "68690701553ecef4e5a39b55a385235592d09d542a804971f8c2414c00c82819",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "PYTHON-SCOPE-ORIGIN.json",
+      "sourceSha256": "b87a1b35644ad24d1f1573ad0f4251ea5ebb49b7d827de61c7613b0f7144078f",
+      "resultSha256": "b87a1b35644ad24d1f1573ad0f4251ea5ebb49b7d827de61c7613b0f7144078f",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "README-PRE-CLOSEOUT.md",
+      "sourceSha256": "a1cdf54293d84985c42005e3fcec4b9826b944da3cbdaafee8eab5b9da372365",
+      "resultSha256": "a1cdf54293d84985c42005e3fcec4b9826b944da3cbdaafee8eab5b9da372365",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "README.md",
+      "sourceSha256": "b4a4761b217d6d766328feb5a814c10fb5ef3611df58a10e436381ae374f2493",
+      "resultSha256": "ae1ef9c24d30c41026999b7a5f7fdeebcf4d646112c0419d77f227d0d4645035",
+      "scope": "current scope documentation replacement; see supplementalDocumentation"
+    },
+    {
+      "path": "runtime-smoke.mjs",
+      "sourceSha256": "393ffe5a1a0fa914b77ecf55055f73788fd065a2deae18772a9a2abeeaa3fea1",
+      "resultSha256": "a1aded7214ab97e1b8a2161521463589e1b583505e31825878ed76b7b826a863",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "safe_extract.py",
+      "sourceSha256": "08207e24e684ac451ba56bfe6815903af183a2a3ddc36609e69cb776ffccc68b",
+      "resultSha256": "c005e3dc7898fa776a18f246a6130fb13470e520715d54a9b7df72c7125cf4b9",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "safe_extract_regression.py",
+      "sourceSha256": "2cc77cbd2fea695b716c6384780ce4a6bebd5c9d2a2bf1d95b7884837fec888f",
+      "resultSha256": "2cc77cbd2fea695b716c6384780ce4a6bebd5c9d2a2bf1d95b7884837fec888f",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "safe_extract_test.py",
+      "sourceSha256": "db033ebc09fc76316ab9cf11cbd0891253a82cedff39d520d73f51ba2a6f4280",
+      "resultSha256": "db033ebc09fc76316ab9cf11cbd0891253a82cedff39d520d73f51ba2a6f4280",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "seal-tests.mjs",
+      "sourceSha256": "ba96641cfcda5c0a64cf5816e89d7084e6491a561729ff0e07f999d4fd5f9288",
+      "resultSha256": "c8cd3e317127fff1f5613e2106fddf63f24de9cd76b580f2d12637f10b083b07",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "workspace-readiness.mjs",
+      "sourceSha256": "ca6a42c18325592d87165c2159b490201860e3397adf85d2756282a76226c7c2",
+      "resultSha256": "ca6a42c18325592d87165c2159b490201860e3397adf85d2756282a76226c7c2",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "workspace-readiness.test.mjs",
+      "sourceSha256": "60dc60e282c75458019ed82d5ec71d9a1c725c502e03dda4c17308f2759f4e63",
+      "resultSha256": "60dc60e282c75458019ed82d5ec71d9a1c725c502e03dda4c17308f2759f4e63",
+      "scope": "only designated isolated output root substituted where present"
+    },
+    {
+      "path": "workspace-sources.json",
+      "sourceSha256": "c7f7bf21bd4180303799ef0f3ac5eaa31ee1335a918e01c2e17da2cfb8d92938",
+      "resultSha256": "c7f7bf21bd4180303799ef0f3ac5eaa31ee1335a918e01c2e17da2cfb8d92938",
+      "scope": "only designated isolated output root substituted where present"
+    }
+  ],
+  "supplementalDocumentation": {
+    "path": "README.md",
+    "sourceSha256": "5247e6069b1e163ea6dc72e9e25207679e099dc15cac8a84e49e9498b579bb98",
+    "resultSha256": "ae1ef9c24d30c41026999b7a5f7fdeebcf4d646112c0419d77f227d0d4645035",
+    "reason": "current wrapper scope replaces inherited historical directory overview"
+  }
+}

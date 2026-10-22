@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "sourceSha256": "90c310d129979a08d832281253d17194c4406de5682e6da61994f6b2625948c4",
+  "resultSha256": "f6d5566e303d88adb3b0d2abc22f36d5e3105827ec9446f4891de827fbb26622",
+  "candidateBindingSha256": "d185a5b8200914b457c98184b5be13f7fd15f0fb3439e24956d5c3be565e3f34",
+  "scope": "unchanged installer safety/signing/restore mechanisms; exact new same-run RC.2 app receipt replaces frozen Alpha.2 receipt; source root limited to this fresh carrier"
+}

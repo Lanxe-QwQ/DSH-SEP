@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "candidateSha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500",
+  "captureSha256": "9aa938de5018b4627a044b828d4514d19bd0fab87bd0cab3f84db78216d432c6",
+  "inputs": 447,
+  "transforms": [
+    {
+      "file": "business/host-modules.mjs",
+      "sourceSha256": "a982f1b06f61070cbd54e3ba708540b2fb640f9089697bd7981fde446c4a79c7",
+      "from": "manifest.version!=='0.2.1-alpha.2'",
+      "to": "manifest.version!=='0.2.1-rc.2'",
+      "count": 1,
+      "resultSha256": "44b5eda6710294df09244dbe5dd2332789beb24675613c071933a0a89848ceb7"
+    },
+    {
+      "file": "native-revalidation/dependency-hook.mjs",
+      "sourceSha256": "912928e7d653145b47d547e2fbb2d3d69675162948b4a9194335b85eaf5a2c9d",
+      "from": "manifest.version!=='0.2.1-alpha.2'",
+      "to": "manifest.version!=='0.2.1-rc.2'",
+      "count": 1,
+      "resultSha256": "42f04a2ad8b8ab4d8844679017e81777e0246880899bb6950b6c87acaf390308"
+    },
+    {
+      "file": "business/bundle-modules.mjs",
+      "sourceSha256": "056bd1bc221521451960e91444dcebd6dc7aab3a19d9cc4fbab5f66273f087a7",
+      "from": "import {verifyCapture} from './capture-runtime.mjs';",
+      "to": "import {verifyCapture} from './rc2-capture.mjs';",
+      "count": 1,
+      "resultSha256": "a6d558c55d4d445466c9cb0e7128274361329a1a7110f4105a9cddedf1e528a6"
+    },
+    {
+      "file": "settings-ui/adapter.mjs",
+      "sourceSha256": "ca62e647c502d5885f35cd60e5c46bc58dd6af59edf2524849d08bd43afc8d6f",
+      "from": "export const sourceOrigin=Object.freeze({commit:'930d081b',officialCommit:'d743267388641bc76f17c45ce8b4c231aed1d32c',version:'0.2.1-alpha.2',files:{\n 'LICENSE':'ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be',\n 'package.json':'0e56a02fc208c53a67efc7e86b1dad5c64a522533a8d3da818bf38711f904452',\n 'README.md':'c4da450be48c149e78eb7aa8dc184d366aef46cd3af55a8cdd2eb7d95e89099d',\n 'lib/index.js':'5d0db86c8ce69a8765e888b08716150a476a907e9c0eda9a1dc8bd323665ea06',\n 'lib/client.js':'3b3d66ffc510e997ce215084eb43b7805a1926e008dd2edaa80b90817b624092'}});",
+      "to": "export const sourceOrigin=Object.freeze({\"commit\":\"c5dbd588d2df6ded340ef15969b229c767bb8e47\",\"candidateSha256\":\"c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500\",\"officialCommit\":\"687f282e8625c6b8d11ff58211a90524be2e4317\",\"version\":\"0.2.1-rc.2\",\"files\":{\"LICENSE\":\"ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be\",\"package.json\":\"9677adc9d74685c9e43b2dea2001eb3ab567142206b111486930f84beed2321f\",\"README.md\":\"c4da450be48c149e78eb7aa8dc184d366aef46cd3af55a8cdd2eb7d95e89099d\",\"lib/index.js\":\"5d0db86c8ce69a8765e888b08716150a476a907e9c0eda9a1dc8bd323665ea06\",\"lib/client.js\":\"3b3d66ffc510e997ce215084eb43b7805a1926e008dd2edaa80b90817b624092\"}});",
+      "count": 1,
+      "resultSha256": "87628d264bae25ccbd7ff31b9573a8ebab84852c1537e0397603a2024aa94441"
+    },
+    {
+      "file": "settings-ui/adapter.mjs",
+      "sourceSha256": "87628d264bae25ccbd7ff31b9573a8ebab84852c1537e0397603a2024aa94441",
+      "from": "0.2.1-alpha.2",
+      "to": "0.2.1-rc.2",
+      "count": 3,
+      "resultSha256": "465d174ae0f06d8fa339886d432c673ab77f3851a9c359837c02270c9b952f2f"
+    },
+    {
+      "file": "settings-ui/adapter.mjs",
+      "sourceSha256": "465d174ae0f06d8fa339886d432c673ab77f3851a9c359837c02270c9b952f2f",
+      "from": "p.peerDependencies[name]=sourceOrigin.version",
+      "to": "p.peerDependencies[name]=name==='@deepseek-ai/dsh-invariants'?'0.2.0-rc.2 || 0.2.1-rc.2':sourceOrigin.version",
+      "count": 1,
+      "resultSha256": "8fa21c5d2c51cf80ac92a4f572c82ffb4aa24dfc322f30628360f60e2ac48823"
+    },
+    {
+      "file": "document-business/context.mjs",
+      "sourceSha256": "88dcd11f253be84c99b0c03a0a5be7c328fffb83ff1d95671f50862a4c32e1e1",
+      "from": "sha256:'110c74099985b81caf70a285ecd9662a8f7ae0cf8902437ceb131fcbb4ceff29',alpha2Sha256:",
+      "to": "sha256:'32364edece8f70a972d784c051b6da256c2ab3cb074232be078fec551928a1de',legacySourceSha256:'110c74099985b81caf70a285ecd9662a8f7ae0cf8902437ceb131fcbb4ceff29',alpha2Sha256:",
+      "count": 1,
+      "resultSha256": "01bebc3bb248b7f4a9269a1c4cfa00a0642368f2a283f03086653aa14fef6965"
+    },
+    {
+      "file": "document-business/context.mjs",
+      "sourceSha256": "01bebc3bb248b7f4a9269a1c4cfa00a0642368f2a283f03086653aa14fef6965",
+      "from": "const alpha2=transform(source,[{before:'session.header.cwd',after:\"ctx.get('workingDirectory').get(session)\",count:3}]);",
+      "to": "const alpha2={source,receipt:Object.freeze({inputSha256:origin.sha256,changes:[],outputSha256:origin.alpha2Sha256,scope:'current capture already uses workingDirectory; legacy 110c7409 to canonical 32364ede replayed with exactly three substitutions by the RC.2 preparer'})};",
+      "count": 1,
+      "resultSha256": "889c1ebe800cb5bf8776cba1655260ec2285844ae5bddc3556db670382434ac5"
+    },
+    {
+      "kind": "context-canonical-replay",
+      "sourceSha256": "110c74099985b81caf70a285ecd9662a8f7ae0cf8902437ceb131fcbb4ceff29",
+      "resultSha256": "32364edece8f70a972d784c051b6da256c2ab3cb074232be078fec551928a1de",
+      "from": "session.header.cwd",
+      "to": "ctx.get('workingDirectory').get(session)",
+      "count": 3,
+      "currentCaptureMatched": true
+    }
+  ],
+  "hostVersion": "0.2.1-rc.2",
+  "oldCaptureRetained": true
+}

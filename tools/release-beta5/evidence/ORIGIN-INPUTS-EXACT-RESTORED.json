@@ -1,0 +1,58 @@
+{
+  "status": "pass",
+  "scope": "restore original Git bytes, no expected hash rewritten",
+  "files": [
+    {
+      "path": "bundle/host/evaluation-entry/entry.mjs",
+      "sha256": "2fed151e7d5a85af798b35c6fdfcd13b01333c2661764520577da86513c1f86a"
+    },
+    {
+      "path": "bundle/host/layered-memory/index.js",
+      "sha256": "e68bf825c809dd83a9be1a8d74e6c9728db39318773439617e14c4ea77c2b2af"
+    },
+    {
+      "path": "bundle/lib/business-runtime.js",
+      "sha256": "8131ea71ba52e693f5a7962973507eabc4d79e466960b35ff9366c24b1be50e6"
+    },
+    {
+      "path": "bundle/lib/controlled-installation.js",
+      "sha256": "1f83c4725a5d7f32dfcfff51af348bd9231abc966df0eed97ad5759df9456293"
+    },
+    {
+      "path": "bundle/lib/governed-consumers.js",
+      "sha256": "7627137297e25907705ceb1de52155b007dc846fe61d75920c158c9e3d922eb5"
+    },
+    {
+      "path": "bundle/lib/native-settings-installation.js",
+      "sha256": "b4421e7d8a097a9ee6bf62e751bb661f1531763fd5881e7d2f0cbb776a14ee39"
+    },
+    {
+      "path": "bundle/lib/settings-consumers.js",
+      "sha256": "cf964919de8d7dde9703e34f5634ff1e9c95b47c44b025e0849b7b52298c970f"
+    },
+    {
+      "path": "bundle/lib/settings-runtime.js",
+      "sha256": "d3b5e436f87325fc01934a0733b22bea48f14be7503deb7b9793f845927f4b05"
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/layered-memory.js",
+      "sha256": "4999890c989bf1527e4f78836e5d7a0594317ce0b0603c3248c03763e3355d82"
+    },
+    {
+      "path": "bundle/modules/trusted-evaluation-entry/entry.mjs",
+      "sha256": "c6ed6f797bac4efe3e1f4838910c849b487ea856d8dc066aba8c9ffeb899cfc9"
+    },
+    {
+      "path": "tools/bundle-install/tests/controlled-fixture.mjs",
+      "sha256": "db2396bb18767bf1b74588b9247614209d933e57b45d190dc166e5a44a241089"
+    },
+    {
+      "path": "tools/bundle-install/tests/native-browser-fixture.mjs",
+      "sha256": "89f8a11c4c3942475ac2bdae35e46def8a53ce2f4f990a38acbb4aad688c8058"
+    },
+    {
+      "path": "tools/bundle-install/tests/native-settings-fixture.mjs",
+      "sha256": "af5f8d0da8ad30d74f812644d65cf58b1b36981178f5b6c64f65b02cc9adb874"
+    }
+  ]
+}

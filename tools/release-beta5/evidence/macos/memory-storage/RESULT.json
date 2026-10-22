@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "mode": "storage",
+  "platform": "darwin",
+  "arch": "arm64",
+  "exitCode": 0,
+  "signal": null,
+  "tests": 3,
+  "passed": 3,
+  "failed": 0,
+  "skipped": 0,
+  "logSha256": "eee0eaca613103e52f5cae1ff8e2a841f24ee286b52c0c6ccb7e1432d707cdd3",
+  "inputSha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d",
+  "model": "synthetic/no paid model"
+}

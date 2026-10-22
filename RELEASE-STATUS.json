@@ -1,16 +1,13 @@
 {
   "schema": 3,
   "product": "DSH SEP",
-  "distributionVersion": "0.2.1-beta.4",
+  "distributionVersion": "0.2.1-beta.5",
   "hostVersion": "0.2.1-rc.2",
-  "releaseTag": "v0.2.1-beta.4",
-  "releaseUrl": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/tag/v0.2.1-beta.4",
-  "state": "published-cross-platform-beta",
-  "published": true,
+  "releaseTag": "v0.2.1-beta.5",
+  "releaseUrl": "https://github.com/Lanxe-QwQ/DSH-SEP/releases/tag/v0.2.1-beta.5",
+  "state": "prepared-cross-platform-beta",
+  "published": false,
   "prerelease": true,
   "dailyDeploymentPerformed": false,
-  "publicationReceipt": "release/v0.2.1-beta.4/PUBLICATION.json",
-  "receiptNote": "Server digests, tag and all nine anonymous download HEAD endpoints verified; immutable release tag retains its preparation snapshot. This main-only publication overlay is separately recorded.",
-  "publishedAt": "2026-10-19T02:16:52Z",
-  "sourceCommit": "793f7a0ad87a6d1490171571df9a5b52211e526a"
+  "note": "Immutable release source snapshot is prepared state. After publication main receives the server publication receipt; source tag is not rewritten."
 }

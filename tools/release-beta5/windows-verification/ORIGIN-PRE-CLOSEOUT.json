@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "scope": "existing fresh installer/archive/default-desktop operator ported to exact RC.2 stage and versions; original source unchanged",
+  "files": [
+    {
+      "path": "bundle-audit.mjs",
+      "sourceSha256": "880bd77cd035dc0ae9aa220a749c96b4af088a47697ca3d1829b092f1225a943",
+      "resultSha256": "880bd77cd035dc0ae9aa220a749c96b4af088a47697ca3d1829b092f1225a943"
+    },
+    {
+      "path": "bundle-audit.test.mjs",
+      "sourceSha256": "a62f32069f97fed8bbc7331f8c94decf9117b9fa5555a98858b0bd3a36b26cc8",
+      "resultSha256": "37e2737c89dd08eaa06bfbffa458e59bb41c5ddd54810b7df7e352d836e30aed"
+    },
+    {
+      "path": "default-desktop-probe.mjs",
+      "sourceSha256": "a74013fd7b1a1fde2b01572984f56cf7159c930d34e600fa1b65e14333929035",
+      "resultSha256": "9014db4177f4fb61934d9c12298b4298a88384ef5658c7932303bf0e004d60cb"
+    },
+    {
+      "path": "desktop-outcomes.mjs",
+      "sourceSha256": "9f8411326e4b77bb821479ef8022d56bde1bcb321ab660c48eed09179688e667",
+      "resultSha256": "9f8411326e4b77bb821479ef8022d56bde1bcb321ab660c48eed09179688e667"
+    },
+    {
+      "path": "desktop-outcomes.test.mjs",
+      "sourceSha256": "ae334ebc7761c03b2995966d471017f34ee0f056bba2e2f23018175dd28e1c3f",
+      "resultSha256": "ae334ebc7761c03b2995966d471017f34ee0f056bba2e2f23018175dd28e1c3f"
+    },
+    {
+      "path": "diagnose-startup.mjs",
+      "sourceSha256": "868d1aa96f362b5867b49e9eee3356d4e7d993b8fcf832f83d548d50274ef595",
+      "resultSha256": "d023d24a53430e1b469053d0fdf06181ef368a971ee1433af479294738cd2105"
+    },
+    {
+      "path": "freeze-operators.mjs",
+      "sourceSha256": "dad57b3981123a0b257499b0ca3f929e6d1cb6511ffb3191ed5361efcf108293",
+      "resultSha256": "aaf0fc8ea93ab35a7b75c2c4111085ab871ee9bd008b12f1da178e6cd6166155"
+    },
+    {
+      "path": "fresh-composition.mjs",
+      "sourceSha256": "af053b3f49914592e3fc784d1b7c0624ba68ced50174d9c75788782170797d83",
+      "resultSha256": "af053b3f49914592e3fc784d1b7c0624ba68ced50174d9c75788782170797d83"
+    },
+    {
+      "path": "fresh-composition.test.mjs",
+      "sourceSha256": "403d8f2f00658d45dea5bdfa9be865dd46b0152d37ddc536182408af4f261704",
+      "resultSha256": "403d8f2f00658d45dea5bdfa9be865dd46b0152d37ddc536182408af4f261704"
+    },
+    {
+      "path": "headless-probe.mjs",
+      "sourceSha256": "eb8c3aa787ac4d95f221e6e94b5f48bb667e383e8f2e767f344e7f4c18cd5553",
+      "resultSha256": "1b44119e600c3d358bbe38b2eac2802aa47e3c4a126abb11181923145ebc8936"
+    },
+    {
+      "path": "inspector-client.mjs",
+      "sourceSha256": "f6801d4555a06a72b511a36d9e09ccb55395434a7a32d5d60c05b3d350f5215a",
+      "resultSha256": "f6801d4555a06a72b511a36d9e09ccb55395434a7a32d5d60c05b3d350f5215a"
+    },
+    {
+      "path": "install-archives.mjs",
+      "sourceSha256": "ea2701104d632c8ad337390880b9e3bdedee15d434b207b124068b5825ff0713",
+      "resultSha256": "40526726004d3c64ab81948135a807d8fc017bcbd4c144365a68a8383b6baa16"
+    },
+    {
+      "path": "installer-refusals.mjs",
+      "sourceSha256": "5015d7fa67cf059654d24b334d397ab45b0d21b74e17b4224e51d596914baa60",
+      "resultSha256": "95508f080057fbedb57604d1b779bfa5d2449a1877d8f8c036e428b7bcf572ab"
+    },
+    {
+      "path": "inventory-diagnostic.mjs",
+      "sourceSha256": "a5c105cddb1fa208d96cfe613d972c3d8be60e4e66248ba7839e771efdf2e812",
+      "resultSha256": "db26ee6209340e8647c2aaffc22f4a575cec036433c1c6e257fb4f14ffd71259"
+    },
+    {
+      "path": "longpath-audit.py",
+      "sourceSha256": "3bb938ba667014dc3b6e78007f2adde2a3126ab7ec130d292fe6b7840e32ee7a",
+      "resultSha256": "3bb938ba667014dc3b6e78007f2adde2a3126ab7ec130d292fe6b7840e32ee7a"
+    },
+    {
+      "path": "memory-identity.mjs",
+      "sourceSha256": "793a5495435fdab6af2f959d1ebc8fd4924c9bdb155e316205c526b8d5b40d4b",
+      "resultSha256": "793a5495435fdab6af2f959d1ebc8fd4924c9bdb155e316205c526b8d5b40d4b"
+    },
+    {
+      "path": "memory-identity.test.mjs",
+      "sourceSha256": "eb1ec847684dc8ea8a17bcaebb1f2d3025365f85c2a48009a4c936eb262e29d0",
+      "resultSha256": "eb1ec847684dc8ea8a17bcaebb1f2d3025365f85c2a48009a4c936eb262e29d0"
+    },
+    {
+      "path": "memory-policy.mjs",
+      "sourceSha256": "8d3303ae8620a5c39a3c1cccdba09b2287b62c77813f9afd69a909b257936fc6",
+      "resultSha256": "8d3303ae8620a5c39a3c1cccdba09b2287b62c77813f9afd69a909b257936fc6"
+    },
+    {
+      "path": "memory-policy.test.mjs",
+      "sourceSha256": "fcb468499d76ea7dfc050e61f7462825434b8b75ee20cedb432b807fb16b76c8",
+      "resultSha256": "fcb468499d76ea7dfc050e61f7462825434b8b75ee20cedb432b807fb16b76c8"
+    },
+    {
+      "path": "README.md",
+      "sourceSha256": "1c4180fecdc567015f85f2da523b84237aceae3a94b2442fd33b15ccf48d6c5a",
+      "resultSha256": "a1cdf54293d84985c42005e3fcec4b9826b944da3cbdaafee8eab5b9da372365"
+    },
+    {
+      "path": "runtime-smoke.mjs",
+      "sourceSha256": "6a280cd5fb0ba1d358ff762e8bd3ebf21cf6455bb44aead68a0323fa10efaa2a",
+      "resultSha256": "393ffe5a1a0fa914b77ecf55055f73788fd065a2deae18772a9a2abeeaa3fea1"
+    },
+    {
+      "path": "safe_extract.py",
+      "sourceSha256": "6aa8ef70a4ea0bcc72c388119d7c0c386be8d6d62cd6e8e1b890a9b3d99e0c59",
+      "resultSha256": "6aa8ef70a4ea0bcc72c388119d7c0c386be8d6d62cd6e8e1b890a9b3d99e0c59"
+    },
+    {
+      "path": "safe_extract_regression.py",
+      "sourceSha256": "2cc77cbd2fea695b716c6384780ce4a6bebd5c9d2a2bf1d95b7884837fec888f",
+      "resultSha256": "2cc77cbd2fea695b716c6384780ce4a6bebd5c9d2a2bf1d95b7884837fec888f"
+    },
+    {
+      "path": "safe_extract_test.py",
+      "sourceSha256": "db033ebc09fc76316ab9cf11cbd0891253a82cedff39d520d73f51ba2a6f4280",
+      "resultSha256": "db033ebc09fc76316ab9cf11cbd0891253a82cedff39d520d73f51ba2a6f4280"
+    },
+    {
+      "path": "seal-tests.mjs",
+      "sourceSha256": "b82eac379379ff53dc9ae6834d2976d4581f41b8be123d183023eb71a1150725",
+      "resultSha256": "ba96641cfcda5c0a64cf5816e89d7084e6491a561729ff0e07f999d4fd5f9288"
+    },
+    {
+      "path": "workspace-readiness.mjs",
+      "sourceSha256": "ca6a42c18325592d87165c2159b490201860e3397adf85d2756282a76226c7c2",
+      "resultSha256": "ca6a42c18325592d87165c2159b490201860e3397adf85d2756282a76226c7c2"
+    },
+    {
+      "path": "workspace-readiness.test.mjs",
+      "sourceSha256": "60dc60e282c75458019ed82d5ec71d9a1c725c502e03dda4c17308f2759f4e63",
+      "resultSha256": "60dc60e282c75458019ed82d5ec71d9a1c725c502e03dda4c17308f2759f4e63"
+    },
+    {
+      "path": "workspace-sources.json",
+      "sourceSha256": "8086b1451952a1fb7d23c7d5b918aef29e653ce803449e90b22a91503e2dad65",
+      "resultSha256": "8086b1451952a1fb7d23c7d5b918aef29e653ce803449e90b22a91503e2dad65"
+    }
+  ]
+}

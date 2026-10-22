@@ -1,0 +1,1553 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "runId": 39706727364,
+  "sourceCommit": "850f71076fdadef74cf78ec98e745e79f0fa5dca",
+  "artifacts": [
+    {
+      "id": 12396851045,
+      "name": "sep-beta5-macos-evidence-39706727364",
+      "size": 2821393,
+      "sha256": "953ee9751af4a55cd82147345cba2bde79c65e47cdff6fa9af0fbd1507c5ad16",
+      "members": [
+        {
+          "path": "evidence/RESULT.json",
+          "size": 2571,
+          "sha256": "0cfb28c976a8de1adb123c31e08d587b2fc3c81915f7bd8e9e23f599364bc292"
+        },
+        {
+          "path": "evidence/compile-attachments.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/compile-attachments.stdout.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/compile-tree.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/compile-tree.stdout.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/native-io.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/native-io.stdout.log",
+          "size": 16379,
+          "sha256": "387e7e48b609ed11fc9f055c5e6c29df8f2201dbffc32f39ea62674d342c4b07"
+        },
+        {
+          "path": "evidence/os.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/os.stdout.log",
+          "size": 7,
+          "sha256": "3e7f3aac6ec05838460f29272ec4647dbdf438a5b83be784975079531ab79eb1"
+        },
+        {
+          "path": "evidence/rc2-business.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/rc2-business.stdout.log",
+          "size": 3751,
+          "sha256": "ec4154e6e7345896111b81dbb45bbeb4977b92f75264597fdddab85a6796437b"
+        },
+        {
+          "path": "evidence/rc2-media.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "evidence/rc2-media.stdout.log",
+          "size": 3611,
+          "sha256": "0541e1dfa4aa1876ea4f4520c4a17f95156487f21ac1472954b4f728fe11701a"
+        },
+        {
+          "path": "DERIVATION.json",
+          "size": 5334,
+          "sha256": "d908163f419c4279dc93a878ad4840af795574b59c6ce18c62ef1c873d94d8a4"
+        },
+        {
+          "path": "BETA5-PREPARATION.json",
+          "size": 1134,
+          "sha256": "2071bcd06c17966f807149df4bb80843a5cb806a04639d91cc82a947b1a4f032"
+        },
+        {
+          "path": "memory-core/INPUTS.json",
+          "size": 89629,
+          "sha256": "9f6ec267de7b03611c8e2bcdf867d784bbee1b3d2aee7cda6660f4a7028db968"
+        },
+        {
+          "path": "memory-core/RESULT.json",
+          "size": 402,
+          "sha256": "fd861d8f6427475c122edaf19c6a9338df7d1f6ec2219e43796837e03de55d48"
+        },
+        {
+          "path": "memory-core/tests.log",
+          "size": 12205,
+          "sha256": "49c2af007fb62d232a6ba71f2cb688043da7d923c526af8d30cdca22084dd914"
+        },
+        {
+          "path": "memory-storage/INPUTS.json",
+          "size": 89095,
+          "sha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d"
+        },
+        {
+          "path": "memory-storage/RESULT.json",
+          "size": 403,
+          "sha256": "ccafb3c38796582b6da74977ffb76f0bcc0dacdb3ce18a11bbe36085fda0b683"
+        },
+        {
+          "path": "memory-storage/real-memory-1S1RL5/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "memory-storage/real-memory-1S1RL5/memory/dsh_four_layer_archive_v1.json",
+          "size": 7558,
+          "sha256": "f673f317f668815e647e20fab9c799499b58c6d41464e784be68008d253f4700"
+        },
+        {
+          "path": "memory-storage/real-memory-1S1RL5/memory/dsh_four_layer_memory_v1.json",
+          "size": 9576,
+          "sha256": "22bf402680f1bc26c197d8db6f42d10a678ebaef25654235390c665742a5ae96"
+        },
+        {
+          "path": "memory-storage/real-memory-8Oud0W/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "memory-storage/real-memory-8Oud0W/memory/dsh_four_layer_archive_v1.json",
+          "size": 7558,
+          "sha256": "e2e0adbb21d51b5852aa27ea1731a0e35cddd49705fa6473a38502501ae8bbf3"
+        },
+        {
+          "path": "memory-storage/real-memory-8Oud0W/memory/dsh_four_layer_memory_v1.json",
+          "size": 9576,
+          "sha256": "628879f1e0f20725ea68218c3c76917075a61e574dcfa171e9d47b8a9462ef82"
+        },
+        {
+          "path": "memory-storage/real-memory-pZUUhB/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "memory-storage/real-memory-pZUUhB/memory/dsh_four_layer_archive_v1.json",
+          "size": 7558,
+          "sha256": "e2f41170ed8c500a5e350d56f5b9799009d430fe5ba0eadfadae3429375092ff"
+        },
+        {
+          "path": "memory-storage/tests.log",
+          "size": 573,
+          "sha256": "eee0eaca613103e52f5cae1ff8e2a841f24ee286b52c0c6ccb7e1432d707cdd3"
+        },
+        {
+          "path": "memory-storage/real-memory-pZUUhB/memory/dsh_four_layer_memory_v1.json",
+          "size": 9576,
+          "sha256": "861238f087a3d56e4f333b7f8c529ae3932597d8c4cf538d8a141090935dc7d1"
+        },
+        {
+          "path": "install.log",
+          "size": 1269,
+          "sha256": "8870573862f340448ac8e14c611c9dc35890bd4dad08f258f869f10d2461c045"
+        },
+        {
+          "path": "mac-package/INSTALLER-ORIGIN.json",
+          "size": 466,
+          "sha256": "bce3f7f6428922afe12e7afba0117638f26a67aad8755087517420efa363c6ca"
+        },
+        {
+          "path": "mac-package/PACKAGE-INVENTORY.json",
+          "size": 17587747,
+          "sha256": "00a06849034cac6431de6477eac628f6d23192757897c3f3985316f4c56acbef"
+        },
+        {
+          "path": "mac-package/POSTBUILD-ORIGIN.json",
+          "size": 2419,
+          "sha256": "1386c8ef4bcb7d503c4a03a761768bbb17f7d47610f2bba88ab9d0c18d42ca8b"
+        },
+        {
+          "path": "mac-package/RESULT.json",
+          "size": 25127,
+          "sha256": "04cd1a301c97aeea230b2e46b7d45899e5ed038f41c76a595e73731031f1f8ab"
+        },
+        {
+          "path": "mac-package/archive-app.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/compile-outer.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/copy-baseline.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/extract-baseline.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/extract-rc2-inputs.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/inner-info.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/install-asar-tool.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/read-inner-info.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/restore-app.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/sign-inner.log",
+          "size": 124,
+          "sha256": "b93ccc222ddb7cf066b5af9fc0887c715d7821a85c62b5fc4af60dd2ce26bf61"
+        },
+        {
+          "path": "mac-package/sign-outer.log",
+          "size": 87,
+          "sha256": "bbd812814faf65f623d9de94329dfe513894c6b4d3b6d3bee629bd2de5098560"
+        },
+        {
+          "path": "mac-package/verify-baseline.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/verify-inner.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/verify-outer.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "mac-package/verify-restored.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-lifecycle/RESULT.json",
+          "size": 2751,
+          "sha256": "eca23391f91caaf772d720fde06c131cb90c9ff45b5d10e20b64dac83b065275"
+        },
+        {
+          "path": "app-lifecycle/application-observer",
+          "size": 52920,
+          "sha256": "55aaab0cfbb73ee6525653b8d5b1960ac4738c6cae560be129169c191f49f9d0"
+        },
+        {
+          "path": "app-lifecycle/cycle-1.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-lifecycle/cycle-1.stdout.log",
+          "size": 2825,
+          "sha256": "c5214716fa8776e5a6b34002fc86472f1d5bf23f5c6c64aae7bcbfc2ddc2232d"
+        },
+        {
+          "path": "app-lifecycle/cycle-2.stderr.log",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-lifecycle/cycle-2.stdout.log",
+          "size": 2825,
+          "sha256": "23927357442dc4062ad3eb4e1c1bb00273594dbc2febde9d3867d6d91da6bf36"
+        },
+        {
+          "path": "app-lifecycle/observation.jsonl",
+          "size": 8385,
+          "sha256": "21d637c4980f1792670590bb0a66cd5d7842d68779fa12a3f688b4f61cb9cbba"
+        },
+        {
+          "path": "app-postbuild/ENV.json",
+          "size": 694,
+          "sha256": "fd726e24f9379afa6dabe217edab31eba33038e45c65936f551afb88c632d80e"
+        },
+        {
+          "path": "app-postbuild/RESULT.json",
+          "size": 3910,
+          "sha256": "b69ea4b541f6c8862c1fced0ff6de8984adb98d73b3701e959f30b104d24eb29"
+        },
+        {
+          "path": "app-postbuild/RUNTIME-INPUTS.json",
+          "size": 16734,
+          "sha256": "01bd9b6566337e24866bbdf828a03c21c8f03cff3fd3521516ebcfd52f0a37df"
+        },
+        {
+          "path": "app-postbuild/SOURCE-INVENTORY.json",
+          "size": 341593,
+          "sha256": "a1814aa341a6bbd0c337172a9bacf58753cad68532b160c344b7e5eadbc4770d"
+        },
+        {
+          "path": "app-postbuild/document-contracts/native.tap",
+          "size": 6096,
+          "sha256": "8ebda685179de2fa733a8eb5cd3060a4ece2cb4044a88bdfb0606a0007a15157"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/ORIGIN-RECEIPT.json",
+          "size": 28194,
+          "sha256": "f4a153485596bf4b5386b39982420498a0d1999c011469ffba08522bb30cfd69"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "02442cb21da935329f35ea03e33f634011c426c6b2ea6eb6a327e09b4408d2df"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "b7fba101a2987dded5066ef55a12c55088cae164508e15ec6a8d28a7e3dff278"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-9GIDFx/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "49f25471cf437f5050fbe5bfa2049ca7ac958d4b12631dff23566eaf431531bb"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "9cf9358487d89299e4ee2319d233d43c8e1df0abe36b78a9ab254e15c2d6fcec"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/memory/dsh_four_layer_memory_v1.json",
+          "size": 278,
+          "sha256": "1089b6970ef997df78ef498c5f0ff1de7f8c33d68485aac8de520d82e695ac53"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-W79wyb/memory/dsh_enhancement_suite_v1.json",
+          "size": 1174,
+          "sha256": "ca86cd9f16e051422c00588cabf439fa3b87bdf06c7077837e99c8529c6b80f3"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "3fb6f03d32a970f00316b2a6c24f0130c3d316b6a3ce790f7336c6937dc0b65a"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "79051aae99e93a7f75155a06b25ee2bf9dcc635ed4142b3b7c24a66a1dca1b73"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-a5AdEZ/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "fe8b58119fd7c2798bac7a072c49718bfc440e964437b3aa903d19c8a44f47f0"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "ccf1db818e98b43c2d11435d5219718f760526b51b65842c7412cead00cf6b3c"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/business-liqoRV/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-Cg6uYS/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-QXf4X3/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-WdXeFA/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-YhNsLF/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-fx0ddN/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-hgrh9W/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-iLC8tB/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-lxqdgC/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-sBG2dt/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-contracts/testdata/context-u4YyNe/snapshot.json",
+          "size": 246,
+          "sha256": "8a7a95c7ae5ec7eeb3580135a72b2cfb956c869b3faa41436a7161563e4f7538"
+        },
+        {
+          "path": "app-postbuild/document-native-context/native.tap",
+          "size": 939,
+          "sha256": "30636a89cbddb2edc8bf36964d819fbc0b8882065b9160331bd6cea04036469c"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "1a9f82daddbb131493694253ee69ca932aa95ee466215c8cb9a09ca27411e484"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "581d5f5580a58116bee536e973ca40f2ffa05b99f750d2026e275ddaa2d7fe58"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/memory/dsh_enhancement_suite_v1.json",
+          "size": 634,
+          "sha256": "fc04295cfb519e68ada2c5d57a47a7e42071d8f8e4f2cabe3a9e454711220578"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/memory/dsh_four_layer_memory_v1.json",
+          "size": 695,
+          "sha256": "106359d96fd6620c03e4d11ae252b29b9569c273cb7400d934a45c2258504c6f"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/parser/document-authority/4c91a7dc6deb48e4722ed97a685ffd6948d125339742dd690bfd3b3574ec1240.task.jsonl",
+          "size": 710,
+          "sha256": "5ae19ae39a84b78b835882a8a0ff4c95410c3ed8fa101ed5636ee4bac07e1bfd"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-JSInY2/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/authorized-public-snapshot.json",
+          "size": 341,
+          "sha256": "0e3669c75a6a0d4f58f2df6b7500fe7bb44fd8fdb4c89ea576e64ac5ebf79436"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "06bb3e96bc3a067ac2cae730a6a79496f16a3cff36d9aee62b4df57f0021a55e"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "01a7c335f24ba69d090a08c1d668cd2970485ffa081d1c0e7f7544c20e21fdbe"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/parser/context-authority/bb146942b32ac063f6c8e24f8e78c19ef1769bc0374e0ad2f6fadfcb6aee6d51.task.jsonl",
+          "size": 710,
+          "sha256": "1dc79ac86b8c68378871d1374f65dda3d222cc36957f65317ab2c8fb1dc556a7"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-nWcTPL/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "2d5ded5ddd3d187915622dde4d26c809ae828a091149aa60058ee5708cb5c337"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/managed/generations/1/data/digital.pdf",
+          "size": 596,
+          "sha256": "8927e98ace79d490d05be9621d74997aa41e9534046e1298c04603881da1af99"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "14d9c1f39da6c6b37002d4472c0c7dba50245335e4d1167b60c26c3347bf7294"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/memory/dsh_enhancement_suite_v1.json",
+          "size": 1646,
+          "sha256": "5f1fb8bbb0059d298a3df0ccb5e7d9fcff74f0002f119521ed6ec60a043ce444"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/memory/dsh_four_layer_memory_v1.json",
+          "size": 278,
+          "sha256": "1089b6970ef997df78ef498c5f0ff1de7f8c33d68485aac8de520d82e695ac53"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/parser/document-authority/3c984aa6aaa52c91368382dc826ba93cd94d6174f4b9394a009554a1cf016256.task.jsonl",
+          "size": 710,
+          "sha256": "944f447ccabb6d9579d9aae02e770734be5ffa7ba937209acc35abf958649ab6"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/parser/document-authority/8cea00ef8f7a9fba416d89138ab5308f95e184327916f7c7017398dd5f7b749e.task.jsonl",
+          "size": 710,
+          "sha256": "02c3ff28ce77083b6165fd785d606ae57307a1b597e6f465935d787d07fb60ab"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/parser/document-authority/d0f68f89664a0dbd453d8ce19a3ab539c172d99f1ef6c0961934247a92bd3987.task.jsonl",
+          "size": 710,
+          "sha256": "66de1cb4479989dfc8e62ddad40fbd1aa1ae5fc42787131633443db72e8fa33e"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/parser/document-authority/d863a8b297a557be6281ca4b2c1fb4720ae7f22d9ed518d8ede378c2e80bcb61.task.jsonl",
+          "size": 710,
+          "sha256": "7acb75410c627a09a573c90d3fc947ed1c7274cadb36ef8db3780353d3f7d9a3"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/source/digital.pdf",
+          "size": 596,
+          "sha256": "8927e98ace79d490d05be9621d74997aa41e9534046e1298c04603881da1af99"
+        },
+        {
+          "path": "app-postbuild/document-native-context/testdata/business-q9UGoJ/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-standalone/native.tap",
+          "size": 432,
+          "sha256": "9333e2935ef4437a824a85cb1dc92401dcddeb31a44346626e7a43f4763d31d3"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/BOOTSTRAP.json",
+          "size": 2077,
+          "sha256": "0eb67046df3a1a0fa2b1e58634ea1c3d1da49bbfdd1b8f48e26198a7c2d989cf"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/PROFILE.json",
+          "size": 2077,
+          "sha256": "0eb67046df3a1a0fa2b1e58634ea1c3d1da49bbfdd1b8f48e26198a7c2d989cf"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/home/profiles/desktop/cordis.patch.yml",
+          "size": 6745,
+          "sha256": "78175bd714a7cf5603a7cf991fe4f498e46cec332aacd3e963da49b584965423"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/home/profiles/desktop/cordis.yml",
+          "size": 223,
+          "sha256": "c300dcf2ebc5f02062d6591268d29d3db6fe45e0cb138f5467276fe2ba06076e"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/home/profiles/desktop/initialize.patch.yml",
+          "size": 2113,
+          "sha256": "71a0eff1e16340a66950413f9dd8caaee87471d8b759a4dc2af00e00c252c7c6"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/home/profiles/desktop/package.json",
+          "size": 116,
+          "sha256": "a554f64c7aa98f7ee5f2709514284e3f2531d474a635678fcd28cb7d6a0382dc"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "6210eeb387485c3bd1587e7b513b29138187b91d401f1952003b221383a8ce32"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "aca0bbb47a6b3d4dbb031ed68258064d9196e42ec8d07e205f2977aee2337618"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/memory/workspace.json",
+          "size": 616,
+          "sha256": "97f3cdc996feecee130e8533eb4900275025b478be4cbee8575e86cf7e3e2aa4"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/data/profile-authority/READY.json",
+          "size": 2077,
+          "sha256": "0eb67046df3a1a0fa2b1e58634ea1c3d1da49bbfdd1b8f48e26198a7c2d989cf"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/round-1.log",
+          "size": 83,
+          "sha256": "77f5d2e53ab010621cf61f4eb8f1fedb84b7557cfd252a7bd979b5b543b2093d"
+        },
+        {
+          "path": "app-postbuild/document-standalone/testdata/standalone-9CaI46/round-2.log",
+          "size": 83,
+          "sha256": "d00df9dd0c793c147a8ad760234b64bf01e977f1a0c7513db79b48097e9a5a1f"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/native.tap",
+          "size": 1875,
+          "sha256": "7fbe65172867c9d75973710bbd3a4c063d7a8d7f63e033496311d75485013e7b"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "4524058ce0c07a2b6d5b6d7d2601c9e86343541a407c1bfe2327f1bbc63c6f8e"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "ba1562f76b93ffd3f2e0ee654d835159ad5cb1d9f4ee3e23a46c556a19327122"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-4XWWGX/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/budget/ledger.json",
+          "size": 1578,
+          "sha256": "e8e53bd12163592f939a0205906fe9f6d2bed40d8b1b7f5112b8b8bfa51b91fc"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "13a8674ffadc95d0cd69c8bfe49e694f8650ad98702e1ca622f20d3290cc1e79"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "739cedf6153a9381a52512a5f8ed1f75b5ddcbba4748524026b71ca92b1b0d50"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-5LwepK/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "48d7cc36ea4cd349a0e74f9dfab559d528fae5289c464cdec764ec70272167c4"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "ca03678630a0af6661a6fce1fcab7083cee77c0886a7b393c769e7132d7e8aa6"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-JdItgt/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/budget/ledger.json",
+          "size": 1539,
+          "sha256": "dec526aaf54b26a56e359509f2ffee86ebf5cd76b675f0700e9fa8c2a3c43a04"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "bf2846aed20abf9c01b53f2932340b7af6146ce7130551878c2f65a930e06b98"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "c2b4ef797bc412bcce54188fb842f3c4ecca3b74aab51e7c1ec6cbf94b3e1b6c"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/memory/dsh_four_layer_memory_v1.json",
+          "size": 527,
+          "sha256": "e9b54a69481fd21abf20313305a042605eaff45ea15223fad68a4d6ce12ddb09"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-KQZSIR/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "06b8aa45ba96213bd80be07e3b29297d404c3a6c285363db411a244521549463"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "bb581c1281174fe07bfcb4fa7b0e7295a65b2885d0e6d36bd7f36df408059fe7"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-Vb3mE0/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/budget/ledger.json",
+          "size": 282,
+          "sha256": "af5eda46d4ef76a5bf29debc3d56eb4070fde57e4225dd85ae2ebd07d6f83bac"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "7aec8c414f821f35cb1400c31c53c492c1005d082d36e9080b352c620939f54a"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "3dd8b3c75e7eead1061f342a6fc7d22a8d113963d36aa6cb5dfe1c2b99a36587"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-YkEe7X/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/budget/ledger.json",
+          "size": 1539,
+          "sha256": "79c582e512f32b9fefcc5ed3da01f9a7e37935bcca3275515ea17788669d8986"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "99c11e90069955c2f6e29ae2765d821f848b0641cf9245798a9a0db079cde900"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/managed/generations/1/data/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "8191406e8736b3efd8383feb249469800a6dae8569d25edfa62bed6d0b194ebe"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/memory/dsh_four_layer_memory_v1.json",
+          "size": 527,
+          "sha256": "e172b053ee8054faf5e853fbce99aa666a397e2eb6c9b19d4cf5d95ed341b856"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/parser-fixture.json",
+          "size": 227,
+          "sha256": "41ae166206693de3bf8321bd9dc4189e51d5a3a0101600628099c5f36bc06663"
+        },
+        {
+          "path": "app-postbuild/document-vision-loader/testdata/business-wifduE/source/\u56fe\u50cf.png",
+          "size": 108,
+          "sha256": "4170f0130eacdd3de7f18a8d22474beddbe796a529fb9756a33a4936e28f7393"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/native.tap",
+          "size": 2209,
+          "sha256": "3c56a8c5086078870f81a4a630d0347cf6d75229c4821543ce4b44341b18d615"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/receipts/FINGERPRINT.json",
+          "size": 203,
+          "sha256": "3b7d5330a4e9004809c73734c91323ab1d2623600eb55da25162677a9435fe8c"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/receipts/LOADER-REPRO.json",
+          "size": 4387,
+          "sha256": "60a7587af0c133baa5f5cfd2f2323126abc581627d1731d63045ccaf44068d3c"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/budget/ledger.json",
+          "size": 281,
+          "sha256": "1c99f7ede70f347f7bc52c527cf8dac07b46aaf3f95f299aa62c30fe153870c7"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "3c5d9a8e60b360028c6c141ad510a8c40d3ff4a6546b4875c4f788d7e7865c9a"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "3dbeb0545ac0076b0c4c903363ab3cb383fce9666ab5f30ffa69c12e2db98cec"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/managed/transactions/da75c539-ae60-47ea-9cdc-672afebbfe4d/candidate/data.txt",
+          "size": 27,
+          "sha256": "ecc7cc3f3f66ba59659e97e5238f3c96bf71c6cea758ddd90d6445a4529a753a"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-1Jkq7D/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-CoQ2MF/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-CoQ2MF/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-CoQ2MF/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-CoQ2MF/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "3fc7bbba9e247a891ab9c377871b57289273402ca3f430f25184132de3ffc5b0"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-CoQ2MF/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-FfsXhK/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-FfsXhK/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-FfsXhK/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-FfsXhK/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "ebd3dad4ef7193392bcd5ae450f42090993330750b3bd2adc77d0176615c4adc"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-FfsXhK/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-OySFl0/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-OySFl0/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-OySFl0/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-OySFl0/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "6c59e73c87fd04748915814ba5900f6b19539d48be43903901c1fd1040b6f1be"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/budget/ledger.json",
+          "size": 221,
+          "sha256": "519a3bfa656c483bbca5734557886459460c90e1252ead18657a692292278017"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/budget/ledger.json.lock.guard.sqlite3",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-OySFl0/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/cordis.yml",
+          "size": 3,
+          "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/locks/dsh-system-enhancement-package-v1.lock.sep-owner/lease.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/locks/dsh-system-enhancement-package-v1.lock.sep-owner/publication.sqlite",
+          "size": 8192,
+          "sha256": "24b63526a7ce36247b678243d38236caac6288d71c717bef43c28793ed3f144d"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/managed/generations/1/data/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/managed/owner.sqlite",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/managed/state.sqlite",
+          "size": 36864,
+          "sha256": "239908865a8137bf005651f12878e8d9c199d24544f7ddf6d6629280cd07a79e"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/business-plGyDy/source/data.txt",
+          "size": 8,
+          "sha256": "0682c5f2076f099c34cfdd15a9e063849ed437a49677e6fcc5b4198c76575be5"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-QJySeS/business/BOOTSTRAP.json",
+          "size": 1885,
+          "sha256": "1fcda2f7139f35a77c607b90e96f53b356ecec271336e359302ad58c34741106"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-QJySeS/business/PROFILE.json",
+          "size": 1885,
+          "sha256": "1fcda2f7139f35a77c607b90e96f53b356ecec271336e359302ad58c34741106"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-QJySeS/business/home/profiles/desktop/cordis.patch.yml",
+          "size": 6868,
+          "sha256": "148a90fd3c1a7872944e5c770c7de40495988c90c0774a0297c644b661f39817"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-QJySeS/business/home/profiles/desktop/initialize.patch.yml",
+          "size": 1919,
+          "sha256": "b25bc3871180f8d393163aa39bc48ed1ac3ee17b3da4e9a85b3b65bbee136ba9"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-QJySeS/business/home/profiles/desktop/package.json",
+          "size": 116,
+          "sha256": "a554f64c7aa98f7ee5f2709514284e3f2531d474a635678fcd28cb7d6a0382dc"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-QJySeS/business/profile-authority/READY.json",
+          "size": 1885,
+          "sha256": "1fcda2f7139f35a77c607b90e96f53b356ecec271336e359302ad58c34741106"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-ajS9MP/business/BOOTSTRAP.json",
+          "size": 1885,
+          "sha256": "4ce3fc5901a1fd8621d39afe68a9daa53a317ded434324ddaa74bdbc98e7a835"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-ajS9MP/business/PROFILE.json",
+          "size": 1885,
+          "sha256": "4ce3fc5901a1fd8621d39afe68a9daa53a317ded434324ddaa74bdbc98e7a835"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-ajS9MP/business/home/profiles/desktop/cordis.patch.yml",
+          "size": 6868,
+          "sha256": "8ad71fbbb70ccfe11d40e08afb7026ffb61708a655335f3987571651ed287dfb"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-ajS9MP/business/home/profiles/desktop/initialize.patch.yml",
+          "size": 1919,
+          "sha256": "d24913941dfb4ec3367d4ac9a6720678ca12750a80933e19bd92091d5aad3399"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-ajS9MP/business/home/profiles/desktop/package.json",
+          "size": 116,
+          "sha256": "a554f64c7aa98f7ee5f2709514284e3f2531d474a635678fcd28cb7d6a0382dc"
+        },
+        {
+          "path": "app-postbuild/pending-loader-restart/testdata/layout-ajS9MP/business/profile-authority/READY.json",
+          "size": 1885,
+          "sha256": "4ce3fc5901a1fd8621d39afe68a9daa53a317ded434324ddaa74bdbc98e7a835"
+        },
+        {
+          "path": "app-postbuild/tmp/node-addon-native-custom-loader-501/native-cache/node-addon-require-builtin-darwin-arm64/0.1.9/darwin-arm64/darwin-arm64-napi-v9.node",
+          "size": 226120,
+          "sha256": "93947abf5edc337b9b2b20267e1b99a26a3a5616dc857f1c2b67122d0057c752"
+        },
+        {
+          "path": "installer/RESULT.json",
+          "size": 9511,
+          "sha256": "fb50438f9722f4171252dd9dcd51beb34e8f8dfd561cb1a046252c0bd058349e"
+        },
+        {
+          "path": "installer/archive.log",
+          "size": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "installer/compile-installer.log",
+          "size": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "installer/info.log",
+          "size": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "installer/restore.log",
+          "size": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "installer/sign-outer.log",
+          "size": 96,
+          "sha256": "cba9d9af39a2b27ad537168c7c9e6b7eda972d87d2cf6450e84a5d4852dd12f5"
+        },
+        {
+          "path": "installer/verify-outer.log",
+          "size": 184,
+          "sha256": "8b427d2f4d357e2cad28d48c9c7d0c328b2a3b560322b144c55a81f4bc8c4611"
+        },
+        {
+          "path": "installer/verify-restored.log",
+          "size": 202,
+          "sha256": "75d50d8900566b57bf5f795432d65895a9a1b48784c9def9cc6533a381910299"
+        }
+      ]
+    },
+    {
+      "id": 12396123990,
+      "name": "sep-beta5-macos-candidate-39706727364",
+      "size": 899723333,
+      "sha256": "0d05e1f8a07ba8f524e69905a8aac2af8e5b0cf71fa2c86a8f7b30621f8ea926",
+      "members": [
+        {
+          "path": "installer/DSH-SEP-macOS-RC2-installer-preview.zip",
+          "size": 862206847
+        },
+        {
+          "path": "mac-package/RESULT.json",
+          "size": 25127,
+          "sha256": "04cd1a301c97aeea230b2e46b7d45899e5ed038f41c76a595e73731031f1f8ab"
+        },
+        {
+          "path": "installer/RESULT.json",
+          "size": 9511,
+          "sha256": "fb50438f9722f4171252dd9dcd51beb34e8f8dfd561cb1a046252c0bd058349e"
+        },
+        {
+          "path": "mac-package/PACKAGE-INVENTORY.json",
+          "size": 17587747,
+          "sha256": "00a06849034cac6431de6477eac628f6d23192757897c3f3985316f4c56acbef"
+        },
+        {
+          "path": "installer/PACKAGE-INVENTORY.json",
+          "size": 19893301,
+          "sha256": "86050c90fb43dcf5ce361892dfbd209ccc5fa0a108d0153eeb64bc768a4a0a94"
+        }
+      ]
+    }
+  ]
+}

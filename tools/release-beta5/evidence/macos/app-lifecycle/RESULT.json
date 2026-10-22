@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "scope": "installed first boot and same-account restart through LaunchServices, readiness and normal quit only; hide/reopen not tested",
+  "plannedCycles": 2,
+  "cycles": [
+    {
+      "index": 1,
+      "status": "pass",
+      "startedAt": "2026-10-22T01:49:50.283Z",
+      "ready": {
+        "sessionId": "3267ab786d5226ab3f09e2e5204d384b",
+        "generation": "92ae6a6e65fb4c461cb342a015e70659",
+        "bootstrapPid": 26976,
+        "controllerPid": 26977,
+        "desktopPid": 27235,
+        "outerLaunchTime": 1792633790.548473,
+        "desktopLaunchTime": 1792633799.298097
+      },
+      "profile": {
+        "sha256": "5decd0900e49a9072a16c25e9cb91825647180eb532a03fd03944cd1e49de23e",
+        "installedPathBound": true,
+        "sameAcrossRestart": false
+      },
+      "initialActivation": {
+        "acknowledged": true,
+        "sequence": 4
+      },
+      "closed": {
+        "normalLaunchServicesWaitExit": {
+          "code": 0,
+          "signal": null
+        },
+        "resourcesConfirmedReleased": true,
+        "generation": "92ae6a6e65fb4c461cb342a015e70659"
+      }
+    },
+    {
+      "index": 2,
+      "status": "pass",
+      "startedAt": "2026-10-22T01:50:06.996Z",
+      "ready": {
+        "sessionId": "e99949f6c3de0070db2ff1474442c8f0",
+        "generation": "4edd5880248f5d74ce587562f3ce1d65",
+        "bootstrapPid": 27368,
+        "controllerPid": 27369,
+        "desktopPid": 27700,
+        "outerLaunchTime": 1792633807.036611,
+        "desktopLaunchTime": 1792633815.254089
+      },
+      "profile": {
+        "sha256": "5decd0900e49a9072a16c25e9cb91825647180eb532a03fd03944cd1e49de23e",
+        "installedPathBound": true,
+        "sameAcrossRestart": true
+      },
+      "initialActivation": {
+        "acknowledged": true,
+        "sequence": 4
+      },
+      "closed": {
+        "normalLaunchServicesWaitExit": {
+          "code": 0,
+          "signal": null
+        },
+        "resourcesConfirmedReleased": true,
+        "generation": "4edd5880248f5d74ce587562f3ce1d65"
+      }
+    }
+  ],
+  "cleanup": [],
+  "modelGenerated": false,
+  "paidProviderCalls": 0,
+  "programSha256": "b356c8af26c49cc0dbedf1e41d33ad0920ae563ed80007eb087ceb610cee5390",
+  "treeSha256": "8a358b50f2f78066e2ddfb034190ef4f1b4b3b707c242b09bb9db6470b6b09f6",
+  "observerSourceSha256": "bb37b6fae94465da6646609f48d444fc16957f884dfb265c0044b7fce1d99995",
+  "notVerified": [
+    "hide/reopen certification",
+    "physical Finder or Dock mouse input",
+    "workspace transition through the Skip button",
+    "active-task user confirmation UI",
+    "all protected features in same desktop instance",
+    "private environment continuation",
+    "paid models",
+    "Developer ID and notarization"
+  ]
+}

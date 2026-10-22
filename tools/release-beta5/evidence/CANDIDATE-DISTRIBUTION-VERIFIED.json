@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "candidateFiles": 447,
+  "sourceBuildId": "beta4-memory-repair.1",
+  "installedWindowsCandidateMatches": true,
+  "packNormalization": [
+    {
+      "path": "package.json",
+      "transform": "remove exactly one terminal LF during pnpm pack",
+      "sourceSha256": "3b4d0c2049c6225042f411beddc883a0db03d53c27f2139f953bb92d23421c5b",
+      "packedSha256": "e3177633b35ab8fa80fd2a5b11e118f3b06285b64d12e4623a0064b141b0eca6"
+    }
+  ],
+  "sourceIndexSha256": "13cbb8685e009ee4324808c1904d2760c6c08a3c0394927e0dc2453f5b4a6d24"
+}

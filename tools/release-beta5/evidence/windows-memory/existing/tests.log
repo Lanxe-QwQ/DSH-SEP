@@ -1,0 +1,137 @@
+TAP version 13
+# Subtest: evaluation configuration rejects traversal and malformed canonical paths in both entry and config
+ok 1 - evaluation configuration rejects traversal and malformed canonical paths in both entry and config
+  ---
+  duration_ms: 169.0703
+  type: 'test'
+  ...
+# Subtest: direct Entry rejects unsafe paths before an external spawn even without the settings schema
+ok 2 - direct Entry rejects unsafe paths before an external spawn even without the settings schema
+  ---
+  duration_ms: 1.3864
+  type: 'test'
+  ...
+# Subtest: fixture origin chains replay to the actual HEAD bytes
+not ok 3 - fixture origin chains replay to the actual HEAD bytes
+  ---
+  duration_ms: 32.3137
+  type: 'test'
+  location: 'D:\\AIData\\ProjectWork\\DSH\\beta5-publication-20261022-r1\\publication-git\\tools\\bundle-install\\tests\\review-regressions.test.mjs:19:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + '586eba3e444284c58cc170adafc2ce31b9a1506407672ee17ba88d350cfa8733'
+    - 'db2396bb18767bf1b74588b9247614209d933e57b45d190dc166e5a44a241089'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'db2396bb18767bf1b74588b9247614209d933e57b45d190dc166e5a44a241089'
+  actual: '586eba3e444284c58cc170adafc2ce31b9a1506407672ee17ba88d350cfa8733'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///D:/AIData/ProjectWork/DSH/beta5-publication-20261022-r1/publication-git/tools/bundle-install/tests/review-regressions.test.mjs:22:54)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: Windows CI publishes a portable runner temp directory with artifact-compatible separators
+ok 4 - Windows CI publishes a portable runner temp directory with artifact-compatible separators
+  ---
+  duration_ms: 527.3157
+  type: 'test'
+  ...
+# Subtest: consumer cleanup attempts independent resources when evaluation blocks and retries only unfinished resources
+ok 5 - consumer cleanup attempts independent resources when evaluation blocks and retries only unfinished resources
+  ---
+  duration_ms: 1.702
+  type: 'test'
+  ...
+# Subtest: consumer cleanup preserves evaluation start diagnosis and independently retries a failed child disposer
+ok 6 - consumer cleanup preserves evaluation start diagnosis and independently retries a failed child disposer
+  ---
+  duration_ms: 0.5488
+  type: 'test'
+  ...
+# Subtest: trusted diagnostics retain nested classified failure without raw body or path
+ok 7 - trusted diagnostics retain nested classified failure without raw body or path
+  ---
+  duration_ms: 0.6604
+  type: 'test'
+  ...
+# Subtest: automatic capture uses the same native Profile ledger and preserves birthday precision
+ok 8 - automatic capture uses the same native Profile ledger and preserves birthday precision
+  ---
+  duration_ms: 3634.7442
+  type: 'test'
+  ...
+# Subtest: automatic capture obeys the existing Profile output cap without an extra dispatch
+ok 9 - automatic capture obeys the existing Profile output cap without an extra dispatch
+  ---
+  duration_ms: 717.3455
+  type: 'test'
+  ...
+# Subtest: a paused capture switch prevents auxiliary model dispatch and preserves memory
+ok 10 - a paused capture switch prevents auxiliary model dispatch and preserves memory
+  ---
+  duration_ms: 677.9849
+  type: 'test'
+  ...
+# Subtest: closing during a non-cooperative capture retains the lease and never publishes late memory
+ok 11 - closing during a non-cooperative capture retains the lease and never publishes late memory
+  ---
+  duration_ms: 880.2232
+  type: 'test'
+  ...
+# Subtest: the optional local media consumer extracts Chinese source paths without model use
+ok 12 - the optional local media consumer extracts Chinese source paths without model use
+  ---
+  duration_ms: 422.8166
+  type: 'test'
+  ...
+# Subtest: the mounted plugin group evaluates three samples before an actual managed child dispatch
+ok 13 - the mounted plugin group evaluates three samples before an actual managed child dispatch
+  ---
+  duration_ms: 859.0134
+  type: 'test'
+  ...
+# Subtest: history expansion requires an explicit current direct request and a registered parent
+ok 14 - history expansion requires an explicit current direct request and a registered parent
+  ---
+  duration_ms: 485.0592
+  type: 'test'
+  ...
+# Subtest: Mem0 assistance stays within the current project messages and shares the same native ledger
+ok 15 - Mem0 assistance stays within the current project messages and shares the same native ledger
+  ---
+  duration_ms: 1054.8623
+  type: 'test'
+  ...
+# Subtest: Mem0 refuses messages from another real session even inside the same project
+ok 16 - Mem0 refuses messages from another real session even inside the same project
+  ---
+  duration_ms: 433.2278
+  type: 'test'
+  ...
+# Subtest: retained plugin group controls reject new preview work after root admission closes
+ok 17 - retained plugin group controls reject new preview work after root admission closes
+  ---
+  duration_ms: 448.777
+  type: 'test'
+  ...
+# Subtest: history navigation reads a real native compaction source and refuses a changed graph
+ok 18 - history navigation reads a real native compaction source and refuses a changed graph
+  ---
+  duration_ms: 993.7884
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 17
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10831.7567
+

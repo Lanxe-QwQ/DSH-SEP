@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "distributionVersion": "0.2.1-beta.5",
+  "implementationCommit": "aa3a27072f3fdaf94bb00e8b204866cdbbffde16",
+  "candidateSha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500",
+  "captureManifestSha256": "9aa938de5018b4627a044b828d4514d19bd0fab87bd0cab3f84db78216d432c6",
+  "lockSha256": "14639a8eebaafaa6688805d4d09f6b095181d97728619bac57a2b98429fb932a",
+  "namespaces": [
+    {
+      "path": "installer-entry/account-native.c",
+      "sourceSha256": "dc43051f1fadd40738501e11a8339f2f5624fd6d5cbc75f236a36de62c45a7bf",
+      "resultSha256": "a6ddb7fba2b2ae3cda37b55d416fd95e031c3fd5c8ede562f8655d1da305eb4f",
+      "before": "alpha2-mac-finder-preview",
+      "after": "rc2-mac-finder-preview",
+      "count": 2
+    },
+    {
+      "path": "installer-entry/controller-core.mjs",
+      "sourceSha256": "04268feaa3faaff0a1d25e8f87e7cbc8f997ba0cd79cb01610bf9bd98d378262",
+      "resultSha256": "ea7a0a43857a4ddd26d85c4af7d4abe6867d18c68b374259207a2f6a11a61829",
+      "before": "alpha2-mac-finder-preview",
+      "after": "rc2-mac-finder-preview",
+      "count": 1
+    }
+  ]
+}

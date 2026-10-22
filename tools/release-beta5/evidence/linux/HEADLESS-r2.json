@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "readyReceiptObserved": true,
+  "exitCode": 0,
+  "paidModelRequests": 0,
+  "stdoutSha256": "be9be726690df9bafa04406771af753129783a555b3b828d9ca7405dae384ce0",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "real installed headless startup: wait for actual ready receipt, then SIGTERM normal drain"
+}

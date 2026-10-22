@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "distributionVersion": "0.2.1-beta.5",
+  "implementationCommit": "aa3a27072f3fdaf94bb00e8b204866cdbbffde16",
+  "repairEvidenceCommit": "369683d90662c813802efad0fbb1849b84fd380b",
+  "currentCandidateFiles": 447,
+  "candidateSha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500",
+  "windows": {
+    "status": "pass",
+    "archiveInstallChecks": 10,
+    "installations": 2,
+    "freshCredentialsSessionsLedger": true,
+    "bothRuntimeSmokes": true,
+    "memoryGroups": [
+      {
+        "mode": "core-final",
+        "passed": 65,
+        "inputSha256": "dd0f54565e2afaadea54af48a1e0df82c9f9ceb9373f7da0f59322ff8e4f47a9",
+        "logSha256": "aa401b1f8a652dc6da10cec080317ef9c9a7551b9cdc387dd1d7c8eaac3f3fa6"
+      },
+      {
+        "mode": "storage-final",
+        "passed": 3,
+        "inputSha256": "c88f0405976d8af914b5e2b31a36b668b80587158d42c38c34b1533001df14ee",
+        "logSha256": "8ddf8c13d8d233fbd1778432edd649d8740b61f8996e8d49ddcef3584d61b8e3"
+      },
+      {
+        "mode": "integration-final",
+        "passed": 5,
+        "inputSha256": "98c9c83b958cc055e090bf00d1dab1abd5b73a4035da36269b08e948d1a0d163",
+        "logSha256": "0433692d9b0464e36386a016c89e3c06b862736471f7b74b0b67d222dab00ca5"
+      },
+      {
+        "mode": "existing-r2",
+        "passed": 18,
+        "inputSha256": "dd4eba29c07f6ea7f7f32d1a7307d0a3316e3d0f49653699951316ea37c28d5f",
+        "logSha256": "81caf43aa793698e36c7b19e2c747034adb95891667e3b37a981b7c35485c542"
+      }
+    ],
+    "memoryTotal": 91,
+    "programGraphSha256": "f567d191ac36531f81055b5d6d222ed69a5422a8a45d251a46e75e599d6a19e4",
+    "failureSamplesRetained": [
+      {
+        "group": "existing",
+        "result": "17 pass / 1 fail",
+        "cause": "initial Windows clone CRLF conversion; expected source hashes unchanged; original Git blobs restored",
+        "rerun": "18/18 pass on exact LF source"
+      }
+    ],
+    "notVerified": [
+      "new physical Electron interaction",
+      "new private library adoption",
+      "paid model"
+    ],
+    "checkoutProtection": "scoped .gitattributes for hash-bound SEP/test/release inputs; all original expected hashes unchanged"
+  },
+  "linux": {
+    "status": "pass",
+    "archiveSha256": "dbff65eafce37d0cf5dbdeffa1ab1a9da48bdb323ea31779c8b8242759d2689b",
+    "manifestSha256": "f6d14ff0a6ae241b202901bd3358d18c723ca9b2eac4c2693eb46343c24a5aeb",
+    "realArchiveRestorationAndFirstInstall": true,
+    "memoryGroups": [
+      {
+        "schema": 1,
+        "status": "pass",
+        "mode": "core",
+        "platform": "linux",
+        "arch": "x64",
+        "exitCode": 0,
+        "signal": null,
+        "tests": 65,
+        "passed": 65,
+        "failed": 0,
+        "skipped": 0,
+        "logSha256": "fbb9e193e8786dbbb26207e8f52ba8cd6b067bba89cf51cb9f57c6e2e8c389b1",
+        "inputSha256": "04f69afcf1ec976c20db5082014b3b82ffffc191d21a048f0ae5fc1717d2298a",
+        "model": "synthetic/no paid model"
+      },
+      {
+        "schema": 1,
+        "status": "pass",
+        "mode": "storage",
+        "platform": "linux",
+        "arch": "x64",
+        "exitCode": 0,
+        "signal": null,
+        "tests": 3,
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0,
+        "logSha256": "145f12bfb1ba8285c1228f305e979bc30ab82ab1a3857a5fd42c19df49dabd9f",
+        "inputSha256": "a6989c7f753ee82a0cf2c99612d14e5abeb0a8c4fd5e0b2cd61a4e500dfe4440",
+        "model": "synthetic/no paid model"
+      }
+    ],
+    "readyThenSigterm": {
+      "schema": 1,
+      "status": "pass",
+      "readyReceiptObserved": true,
+      "exitCode": 0,
+      "paidModelRequests": 0,
+      "stdoutSha256": "be9be726690df9bafa04406771af753129783a555b3b828d9ca7405dae384ce0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "real installed headless startup: wait for actual ready receipt, then SIGTERM normal drain"
+    },
+    "failureSamplesRetained": [
+      "Python data-filter extraction altered executable modes; rejected before installation, GNU tar exact-mode restoration passed",
+      "8-second premature pre-ready cancellation returned blocked/owner-exited; final waits for actual ready then drains normally"
+    ],
+    "notVerified": [
+      "new Wayland physical interaction",
+      "new private library adoption",
+      "paid model",
+      "fullLinuxCertification"
+    ]
+  },
+  "macOS": {
+    "schema": 1,
+    "status": "pass",
+    "runId": 39706727364,
+    "buildSourceCommit": "850f71076fdadef74cf78ec98e745e79f0fa5dca",
+    "os": "15.7.9",
+    "nativeGroups": [
+      {
+        "name": "native-io",
+        "status": "pass",
+        "tests": 74,
+        "pass": 74,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "name": "rc2-business",
+        "status": "pass",
+        "tests": 15,
+        "pass": 15,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "name": "rc2-media",
+        "status": "pass",
+        "tests": 14,
+        "pass": 14,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      }
+    ],
+    "memoryGroups": [
+      {
+        "mode": "core",
+        "passed": 65,
+        "inputSha256": "9f6ec267de7b03611c8e2bcdf867d784bbee1b3d2aee7cda6660f4a7028db968",
+        "logSha256": "49c2af007fb62d232a6ba71f2cb688043da7d923c526af8d30cdca22084dd914"
+      },
+      {
+        "mode": "storage",
+        "passed": 3,
+        "inputSha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d",
+        "logSha256": "eee0eaca613103e52f5cae1ff8e2a841f24ee286b52c0c6ccb7e1432d707cdd3"
+      }
+    ],
+    "postbuildCounts": {
+      "tests": 46,
+      "pass": 46,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    "appNormalLaunchServicesCycles": 2,
+    "installerArchiveRestoredAndSignatureVerifiedInCI": true,
+    "installerFilesIndependentlyHashed": 52982,
+    "captureFilesIndependentlyHashed": 447,
+    "programSha256": "b356c8af26c49cc0dbedf1e41d33ad0920ae563ed80007eb087ceb610cee5390",
+    "appTreeSha256": "8a358b50f2f78066e2ddfb034190ef4f1b4b3b707c242b09bb9db6470b6b09f6",
+    "installerTreeSha256": "0020326898baae8bc9f51af983179ca34004433f97b5551480863a3fd44f9065",
+    "privacySummary": {
+      "status": "pass",
+      "filesScanned": 52996,
+      "uncompressedBytesScanned": 2569930662,
+      "comprehensivePrivacyAudit": false
+    },
+    "notVerified": [
+      "Beta.5 installer-button installation",
+      "physical input",
+      "Developer ID/notarization",
+      "paid models",
+      "private environment continuation",
+      "fullMacCertification"
+    ],
+    "asset": {
+      "name": "DSH-SEP-0.2.1-beta.5-macOS-arm64.zip",
+      "size": 862206847,
+      "sha256": "6c618fa84dc3eeea2c8778ade44124089331278e18d47bb4ecce81311b0b5c4c",
+      "kind": "installer"
+    }
+  },
+  "crossPlatformCountsAreNotIndependentDefectClasses": true,
+  "dailyDeploymentPerformed": false,
+  "automaticUpdateEligible": false,
+  "notVerified": [
+    "full cross-platform public certification",
+    "paid providers",
+    "physical input",
+    "public download/native confirm/default Electron automatic-install single positive",
+    "macOS Developer ID/notarization",
+    "Beta.5 Mac installer-button fresh installation"
+  ],
+  "distributionPrivacy": [
+    {
+      "asset": "DSH-SEP-0.2.1-beta.5-Linux-x64.tar.gz",
+      "sha256": "dbff65eafce37d0cf5dbdeffa1ab1a9da48bdb323ea31779c8b8242759d2689b",
+      "filesScanned": 33981,
+      "uncompressedBytesScanned": 1307884474,
+      "comprehensivePrivacyAudit": false,
+      "status": "pass",
+      "rawSignatureHits": 2,
+      "unresolved": 0,
+      "reportSha256": "5b3a673c1326d4a96d75a61f40697b6ebcde65c0cc7310c6b5c3c84213a1587c"
+    },
+    {
+      "asset": "DSH-SEP-0.2.1-beta.5-macOS-arm64.zip",
+      "sha256": "6c618fa84dc3eeea2c8778ade44124089331278e18d47bb4ecce81311b0b5c4c",
+      "filesScanned": 52996,
+      "uncompressedBytesScanned": 2569930662,
+      "comprehensivePrivacyAudit": false,
+      "status": "pass",
+      "rawSignatureHits": 6,
+      "unresolved": 0,
+      "reportSha256": "22ebdf9830b5905013155fe46955c9a5ff4313b692df447bc58ba3cda567b710"
+    },
+    {
+      "asset": "DSH-SEP-Full-0.2.1-beta.5-Windows-x64.zip",
+      "sha256": "07d97df178ff5109f4a127f48fc7a3f3321a1f395ce9d0a60461371433bb5747",
+      "filesScanned": 32822,
+      "uncompressedBytesScanned": 1434468363,
+      "comprehensivePrivacyAudit": false,
+      "status": "pass",
+      "rawSignatureHits": 86,
+      "unresolved": 0,
+      "reportSha256": "57193f2cc0fcb099b7badabd2742fc814f0f42e7f658048677d134e6d3a70dc8"
+    },
+    {
+      "asset": "DSH-SEP-Only-0.2.1-beta.5-Windows-x64.zip",
+      "sha256": "9ca93dfcf704740e2ac45a2f5e608af8d98f778a37602d7fff8550cc7790998f",
+      "filesScanned": 28131,
+      "uncompressedBytesScanned": 1170290180,
+      "comprehensivePrivacyAudit": false,
+      "status": "pass",
+      "rawSignatureHits": 85,
+      "unresolved": 0,
+      "reportSha256": "172dd351a5008e12c0d134c8a8ecd04ad182e8fb8641b0efbcfa4648b4c967ba"
+    }
+  ],
+  "privacyScope": "fixed byte signatures and filename checks, independently classified public literals; no universal privacy claim",
+  "rawEvidenceWhitespace": "Raw TAP logs retain exact blank/trailing whitespace and their recorded hashes; source whitespace checks exclude only this raw-evidence subtree."
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "scope": "RC.2 native APFS + actual host integration; synthetic LLM, no GUI or physical input certification",
+  "runs": [
+    {
+      "name": "os",
+      "exit": 0,
+      "error": null,
+      "stdoutSha256": "3e7f3aac6ec05838460f29272ec4647dbdf438a5b83be784975079531ab79eb1",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    },
+    {
+      "name": "compile-tree",
+      "exit": 0,
+      "error": null,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    },
+    {
+      "name": "compile-attachments",
+      "exit": 0,
+      "error": null,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    },
+    {
+      "name": "native-io",
+      "exit": 0,
+      "error": null,
+      "stdoutSha256": "387e7e48b609ed11fc9f055c5e6c29df8f2201dbffc32f39ea62674d342c4b07",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    },
+    {
+      "name": "rc2-business",
+      "exit": 0,
+      "error": null,
+      "stdoutSha256": "ec4154e6e7345896111b81dbb45bbeb4977b92f75264597fdddab85a6796437b",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    },
+    {
+      "name": "rc2-media",
+      "exit": 0,
+      "error": null,
+      "stdoutSha256": "0541e1dfa4aa1876ea4f4520c4a17f95156487f21ac1472954b4f728fe11701a",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "pass"
+    }
+  ],
+  "fullMacCertification": "blocked",
+  "notVerified": [
+    "RC.2 installed Electron lifecycle",
+    "RC.2 installer",
+    "physical input",
+    "paid API",
+    "Developer ID/notarization"
+  ],
+  "os": "15.7.9",
+  "groups": [
+    {
+      "name": "native-io",
+      "status": "pass",
+      "tests": 74,
+      "pass": 74,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "rc2-business",
+      "status": "pass",
+      "tests": 15,
+      "pass": 15,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "rc2-media",
+      "status": "pass",
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    }
+  ]
+}

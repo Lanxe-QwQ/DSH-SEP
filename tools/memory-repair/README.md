@@ -1,3 +1,5 @@
+> 历史修复阶段记录：本页的“未改main／未发布／未切换日常版／Mac安装器未重建”仅指当时检查点。当前发行与重建验证见 [Beta.5](../../release/v0.2.1-beta.5/RELEASE-NOTES.md)。冻结候选包内同名策略文档保留原审查输入，不用于判断本次发布状态。
+
 # memory-repair.1 源码与复验
 
 当前结果（2026-10-22）：三项修复的 Windows 91/91、WSL2 Linux 87/87、macOS 15.7.9 ARM64 原生68/68均通过，0跳过。Mac当前索引为 [MACOS-VERIFICATION.json](MACOS-VERIFICATION.json)，原 [VERIFICATION.json](VERIFICATION.json) 保留为上传前检查点。仅专用测试分支已推送，未改 main、未发布Release、未切换日常版。上述数量包含重复流程和跨平台相同定义，不能相加当成独立缺陷类型；完整 Mac app/安装器仍未重建或认证。

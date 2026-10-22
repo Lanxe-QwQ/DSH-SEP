@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "fail",
+  "mode": "existing",
+  "platform": "win32",
+  "arch": "x64",
+  "exitCode": 1,
+  "signal": null,
+  "tests": 18,
+  "passed": 17,
+  "failed": 1,
+  "skipped": 0,
+  "logSha256": "bcea075786a2d53e1c5ad2b9986b7db9f05c6788d9c345d6a61187d3da5e147c",
+  "inputSha256": "e4b853e00691ab5a2315782d175c1a4b66b4bc2d8756367df63e69be9d348f83",
+  "model": "synthetic/no paid model"
+}

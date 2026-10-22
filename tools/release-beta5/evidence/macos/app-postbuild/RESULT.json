@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "scope": "current source using actual official Loader, blank governed Profile, native tree/parser/attachments and pending restart; synthetic LLM adapter, no paid endpoint",
+  "mode": "built",
+  "sourceCommit": "850f71076fdadef74cf78ec98e745e79f0fa5dca",
+  "source": "/Users/runner/work/_temp/sep-rc2/carrier",
+  "checks": [
+    {
+      "name": "pending-loader-restart",
+      "expectedTests": 8,
+      "realParser": true,
+      "counts": {
+        "tests": 8,
+        "pass": 8,
+        "fail": 0,
+        "skipped": 0,
+        "cancelled": 0
+      },
+      "status": "pass",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "cleanupConfirmed": true,
+      "logFinished": true,
+      "logSha256": "3c56a8c5086078870f81a4a630d0347cf6d75229c4821543ce4b44341b18d615"
+    },
+    {
+      "name": "document-contracts",
+      "expectedTests": 27,
+      "realParser": false,
+      "counts": {
+        "tests": 27,
+        "pass": 27,
+        "fail": 0,
+        "skipped": 0,
+        "cancelled": 0
+      },
+      "status": "pass",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "cleanupConfirmed": true,
+      "logFinished": true,
+      "logSha256": "8ebda685179de2fa733a8eb5cd3060a4ece2cb4044a88bdfb0606a0007a15157"
+    },
+    {
+      "name": "document-vision-loader",
+      "expectedTests": 7,
+      "realParser": true,
+      "counts": {
+        "tests": 7,
+        "pass": 7,
+        "fail": 0,
+        "skipped": 0,
+        "cancelled": 0
+      },
+      "status": "pass",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "cleanupConfirmed": true,
+      "logFinished": true,
+      "logSha256": "7fbe65172867c9d75973710bbd3a4c063d7a8d7f63e033496311d75485013e7b"
+    },
+    {
+      "name": "document-native-context",
+      "expectedTests": 3,
+      "realParser": true,
+      "counts": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0,
+        "skipped": 0,
+        "cancelled": 0
+      },
+      "status": "pass",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "cleanupConfirmed": true,
+      "logFinished": true,
+      "logSha256": "30636a89cbddb2edc8bf36964d819fbc0b8882065b9160331bd6cea04036469c"
+    },
+    {
+      "name": "document-standalone",
+      "expectedTests": 1,
+      "realParser": true,
+      "counts": {
+        "tests": 1,
+        "pass": 1,
+        "fail": 0,
+        "skipped": 0,
+        "cancelled": 0
+      },
+      "status": "pass",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "cleanupConfirmed": true,
+      "logFinished": true,
+      "logSha256": "9333e2935ef4437a824a85cb1dc92401dcddeb31a44346626e7a43f4763d31d3"
+    }
+  ],
+  "expectedTests": 46,
+  "fullMacCertification": "blocked",
+  "sourceTreeSha256": "37c565828d8e9ff71cb6f138110fa826922aadc8abbafd0be49ab492ec269e45",
+  "runtimeInputsSha256": "887a936c119f6244554c78b639421b086569d972038a07e16bfef1b431ba07a8",
+  "applicationResultSha256": "04cd1a301c97aeea230b2e46b7d45899e5ed038f41c76a595e73731031f1f8ab",
+  "programSha256": "b356c8af26c49cc0dbedf1e41d33ad0920ae563ed80007eb087ceb610cee5390",
+  "nodeSha256": "e4b5a3af0e05c75de2eae013904145f40fe7fc2a6e6f17510128bf45cca4e79b",
+  "parserManifestSha256": "1cbd8ec4afc1b421d4a730b54f053005f6a7827706f5ffc8e9e14dcd1041029a",
+  "mac": "ProductName:\t\tmacOS\nProductVersion:\t\t15.7.9\nBuildVersion:\t\t24G830",
+  "counts": {
+    "tests": 46,
+    "pass": 46,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "sourceUnchanged": true,
+  "applicationUnchanged": true,
+  "paidProviderCalls": 0,
+  "notVerified": [
+    "AppKit or Electron UI lifecycle/physical gestures in this operator",
+    "existing private user data",
+    "Developer ID and notarization",
+    "other macOS/architecture",
+    "arbitrary descendant families after deadline; runner-local cleanup is not a global process audit"
+  ]
+}

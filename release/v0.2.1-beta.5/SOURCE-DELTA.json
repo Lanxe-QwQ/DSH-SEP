@@ -1,0 +1,887 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "distributionVersion": "0.2.1-beta.5",
+  "basePublicCommit": "a69a754d65664af151e0afd9d95cbb32f3c94371",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 319,
+      "sha256": "06107bc1161dc91e1d40a65af07a052b546446c7300126a750d0c2c2f56f2921"
+    },
+    {
+      "path": ".github/workflows/sep-beta5-macos.yml",
+      "bytes": 4011,
+      "sha256": "9ad40b6c4d6ca313f57ec89e6f0f0c66739a237770fc09cbbce7bf7eec7c358b"
+    },
+    {
+      "path": ".github/workflows/sep-memory-macos.yml",
+      "bytes": 1450,
+      "sha256": "949c575148dfa31440167f94e2840a830637f88bcd1374587fc67f2bcf2ca121"
+    },
+    {
+      "path": "PUBLIC-SOURCE-ORIGIN.json",
+      "bytes": 820,
+      "sha256": "7c82862c6072c27ce07c67661bbbaaabbe42bb311840969bb70e52e632e7ba2c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4456,
+      "sha256": "084a44d649cf3677f60ac41fab1416d5ec450c7cd4f4125cb17c231fef1d2dc3"
+    },
+    {
+      "path": "RELEASE-STATUS.json",
+      "bytes": 513,
+      "sha256": "49d981c2dfa9725b1e0d3463ca979b3bf285341e3516a8347f8e31818c42a57b"
+    },
+    {
+      "path": "bundle/MEMORY-REPAIR.md",
+      "bytes": 4060,
+      "sha256": "4a82eac912612d820a27d22e3fefb48a4fe1c08dba2e3267ff24e63ca7151b7a"
+    },
+    {
+      "path": "bundle/README.md",
+      "bytes": 38895,
+      "sha256": "e9c6f387a14290b12e583ba76e2237fe106baaa36534c19ab589a60bcf977314"
+    },
+    {
+      "path": "bundle/host/automatic-memory/index.js",
+      "bytes": 18133,
+      "sha256": "de9a3a6cf566b1256fb9ff2fc9a05cbbddee779879e3edcf3dd1d65a8cfc669a"
+    },
+    {
+      "path": "bundle/host/automatic-memory/origin.json",
+      "bytes": 2594,
+      "sha256": "2207e5f9c83a82b4d0ed6bdf542cac5860ebd3bd254fab17782edae9588e55f5"
+    },
+    {
+      "path": "bundle/host/layered-memory/index.js",
+      "bytes": 43912,
+      "sha256": "e68bf825c809dd83a9be1a8d74e6c9728db39318773439617e14c4ea77c2b2af"
+    },
+    {
+      "path": "bundle/host/layered-memory/origin.json",
+      "bytes": 3976,
+      "sha256": "4e88794989c853dcb05b5af3f828a1cda805f50910c5bb728b896c7d00579387"
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/automatic-layered-memory.js",
+      "bytes": 17910,
+      "sha256": "083c0e6e092fec0a233a09af689f173f135d9e4a73ad3a7d19f58a44b27745a8"
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/layered-memory.js",
+      "bytes": 43386,
+      "sha256": "4999890c989bf1527e4f78836e5d7a0594317ce0b0603c3248c03763e3355d82"
+    },
+    {
+      "path": "bundle/modules/system-enhancement-package/src/vendor/bm25.js",
+      "bytes": 3501,
+      "sha256": "738f36db194ab77ad403a92f6d012b9d0602270793eb5cfc5c027fe490a4a532"
+    },
+    {
+      "path": "docs/DOCS_INDEX.md",
+      "bytes": 1216,
+      "sha256": "0b4c5aa7311cd905a91cd7a7819fccc4aa103809227076ec323735cab5899ed6"
+    },
+    {
+      "path": "docs/PRE-BETA5-README.md",
+      "bytes": 4583,
+      "sha256": "c41a7106da2037f4be23319454eb0c59f075a8441c94740f0f6391c8defc5d48"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/ASSET-BINDINGS.json",
+      "bytes": 1664,
+      "sha256": "4de7dcf266d4d8c8ffc123b06e06a99ec7cf50e41adcb8523f33f836464525e7"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/Linux.md",
+      "bytes": 1767,
+      "sha256": "03f2052de7477d948dd36afb04666efc1b01c1e35db5fd2aa3bd46e4500a6f74"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/RELEASE-NOTES.md",
+      "bytes": 1901,
+      "sha256": "4efbda70552f9bae67af4e6f264e80d572968172e210122f0ebc89cd676a2a59"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/SOURCE-GUIDE.md",
+      "bytes": 2816,
+      "sha256": "aef4b0e03486f2525ec0c0a716a16e75c4206bc6cef8ee37775c6210d4ed89e0"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/TECHNICAL-NOTES.md",
+      "bytes": 3747,
+      "sha256": "bfe527fece57a50d093378c633746034e9f2b4f4639c6dd1e7d4b672d457783f"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/THIRD-PARTY.md",
+      "bytes": 1116,
+      "sha256": "f95a0d3ceed23b77a6116ee9648db05958ed600d482c68ade30a442e840d8872"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/UPGRADING.md",
+      "bytes": 1081,
+      "sha256": "e26ee2ab477cc03b781a0bb700b326c04acb08f8f24cbb83f26ba91db75a80f0"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/VERIFICATION.json",
+      "bytes": 9376,
+      "sha256": "4aa8f889d3067c29aea0dfff6cb96a556c026d4c385f366e80c96b1093694d6b"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/Windows.md",
+      "bytes": 2610,
+      "sha256": "81fe79439c671f157ddd692042c5f3637dd0e58bbd12d6e53555364b4ae6a2db"
+    },
+    {
+      "path": "release/v0.2.1-beta.5/macOS.md",
+      "bytes": 1844,
+      "sha256": "8cb5b6acbbcd60cd2743efd3b058a09ff9d1e6cf53a353b9154e76a9657768bc"
+    },
+    {
+      "path": "tools/memory-repair/MACOS-VERIFICATION.json",
+      "bytes": 2387,
+      "sha256": "73de3939a5d3d43dfad1a995646da015c31456a2c299aa1c92f6ab400e7ab2cd"
+    },
+    {
+      "path": "tools/memory-repair/RC2-CANDIDATE-BASELINE.json",
+      "bytes": 85210,
+      "sha256": "6c61f2cd0525c468f458cbf988660b4d19e6507e22d457ec397ba6c3874c7688"
+    },
+    {
+      "path": "tools/memory-repair/README.md",
+      "bytes": 4594,
+      "sha256": "63c5412358ace58f29f1249e5598f6d52d8955ead52ac634d1c164d8caaae96c"
+    },
+    {
+      "path": "tools/memory-repair/VERIFICATION.json",
+      "bytes": 8497,
+      "sha256": "dadd5b250c539a269cfb3679b236d4587ba2fba7bdd7b8ef051c3ae097804485"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-consumers/INPUTS.json",
+      "bytes": 57468,
+      "sha256": "10058195d91b615ada73fe1aa1fda7da734a3802dc4bba77c020dcbab2024545"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-consumers/RESULT.json",
+      "bytes": 219,
+      "sha256": "a17c7d8caf5d0d4211b7fa01012dd462f0367ccaceee5f46b2b2e88070bf3485"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-consumers/tests.log",
+      "bytes": 4858,
+      "sha256": "f3934e90f71880f04be31c6fea9e960984b7142161b570a47ec09e790b19f98c"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-core/INPUTS.json",
+      "bytes": 89626,
+      "sha256": "c2293bb2bde8734961428cf823f9a53df49360dc77b5515910f334fe5f49bcb1"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-core/RESULT.json",
+      "bytes": 399,
+      "sha256": "f626e5bbfa4b1f8723bef9da2b8093860445da3e673c3e3f4054bc4278e93eb7"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-core/tests.log",
+      "bytes": 12218,
+      "sha256": "7bf3b3f5cf2b7f74fac6c1c472531d3b9a40da1687e6eb039c2368375667233c"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-storage/INPUTS.json",
+      "bytes": 89092,
+      "sha256": "745f2ff660426391dec2efbec4a02aaca6d188a18d9f403a0e765eb93ebee3d5"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-storage/RESULT.json",
+      "bytes": 400,
+      "sha256": "0613c48f9a9e466ebd8d5ce62f4a2581d234b0df21cec5d1b9b68aef875801b5"
+    },
+    {
+      "path": "tools/memory-repair/evidence/linux-storage/tests.log",
+      "bytes": 574,
+      "sha256": "720a2ab49f11c4aafc9e29acb0bc648828fa31f90cdda205b1829a86d1ea0df6"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/AUDIT.json",
+      "bytes": 4164,
+      "sha256": "76746fc04f07edcbd5aa893a76cc54de1583202328182d575de81129c0b0b185"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/CANDIDATE.json",
+      "bytes": 670,
+      "sha256": "1a15d20f82eb10bb43b9c02230c21ade6c9321c120a54609b546556d7978eda7"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/RESULT.json",
+      "bytes": 706,
+      "sha256": "b143b0103305440430ee7f7ff337e68015506f059ea9f7513d9a0efddaa524d3"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/core.log",
+      "bytes": 346,
+      "sha256": "8384f9511f7e9c4836de62ab264f9c0416638194c045a19bb3f0ac940ec09a91"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/core/INPUTS.json",
+      "bytes": 89629,
+      "sha256": "9f6ec267de7b03611c8e2bcdf867d784bbee1b3d2aee7cda6660f4a7028db968"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/core/RESULT.json",
+      "bytes": 402,
+      "sha256": "3dfbc26c18120752fdf34f1caf3bd6e9a94a62986c7614cf9be1b6dde4c21fef"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/core/tests.log",
+      "bytes": 12208,
+      "sha256": "40c6345fffaa118603df39cd2243073ade1a1166e05386072e95f579b6711e78"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/github-metadata.json",
+      "bytes": 1217,
+      "sha256": "9bdade401c83209f0fc0b028b32e863f73d3087bd4d504ee9c021c00da8db6b4"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/install.log",
+      "bytes": 17692,
+      "sha256": "da1872faed6964d70d9790b0014399520cc25881abbcae1059dc049d8b86347c"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/pack.log",
+      "bytes": 25136,
+      "sha256": "a179beda7f30f59687ae091c929126a8b6b84937eb385dbeb8491d4f412abe1d"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/pnpm-extract.log",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/storage.log",
+      "bytes": 347,
+      "sha256": "2b861b1724c7d577e773780eb099962acf0046af68cd03cfd295f26617ecf2ed"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/storage/INPUTS.json",
+      "bytes": 89095,
+      "sha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/storage/RESULT.json",
+      "bytes": 403,
+      "sha256": "7f96366cefc3e74679bc34c379e52cb58f52a25ab36d55a378daf5cfde0c8ed4"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/storage/tests.log",
+      "bytes": 574,
+      "sha256": "cf194e488ad4cfa1f0236252e6cd69d040061cb6893fc86cb3d627091f44bce6"
+    },
+    {
+      "path": "tools/memory-repair/evidence/macos-r1/system.log",
+      "bytes": 67,
+      "sha256": "090d9dd0b7a4b8da43cf17381a4c21e5fff2b6a0e75701319dca732a9e8157e9"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-core/INPUTS.json",
+      "bytes": 89626,
+      "sha256": "7080aeafa30db942efdc79fa1cc0c403853c949c39621646e3bb1fcc03c613d0"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-core/RESULT.json",
+      "bytes": 399,
+      "sha256": "b08f788474c8acd5eb119b4bcb6b91ac8ec8fe4f0648c68c0e4eaddc3823d93d"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-core/tests.log",
+      "bytes": 12085,
+      "sha256": "04196b19d368b1ab33ac82ec6bfaa7630133973930a1974b0c33369d91ded75a"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-existing/INPUTS.json",
+      "bytes": 89292,
+      "sha256": "fc20da31311a92520b054229077043feb60f5a2486225cff918255c1e4992071"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-existing/RESULT.json",
+      "bytes": 403,
+      "sha256": "e26ed238e0f9766b00bd802876ce26b77355788ac406723d99cf5e33c715851e"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-existing/tests.log",
+      "bytes": 4475,
+      "sha256": "0a1f23ced6de6f10fed3d6c1057098b061dcf4f333c6fb61dac28937ee38aa43"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-integration/INPUTS.json",
+      "bytes": 89100,
+      "sha256": "81e18c2390917182a338d6ed6ba14ad724eae0526836982b7c048ac219700deb"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-integration/RESULT.json",
+      "bytes": 404,
+      "sha256": "f06c64e5dffe93cafdca0c4d819e654011c9c8631ade7505ed654454ad1fe71a"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-integration/tests.log",
+      "bytes": 1022,
+      "sha256": "8cb717d4bdf6ecff14cf5324cc57fdea86f860e9de6ee922c2bcbfad2c5a6e5e"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-storage/INPUTS.json",
+      "bytes": 89092,
+      "sha256": "1567b477d03fbfa1a923c9d22febe33e9f7251a540ef10df16cb184f6e9b82d6"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-storage/RESULT.json",
+      "bytes": 400,
+      "sha256": "9343df516b1d0c52874d7749719fb254130ad1e19abdff82a70806e67971660c"
+    },
+    {
+      "path": "tools/memory-repair/evidence/windows-storage/tests.log",
+      "bytes": 567,
+      "sha256": "a963b29318e61bf9cedb3a0c1675f4b8658b75c9579db296c4de2ee8dd67a344"
+    },
+    {
+      "path": "tools/memory-repair/mac-ci.mjs",
+      "bytes": 6806,
+      "sha256": "b1279a3bf2504dab5af7b476a86a531fd30879da33f7a6c4599b6cd459fb0f44"
+    },
+    {
+      "path": "tools/memory-repair/run.mjs",
+      "bytes": 3161,
+      "sha256": "b7c66e84807d848576a47b305b22966c9233190848fa5a534ef4ea2499ab0826"
+    },
+    {
+      "path": "tools/memory-repair/tests/conflicts.test.mjs",
+      "bytes": 6960,
+      "sha256": "60ebb1e2b771615311fda2a0ef89afad841abd4632dfd8c2f127a687b6599831"
+    },
+    {
+      "path": "tools/memory-repair/tests/eligibility.test.mjs",
+      "bytes": 2156,
+      "sha256": "a8d2206f0c8d0b7e31c4c0ea258883dd15ee1168729c8989ad570f700654fc03"
+    },
+    {
+      "path": "tools/memory-repair/tests/fixture.mjs",
+      "bytes": 3816,
+      "sha256": "c3b263f5de5266bade162efb5a0591d55687e3056b915ee2af16e6e60efd1764"
+    },
+    {
+      "path": "tools/memory-repair/tests/integration.test.mjs",
+      "bytes": 6898,
+      "sha256": "7b14dceb8e156f246976ca45cf10d57d61f4d14360284be11d62792e0b9b1554"
+    },
+    {
+      "path": "tools/memory-repair/tests/storage.test.mjs",
+      "bytes": 4281,
+      "sha256": "e6b8958162919d3210e7f251dc49d2d9014ab66a0f2213062ee2489112e38cd4"
+    },
+    {
+      "path": "tools/memory-repair/tests/tokenizer.test.mjs",
+      "bytes": 2474,
+      "sha256": "36de17dc86aa3d031d482ea355ea398a62b64db9db0fcba2b86b9137337f91f6"
+    },
+    {
+      "path": "tools/memory-repair/tests/usage.test.mjs",
+      "bytes": 9983,
+      "sha256": "79133d0c09c93cc0294c1d5ee061bb7ad89bbf6bee50350713a4df32b1975176"
+    },
+    {
+      "path": "tools/rc2-adaptation/CANDIDATE-SOURCE.json",
+      "bytes": 85607,
+      "sha256": "13cbb8685e009ee4324808c1904d2760c6c08a3c0394927e0dc2453f5b4a6d24"
+    },
+    {
+      "path": "tools/rc2-adaptation/README.md",
+      "bytes": 4138,
+      "sha256": "a351fdca8cd6647cda668d6f1fa067c0042752c66a2e42210fce3d7c74d68fd8"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/MEMORY-REPAIR.json",
+      "bytes": 2415,
+      "sha256": "98cad476ba88ec9616512f233dde02bb21b6c4edad46ed650c89bed8dae1cb54"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/README.md",
+      "bytes": 9584,
+      "sha256": "e3557ce0662355ac66fe403eb9ba4a6369aec217cf0b25846253fafd239ed912"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/MEMORY-REPAIR.md",
+      "bytes": 4060,
+      "sha256": "4a82eac912612d820a27d22e3fefb48a4fe1c08dba2e3267ff24e63ca7151b7a"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/README.md",
+      "bytes": 38824,
+      "sha256": "22d495be141e31cb7b6effa9cc34733766abc35e8a8e37a6a24e5678b8f460fd"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/host/automatic-memory/index.js",
+      "bytes": 18133,
+      "sha256": "de9a3a6cf566b1256fb9ff2fc9a05cbbddee779879e3edcf3dd1d65a8cfc669a"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/host/automatic-memory/origin.json",
+      "bytes": 2594,
+      "sha256": "2207e5f9c83a82b4d0ed6bdf542cac5860ebd3bd254fab17782edae9588e55f5"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/host/layered-memory/index.js",
+      "bytes": 43912,
+      "sha256": "e68bf825c809dd83a9be1a8d74e6c9728db39318773439617e14c4ea77c2b2af"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/host/layered-memory/origin.json",
+      "bytes": 3976,
+      "sha256": "4e88794989c853dcb05b5af3f828a1cda805f50910c5bb728b896c7d00579387"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/modules/system-enhancement-package/src/automatic-layered-memory.js",
+      "bytes": 17910,
+      "sha256": "083c0e6e092fec0a233a09af689f173f135d9e4a73ad3a7d19f58a44b27745a8"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/modules/system-enhancement-package/src/layered-memory.js",
+      "bytes": 43386,
+      "sha256": "4999890c989bf1527e4f78836e5d7a0594317ce0b0603c3248c03763e3355d82"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/bundle/modules/system-enhancement-package/src/vendor/bm25.js",
+      "bytes": 3501,
+      "sha256": "738f36db194ab77ad403a92f6d012b9d0602270793eb5cfc5c027fe490a4a532"
+    },
+    {
+      "path": "tools/rc2-adaptation/candidate/package.json",
+      "bytes": 8259,
+      "sha256": "3b4d0c2049c6225042f411beddc883a0db03d53c27f2139f953bb92d23421c5b"
+    },
+    {
+      "path": "tools/release-beta5/MAC-PREPARE-ORIGIN.json",
+      "bytes": 516,
+      "sha256": "62bb90ba23eb605982bfce56f6a1d4521082a7e1d4d1376220d3532d373b50ba"
+    },
+    {
+      "path": "tools/release-beta5/PLAN.md",
+      "bytes": 852,
+      "sha256": "f8db2dbdb6ab5c8072cb47c9fba3ee62db945014255ab1b1908383e14db63e67"
+    },
+    {
+      "path": "tools/release-beta5/REPRODUCTION.md",
+      "bytes": 2955,
+      "sha256": "570ae32912b5c6c16bbcbf1dd1f5aed26f97532d6f859f06ea3867ac993a7b55"
+    },
+    {
+      "path": "tools/release-beta5/evidence/CANDIDATE-DISTRIBUTION-VERIFIED.json",
+      "bytes": 579,
+      "sha256": "e51228da9c88acedd31bed8ac86b26842e1a74798b8bd4832d7dce4d70b0db8b"
+    },
+    {
+      "path": "tools/release-beta5/evidence/ORIGIN-INPUTS-EXACT-RESTORED.json",
+      "bytes": 2193,
+      "sha256": "50d2b66379db9bcf62c1a7b1c01967189af274c53688ba622cdd00892e15757b"
+    },
+    {
+      "path": "tools/release-beta5/evidence/SOURCE-DELTA-PROVIDER-SCAN.json",
+      "bytes": 157,
+      "sha256": "a1eba570ebc7d0d080cfb7ab87fdb9f85ff888b3e44da20672a77b62c31cf4b6"
+    },
+    {
+      "path": "tools/release-beta5/evidence/SOURCE-DELTA-SCAN.json",
+      "bytes": 24129,
+      "sha256": "b26f4a4b3d71bc3f67426fb1d21a55c54daae351e1addef0a526846944b32b0f"
+    },
+    {
+      "path": "tools/release-beta5/evidence/linux/HEADLESS-r2.json",
+      "bytes": 399,
+      "sha256": "5fe568942c27624d1915ef107cb136860329bf5aa8d5b6ada00c63eb22439250"
+    },
+    {
+      "path": "tools/release-beta5/evidence/linux/HEADLESS.json",
+      "bytes": 409,
+      "sha256": "4a20cec682095986cbbf39f26130b6da471c94b6e6306dbb5382ee63fd5f4ba6"
+    },
+    {
+      "path": "tools/release-beta5/evidence/linux/MEMORY-FINAL.json",
+      "bytes": 1008,
+      "sha256": "71b819261089517d244de78dbca3246496fbd44f22e6ec28ce9a1aa300b27067"
+    },
+    {
+      "path": "tools/release-beta5/evidence/linux/RESULT.json",
+      "bytes": 1876,
+      "sha256": "66e23166c8318635a92a7f0f8e7f4e41f96245fdfceedc9e126f152d91eafce8"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/BETA5-PREPARATION.json",
+      "bytes": 1134,
+      "sha256": "2071bcd06c17966f807149df4bb80843a5cb806a04639d91cc82a947b1a4f032"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/DERIVATION.json",
+      "bytes": 5334,
+      "sha256": "d908163f419c4279dc93a878ad4840af795574b59c6ce18c62ef1c873d94d8a4"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/DOWNLOAD-VERIFIED.json",
+      "bytes": 73023,
+      "sha256": "27d905ee29252808813d9d12f0860f234a09fff1e3cda2f13985a04ca3b742b1"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/VERIFIED.json",
+      "bytes": 2475,
+      "sha256": "8f6ff45df6fa9232f97bedd336dfa91c03f19843bb8dc2cf2920479f45ef3ada"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/app-lifecycle/RESULT.json",
+      "bytes": 2751,
+      "sha256": "eca23391f91caaf772d720fde06c131cb90c9ff45b5d10e20b64dac83b065275"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/app-postbuild/RESULT.json",
+      "bytes": 3910,
+      "sha256": "b69ea4b541f6c8862c1fced0ff6de8984adb98d73b3701e959f30b104d24eb29"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/evidence/RESULT.json",
+      "bytes": 2571,
+      "sha256": "0cfb28c976a8de1adb123c31e08d587b2fc3c81915f7bd8e9e23f599364bc292"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/installer/PACKAGE-INVENTORY.json",
+      "bytes": 19893301,
+      "sha256": "86050c90fb43dcf5ce361892dfbd209ccc5fa0a108d0153eeb64bc768a4a0a94"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/installer/RESULT.json",
+      "bytes": 9511,
+      "sha256": "fb50438f9722f4171252dd9dcd51beb34e8f8dfd561cb1a046252c0bd058349e"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/mac-package/INSTALLER-ORIGIN.json",
+      "bytes": 466,
+      "sha256": "bce3f7f6428922afe12e7afba0117638f26a67aad8755087517420efa363c6ca"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/mac-package/PACKAGE-INVENTORY.json",
+      "bytes": 17587747,
+      "sha256": "00a06849034cac6431de6477eac628f6d23192757897c3f3985316f4c56acbef"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/mac-package/RESULT.json",
+      "bytes": 25127,
+      "sha256": "04cd1a301c97aeea230b2e46b7d45899e5ed038f41c76a595e73731031f1f8ab"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/memory-core/INPUTS.json",
+      "bytes": 89629,
+      "sha256": "9f6ec267de7b03611c8e2bcdf867d784bbee1b3d2aee7cda6660f4a7028db968"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/memory-core/RESULT.json",
+      "bytes": 402,
+      "sha256": "fd861d8f6427475c122edaf19c6a9338df7d1f6ec2219e43796837e03de55d48"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/memory-core/tests.log",
+      "bytes": 12205,
+      "sha256": "49c2af007fb62d232a6ba71f2cb688043da7d923c526af8d30cdca22084dd914"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/memory-storage/INPUTS.json",
+      "bytes": 89095,
+      "sha256": "5bc89a7cc1dc6eff0251e795aea1aae11de1f194121b9a80ee23898acc4f087d"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/memory-storage/RESULT.json",
+      "bytes": 403,
+      "sha256": "ccafb3c38796582b6da74977ffb76f0bcc0dacdb3ce18a11bbe36085fda0b683"
+    },
+    {
+      "path": "tools/release-beta5/evidence/macos/memory-storage/tests.log",
+      "bytes": 573,
+      "sha256": "eee0eaca613103e52f5cae1ff8e2a841f24ee286b52c0c6ccb7e1432d707cdd3"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/core-final/INPUTS.json",
+      "bytes": 89626,
+      "sha256": "dd0f54565e2afaadea54af48a1e0df82c9f9ceb9373f7da0f59322ff8e4f47a9"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/core-final/RESULT.json",
+      "bytes": 399,
+      "sha256": "9f283e033bc2d3ec0fffd2c03ec1761bb83e7192d7bd34ac2f7d03be364dbf69"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/core-final/tests.log",
+      "bytes": 12089,
+      "sha256": "aa401b1f8a652dc6da10cec080317ef9c9a7551b9cdc387dd1d7c8eaac3f3fa6"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/existing-r2/INPUTS.json",
+      "bytes": 89292,
+      "sha256": "dd4eba29c07f6ea7f7f32d1a7307d0a3316e3d0f49653699951316ea37c28d5f"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/existing-r2/RESULT.json",
+      "bytes": 403,
+      "sha256": "9e687b7ae35e9d36f521aad4dde1d46488f97441e1d001d86032202d88b7f0e8"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/existing-r2/tests.log",
+      "bytes": 4481,
+      "sha256": "81caf43aa793698e36c7b19e2c747034adb95891667e3b37a981b7c35485c542"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/existing/INPUTS.json",
+      "bytes": 89292,
+      "sha256": "e4b853e00691ab5a2315782d175c1a4b66b4bc2d8756367df63e69be9d348f83"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/existing/RESULT.json",
+      "bytes": 403,
+      "sha256": "68533e78288e4947bedc517f48a827a66bd2d72f441d05e3b23e2eb60652114e"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/existing/tests.log",
+      "bytes": 5457,
+      "sha256": "bcea075786a2d53e1c5ad2b9986b7db9f05c6788d9c345d6a61187d3da5e147c"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/integration-final/INPUTS.json",
+      "bytes": 89100,
+      "sha256": "98c9c83b958cc055e090bf00d1dab1abd5b73a4035da36269b08e948d1a0d163"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/integration-final/RESULT.json",
+      "bytes": 404,
+      "sha256": "a7d68e603450415cbf81737f2e1e6496d8888dc0956e80340dedd6483becd0e6"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/integration-final/tests.log",
+      "bytes": 1023,
+      "sha256": "0433692d9b0464e36386a016c89e3c06b862736471f7b74b0b67d222dab00ca5"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/storage-final/INPUTS.json",
+      "bytes": 89092,
+      "sha256": "c88f0405976d8af914b5e2b31a36b668b80587158d42c38c34b1533001df14ee"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/storage-final/RESULT.json",
+      "bytes": 400,
+      "sha256": "cfccc4b795b5b84cef5868d24f13831a0d3afa031e876c102e5ed377c2a8d4ac"
+    },
+    {
+      "path": "tools/release-beta5/evidence/windows-memory/storage-final/tests.log",
+      "bytes": 567,
+      "sha256": "8ddf8c13d8d233fbd1778432edd649d8740b61f8996e8d49ddcef3584d61b8e3"
+    },
+    {
+      "path": "tools/release-beta5/linux-package.py",
+      "bytes": 5953,
+      "sha256": "4fa16b20ab7802b60387fbf2f36af1ba8ea258b577918ef43af19785ad8b7f81"
+    },
+    {
+      "path": "tools/release-beta5/mac-prepare.mjs",
+      "bytes": 9071,
+      "sha256": "b87de2aeaeac6cde8f3ef33a2329d5ab0c5e09c53537cc6192d5f5a5155e8bc3"
+    },
+    {
+      "path": "tools/release-beta5/memory-candidate.tgz",
+      "bytes": 1302492,
+      "sha256": "c571b92350055c2fa9388f2de196db28e270ef68a68196e47ca9569f6b5fd500"
+    },
+    {
+      "path": "tools/release-beta5/windows-package.py",
+      "bytes": 4074,
+      "sha256": "f499bdcbfc4c9da9f9bdce0d7936eb8ac9dae3322a82811541448f726c428783"
+    },
+    {
+      "path": "tools/release-beta5/windows-seal.mjs",
+      "bytes": 4449,
+      "sha256": "ec625ac96a7a8fe3a67ac7b81d154b212715a042f66879a8effed4abefd46270"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/BETA5-ORIGIN.json",
+      "bytes": 11231,
+      "sha256": "3a2dee52931ee844b418751bb46d4d14834b9bd6491e4e79dfa5abd08bf86a71"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/CURRENT-INPUTS.json",
+      "bytes": 5264,
+      "sha256": "e68f3b4e458df031e87f250233807e641b26e2625b7756f9b3b0d04bdfd6b6a6"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/ORIGIN-PORT-AND-DOC.json",
+      "bytes": 7748,
+      "sha256": "07dcf7e6da8218cc5a7fdf9bd1dbf9c9c92981e4e0d553ed736d26297585d397"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/ORIGIN-PRE-CLOSEOUT.json",
+      "bytes": 6771,
+      "sha256": "140e902360b656415764ea350e2adb9d22fc2fcbef5c9bc101df0fcfc6a241a2"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/ORIGIN.json",
+      "bytes": 549,
+      "sha256": "68690701553ecef4e5a39b55a385235592d09d542a804971f8c2414c00c82819"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/PYTHON-SCOPE-ORIGIN.json",
+      "bytes": 991,
+      "sha256": "b87a1b35644ad24d1f1573ad0f4251ea5ebb49b7d827de61c7613b0f7144078f"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/README-PRE-CLOSEOUT.md",
+      "bytes": 14129,
+      "sha256": "a1cdf54293d84985c42005e3fcec4b9826b944da3cbdaafee8eab5b9da372365"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/README.md",
+      "bytes": 993,
+      "sha256": "ae1ef9c24d30c41026999b7a5f7fdeebcf4d646112c0419d77f227d0d4645035"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/bundle-audit.mjs",
+      "bytes": 6219,
+      "sha256": "880bd77cd035dc0ae9aa220a749c96b4af088a47697ca3d1829b092f1225a943"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/bundle-audit.test.mjs",
+      "bytes": 4003,
+      "sha256": "53b9906e4e8831f47f8dcd58776f65d5c72b56a4258f8d3fb5508824ec5a874a"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/default-desktop-probe.mjs",
+      "bytes": 17251,
+      "sha256": "51f0c0cc65841fc7b0a3c8f917342e63a215bafcc0745bd852182847a3135df6"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/desktop-outcomes.mjs",
+      "bytes": 876,
+      "sha256": "9f8411326e4b77bb821479ef8022d56bde1bcb321ab660c48eed09179688e667"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/desktop-outcomes.test.mjs",
+      "bytes": 3106,
+      "sha256": "ae334ebc7761c03b2995966d471017f34ee0f056bba2e2f23018175dd28e1c3f"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/diagnose-startup.mjs",
+      "bytes": 5158,
+      "sha256": "1b1c13832efa4be72a333e7258b8db664c645899ec2fc7973fc1794b0ad74637"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/freeze-operators.mjs",
+      "bytes": 1695,
+      "sha256": "9c3dfe071303d7d602e377f878ca00e99038c400d6285ff693b56053f3874024"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/fresh-composition.mjs",
+      "bytes": 1648,
+      "sha256": "af053b3f49914592e3fc784d1b7c0624ba68ced50174d9c75788782170797d83"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/fresh-composition.test.mjs",
+      "bytes": 2906,
+      "sha256": "403d8f2f00658d45dea5bdfa9be865dd46b0152d37ddc536182408af4f261704"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/headless-probe.mjs",
+      "bytes": 10573,
+      "sha256": "92476e20a8d996e716c0f5e7d877dde4392b8e17537db7f189cb744da24866a8"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/inspector-client.mjs",
+      "bytes": 1985,
+      "sha256": "f6801d4555a06a72b511a36d9e09ccb55395434a7a32d5d60c05b3d350f5215a"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/install-archives.mjs",
+      "bytes": 11674,
+      "sha256": "804fdbe2a74567762c16d4933bac8b8a3c8b9239e9bf214d385561cf92372086"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/installer-refusals.mjs",
+      "bytes": 2647,
+      "sha256": "c7b73094069b65dfa7903a70b28ee92c097e29c277cd53c56e25f15551556862"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/inventory-diagnostic.mjs",
+      "bytes": 5154,
+      "sha256": "86646928031cb8838640f871c0fd5a1e0247d79ea0e44ec08657fb09fee657ce"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/longpath-audit.py",
+      "bytes": 2884,
+      "sha256": "7867d03a02e14369740c1709318f5dcefd9af48ae5c5e1b4f607837b75c0c0ec"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/memory-identity.mjs",
+      "bytes": 825,
+      "sha256": "793a5495435fdab6af2f959d1ebc8fd4924c9bdb155e316205c526b8d5b40d4b"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/memory-identity.test.mjs",
+      "bytes": 1798,
+      "sha256": "eb1ec847684dc8ea8a17bcaebb1f2d3025365f85c2a48009a4c936eb262e29d0"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/memory-policy.mjs",
+      "bytes": 444,
+      "sha256": "8d3303ae8620a5c39a3c1cccdba09b2287b62c77813f9afd69a909b257936fc6"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/memory-policy.test.mjs",
+      "bytes": 1041,
+      "sha256": "fcb468499d76ea7dfc050e61f7462825434b8b75ee20cedb432b807fb16b76c8"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/runtime-smoke.mjs",
+      "bytes": 4864,
+      "sha256": "a1aded7214ab97e1b8a2161521463589e1b583505e31825878ed76b7b826a863"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/safe_extract.py",
+      "bytes": 9208,
+      "sha256": "c005e3dc7898fa776a18f246a6130fb13470e520715d54a9b7df72c7125cf4b9"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/safe_extract_regression.py",
+      "bytes": 1262,
+      "sha256": "2cc77cbd2fea695b716c6384780ce4a6bebd5c9d2a2bf1d95b7884837fec888f"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/safe_extract_test.py",
+      "bytes": 9181,
+      "sha256": "db033ebc09fc76316ab9cf11cbd0891253a82cedff39d520d73f51ba2a6f4280"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/seal-tests.mjs",
+      "bytes": 2708,
+      "sha256": "c8cd3e317127fff1f5613e2106fddf63f24de9cd76b580f2d12637f10b083b07"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/workspace-readiness.mjs",
+      "bytes": 1974,
+      "sha256": "ca6a42c18325592d87165c2159b490201860e3397adf85d2756282a76226c7c2"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/workspace-readiness.test.mjs",
+      "bytes": 2079,
+      "sha256": "60dc60e282c75458019ed82d5ec71d9a1c725c502e03dda4c17308f2759f4e63"
+    },
+    {
+      "path": "tools/release-beta5/windows-verification/workspace-sources.json",
+      "bytes": 1181,
+      "sha256": "c7f7bf21bd4180303799ef0f3ac5eaa31ee1335a918e01c2e17da2cfb8d92938"
+    }
+  ],
+  "selfExcluded": true,
+  "currentSourceArchiveVerifiedAgainstReleaseCommitSeparately": true,
+  "findings": [],
+  "privacyScope": "defined signatures in changed textual source; binary candidate bound by SHA and each installer independently scanned; not a universal privacy claim"
+}

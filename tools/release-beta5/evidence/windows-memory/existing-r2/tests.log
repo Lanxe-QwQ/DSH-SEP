@@ -1,0 +1,119 @@
+TAP version 13
+# Subtest: evaluation configuration rejects traversal and malformed canonical paths in both entry and config
+ok 1 - evaluation configuration rejects traversal and malformed canonical paths in both entry and config
+  ---
+  duration_ms: 171.8791
+  type: 'test'
+  ...
+# Subtest: direct Entry rejects unsafe paths before an external spawn even without the settings schema
+ok 2 - direct Entry rejects unsafe paths before an external spawn even without the settings schema
+  ---
+  duration_ms: 1.6177
+  type: 'test'
+  ...
+# Subtest: fixture origin chains replay to the actual HEAD bytes
+ok 3 - fixture origin chains replay to the actual HEAD bytes
+  ---
+  duration_ms: 188.8999
+  type: 'test'
+  ...
+# Subtest: Windows CI publishes a portable runner temp directory with artifact-compatible separators
+ok 4 - Windows CI publishes a portable runner temp directory with artifact-compatible separators
+  ---
+  duration_ms: 509.5567
+  type: 'test'
+  ...
+# Subtest: consumer cleanup attempts independent resources when evaluation blocks and retries only unfinished resources
+ok 5 - consumer cleanup attempts independent resources when evaluation blocks and retries only unfinished resources
+  ---
+  duration_ms: 1.344
+  type: 'test'
+  ...
+# Subtest: consumer cleanup preserves evaluation start diagnosis and independently retries a failed child disposer
+ok 6 - consumer cleanup preserves evaluation start diagnosis and independently retries a failed child disposer
+  ---
+  duration_ms: 0.298
+  type: 'test'
+  ...
+# Subtest: trusted diagnostics retain nested classified failure without raw body or path
+ok 7 - trusted diagnostics retain nested classified failure without raw body or path
+  ---
+  duration_ms: 0.4962
+  type: 'test'
+  ...
+# Subtest: automatic capture uses the same native Profile ledger and preserves birthday precision
+ok 8 - automatic capture uses the same native Profile ledger and preserves birthday precision
+  ---
+  duration_ms: 3956.1451
+  type: 'test'
+  ...
+# Subtest: automatic capture obeys the existing Profile output cap without an extra dispatch
+ok 9 - automatic capture obeys the existing Profile output cap without an extra dispatch
+  ---
+  duration_ms: 747.1123
+  type: 'test'
+  ...
+# Subtest: a paused capture switch prevents auxiliary model dispatch and preserves memory
+ok 10 - a paused capture switch prevents auxiliary model dispatch and preserves memory
+  ---
+  duration_ms: 722.6712
+  type: 'test'
+  ...
+# Subtest: closing during a non-cooperative capture retains the lease and never publishes late memory
+ok 11 - closing during a non-cooperative capture retains the lease and never publishes late memory
+  ---
+  duration_ms: 885.7519
+  type: 'test'
+  ...
+# Subtest: the optional local media consumer extracts Chinese source paths without model use
+ok 12 - the optional local media consumer extracts Chinese source paths without model use
+  ---
+  duration_ms: 440.8316
+  type: 'test'
+  ...
+# Subtest: the mounted plugin group evaluates three samples before an actual managed child dispatch
+ok 13 - the mounted plugin group evaluates three samples before an actual managed child dispatch
+  ---
+  duration_ms: 874.4378
+  type: 'test'
+  ...
+# Subtest: history expansion requires an explicit current direct request and a registered parent
+ok 14 - history expansion requires an explicit current direct request and a registered parent
+  ---
+  duration_ms: 420.8511
+  type: 'test'
+  ...
+# Subtest: Mem0 assistance stays within the current project messages and shares the same native ledger
+ok 15 - Mem0 assistance stays within the current project messages and shares the same native ledger
+  ---
+  duration_ms: 891.1974
+  type: 'test'
+  ...
+# Subtest: Mem0 refuses messages from another real session even inside the same project
+ok 16 - Mem0 refuses messages from another real session even inside the same project
+  ---
+  duration_ms: 388.4362
+  type: 'test'
+  ...
+# Subtest: retained plugin group controls reject new preview work after root admission closes
+ok 17 - retained plugin group controls reject new preview work after root admission closes
+  ---
+  duration_ms: 380.0607
+  type: 'test'
+  ...
+# Subtest: history navigation reads a real native compaction source and refuses a changed graph
+ok 18 - history navigation reads a real native compaction source and refuses a changed graph
+  ---
+  duration_ms: 877.1104
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10798.0734
+

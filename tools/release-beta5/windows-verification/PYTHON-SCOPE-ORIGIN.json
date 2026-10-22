@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "scope": "retain identical extraction policy; port hardcoded isolated work root only",
+  "transforms": [
+    {
+      "path": "longpath-audit.py",
+      "sourceSha256": "3bb938ba667014dc3b6e78007f2adde2a3126ab7ec130d292fe6b7840e32ee7a",
+      "resultSha256": "c4304fb311190c2b9feabef30ddde064770aab7078f9d675f5c21030385208f4",
+      "from": "D:\\AIData\\ProjectWork\\DSH\\alpha2-windows-packages-20261015-r1",
+      "to": "D:\\AIData\\ProjectWork\\DSH\\rc2-adaptation-20261018-r1\\windows-packages-r1",
+      "count": 1
+    },
+    {
+      "path": "safe_extract.py",
+      "sourceSha256": "6aa8ef70a4ea0bcc72c388119d7c0c386be8d6d62cd6e8e1b890a9b3d99e0c59",
+      "resultSha256": "08207e24e684ac451ba56bfe6815903af183a2a3ddc36609e69cb776ffccc68b",
+      "from": "D:\\AIData\\ProjectWork\\DSH\\alpha2-windows-packages-20261015-r1",
+      "to": "D:\\AIData\\ProjectWork\\DSH\\rc2-adaptation-20261018-r1\\windows-packages-r1",
+      "count": 1
+    }
+  ]
+}
