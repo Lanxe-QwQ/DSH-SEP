@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "repository": "Lanxe-QwQ/DSH-SEP",
+  "tag": "v0.2.2-beta.1",
+  "hostVersion": "0.2.3-alpha.2",
+  "version": "0.2.2-beta.1",
+  "prerelease": true,
+  "platform": "Windows x64",
+  "installMode": "standalone new installation",
+  "programGraphSha256": "08701b8ea4b135fb88f2b6381f89940a0beefb8fdce6d08ebe3fcbcfdaf1dcab",
+  "assets": [
+    {
+      "name": "DSH-SEP-Full-0.2.2-beta.1-Windows-x64.zip",
+      "size": 464011414,
+      "sha256": "818f8e3b73284c95618983ebfb72982021cd31e127c6f027f694a854fb01c521"
+    },
+    {
+      "name": "DSH-SEP-Only-0.2.2-beta.1-Windows-x64.zip",
+      "size": 301959607,
+      "sha256": "2235ead30f18fde0ffe1de1cc5d4698411b79aba1190505870d42ce99e6b087b"
+    },
+    {
+      "name": "DSH-SEP-FFmpeg-Sources-0.2.2-beta.1-Windows-x64.zip",
+      "size": 18653609,
+      "sha256": "04d2297f09d71d2544d5188ca8332223dd892a5fabc4c074a0c81f1ba359b7c4"
+    },
+    {
+      "name": "DSH-SEP-Windows-Overlay-Source-0.2.2-beta.1.zip",
+      "size": 8962878,
+      "sha256": "f5152b78e577f11b3164c8046ae7e6180cf69543963ab1c99efb3966e8cb89a4"
+    }
+  ],
+  "verification": {
+    "packages": {
+      "full": {
+        "install": "pass",
+        "filesScanned": 27775,
+        "opaqueMemberFamilies": {
+          "asar": 1,
+          "gzip": 1
+        },
+        "coldStartup": "pass",
+        "firstTurnDurable": "pass",
+        "normalShutdown": "pass",
+        "synthetic4LM": false
+      },
+      "sep": {
+        "install": "pass",
+        "filesScanned": 7037,
+        "opaqueMemberFamilies": {
+          "asar": 1,
+          "gzip": 1
+        },
+        "coldStartup": "pass",
+        "firstTurnDurable": "pass",
+        "normalShutdown": "pass",
+        "synthetic4LM": true
+      }
+    },
+    "officialCoexistence": "pass with unmodified official Alpha.2 Web host",
+    "modelCallsCharged": 0,
+    "privacyScope": "bounded byte and filename scan"
+  },
+  "runtimeSourcesDocument": "RUNTIME-SOURCES.md"
+}
